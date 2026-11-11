@@ -1,0 +1,2035 @@
+{
+ "clave": "SistemasControlRobotica",
+ "libro": "Sistemas de Control y Robótica I",
+ "curso": "3º ESO",
+ "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/index.html",
+ "temas": [
+  {
+   "codigo": "UD01",
+   "titulo": "UD01 · Historia de la robótica y los sistemas de control",
+   "bloque": "Bloque I · Robótica y sociedad",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud01/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 1.1 · Qué es un robot y qué es un sistema de control",
+     "descripcion": "Hoy vas a saber qué es un robot y reconocer las tres partes de un sistema de control.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud01/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.2 · Autómatas y máquinas automáticas antes de la electrónica",
+     "descripcion": "Hoy vas a conocer cómo funcionaban las máquinas automáticas antes de los ordenadores.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud01/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.3 · La robótica industrial y la era del microprocesador",
+     "descripcion": "Hoy vas a conocer el primer robot industrial y entender por qué el microprocesador cambió la robótica.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud01/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.4 · Las tres leyes de la robótica de Asimov",
+     "descripcion": "Hoy vas a conocer las leyes de Asimov y usarlas para opinar sobre robots.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud01/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.5 · Presente y futuro: inteligencia artificial, robots colaborativos y ética",
+     "descripcion": "Hoy vas a saber qué es la inteligencia artificial y opinar con argumentos sobre el uso de los robots.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud01/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD01 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud01/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Un robot percibe, decide y...",
+      "opciones": [
+       "actúa",
+       "duerme",
+       "calcula"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Los sensores son la parte de...",
+      "opciones": [
+       "salida",
+       "entrada",
+       "controlador"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un motor es...",
+      "opciones": [
+       "un sensor",
+       "un controlador",
+       "un actuador"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "¿Qué máquina se corregía sola con unas bolas que giran?",
+      "opciones": [
+       "El telar de Jacquard",
+       "El regulador de Watt",
+       "Unimate"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El primer robot industrial se llamaba...",
+      "opciones": [
+       "Unimate",
+       "Asimov",
+       "Micro:Bit"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Qué ley de Asimov es la más importante?",
+      "opciones": [
+       "Obedecer",
+       "Protegerse",
+       "No hacer daño"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Un cobot es un robot que...",
+      "opciones": [
+       "trabaja junto a las personas",
+       "vuela",
+       "solo trabaja de noche"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La inteligencia artificial aprende...",
+      "opciones": [
+       "sola, sin datos",
+       "con muchos ejemplos",
+       "leyendo las leyes de Asimov"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "Escribe las tres partes de un sistema de control y un ejemplo de cada una.",
+      "solucion": "Entrada (un sensor de luz), controlador (una placa con un programa) y salida (un motor)."
+     },
+     {
+      "enunciado": "¿Por qué el microprocesador cambió la robótica?",
+      "solucion": "Porque el controlador cabe en un chip: los robots son más pequeños y se programan en minutos."
+     }
+    ],
+    "rubrica": [
+     "Sé qué es un robot y lo distingo de una máquina automática.",
+     "Reconozco la entrada, el controlador y la salida.",
+     "Conozco los grandes momentos de la historia de la robótica.",
+     "Explico las leyes de Asimov.",
+     "Doy mi opinión sobre los robots con argumentos."
+    ],
+    "titulo": "UD01 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud01/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD02",
+   "titulo": "UD02 · Tipos de robots y aplicaciones",
+   "bloque": "Bloque I · Robótica y sociedad",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud02/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 2.1 · Clasificación de los robots",
+     "descripcion": "Hoy vas a clasificar un robot según cómo se mueve, qué forma tiene y para qué sirve.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud02/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.2 · Robots industriales y robots en la agricultura",
+     "descripcion": "Hoy vas a conocer las partes de un brazo robótico y algunos robots del campo.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud02/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.3 · Robots terrestres, aéreos y submarinos",
+     "descripcion": "Hoy vas a conocer cómo se mueven los robots por tierra, aire y agua.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud02/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.4 · Robots en medicina y robots sociales",
+     "descripcion": "Hoy vas a conocer cómo ayudan los robots a cuidar la salud y a acompañar a las personas.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud02/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.5 · La domótica: la casa como sistema de control",
+     "descripcion": "Hoy vas a reconocer los sensores y actuadores de una casa domótica.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud02/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD02 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud02/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Un robot que está sujeto en un sitio es...",
+      "opciones": [
+       "móvil",
+       "fijo",
+       "humanoide"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un robot con forma de persona es...",
+      "opciones": [
+       "un humanoide",
+       "un cobot",
+       "un dron"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La pinza de un brazo robótico es...",
+      "opciones": [
+       "una articulación",
+       "un eslabón",
+       "el efector final"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Las uniones que giran en un brazo robótico son...",
+      "opciones": [
+       "las articulaciones",
+       "los eslabones",
+       "la base"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un robot que maneja una persona con un mando es...",
+      "opciones": [
+       "autónomo",
+       "teleoperado",
+       "social"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Quién decide en un robot de cirugía?",
+      "opciones": [
+       "El robot",
+       "El paciente",
+       "El cirujano"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "En una casa domótica, la centralita es...",
+      "opciones": [
+       "el controlador",
+       "un sensor",
+       "un actuador"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un sensor de humo es...",
+      "opciones": [
+       "un actuador",
+       "una entrada",
+       "una salida"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "Clasifica un brazo que pinta coches con las tres preguntas.",
+      "solucion": "Fijo, con forma de brazo y de industria."
+     },
+     {
+      "enunciado": "Escribe dos cosas para las que sirve la domótica.",
+      "solucion": "Por ejemplo: seguridad (avisa si hay humo) y ahorro (apaga las luces de las salas vacías)."
+     }
+    ],
+    "rubrica": [
+     "Clasifico un robot con las tres preguntas.",
+     "Nombro las partes de un brazo robótico.",
+     "Distingo un robot teleoperado de uno autónomo.",
+     "Conozco robots de la medicina y robots sociales.",
+     "Explico la domótica como un sistema de control."
+    ],
+    "titulo": "UD02 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud02/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD03",
+   "titulo": "UD03 · Programas, lenguajes y algoritmos",
+   "bloque": "Bloque II · Programación",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud03/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 3.1 · Concepto de programa",
+     "descripcion": "Hoy vas a saber qué es un programa y por qué sus instrucciones deben estar en orden.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud03/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.2 · Lenguajes de programación: de la máquina a los bloques",
+     "descripcion": "Hoy vas a conocer los tipos de lenguajes de programación.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud03/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.3 · Algoritmos y pensamiento computacional",
+     "descripcion": "Hoy vas a escribir algoritmos y resolver problemas por partes.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud03/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.4 · Diagramas de flujo: símbolos y reglas",
+     "descripcion": "Hoy vas a dibujar un algoritmo como diagrama de flujo.\nNecesitas: cuaderno, lápiz y regla.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud03/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD03 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud03/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD03 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud03/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Un programa es...",
+      "opciones": [
+       "un dibujo del ordenador",
+       "una lista de instrucciones",
+       "un cable"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El ordenador, por dentro, solo entiende...",
+      "opciones": [
+       "ceros y unos",
+       "español",
+       "bloques"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La pantalla de un ordenador es...",
+      "opciones": [
+       "software",
+       "un algoritmo",
+       "hardware"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Scratch y MakeCode son lenguajes de...",
+      "opciones": [
+       "máquina",
+       "bloques",
+       "ensamblador"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Quedarse con lo importante y olvidar los detalles es...",
+      "opciones": [
+       "abstraer",
+       "descomponer",
+       "compilar"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En un diagrama de flujo, una pregunta va en un...",
+      "opciones": [
+       "óvalo",
+       "rectángulo",
+       "rombo"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Del rombo salen...",
+      "opciones": [
+       "dos flechas: Sí y No",
+       "tres flechas",
+       "ninguna flecha"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El programa que traduce un programa entero a ceros y unos es el...",
+      "opciones": [
+       "intérprete",
+       "compilador",
+       "navegador"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué es un algoritmo? ¿Y un programa?",
+      "solucion": "Un algoritmo es una serie ordenada y finita de pasos que resuelve un problema. Un programa es un algoritmo escrito en un lenguaje de programación."
+     },
+     {
+      "enunciado": "¿Por qué hay que traducir los programas antes de ejecutarlos?",
+      "solucion": "Porque el procesador solo entiende código máquina (ceros y unos)."
+     },
+     {
+      "enunciado": "Escribe una ventaja de los lenguajes de bloques.",
+      "solucion": "Por ejemplo: no hay errores de escritura, porque las piezas que no encajan no se pueden unir."
+     },
+     {
+      "enunciado": "¿Qué es la abstracción? Pon un ejemplo.",
+      "solucion": "Quedarse con lo importante y olvidar los detalles. Por ejemplo, un mapa del metro solo guarda las estaciones y las líneas."
+     },
+     {
+      "enunciado": "¿Qué símbolo se usa para «Mostrar el resultado»? ¿Y para «¿Es mayor que 10?»?",
+      "solucion": "El paralelogramo (salida) y el rombo (decisión)."
+     },
+     {
+      "enunciado": "Dibuja el diagrama de flujo de un timbre: si alguien pulsa el botón, suena; si no, no hace nada.",
+      "solucion": "Inicio → Leer botón → ¿Pulsado? Sí: Sonar timbre → Fin. No: Fin."
+     }
+    ],
+    "rubrica": [
+     "Explico qué es un programa y qué es un algoritmo.",
+     "Distingo los tipos de lenguajes de programación.",
+     "Uso la descomposición, los patrones y la abstracción.",
+     "Dibujo diagramas de flujo con los símbolos y las reglas correctos."
+    ],
+    "titulo": "UD03 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud03/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD04",
+   "titulo": "UD04 · Programación por bloques I: variables, operadores y decisiones",
+   "bloque": "Bloque II · Programación",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 4.1 · El entorno de programación por bloques: Code.org",
+     "descripcion": "Hoy vas a entrar en App Lab, conocer sus partes y hacer un primer programa.\nNecesitas: ordenador con Code.org y el código de la clase.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/sesion-1.html",
+     "enlaces": [
+      {
+       "titulo": "Code.org",
+       "url": "https://studio.code.org/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 4.2 · Eventos y secuencias",
+     "descripcion": "Hoy vas a hacer una aplicación que responda cuando pulsas un botón.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 4.3 · Variables y tipos de datos",
+     "descripcion": "Hoy vas a guardar datos en variables y hacer un contador.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 4.4 · Operadores aritméticos, de comparación y lógicos",
+     "descripcion": "Hoy vas a hacer cuentas y comparar datos en un programa.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 4.5 · Estructuras de decisión",
+     "descripcion": "Hoy vas a hacer que un programa elija qué hacer con «si…» y «si… si no…».\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "UD04 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD04 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "En App Lab, los botones y textos se colocan en el modo...",
+      "opciones": [
+       "código",
+       "diseño",
+       "consola"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un clic en un botón es...",
+      "opciones": [
+       "un evento",
+       "una variable",
+       "un operador"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El nombre de un elemento de la pantalla es su...",
+      "opciones": [
+       "valor",
+       "consola",
+       "id"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "true y false son datos de tipo...",
+      "opciones": [
+       "texto",
+       "número",
+       "booleano"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "puntos = puntos + 1 hace que la variable...",
+      "opciones": [
+       "sume 1",
+       "valga 1",
+       "se borre"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Para comparar si x vale 5 se escribe...",
+      "opciones": [
+       "x = 5",
+       "x == 5",
+       "x + 5"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Con el operador «y» se tienen que cumplir...",
+      "opciones": [
+       "una condición",
+       "ninguna",
+       "las dos condiciones"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Una decisión doble es...",
+      "opciones": [
+       "si… si no",
+       "repetir",
+       "onEvent"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué es un evento? Pon un ejemplo en App Lab.",
+      "solucion": "Algo que ocurre y pone en marcha una parte del programa. Por ejemplo, hacer clic en un botón."
+     },
+     {
+      "enunciado": "¿Qué hace la instrucción vidas = vidas - 1?",
+      "solucion": "Resta 1 al valor que tenía la variable vidas."
+     },
+     {
+      "enunciado": "¿Qué tipo de dato es true? ¿Qué otro valor puede tener?",
+      "solucion": "Booleano. Solo puede valer true o false."
+     },
+     {
+      "enunciado": "¿Cuándo es verdadera a || b?",
+      "solucion": "Cuando al menos una de las dos, a o b, es verdadera."
+     },
+     {
+      "enunciado": "¿Qué escribe el programa si nota vale 8? Si nota ≥ 9, «Sobresaliente»; si no, si nota ≥ 7, «Notable»; si no, «Otro».",
+      "solucion": "«Notable»."
+     },
+     {
+      "enunciado": "¿Por qué hay que convertir en número lo que escribe el usuario antes de sumarlo?",
+      "solucion": "Porque llega como texto y, al sumarlo, App Lab pega los textos en lugar de sumar."
+     }
+    ],
+    "rubrica": [
+     "Manejo App Lab: diseño, código y ejecución.",
+     "Programo respuestas a eventos.",
+     "Creo y actualizo variables de distintos tipos.",
+     "Escribo condiciones con operadores.",
+     "Uso decisiones simples, dobles y múltiples."
+    ],
+    "titulo": "UD04 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud04/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD05",
+   "titulo": "UD05 · Programación por bloques II: bucles, funciones y aplicaciones",
+   "bloque": "Bloque II · Programación",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 5.1 · Bucles: repetir, por siempre y repetir hasta",
+     "descripcion": "Hoy vas a repetir instrucciones con bucles, sin copiar bloques.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/sesion-1.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 5.2 · Funciones y parámetros",
+     "descripcion": "Hoy vas a crear tus propios bloques (funciones) y usarlos con datos distintos.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 5.3 · Listas",
+     "descripcion": "Hoy vas a guardar muchos datos en una lista y recorrerla.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 5.4 · Depurar un programa: encontrar y corregir errores",
+     "descripcion": "Hoy vas a reconocer los tipos de errores y seguir unos pasos para corregirlos.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 5.5 · Crear una aplicación sencilla con App Lab",
+     "descripcion": "Hoy vas a diseñar y programar una aplicación sencilla.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "UD05 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD05 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Un bucle sirve para...",
+      "opciones": [
+       "repetir instrucciones",
+       "guardar un dato",
+       "cambiar de pantalla"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un bucle que no termina nunca es un bucle...",
+      "opciones": [
+       "doble",
+       "infinito",
+       "simple"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una función se define...",
+      "opciones": [
+       "cada vez que se usa",
+       "nunca",
+       "una vez y se llama muchas"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El dato que le das a una función es un...",
+      "opciones": [
+       "parámetro",
+       "evento",
+       "bucle"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En una lista, la primera posición es la...",
+      "opciones": [
+       "1",
+       "0",
+       "última"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Si una lista tiene 5 datos, su última posición es la...",
+      "opciones": [
+       "5",
+       "6",
+       "4"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Un programa funciona pero hace otra cosa. Es un error de...",
+      "opciones": [
+       "lógica",
+       "escritura",
+       "teclado"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Lo que ve y usa la persona en una aplicación es la...",
+      "opciones": [
+       "consola",
+       "interfaz",
+       "variable"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué es un bucle infinito?",
+      "solucion": "Un bucle cuya condición nunca deja de cumplirse, así que no termina."
+     },
+     {
+      "enunciado": "¿Qué ventaja tiene usar una función?",
+      "solucion": "No repetir bloques y poder cambiar algo en un solo sitio."
+     },
+     {
+      "enunciado": "Una lista tiene 8 datos. ¿Cuál es la posición del primero y la del último?",
+      "solucion": "La 0 y la 7."
+     },
+     {
+      "enunciado": "¿Qué tipo de error no avisa el ordenador? ¿Cómo se encuentra?",
+      "solucion": "El de lógica. Probando el programa y mirando el valor de las variables con console.log."
+     },
+     {
+      "enunciado": "¿Qué bloque de App Lab cambia de pantalla? ¿Y cuál lee lo que ha escrito el usuario?",
+      "solucion": "setScreen y getText."
+     }
+    ],
+    "rubrica": [
+     "Uso el bucle adecuado en cada caso.",
+     "Creo funciones con parámetros y las llamo.",
+     "Guardo datos en listas y las recorro.",
+     "Encuentro y corrijo errores con un método.",
+     "Creo una aplicación con varias pantallas."
+    ],
+    "titulo": "UD05 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud05/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD06",
+   "titulo": "UD06 · Programar placas con MakeCode",
+   "bloque": "Bloque II · Programación",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 6.1 · La placa Micro:Bit y el editor MakeCode",
+     "descripcion": "Hoy vas a conocer las partes de la Micro:Bit y del editor MakeCode.\nNecesitas: ordenador con internet y, si hay, una Micro:Bit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/sesion-1.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 6.2 · Entradas: botones, acelerómetro y sensores de luz y temperatura",
+     "descripcion": "Hoy vas a hacer que la placa responda a los botones, al movimiento, a la luz y a la temperatura.\nNecesitas: ordenador con MakeCode y, si hay, una Micro:Bit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 6.3 · Salidas: matriz de LED y sonido",
+     "descripcion": "Hoy vas a mostrar dibujos, números y textos en los LED y hacer sonar la placa.\nNecesitas: ordenador con MakeCode y, si hay, una Micro:Bit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 6.4 · Eventos, variables y bucles en una placa",
+     "descripcion": "Hoy vas a usar eventos, variables y bucles en la placa.\nNecesitas: ordenador con MakeCode y, si hay, una Micro:Bit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 6.5 · El simulador y la descarga del programa a la placa",
+     "descripcion": "Hoy vas a probar un programa en el simulador y pasarlo a la placa.\nNecesitas: ordenador con MakeCode, una Micro:Bit y su cable USB.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "UD06 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD06 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque II · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Programación».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/situaciones-bloque-2.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "La Micro:Bit tiene...",
+      "opciones": [
+       "25 LED",
+       "10 LED",
+       "100 LED"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El acelerómetro nota...",
+      "opciones": [
+       "la luz",
+       "el movimiento",
+       "la temperatura"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "al presionarse el botón A es...",
+      "opciones": [
+       "un valor",
+       "una variable",
+       "un evento"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El nivel de luz va de...",
+      "opciones": [
+       "0 a 255",
+       "1 a 10",
+       "0 a 4"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Lo que está en al iniciar se hace...",
+      "opciones": [
+       "sin parar",
+       "una vez",
+       "nunca"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "1000 ms son...",
+      "opciones": [
+       "10 segundos",
+       "1 minuto",
+       "1 segundo"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Los bloques de la categoría Básico son de color...",
+      "opciones": [
+       "azul",
+       "verde",
+       "rojo"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El archivo que se copia a la placa termina en...",
+      "opciones": [
+       ".doc",
+       ".hex",
+       ".png"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "Nombra dos entradas y dos salidas de la Micro:Bit.",
+      "solucion": "Por ejemplo: entradas, los botones y el acelerómetro; salidas, los LED y el altavoz."
+     },
+     {
+      "enunciado": "¿Qué valores puede dar el bloque nivel de luz?",
+      "solucion": "De 0 (oscuro) a 255 (mucha luz)."
+     },
+     {
+      "enunciado": "¿Qué LED se enciende con graficar x 0 y 4?",
+      "solucion": "El de la esquina de abajo a la izquierda."
+     },
+     {
+      "enunciado": "¿Dónde pondrías un bloque que vigila un sensor todo el rato?",
+      "solucion": "Dentro de para siempre."
+     },
+     {
+      "enunciado": "¿Qué archivo se descarga de MakeCode y dónde se copia?",
+      "solucion": "Un archivo .hex, que se copia en la unidad MICROBIT."
+     }
+    ],
+    "rubrica": [
+     "Reconozco las partes de la Micro:Bit.",
+     "Uso los botones y los sensores en mis programas.",
+     "Muestro dibujos y textos y hago sonar la placa.",
+     "Combino eventos, variables y bucles.",
+     "Pruebo en el simulador y paso el programa a la placa."
+    ],
+    "titulo": "UD06 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud06/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD07",
+   "titulo": "UD07 · Estructura y mecanismos",
+   "bloque": "Bloque III · Arquitectura de un robot",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 7.1 · Materiales y estructuras de un robot",
+     "descripcion": "Hoy vas a reconocer la estructura de un robot, las fuerzas que soporta y sus materiales.\nNecesitas: cuaderno, bolígrafo, pajitas y cinta adhesiva.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.2 · Máquinas simples y mecanismos",
+     "descripcion": "Hoy vas a reconocer la palanca y calcular la fuerza que hay que hacer.\nNecesitas: cuaderno, bolígrafo, una regla, un lápiz y una goma.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.3 · Transmisión de movimiento: engranajes, poleas y correas",
+     "descripcion": "Hoy vas a explicar cómo pasa el giro de un eje a otro y en qué sentido gira cada rueda.\nNecesitas: cuaderno, bolígrafo y, si hay, engranajes de construcción.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.4 · Reducción de movimiento y relación de transmisión",
+     "descripcion": "Hoy vas a calcular la velocidad de una rueda movida por un engranaje.\nNecesitas: cuaderno, bolígrafo y calculadora.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.5 · Transformación de movimiento",
+     "descripcion": "Hoy vas a reconocer los mecanismos que convierten un giro en otro tipo de movimiento.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD07 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD07 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Las barras en diagonal de una grúa forman...",
+      "opciones": [
+       "cuadrados",
+       "triángulos",
+       "círculos"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El cable de una grúa que sube una carga soporta...",
+      "opciones": [
+       "tracción",
+       "compresión",
+       "torsión"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El punto de apoyo de una palanca es el...",
+      "opciones": [
+       "eslabón",
+       "engranaje",
+       "fulcro"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Cuanto más lejos del fulcro empujas, haces...",
+      "opciones": [
+       "menos fuerza",
+       "más fuerza",
+       "la misma fuerza"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Dos engranajes que encajan giran...",
+      "opciones": [
+       "en el mismo sentido",
+       "en sentidos contrarios",
+       "no giran"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un motor de 10 dientes a 300 rpm mueve una rueda de 30. La rueda gira a...",
+      "opciones": [
+       "900 rpm",
+       "300 rpm",
+       "100 rpm"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Una rueda pequeña mueve una grande: es un...",
+      "opciones": [
+       "reductor",
+       "multiplicador",
+       "fulcro"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El mecanismo de una puerta corredera de garaje es...",
+      "opciones": [
+       "la leva",
+       "piñón y cremallera",
+       "la polea"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué esfuerzo soporta el eje de un motor que gira una rueda?",
+      "solucion": "Torsión."
+     },
+     {
+      "enunciado": "Una palanca levanta 240 N a 0,25 m del fulcro. Empujas a 1 m. ¿Qué fuerza haces?",
+      "solucion": "60 N."
+     },
+     {
+      "enunciado": "Un motor de 8 dientes a 1200 rpm mueve una rueda de 32. ¿A qué velocidad gira la rueda?",
+      "solucion": "300 rpm."
+     },
+     {
+      "enunciado": "¿Qué mecanismo convierte el giro de un motor en el vaivén de una sierra?",
+      "solucion": "Biela y manivela."
+     }
+    ],
+    "rubrica": [
+     "Reconozco los esfuerzos y los materiales de un robot.",
+     "Uso la ley de la palanca.",
+     "Sé el sentido de giro en engranajes y poleas.",
+     "Calculo la velocidad de salida de unos engranajes.",
+     "Reconozco los mecanismos que transforman el movimiento."
+    ],
+    "titulo": "UD07 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud07/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD08",
+   "titulo": "UD08 · Sistemas de control: sensores, actuadores y controladores",
+   "bloque": "Bloque III · Arquitectura de un robot",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 8.1 · Qué es un sistema de control",
+     "descripcion": "Hoy vas a dibujar el esquema de un sistema de control y decir qué quiere conseguir.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.2 · Control en lazo abierto y en lazo cerrado",
+     "descripcion": "Hoy vas a saber si un sistema comprueba lo que hace (lazo cerrado) o no (lazo abierto).\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.3 · Sensores",
+     "descripcion": "Hoy vas a conocer los sensores más usados y leer el sensor de luz de la Micro:Bit.\nNecesitas: ordenador con MakeCode y, si hay, una Micro:Bit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 8.4 · Actuadores",
+     "descripcion": "Hoy vas a conocer los actuadores más usados y programar un servo.\nNecesitas: ordenador con MakeCode y, si hay, una Micro:Bit con un servo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 8.5 · Controladores: Micro:Bit, Arduino y la placa del mBot",
+     "descripcion": "Hoy vas a conocer las placas que hacen de controlador y qué tiene cada una.\nNecesitas: cuaderno, bolígrafo y, si hay, las placas para mirarlas.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.6 · Señales digitales y analógicas",
+     "descripcion": "Hoy vas a distinguir una señal digital de una analógica y leerlas en MakeCode.\nNecesitas: ordenador con MakeCode y, si hay, una Micro:Bit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/sesion-6.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "UD08 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD08 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque III · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Arquitectura de un robot».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/situaciones-bloque-3.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Lo que queremos que pase en un sistema de control es la...",
+      "opciones": [
+       "consigna",
+       "salida",
+       "pausa"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un sistema que mide el resultado y se corrige es de lazo...",
+      "opciones": [
+       "abierto",
+       "cerrado",
+       "doble"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una tostadora con temporizador es de lazo...",
+      "opciones": [
+       "cerrado",
+       "automático",
+       "abierto"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El sensor de ultrasonidos mide...",
+      "opciones": [
+       "la distancia",
+       "la luz",
+       "el color"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un servomotor...",
+      "opciones": [
+       "solo gira sin parar",
+       "va a un ángulo exacto",
+       "mide la luz"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La Micro:Bit, Arduino y la placa del mBot son...",
+      "opciones": [
+       "sensores",
+       "actuadores",
+       "controladores"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Una señal digital tiene...",
+      "opciones": [
+       "dos valores",
+       "cualquier valor",
+       "tres valores"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La lectura analógica de la Micro:Bit da un número de...",
+      "opciones": [
+       "0 a 1",
+       "0 a 1023",
+       "1 a 100"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué diferencia a un sistema en lazo cerrado de uno en lazo abierto?",
+      "solucion": "El de lazo cerrado mide el resultado con un sensor y se corrige (realimentación); el de lazo abierto no."
+     },
+     {
+      "enunciado": "El eco de un sensor de ultrasonidos tarda 0,003 s. ¿A qué distancia está el obstáculo?",
+      "solucion": "343· 0,003/2≈ 0,51 m."
+     },
+     {
+      "enunciado": "¿Qué actuador usarías para mover una barrera a 90°?",
+      "solucion": "Un servomotor."
+     },
+     {
+      "enunciado": "Un pulsador, ¿da una señal digital o analógica?",
+      "solucion": "Digital: pulsado (1) o no pulsado (0)."
+     }
+    ],
+    "rubrica": [
+     "Dibujo el diagrama de bloques de un sistema de control.",
+     "Distingo el lazo abierto del lazo cerrado.",
+     "Elijo el sensor y el actuador adecuados para una tarea.",
+     "Conozco las placas Micro:Bit, Arduino y mBot.",
+     "Leo sensores y controlo actuadores en MakeCode."
+    ],
+    "titulo": "UD08 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud08/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD09",
+   "titulo": "UD09 · Construir y programar un robot",
+   "bloque": "Bloque IV · Robótica aplicada",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 9.1 · Las fases de un proyecto de robótica",
+     "descripcion": "Hoy vas a conocer las fases de un proyecto de robótica.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 9.2 · Montamos el robot",
+     "descripcion": "Hoy vas a conocer las piezas de un robot móvil y montarlo.\nNecesitas: un mBot o un robot Nezha por equipo y destornillador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 9.3 · Programamos los motores",
+     "descripcion": "Hoy vas a programar los motores para avanzar, girar y parar.\nNecesitas: robot montado y ordenador con mBlock o MakeCode.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      },
+      {
+       "titulo": "mBlock",
+       "url": "https://ide.mblock.cc/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 9.4 · Un robot que esquiva obstáculos",
+     "descripcion": "Hoy vas a programar un robot que avanza solo y esquiva obstáculos.\nNecesitas: robot con sensor de ultrasonidos, ordenador y cajas.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 9.5 · Un robot que sigue una línea",
+     "descripcion": "Hoy vas a programar y ajustar un robot que sigue una línea negra.\nNecesitas: robot con sensor siguelíneas, circuito de cinta negra y ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD09 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD09 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "La primera fase de un proyecto es...",
+      "opciones": [
+       "presentar",
+       "el problema",
+       "construir"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La fase que más se repite es...",
+      "opciones": [
+       "probar y mejorar",
+       "investigar",
+       "presentar"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La rueda loca sirve para...",
+      "opciones": [
+       "dar fuerza",
+       "medir",
+       "mantener el equilibrio"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Velocidad −50 en un motor: la rueda gira...",
+      "opciones": [
+       "hacia delante",
+       "hacia atrás",
+       "no gira"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Motores a 50 y −50: el robot...",
+      "opciones": [
+       "gira",
+       "avanza",
+       "se para"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El sensor de ultrasonidos mide...",
+      "opciones": [
+       "el color",
+       "la luz",
+       "la distancia"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "En el siguelíneas, el suelo blanco...",
+      "opciones": [
+       "devuelve la luz",
+       "se queda la luz",
+       "hace ruido"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Si el ojo derecho ve negro, el robot gira a la...",
+      "opciones": [
+       "izquierda",
+       "derecha",
+       "no gira"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿En qué fase se hace el diagrama de flujo?",
+      "solucion": "En la fase de diseño."
+     },
+     {
+      "enunciado": "¿Qué velocidades pones para girar a la izquierda?",
+      "solucion": "Izquierdo negativo y derecho positivo: −50 y 50."
+     },
+     {
+      "enunciado": "¿Qué mide el sensor de ultrasonidos?",
+      "solucion": "La distancia a un obstáculo, en centímetros."
+     },
+     {
+      "enunciado": "¿Por qué el siguelíneas distingue el negro del blanco?",
+      "solucion": "Porque el blanco devuelve la luz y el negro se la queda."
+     },
+     {
+      "enunciado": "Tu siguelíneas se sale en las curvas. ¿Qué cambias?",
+      "solucion": "Bajar la velocidad o girar con más fuerza."
+     },
+     {
+      "enunciado": "¿Qué bloque hace que el robot mire todo el rato?",
+      "solucion": "El bucle «por siempre»."
+     }
+    ],
+    "rubrica": [
+     "Organizo un proyecto en fases.",
+     "Monto el robot y sé en qué puerto va cada pieza.",
+     "Programo los motores para avanzar, girar y parar.",
+     "Programo un robot que esquiva obstáculos.",
+     "Programo y ajusto un siguelíneas."
+    ],
+    "titulo": "UD09 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud09/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD10",
+   "titulo": "UD10 · Control y comunicaciones",
+   "bloque": "Bloque IV · Robótica aplicada",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 10.1 · Cómo se comunican las máquinas",
+     "descripcion": "Hoy vas a conocer las partes de una comunicación entre máquinas.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 10.2 · El puerto serie",
+     "descripcion": "Hoy vas a enviar datos de la placa al ordenador para ver qué pasa dentro del programa.\nNecesitas: Micro:Bit con cable USB y ordenador con MakeCode.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 10.3 · Manejar el robot con un mando",
+     "descripcion": "Hoy vas a manejar un robot con un mando de infrarrojos.\nNecesitas: mBot con su mando y ordenador con mBlock.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "mBlock",
+       "url": "https://ide.mblock.cc/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 10.4 · Radio y Bluetooth con Micro:Bit",
+     "descripcion": "Hoy vas a enviar mensajes por radio entre dos Micro:Bit.\nNecesitas: dos Micro:Bit por pareja y ordenador con MakeCode.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 10.5 · Manejar el robot desde el móvil",
+     "descripcion": "Hoy vas a manejar un robot desde el móvil y diseñar la pantalla de una aplicación.\nNecesitas: robot con Bluetooth y móvil o tableta con la aplicación del robot.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD10 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD10 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque IV · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Robótica aplicada».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/situaciones-bloque-4.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "La máquina que envía el mensaje es el...",
+      "opciones": [
+       "receptor",
+       "emisor",
+       "canal"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Las reglas para entenderse son el...",
+      "opciones": [
+       "protocolo",
+       "mensaje",
+       "cable"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En el puerto serie, los bits viajan...",
+      "opciones": [
+       "todos a la vez",
+       "por el aire",
+       "de uno en uno"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Si salen símbolos raros por el puerto serie, hay que mirar...",
+      "opciones": [
+       "la velocidad",
+       "la batería",
+       "el color"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La luz infrarroja...",
+      "opciones": [
+       "atraviesa paredes",
+       "no la vemos",
+       "es de color rojo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La radio de la Micro:Bit solo llega a las placas...",
+      "opciones": [
+       "más cercanas",
+       "con pilas",
+       "del mismo grupo"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El Bluetooth une...",
+      "opciones": [
+       "dos aparatos emparejados",
+       "toda la clase",
+       "solo ordenadores"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En una app de control, el móvil y el robot deben usar...",
+      "opciones": [
+       "la misma batería",
+       "el mismo protocolo",
+       "el mismo color"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "El Bluetooth, ¿es el emisor, el mensaje o el canal?",
+      "solucion": "El canal."
+     },
+     {
+      "enunciado": "¿Qué dice la velocidad en baudios?",
+      "solucion": "Cuántos bits pasan cada segundo por el puerto serie."
+     },
+     {
+      "enunciado": "Escribe algo bueno y algo malo del mando de infrarrojos.",
+      "solucion": "Bueno: es barato y sencillo. Malo: tiene que apuntar al robot."
+     },
+     {
+      "enunciado": "¿Qué bloque evita que tu mando mueva el robot de otro equipo?",
+      "solucion": "Radio establecer grupo, con un número distinto para cada equipo."
+     },
+     {
+      "enunciado": "¿Por qué tu móvil no encuentra el robot si otro compañero ya está conectado?",
+      "solucion": "Porque el Bluetooth une solo dos aparatos a la vez."
+     },
+     {
+      "enunciado": "En el paso a paso, ¿qué hace el robot con una letra que no está en la tabla?",
+      "solucion": "Se para."
+     }
+    ],
+    "rubrica": [
+     "Reconozco las partes de una comunicación.",
+     "Uso el puerto serie para ver los datos.",
+     "Manejo un robot con un mando de infrarrojos.",
+     "Envío mensajes por radio entre dos Micro:Bit.",
+     "Manejo un robot desde el móvil con mi protocolo."
+    ],
+    "titulo": "UD10 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud10/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD11",
+   "titulo": "UD11 · Diseño 2D y 3D",
+   "bloque": "Bloque V · Diseño y fabricación digital",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 11.1 · Diseño asistido por ordenador (CAD) con Tinkercad",
+     "descripcion": "Hoy vas a saber qué es el CAD y moverte por Tinkercad.\nNecesitas: ordenador con la cuenta de clase de Tinkercad.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/sesion-1.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 11.2 · Diseño 2D: vectores y contornos",
+     "descripcion": "Hoy vas a distinguir una imagen de píxeles de una imagen vectorial y dar grosor a un dibujo plano.\nNecesitas: ordenador con Tinkercad.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 11.3 · Técnicas de modelado 3D",
+     "descripcion": "Hoy vas a construir piezas sumando y restando formas sencillas.\nNecesitas: ordenador con Tinkercad.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 11.4 · Modelos STL y otros formatos",
+     "descripcion": "Hoy vas a elegir el formato de archivo para fabricar un diseño.\nNecesitas: ordenador con Tinkercad.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 11.5 · Diseñar piezas para un robot",
+     "descripcion": "Hoy vas a diseñar una pieza que encaje en el robot usando medidas reales.\nNecesitas: ordenador con Tinkercad, regla o calibre, el robot del aula.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "UD11 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD11 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "CAD significa...",
+      "opciones": [
+       "diseño asistido por ordenador",
+       "cortar a mano",
+       "caja de dibujo"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En Tinkercad las medidas van en...",
+      "opciones": [
+       "centímetros",
+       "milímetros",
+       "metros"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una imagen que se amplía sin estropearse es...",
+      "opciones": [
+       "de píxeles",
+       "una foto JPG",
+       "vectorial"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Dar grosor a una figura plana se llama...",
+      "opciones": [
+       "extrusión",
+       "agrupar",
+       "exportar"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un sólido y un hueco agrupados hacen una...",
+      "opciones": [
+       "unión",
+       "diferencia",
+       "intersección"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para imprimir en 3D se exporta en...",
+      "opciones": [
+       "SVG",
+       "JPG",
+       "STL"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El espacio que se deja para que dos piezas encajen es la...",
+      "opciones": [
+       "holgura",
+       "malla",
+       "extrusión"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Para un tornillo de 3 mm, el agujero se diseña de...",
+      "opciones": [
+       "3 mm",
+       "3,4 mm",
+       "2,6 mm"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué medida representa el eje Z en un modelo 3D?",
+      "solucion": "El alto."
+     },
+     {
+      "enunciado": "¿Por qué una imagen vectorial no se pixela al ampliarla?",
+      "solucion": "Porque guarda líneas y curvas descritas con números, no puntos de color."
+     },
+     {
+      "enunciado": "¿Cómo se hace un agujero en una pieza en Tinkercad?",
+      "solucion": "Se coloca una forma hueca donde va el agujero, se seleccionan las dos y se agrupan (diferencia)."
+     },
+     {
+      "enunciado": "¿Qué es la extrusión?",
+      "solucion": "Dar grosor a una figura plana levantándola en altura."
+     },
+     {
+      "enunciado": "¿Qué guarda un archivo STL?",
+      "solucion": "Solo la forma de la pieza, como una malla de triángulos, sin colores ni historial."
+     },
+     {
+      "enunciado": "Una tapa entra en un hueco de 60 × 40 mm. ¿Qué medidas le das con 0,3 mm de holgura por lado?",
+      "solucion": "59,4 × 39,4 mm."
+     }
+    ],
+    "rubrica": [
+     "Me muevo por Tinkercad y cambio las medidas de una forma.",
+     "Distingo una imagen vectorial de una de píxeles.",
+     "Modelo piezas con sólidos, huecos y agrupaciones.",
+     "Exporto un diseño en el formato adecuado.",
+     "Diseño una pieza a partir de medidas reales, con holgura."
+    ],
+    "titulo": "UD11 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud11/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD12",
+   "titulo": "UD12 · Impresión 3D y prototipado rápido",
+   "bloque": "Bloque V · Diseño y fabricación digital",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 12.1 · Cómo funciona una impresora 3D",
+     "descripcion": "Hoy vas a explicar cómo fabrica una pieza la impresora 3D.\nNecesitas: cuaderno y la impresora del aula para observarla.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 12.2 · Preparar la impresión: el laminador",
+     "descripcion": "Hoy vas a preparar una pieza en el laminador.\nNecesitas: ordenador con el laminador del aula y un archivo STL.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 12.3 · Imprimir, controlar, calibrar y mantener la impresora",
+     "descripcion": "Hoy vas a imprimir una pieza vigilando la primera capa y cuidar la impresora.\nNecesitas: la impresora del aula y una pieza preparada.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 12.4 · Corte láser y fresado CNC",
+     "descripcion": "Hoy vas a conocer el corte láser y el fresado, y elegir la máquina adecuada.\nNecesitas: cuaderno, ordenador con Snapmaker Luban y la Snapmaker del aula.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 12.5 · Seguridad en el taller",
+     "descripcion": "Hoy vas a conocer los peligros de las máquinas y cómo trabajar seguro.\nNecesitas: cuaderno y las normas del taller.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD12 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD12 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque V · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Diseño y fabricación digital».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/situaciones-bloque-5.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "La impresora 3D fabrica...",
+      "opciones": [
+       "quitando material",
+       "añadiendo capas",
+       "con moldes"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El plástico más usado en la impresora del aula es el...",
+      "opciones": [
+       "PLA",
+       "acero",
+       "vidrio"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El programa que corta la pieza en capas es el...",
+      "opciones": [
+       "navegador",
+       "Tinkercad",
+       "laminador"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El archivo con las órdenes para la impresora es el...",
+      "opciones": [
+       "G-code",
+       "SVG",
+       "JPG"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Para casi todas las piezas basta un relleno del...",
+      "opciones": [
+       "100 %",
+       "20 %",
+       "0 %"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Lo que hay que vigilar siempre al empezar es...",
+      "opciones": [
+       "el color",
+       "la última capa",
+       "la primera capa"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Para cortar con láser se usa un archivo...",
+      "opciones": [
+       "SVG",
+       "STL",
+       "G-code"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Si una máquina hace un ruido raro...",
+      "opciones": [
+       "la toco para ver qué pasa",
+       "la paro y aviso",
+       "sigo trabajando"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué la impresión 3D es fabricación aditiva?",
+      "solucion": "Porque construye la pieza añadiendo material capa a capa."
+     },
+     {
+      "enunciado": "¿Qué archivo entiende la impresora: el STL o el G-code?",
+      "solucion": "El G-code, que genera el laminador a partir del STL."
+     },
+     {
+      "enunciado": "¿Qué ocurre si bajamos la altura de capa de 0,2 a 0,1 mm?",
+      "solucion": "La pieza tiene más detalle, pero tarda aproximadamente el doble."
+     },
+     {
+      "enunciado": "¿Qué es nivelar la cama?",
+      "solucion": "Ajustar la distancia entre la boquilla y la cama para que sea igual en todos los puntos."
+     },
+     {
+      "enunciado": "¿Qué diferencia hay entre el corte láser y el fresado CNC?",
+      "solucion": "El láser quema el material con luz y trabaja en plano; la fresa arranca material girando y puede hacer relieves."
+     },
+     {
+      "enunciado": "Escribe dos normas de seguridad para usar el láser.",
+      "solucion": "Tapa cerrada o gafas específicas; no dejarlo solo; extractor encendido; solo con permiso del profesor."
+     }
+    ],
+    "rubrica": [
+     "Explico cómo funciona una impresora de filamento y una de resina.",
+     "Preparo un modelo en el laminador y elijo sus ajustes.",
+     "Imprimo una pieza vigilando la primera capa.",
+     "Reconozco fallos de impresión y sé cómo arreglarlos.",
+     "Elijo entre impresora 3D, láser o fresadora según la pieza.",
+     "Trabajo en el taller siguiendo las normas de seguridad."
+    ],
+    "titulo": "UD12 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/ud12/autoevaluacion.html"
+   }
+  }
+ ]
+}

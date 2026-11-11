@@ -1,0 +1,16 @@
+[
+ {
+  "clave": "SistemasControlRobotica",
+  "libro": "Sistemas de Control y Robótica I",
+  "curso": "3º ESO",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/sistemas-control-robotica/classroom.json"
+ },
+ {
+  "clave": "TallerProgramacionRobotica",
+  "libro": "Taller de programación y robótica",
+  "curso": "2º ESO",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/classroom.json"
+ }
+]

@@ -1,0 +1,1939 @@
+{
+ "clave": "TallerProgramacionRobotica",
+ "libro": "Taller de programación y robótica",
+ "curso": "2º ESO",
+ "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/index.html",
+ "temas": [
+  {
+   "codigo": "UD01",
+   "titulo": "UD01 · El taller y la información",
+   "bloque": "Bloque I · El taller maker",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud01/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 1.1 · Normas de seguridad del taller",
+     "descripcion": "Hoy vas a conocer las normas del taller y saber qué hacer si hay un accidente.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud01/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.2 · Seguridad con las máquinas",
+     "descripcion": "Hoy vas a reconocer las señales de seguridad y saber cómo protegerte con cada máquina.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud01/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.3 · Archivos, carpetas y la plataforma de clase",
+     "descripcion": "Hoy vas a guardar tus trabajos con un buen nombre, en su carpeta, y entregarlos en la plataforma.\nNecesitas: ordenador con la plataforma de clase.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud01/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.4 · Buscar información en internet",
+     "descripcion": "Hoy vas a buscar información con palabras clave y saber si una página es fiable.\nNecesitas: ordenador con navegador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud01/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD01 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud01/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD01 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud01/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "¿Qué haces primero si hay un accidente?",
+      "opciones": [
+       "Ayudo",
+       "Paro",
+       "Aviso a mi familia"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una señal azul y redonda es de…",
+      "opciones": [
+       "obligación",
+       "prohibición",
+       "salvamento"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Por qué no se abre el láser mientras funciona?",
+      "opciones": [
+       "Porque se pierde el diseño",
+       "Porque daña los ojos y puede hacer fuego",
+       "Porque hace ruido"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Qué es un EPI?",
+      "opciones": [
+       "Un tipo de archivo",
+       "Una máquina del taller",
+       "Lo que te pones para protegerte"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "¿Cuál es el mejor nombre de archivo?",
+      "opciones": [
+       "Documento1.docx",
+       "trabajo final.docx",
+       "UD01_normas_Ruiz.docx"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "La extensión .stl es de…",
+      "opciones": [
+       "un diseño en 3D",
+       "un programa de Scratch",
+       "una imagen"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Qué escribes en el buscador?",
+      "opciones": [
+       "Una pregunta muy larga",
+       "Las palabras clave",
+       "Solo una letra"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Qué página es más fiable?",
+      "opciones": [
+       "La del fabricante",
+       "Un anuncio",
+       "Una sin autor ni fecha"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "Escribe tres normas del taller y explica para qué sirve una de ellas.",
+      "solucion": "Por ejemplo: mochila en su sitio, no comer ni beber, no abrir una máquina en marcha. La mochila en su sitio evita tropiezos."
+     },
+     {
+      "enunciado": "¿Qué forma y qué color tiene una señal de prohibición? Dibuja una.",
+      "solucion": "Círculo rojo con una barra cruzada, sobre fondo blanco."
+     },
+     {
+      "enunciado": "¿Qué diferencia hay entre añadir un archivo a la tarea y entregarla?",
+      "solucion": "Al añadirlo solo se adjunta. La tarea no llega al profesor hasta que pulsas Entregar."
+     },
+     {
+      "enunciado": "Escribe dos preguntas para saber si una página es fiable.",
+      "solucion": "¿Quién lo escribe? ¿Es reciente? ¿Quiere venderme algo? ¿Lo dice otra página?"
+     }
+    ],
+    "rubrica": [
+     "Cumplo las normas del taller y sé qué hacer ante un accidente.",
+     "Reconozco los cuatro tipos de señales y los EPI.",
+     "Pongo buenos nombres a mis archivos y los guardo en su carpeta.",
+     "Entrego las tareas en la plataforma y compruebo que están entregadas.",
+     "Busco con palabras clave y compruebo si una página es fiable."
+    ],
+    "titulo": "UD01 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud01/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD02",
+   "titulo": "UD02 · Diseño en 3D",
+   "bloque": "Bloque I · El taller maker",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 2.1 · Del boceto al modelo",
+     "descripcion": "Hoy vas a dibujar el boceto de una pieza con sus vistas y sus medidas.\nNecesitas: cuaderno, regla, lápiz y un objeto para medir.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.2 · Primeros pasos en Tinkercad",
+     "descripcion": "Hoy vas a moverte por Tinkercad, colocar formas y cambiar su tamaño.\nNecesitas: ordenador con cuenta en Tinkercad.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 2.3 · Agrupar formas y hacer agujeros",
+     "descripcion": "Hoy vas a unir formas y hacer agujeros con los huecos.\nNecesitas: ordenador con cuenta en Tinkercad.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 2.4 · Alinear y duplicar",
+     "descripcion": "Hoy vas a colocar las formas en su sitio exacto con alinear y duplicar.\nNecesitas: ordenador con cuenta en Tinkercad.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 2.5 · Diseñar una pieza útil y exportarla",
+     "descripcion": "Hoy vas a diseñar una pieza útil, comprobar que se puede imprimir y exportarla.\nNecesitas: ordenador con cuenta en Tinkercad y tu boceto.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "Tinkercad",
+       "url": "https://www.tinkercad.com/"
+      }
+     ]
+    },
+    {
+     "titulo": "UD02 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD02 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "¿Qué se hace antes de diseñar en el ordenador?",
+      "opciones": [
+       "Imprimir",
+       "Un boceto con medidas",
+       "Exportar"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La vista desde arriba se llama…",
+      "opciones": [
+       "planta",
+       "alzado",
+       "perfil"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿En qué unidad se escriben las medidas en Tinkercad?",
+      "opciones": [
+       "Centímetros",
+       "Metros",
+       "Milímetros"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Un hueco agrupado con un sólido…",
+      "opciones": [
+       "le añade materia",
+       "le quita materia",
+       "cambia su color"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Qué tecla alinea las formas?",
+      "opciones": [
+       "L",
+       "D",
+       "M"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Qué hace la tecla D?",
+      "opciones": [
+       "Duplica",
+       "Baja la pieza al plano",
+       "Borra la pieza"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Las paredes de una pieza para imprimir deben medir…",
+      "opciones": [
+       "menos de 1 mm",
+       "justo 1 mm",
+       "más de 2 mm"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "¿En qué formato se exporta para imprimir?",
+      "opciones": [
+       "STL",
+       "PDF",
+       "JPG"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "Dibuja el alzado y la planta de una caja de zapatos. Pon las medidas.",
+      "solucion": "Dos rectángulos: el alzado con el largo y el alto; la planta con el largo y el ancho. Medidas en milímetros."
+     },
+     {
+      "enunciado": "¿Cómo harías una placa con un agujero en el centro en Tinkercad?",
+      "solucion": "Caja sólida y cilindro hueco más alto; seleccionar los dos, alinear al centro y agrupar."
+     },
+     {
+      "enunciado": "Escribe tres cosas que revisas antes de exportar una pieza.",
+      "solucion": "Que está apoyada, que es una sola pieza, que las paredes miden más de 2 mm y que no hay partes en el aire."
+     },
+     {
+      "enunciado": "¿Qué guarda un archivo STL?",
+      "solucion": "La forma de la pieza, hecha con muchos triángulos pequeños."
+     }
+    ],
+    "rubrica": [
+     "Hago un boceto con las vistas y las medidas en milímetros.",
+     "Coloco formas en Tinkercad y escribo sus medidas.",
+     "Hago agujeros con huecos y agrupo.",
+     "Alineo, duplico y reflejo formas.",
+     "Reviso que la pieza se puede imprimir y la exporto en STL."
+    ],
+    "titulo": "UD02 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud02/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD03",
+   "titulo": "UD03 · Fabricación digital",
+   "bloque": "Bloque I · El taller maker",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 3.1 · Materiales y estructuras",
+     "descripcion": "Hoy vas a elegir un material por sus propiedades y saber qué hace fuerte una estructura.\nNecesitas: cuaderno; muestras de plástico, madera y metacrilato si las hay.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.2 · La impresora 3D de filamento",
+     "descripcion": "Hoy vas a conocer las partes de la impresora 3D, nivelar la cama y cambiar el filamento.\nNecesitas: la impresora 3D del taller y una bobina de PLA.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.3 · Preparar la impresión con Cura",
+     "descripcion": "Hoy vas a preparar una pieza para imprimir con Cura.\nNecesitas: ordenador con Cura y el STL de tu soporte.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.4 · La impresora de resina",
+     "descripcion": "Hoy vas a conocer cómo imprime la impresora de resina y cómo usarla sin peligro.\nNecesitas: cuaderno; una pieza de filamento y otra de resina para comparar.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.5 · Corte láser y fresado",
+     "descripcion": "Hoy vas a distinguir la fabricación que añade material de la que lo quita, y conocer el láser y la fresadora.\nNecesitas: cuaderno; la Snapmaker del taller para verla funcionar.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD03 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD03 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque I · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «El taller maker».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/situaciones-bloque-1.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "¿Qué figura hace firme una estructura?",
+      "opciones": [
+       "El cuadrado",
+       "El triángulo",
+       "El círculo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿A qué temperatura funde la boquilla el PLA?",
+      "opciones": [
+       "A unos 60 ºC",
+       "A unos 200 ºC",
+       "A unos 1000 ºC"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Qué se ajusta al nivelar la cama?",
+      "opciones": [
+       "La distancia de la boquilla a la cama",
+       "El color del filamento",
+       "La velocidad del ventilador"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Qué archivo entiende la impresora?",
+      "opciones": [
+       "STL",
+       "G-code",
+       "PDF"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Los soportes sirven para…",
+      "opciones": [
+       "sujetar las partes en el aire",
+       "que la pieza pese más",
+       "pintar la pieza"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La resina se endurece con…",
+      "opciones": [
+       "calor",
+       "agua",
+       "luz ultravioleta"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El láser y la fresadora son fabricación…",
+      "opciones": [
+       "aditiva",
+       "sustractiva",
+       "manual"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para grabar, el láser va…",
+      "opciones": [
+       "despacio y con mucha fuerza",
+       "rápido y con poca fuerza",
+       "apagado"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué una pieza de PLA no debe quedarse dentro de un coche al sol?",
+      "solucion": "Porque el PLA se ablanda a unos 60 ºC y la pieza se deforma."
+     },
+     {
+      "enunciado": "¿Qué es nivelar la cama y por qué es importante?",
+      "solucion": "Dejar la boquilla igual de cerca de la cama en todos los puntos; así la primera capa se pega bien."
+     },
+     {
+      "enunciado": "¿Qué hace Cura con un archivo STL?",
+      "solucion": "Lo corta en capas (lamina) y crea el G-code, las órdenes para la impresora."
+     },
+     {
+      "enunciado": "Escribe los pasos para terminar una pieza de resina.",
+      "solucion": "Con guantes y gafas: despegar, lavar en alcohol, quitar soportes y curar con luz ultravioleta."
+     }
+    ],
+    "rubrica": [
+     "Elijo el material por sus propiedades y sé qué es la triangulación.",
+     "Conozco las partes de la impresora 3D y sé nivelar y cambiar el filamento.",
+     "Preparo una pieza en Cura y guardo el G-code.",
+     "Sé cómo imprime la impresora de resina y cómo se termina la pieza con seguridad.",
+     "Distingo fabricación aditiva y sustractiva, cortar y grabar con láser."
+    ],
+    "titulo": "UD03 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud03/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD04",
+   "titulo": "UD04 · Algoritmos",
+   "bloque": "Bloque II · Programar con bloques",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 4.1 · Qué es un programa",
+     "descripcion": "Hoy vas a saber qué es un programa y qué tipos de lenguajes de programación hay.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.2 · Algoritmos: pasos claros y en orden",
+     "descripcion": "Hoy vas a escribir algoritmos con pasos claros y en el orden correcto.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.3 · Diagramas de flujo",
+     "descripcion": "Hoy vas a dibujar y leer diagramas de flujo.\nNecesitas: cuaderno, regla y lápiz.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.4 · Primeros pasos con bloques: Code.org",
+     "descripcion": "Hoy vas a resolver retos con bloques y corregir un programa que falla.\nNecesitas: ordenador con Code.org.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "Code.org",
+       "url": "https://studio.code.org/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 4.5 · El entorno de Scratch",
+     "descripcion": "Hoy vas a conocer Scratch y hacer un programa que empiece con un evento.\nNecesitas: ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "UD04 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD04 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Un programa es…",
+      "opciones": [
+       "un aparato electrónico",
+       "una lista de instrucciones en orden",
+       "un dibujo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Qué tipo de lenguaje es Scratch?",
+      "opciones": [
+       "De bloques",
+       "De máquina",
+       "De texto"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Qué regla NO es de un algoritmo?",
+      "opciones": [
+       "Ser claro",
+       "Ser muy largo",
+       "Terminar"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En un diagrama de flujo, una pregunta va en un…",
+      "opciones": [
+       "óvalo",
+       "rectángulo",
+       "rombo"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "¿Cuántas flechas salen de un rombo?",
+      "opciones": [
+       "Una",
+       "Dos",
+       "Tres"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Depurar es…",
+      "opciones": [
+       "borrar el programa",
+       "buscar y corregir errores",
+       "copiar un programa"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En Code.org, girar a la izquierda…",
+      "opciones": [
+       "mueve al personaje una casilla",
+       "solo cambia hacia dónde mira",
+       "termina el programa"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En Scratch, un programa empieza con un…",
+      "opciones": [
+       "evento (sombrero amarillo)",
+       "disfraz",
+       "fondo"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué diferencia hay entre un algoritmo y un programa?",
+      "solucion": "El algoritmo es la lista de pasos. El programa es ese algoritmo escrito en un lenguaje de programación."
+     },
+     {
+      "enunciado": "¿Qué va dentro de un rombo?",
+      "solucion": "Una pregunta que se responde con sí o no."
+     },
+     {
+      "enunciado": "¿Por qué no se ejecutan unos bloques de Scratch sin sombrero amarillo?",
+      "solucion": "Porque ningún evento los pone en marcha."
+     },
+     {
+      "enunciado": "¿Qué es depurar?",
+      "solucion": "Buscar y corregir los errores de un programa."
+     }
+    ],
+    "rubrica": [
+     "Explico qué es un programa.",
+     "Escribo algoritmos claros y ordenados.",
+     "Dibujo diagramas de flujo.",
+     "Resuelvo retos de Code.org y corrijo errores.",
+     "Hago programas con eventos en Scratch."
+    ],
+    "titulo": "UD04 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud04/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD05",
+   "titulo": "UD05 · Variables y decisiones",
+   "bloque": "Bloque II · Programar con bloques",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 5.1 · Variables: la memoria del programa",
+     "descripcion": "Hoy vas a crear una variable, darle un valor y cambiarlo.\nNecesitas: ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/sesion-1.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 5.2 · El programa calcula",
+     "descripcion": "Hoy vas a hacer cálculos con los operadores y con números al azar.\nNecesitas: ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 5.3 · Comparar y unir condiciones",
+     "descripcion": "Hoy vas a escribir condiciones con comparaciones y con y, o y no.\nNecesitas: cuaderno y ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 5.4 · Decidir con si",
+     "descripcion": "Hoy vas a hacer que el programa haga algo solo si se cumple una condición.\nNecesitas: ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 5.5 · Dos caminos: si… si no",
+     "descripcion": "Hoy vas a elegir entre dos caminos y programar el juego de adivinar el número.\nNecesitas: ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "UD05 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD05 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Una variable sirve para…",
+      "opciones": [
+       "dibujar en el escenario",
+       "guardar un dato con un nombre",
+       "repetir bloques"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Al pulsar la bandera, el marcador debe…",
+      "opciones": [
+       "fijarse a 0",
+       "sumar 1",
+       "esconderse"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Qué da número aleatorio entre 1 y 6?",
+      "opciones": [
+       "Siempre 6",
+       "Un número al azar del 1 al 6",
+       "La suma de 1 y 6"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Lo que escribe el usuario se guarda en…",
+      "opciones": [
+       "pregunta",
+       "respuesta",
+       "fondo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una condición puede ser…",
+      "opciones": [
+       "verdadera o falsa",
+       "roja o azul",
+       "grande o pequeña"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "A y B es verdadero si…",
+      "opciones": [
+       "una de las dos es verdadera",
+       "las dos son verdaderas",
+       "las dos son falsas"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Con si… si no…",
+      "opciones": [
+       "se hacen los dos caminos",
+       "no se hace ninguno",
+       "se hace siempre uno de los dos"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Para elegir entre tres caminos…",
+      "opciones": [
+       "se pone un si dentro de otro",
+       "se borra el programa",
+       "se usan dos banderas"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué hay que fijar el valor de una variable al pulsar la bandera?",
+      "solucion": "Para que no empiece con el valor de la vez anterior."
+     },
+     {
+      "enunciado": "¿Cuándo es verdadero A y B?",
+      "solucion": "Solo cuando A y B son verdaderas a la vez."
+     },
+     {
+      "enunciado": "¿Qué diferencia hay entre si y si… si no?",
+      "solucion": "Si hace algo solo cuando la condición es verdadera. Si… si no hace una cosa si es verdadera y otra si es falsa."
+     },
+     {
+      "enunciado": "¿Qué bloque da un número al azar?",
+      "solucion": "número aleatorio entre … y …"
+     }
+    ],
+    "rubrica": [
+     "Creo variables y les doy un valor inicial.",
+     "Distingo números, textos y booleanos.",
+     "Hago cuentas con los operadores.",
+     "Escribo condiciones con y, o y no.",
+     "Programo decisiones con si y si… si no."
+    ],
+    "titulo": "UD05 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud05/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD06",
+   "titulo": "UD06 · Bucles y funciones",
+   "bloque": "Bloque II · Programar con bloques",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 6.1 · Repetir un número de veces",
+     "descripcion": "Hoy vas a usar el bucle repetir para dibujar polígonos con pocos bloques.\nNecesitas: ordenador con Scratch y la extensión Lápiz.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/sesion-1.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 6.2 · Por siempre y repetir hasta",
+     "descripcion": "Hoy vas a usar por siempre y repetir hasta que, y saber cuándo usar cada uno.\nNecesitas: ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 6.3 · Bucles y condiciones: un juego",
+     "descripcion": "Hoy vas a juntar por siempre y si para hacer un juego de atrapar.\nNecesitas: ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 6.4 · Tus propios bloques: las funciones",
+     "descripcion": "Hoy vas a crear bloques propios con datos de entrada.\nNecesitas: ordenador con Scratch y la extensión Lápiz.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 6.5 · Dividir un problema en partes",
+     "descripcion": "Hoy vas a dividir un juego en partes pequeñas y programarlas una a una.\nNecesitas: cuaderno y ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "UD06 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD06 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Un bucle sirve para…",
+      "opciones": [
+       "repetir bloques",
+       "guardar datos",
+       "cambiar el fondo"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Para dibujar un cuadrado, repites 4 veces y giras…",
+      "opciones": [
+       "45°",
+       "90°",
+       "120°"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Qué bucle usas si no para nunca?",
+      "opciones": [
+       "repetir 10",
+       "repetir hasta que",
+       "por siempre"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "¿Qué bucle usas para andar hasta tocar la meta?",
+      "opciones": [
+       "repetir hasta que",
+       "repetir 10",
+       "por siempre"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Si la condición de repetir hasta que nunca se cumple…",
+      "opciones": [
+       "el programa no termina",
+       "se repite una vez",
+       "da un error rojo"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Para que un juego esté atento todo el rato se usa…",
+      "opciones": [
+       "un si solo",
+       "por siempre con un si dentro",
+       "un fondo nuevo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un parámetro es…",
+      "opciones": [
+       "un dato que le das a una función",
+       "un tipo de bucle",
+       "un disfraz"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Dividir un problema en partes se llama…",
+      "opciones": [
+       "depuración",
+       "descomposición",
+       "iteración"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué bucle usas para que un personaje esté atento todo el juego a si toca un enemigo?",
+      "solucion": "Por siempre, con un si ¿tocando enemigo? dentro."
+     },
+     {
+      "enunciado": "¿Cuántas veces repite y cuánto gira el bucle de un triángulo?",
+      "solucion": "3 veces y 120 grados."
+     },
+     {
+      "enunciado": "¿Para qué sirve crear un bloque propio?",
+      "solucion": "Para escribir unos bloques una vez y usarlos muchas, con datos distintos."
+     },
+     {
+      "enunciado": "¿Qué es la descomposición?",
+      "solucion": "Dividir un problema grande en partes pequeñas que se hacen y se prueban por separado."
+     }
+    ],
+    "rubrica": [
+     "Uso repetir para no repetir bloques.",
+     "Elijo el bucle adecuado.",
+     "Junto bucles y condiciones en un juego.",
+     "Creo bloques propios con parámetros.",
+     "Divido un proyecto en partes y las pruebo."
+    ],
+    "titulo": "UD06 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud06/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD07",
+   "titulo": "UD07 · Crear aplicaciones",
+   "bloque": "Bloque II · Programar con bloques",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 7.1 · Diseñar una app",
+     "descripcion": "Hoy vas a diseñar una app en papel antes de programarla.\nNecesitas: cuaderno, lápiz y regla.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.2 · Mensajes y escenas en Scratch",
+     "descripcion": "Hoy vas a hacer que los objetos se avisen con mensajes y cambiar de escena.\nNecesitas: ordenador con Scratch.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 7.3 · App Lab: pantallas y botones",
+     "descripcion": "Hoy vas a crear en App Lab una app con dos pantallas y un botón para pasar de una a otra.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 7.4 · App Lab: textos y datos",
+     "descripcion": "Hoy vas a leer lo que escribe el usuario y mostrar resultados en la pantalla.\nNecesitas: ordenador con Code.org (App Lab).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 7.5 · Probar y corregir una app",
+     "descripcion": "Hoy vas a probar una app con un plan y corregir sus errores.\nNecesitas: ordenador con tu app de Scratch o de App Lab.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "App Lab (Code.org)",
+       "url": "https://studio.code.org/projects/applab/new"
+      },
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 7.6 · Trabajar en equipo en línea",
+     "descripcion": "Hoy vas a compartir proyectos, repartir el trabajo y comentar con respeto.\nNecesitas: ordenador con Scratch o Code.org.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/sesion-6.html",
+     "enlaces": [
+      {
+       "titulo": "Code.org",
+       "url": "https://studio.code.org/"
+      },
+      {
+       "titulo": "Scratch",
+       "url": "https://scratch.mit.edu/projects/editor/"
+      }
+     ]
+    },
+    {
+     "titulo": "UD07 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD07 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque II · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Programar con bloques».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/situaciones-bloque-2.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "El diseño funcional dice…",
+      "opciones": [
+       "qué hace la app y para quién",
+       "de qué color son los botones",
+       "cuánto cuesta"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Antes de programar una app se hace…",
+      "opciones": [
+       "un boceto de las pantallas",
+       "la consola",
+       "un remix"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En Scratch, un objeto avisa a otros con…",
+      "opciones": [
+       "un disfraz",
+       "un mensaje",
+       "una variable"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En App Lab, los botones se colocan en el modo…",
+      "opciones": [
+       "Código",
+       "Diseño",
+       "Consola"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "getText sirve para…",
+      "opciones": [
+       "leer lo que escribe el usuario",
+       "cambiar de pantalla",
+       "borrar la app"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Si la app suma 2 en vez de 1, es un error de…",
+      "opciones": [
+       "ejecución",
+       "lógica",
+       "diseño"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un plan de pruebas tiene…",
+      "opciones": [
+       "qué pruebo, qué debería pasar y qué pasa",
+       "solo los colores",
+       "el nombre del autor"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Al remezclar un proyecto hay que…",
+      "opciones": [
+       "ponerle tu nombre y ya está",
+       "nombrar al autor original",
+       "borrar el original"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué se hace un boceto antes de programar?",
+      "solucion": "Para decidir pantallas y botones antes y no tener que cambiar el programa después."
+     },
+     {
+      "enunciado": "¿Para qué sirve un mensaje en Scratch?",
+      "solucion": "Para que un objeto avise a otros y empiecen sus programas."
+     },
+     {
+      "enunciado": "¿Qué hace onEvent(botonJugar, click)?",
+      "solucion": "Ejecuta sus bloques cuando se pulsa el botón botonJugar."
+     },
+     {
+      "enunciado": "¿Qué es un error de lógica?",
+      "solucion": "Un error en el que la app funciona, pero no hace lo que debería."
+     }
+    ],
+    "rubrica": [
+     "Diseño una app con boceto antes de programarla.",
+     "Uso mensajes y escenas en Scratch.",
+     "Hago apps con pantallas y botones en App Lab.",
+     "Pruebo mis apps con un plan y corrijo errores.",
+     "Comparto y comento con respeto en línea."
+    ],
+    "titulo": "UD07 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud07/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD08",
+   "titulo": "UD08 · Sensores y actuadores",
+   "bloque": "Bloque III · Control con Micro:Bit",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 8.1 · Entrada, controlador y salida",
+     "descripcion": "Hoy vas a reconocer las tres partes de un sistema de control y dibujar su esquema.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.2 · La placa Micro:Bit y MakeCode",
+     "descripcion": "Hoy vas a conocer las partes de la Micro:Bit y pasarle tu primer programa.\nNecesitas: ordenador, Micro:Bit y cable USB.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 8.3 · Salidas: la pantalla de LED y el sonido",
+     "descripcion": "Hoy vas a programar la pantalla de LED y el sonido de la Micro:Bit.\nNecesitas: ordenador, Micro:Bit y cable USB.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 8.4 · Entradas: botones, luz y temperatura",
+     "descripcion": "Hoy vas a leer los botones, la luz y la temperatura, y decidir con ellos.\nNecesitas: ordenador, Micro:Bit y cable USB.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 8.5 · La brújula y el acelerómetro",
+     "descripcion": "Hoy vas a usar la brújula para saber hacia dónde apunta la placa y el acelerómetro para saber cómo se mueve.\nNecesitas: ordenador, Micro:Bit con pilas y cable USB.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 8.6 · Sensores y actuadores externos con el Nezha",
+     "descripcion": "Hoy vas a conectar a la Micro:Bit un sensor de distancia, un servo y un motor con la placa Nezha.\nNecesitas: ordenador, Micro:Bit, placa Nezha con batería, sensor de ultrasonidos, servo y motor.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/sesion-6.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "UD08 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD08 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "¿Qué parte de un sistema de control decide?",
+      "opciones": [
+       "El sensor",
+       "El controlador",
+       "El actuador"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Cuál es un actuador?",
+      "opciones": [
+       "El zumbador",
+       "El botón A",
+       "El sensor de luz"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Lo que está en al iniciar se hace…",
+      "opciones": [
+       "una sola vez",
+       "sin parar",
+       "nunca"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Cuántos LED tiene la pantalla de la Micro:Bit?",
+      "opciones": [
+       "16",
+       "25",
+       "36"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El LED (0,0) está…",
+      "opciones": [
+       "abajo a la derecha",
+       "arriba a la izquierda",
+       "en el centro"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El sensor de luz es…",
+      "opciones": [
+       "digital",
+       "analógico",
+       "un actuador"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Si la brújula marca 90, la placa apunta al…",
+      "opciones": [
+       "norte",
+       "este",
+       "sur"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En el Nezha, un servo se conecta en…",
+      "opciones": [
+       "M1",
+       "S1",
+       "J1"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "En un robot aspirador, ¿cuál es la entrada, el proceso y la salida?",
+      "solucion": "Entrada: sensores de choque y de distancia. Proceso: la placa con su programa. Salida: los motores de las ruedas y del cepillo."
+     },
+     {
+      "enunciado": "¿Qué LED se enciende con trazar x 4 y 0?",
+      "solucion": "El de la esquina de arriba a la derecha."
+     },
+     {
+      "enunciado": "¿Qué diferencia hay entre un sensor digital y uno analógico? Pon un ejemplo de cada uno en la Micro:Bit.",
+      "solucion": "El digital solo da sí o no (botón A); el analógico da muchos valores (nivel de luz, de 0 a 255)."
+     },
+     {
+      "enunciado": "¿Qué gesto usarías para programar un dado y qué bloque para el número?",
+      "solucion": "Al agitar y entero aleatorio de 1 a 6."
+     },
+     {
+      "enunciado": "¿Dónde conectas un servo en el Nezha? ¿Y un motor?",
+      "solucion": "El servo, en S1 a S4; el motor, en M1 a M4."
+     }
+    ],
+    "rubrica": [
+     "Distingo la entrada, el proceso y la salida de un sistema de control.",
+     "Conozco las partes de la Micro:Bit y paso un programa a la placa.",
+     "Uso la pantalla de LED y el sonido.",
+     "Leo los botones, la luz, la temperatura, la brújula y el acelerómetro.",
+     "Decido con un umbral y lo ajusto probando.",
+     "Conecto y programo un sensor, un servo y un motor con el Nezha."
+    ],
+    "titulo": "UD08 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud08/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD09",
+   "titulo": "UD09 · Control y comunicaciones",
+   "bloque": "Bloque III · Control con Micro:Bit",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 9.1 · Control en lazo abierto y en lazo cerrado",
+     "descripcion": "Hoy vas a distinguir un sistema en lazo abierto de uno en lazo cerrado y dibujar sus esquemas.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 9.2 · Programar un lazo cerrado",
+     "descripcion": "Hoy vas a programar con la Micro:Bit un sistema que mide, compara y corrige.\nNecesitas: ordenador, Micro:Bit, placa Nezha y un motor con hélice.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/sesion-2.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 9.3 · Comunicación por puerto serie",
+     "descripcion": "Hoy vas a enviar datos de la Micro:Bit al ordenador y verlos en una gráfica.\nNecesitas: ordenador, Micro:Bit y cable USB.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/sesion-3.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 9.4 · Comunicación por radio",
+     "descripcion": "Hoy vas a enviar y recibir mensajes por radio entre dos placas.\nNecesitas: ordenador y dos Micro:Bit por pareja, con pilas.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/sesion-4.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 9.5 · Infrarrojos y Bluetooth",
+     "descripcion": "Hoy vas a conocer los infrarrojos y el Bluetooth y elegir el medio adecuado para cada caso.\nNecesitas: ordenador, Micro:Bit, mando y receptor de infrarrojos, móvil o tableta con la app de Micro:Bit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "UD09 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD09 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque III · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Control con Micro:Bit».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/situaciones-bloque-3.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Una tostadora con temporizador es un control en…",
+      "opciones": [
+       "lazo abierto",
+       "lazo cerrado",
+       "radio"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En lazo cerrado, el sensor mide…",
+      "opciones": [
+       "la hora",
+       "el resultado",
+       "el color de la placa"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Los tres pasos del lazo cerrado son…",
+      "opciones": [
+       "medir, comparar y corregir",
+       "enviar, esperar y borrar",
+       "encender, apagar y repetir"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Por qué se pone una pausa en para siempre?",
+      "opciones": [
+       "Para que el actuador haga efecto",
+       "Para gastar más batería",
+       "No hace falta nunca"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Toda comunicación tiene…",
+      "opciones": [
+       "emisor, medio y receptor",
+       "solo un cable",
+       "dos pantallas"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Dos placas se entienden por radio si tienen…",
+      "opciones": [
+       "el mismo color",
+       "el mismo grupo",
+       "el mismo nombre"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El mando de la tele usa…",
+      "opciones": [
+       "infrarrojos",
+       "el puerto serie",
+       "Bluetooth siempre"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Para usar Bluetooth, los aparatos primero se…",
+      "opciones": [
+       "apagan",
+       "emparejan",
+       "pintan"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué diferencia hay entre un sistema en lazo abierto y uno en lazo cerrado?",
+      "solucion": "El de lazo cerrado mide el resultado con un sensor y corrige; el de lazo abierto no lo comprueba."
+     },
+     {
+      "enunciado": "¿Qué tres pasos repite un programa en lazo cerrado?",
+      "solucion": "Medir, comparar con el valor deseado y corregir."
+     },
+     {
+      "enunciado": "¿Qué bloque usarías para ver la temperatura en una gráfica en el ordenador?",
+      "solucion": "Serie escribir valor \"temp\" = temperatura."
+     },
+     {
+      "enunciado": "¿Qué tienen que tener igual dos placas para comunicarse por radio?",
+      "solucion": "El número de grupo."
+     },
+     {
+      "enunciado": "¿Qué medio usa un mando a distancia de la tele y qué limitación tiene?",
+      "solucion": "Infrarrojos; tiene que apuntar al receptor sin nada en medio."
+     }
+    ],
+    "rubrica": [
+     "Distingo el lazo abierto del lazo cerrado y dibujo sus diagramas.",
+     "Programo un lazo cerrado: medir, comparar y corregir.",
+     "Envío datos al ordenador y los leo en una gráfica.",
+     "Comunico dos placas por radio.",
+     "Sé cuándo usar infrarrojos, Bluetooth, radio o cable."
+    ],
+    "titulo": "UD09 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud09/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD10",
+   "titulo": "UD10 · El robot Nezha",
+   "bloque": "Bloque IV · Robótica y proyectos",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 10.1 · Qué es un robot",
+     "descripcion": "Hoy vas a reconocer las partes de un robot y encontrarlas en el Nezha.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 10.2 · Estructura y materiales",
+     "descripcion": "Hoy vas a entender por qué una estructura no se deforma y elegir un material para cada pieza.\nNecesitas: cuaderno y piezas sueltas del kit Nezha.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 10.3 · Poleas y engranajes",
+     "descripcion": "Hoy vas a saber cómo pasa el giro del motor a las ruedas y en qué sentido giran.\nNecesitas: cuaderno, engranajes y poleas del kit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 10.4 · Más rápido o más fuerza: la relación de transmisión",
+     "descripcion": "Hoy vas a calcular cuánto gira el eje conducido.\nNecesitas: cuaderno, calculadora y engranajes del kit.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 10.5 · Montaje del Nezha",
+     "descripcion": "Hoy vas a montar el chasis del Nezha y conectar los motores a la placa.\nNecesitas: kit Nezha, Micro:Bit y cable USB; en grupos de tres.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/sesion-5.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 10.6 · Programar los motores",
+     "descripcion": "Hoy vas a programar el Nezha para que avance, gire y se pare.\nNecesitas: Nezha montado y ordenador con MakeCode.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/sesion-6.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 10.7 · Programar los servos",
+     "descripcion": "Hoy vas a colocar un servo en un ángulo y usarlo para mover una pinza.\nNecesitas: Nezha con un servo y ordenador con MakeCode.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/sesion-7.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "Sesión 10.8 · Programar los sensores",
+     "descripcion": "Hoy vas a usar sensores para que el robot reaccione.\nNecesitas: Nezha con sensor de ultrasonidos y seguidor de línea; ordenador con MakeCode.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/sesion-8.html",
+     "enlaces": [
+      {
+       "titulo": "MakeCode para micro:bit",
+       "url": "https://makecode.microbit.org/?lang=es-ES"
+      }
+     ]
+    },
+    {
+     "titulo": "UD10 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD10 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Un robot…",
+      "opciones": [
+       "percibe, decide y actúa",
+       "solo se mueve",
+       "siempre parece una persona"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Qué figura hace rígida una estructura?",
+      "opciones": [
+       "El cuadrado",
+       "El triángulo",
+       "El círculo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Dos engranajes engranados giran…",
+      "opciones": [
+       "en el mismo sentido",
+       "en sentido contrario",
+       "no giran"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Si Z1 = 8 y Z2 = 24, la relación i es…",
+      "opciones": [
+       "3",
+       "1/3",
+       "32"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una rueda pequeña que mueve una grande es un…",
+      "opciones": [
+       "reductor: más fuerza",
+       "multiplicador: más rápido",
+       "freno"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En el Nezha, los motores van en…",
+      "opciones": [
+       "M1 a M4",
+       "S1 a S4",
+       "J1 a J4"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un motor a velocidad −50…",
+      "opciones": [
+       "se para",
+       "gira al revés a media velocidad",
+       "gira al máximo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El servo…",
+      "opciones": [
+       "gira sin parar",
+       "va a un ángulo y se queda quieto",
+       "mide distancias"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué tres cosas hace un robot?",
+      "solucion": "Percibe con sensores, decide con un programa y actúa moviéndose."
+     },
+     {
+      "enunciado": "¿Qué forma geométrica hace rígida una estructura?",
+      "solucion": "El triángulo."
+     },
+     {
+      "enunciado": "Un engranaje de 8 dientes mueve otro de 16. Si el motor gira a 100 rpm, ¿a qué velocidad gira el conducido?",
+      "solucion": "i=8/16=1/2; n2=50 rpm."
+     },
+     {
+      "enunciado": "¿Qué velocidad pones a un motor del Nezha para que se pare?",
+      "solucion": "0 (o el bloque parar motor)."
+     },
+     {
+      "enunciado": "¿Qué bloque usas para que una pinza se coloque en 90 grados?",
+      "solucion": "Fijar el ángulo del servo (en su puerto S) a 90."
+     },
+     {
+      "enunciado": "¿Qué mide el sensor de ultrasonidos?",
+      "solucion": "La distancia a un objeto, en centímetros."
+     }
+    ],
+    "rubrica": [
+     "Reconozco las partes de un robot.",
+     "Construyo estructuras rígidas y elijo materiales.",
+     "Calculo la relación de transmisión.",
+     "Monto el Nezha y conecto cada elemento a su puerto.",
+     "Programo los motores y los servos.",
+     "Uso los sensores para que el robot reaccione."
+    ],
+    "titulo": "UD10 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud10/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD11",
+   "titulo": "UD11 · El proyecto tecnológico",
+   "bloque": "Bloque IV · Robótica y proyectos",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 11.1 · Las fases de un proyecto",
+     "descripcion": "Hoy vas a conocer las fases de un proyecto y su orden.\nNecesitas: cuaderno y bolígrafo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 11.2 · Del problema al diseño",
+     "descripcion": "Hoy vas a escribir los requisitos de un problema y elegir el mejor diseño.\nNecesitas: cuaderno, lápiz y regla.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 11.3 · Planificar en el tiempo",
+     "descripcion": "Hoy vas a dividir un proyecto en tareas y dibujar su diagrama de Gantt.\nNecesitas: cuaderno, lápiz y regla.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 11.4 · El equipo y los recursos",
+     "descripcion": "Hoy vas a repartir el trabajo del grupo y hacer la lista de recursos.\nNecesitas: cuaderno y bolígrafo; en grupos de tres.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 11.5 · La memoria técnica",
+     "descripcion": "Hoy vas a conocer los apartados de la memoria técnica y empezar la vuestra.\nNecesitas: ordenador con procesador de textos o cuaderno.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD11 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD11 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque IV · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Robótica y proyectos».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/situaciones-bloque-4.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "¿Cuál es la primera fase de un proyecto?",
+      "opciones": [
+       "Construir",
+       "Definir el problema",
+       "Escribir la memoria"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Qué requisito está bien escrito?",
+      "opciones": [
+       "«Que sea rápido»",
+       "«Que recorra 3 m en menos de 10 s»",
+       "«Que sea bonito»"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para elegir entre varias ideas se usa…",
+      "opciones": [
+       "una tabla de decisión",
+       "un sorteo",
+       "la idea más larga"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un dibujo con medidas para fabricar es un…",
+      "opciones": [
+       "boceto",
+       "croquis",
+       "Gantt"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En un diagrama de Gantt, cada tarea es…",
+      "opciones": [
+       "una barra",
+       "un círculo",
+       "una flecha"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Quién vigila el Gantt y habla con el profesor?",
+      "opciones": [
+       "El secretario",
+       "El coordinador",
+       "El responsable de material"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Las herramientas…",
+      "opciones": [
+       "se gastan",
+       "se usan y se devuelven",
+       "no son recursos"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La memoria técnica se escribe…",
+      "opciones": [
+       "a la vez que el proyecto",
+       "solo al final",
+       "antes de empezar"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Cuáles son las seis fases de un proyecto tecnológico?",
+      "solucion": "Identificar el problema, buscar información, diseñar, planificar, construir, evaluar y presentar."
+     },
+     {
+      "enunciado": "Escribe un requisito comprobable para un robot que transporta objetos.",
+      "solucion": "Por ejemplo: «lleva un objeto de 200 g a 3 m sin que se caiga»."
+     },
+     {
+      "enunciado": "¿Qué es un diagrama de Gantt?",
+      "solucion": "Una tabla con las tareas en filas y el tiempo en columnas, en la que cada tarea es una barra."
+     },
+     {
+      "enunciado": "¿Es la impresora 3D un material o una herramienta?",
+      "solucion": "Una herramienta: se usa y no se gasta."
+     },
+     {
+      "enunciado": "¿Qué apartado de la memoria cuenta lo que falló y cómo se arregló?",
+      "solucion": "El de las pruebas."
+     }
+    ],
+    "rubrica": [
+     "Ordeno las fases de un proyecto.",
+     "Escribo requisitos concretos y elijo un diseño con una tabla.",
+     "Divido el proyecto en tareas y dibujo su Gantt.",
+     "Reparto el trabajo y hago la lista de recursos.",
+     "Escribo la memoria técnica con pruebas y conclusiones."
+    ],
+    "titulo": "UD11 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/ud11/autoevaluacion.html"
+   }
+  }
+ ]
+}
