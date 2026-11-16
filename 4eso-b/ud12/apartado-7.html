@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 12.7 · Tablas de contingencia</title>
+<meta name="description" content="Matemáticas B 4º ESO: Tablas de contingencia">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD12 · Recuento y probabilidad</a> › <span>Apartado 12.7</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 12.7</span></div><h1 class="titulo-sesion">Tablas de contingencia</h1><p>Las tablas de contingencia son una herramienta estadística muy útil para organizar datos y calcular probabilidades, especialmente las <strong>probabilidades condicionadas</strong>, cuando estudiamos dos características diferentes simultáneamente sobre una misma población. Nos permiten visualizar de un vistazo las intersecciones y los totales marginales.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Estructura de la tabla de contingencia</div><div class="caja-cuerpo"><p>Es una tabla de doble entrada donde:</p>
+<ul><li>Las <strong>filas</strong> representan las modalidades de una característica (por ejemplo, el género: chico / chica).</li><li>Las <strong>columnas</strong> representan las modalidades de una segunda característica (por ejemplo, usa gafas / no usa gafas).</li><li>La última fila y la última columna se reservan siempre para los <strong>Totales</strong> (la suma de su respectiva fila o columna). El cruce de los dos totales es el total absoluto de la población.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Tabla de contingencia</div><div class="caja-cuerpo"><p>En un centro escolar hay 100 estudiantes de un determinado curso. De ellos, 60 son chicas y 40 son chicos. Se ha realizado un estudio de salud visual y se sabe que 15 chicas y 10 chicos usan gafas.</p>
+<p>Primero, organizamos los datos construyendo y rellenando la tabla de contingencia. Las celdas en blanco se rellenan mediante sumas y restas simples usando los totales:</p>
+<div class="centro"><div class="tabla"><table><tr><td></td><td>Llevan gafas (<span class="mat">\(G\)</span>)</td><td>No llevan gafas (<span class="mat">\(\bar{G}\)</span>)</td><td><strong>Total</strong></td></tr><tr><td><strong>Chicas (<span class="mat">\(M\)</span>)</strong></td><td>15</td><td>45</td><td><strong>60</strong></td></tr><tr><td><strong>Chicos (<span class="mat">\(C\)</span>)</strong></td><td>10</td><td>30</td><td><strong>40</strong></td></tr><tr><th><strong>Total</strong></th><th><strong>25</strong></th><th><strong>75</strong></th><th><strong>100</strong></th></tr></table></div></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Probabilidades a partir de la tabla</div><div class="caja-cuerpo"><p>A partir de la tabla, y utilizando la Regla de Laplace, podemos responder de forma inmediata a multitud de preguntas sobre probabilidades:</p>
+<ul><li><strong>Probabilidad simple (marginal):</strong> Elegir a alguien al azar y que lleve gafas.<br> <span class="mat">\(P(G) = \dfrac{\text{Total de alumnos con gafas}}{\text{Total de alumnos}} = \dfrac{25}{100} = 0,25\)</span></li><li><strong>Probabilidad conjunta (intersección):</strong> Elegir a alguien al azar y que sea chica <strong>y</strong> lleve gafas.<br> <span class="mat">\(P(M \cap G) = \dfrac{\text{Chicas que llevan gafas}}{\text{Total de alumnos}} = \dfrac{15}{100} = 0,15\)</span></li><li><strong>Probabilidad condicionada:</strong> <em>Sabiendo</em> que el estudiante elegido es chico, ¿cuál es la probabilidad de que lleve gafas? Aquí <strong>nuestro universo (el denominador) se reduce</strong>: ya no dividimos entre 100, sino solo entre el total de la condición (los 40 chicos).<br> <span class="mat">\(P(G|C) = \dfrac{\text{Chicos que llevan gafas}}{\text{Total de chicos}} = \dfrac{10}{40} = 0,25\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-12.7.1"><div class="act-cab"><span class="act-num">12.7.1</span></div><div class="act-cuerpo"><p>En una clase de 30 alumnos hay 16 chicos y 14 chicas. Juegan al baloncesto 12 chicos y 8 chicas. Construye la tabla de contingencia y calcula la probabilidad de que un alumno elegido al azar juegue al baloncesto.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-6.html">← Apartado 12.6</a><a class="boton secundario" href="apartado-8.html">Apartado 12.8 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

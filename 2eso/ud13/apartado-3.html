@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 13.3 · Regla de Laplace</title>
+<meta name="description" content="Matemáticas 2º ESO: Regla de Laplace">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD13 · Probabilidad</a> › <span>Apartado 13.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 13.3</span></div><h1 class="titulo-sesion">Regla de Laplace</h1><p>Cuando todos los resultados de un experimento tienen la misma probabilidad (son <dfn class="glosario" tabindex="0" data-def="sucesos elementales que tienen la misma probabilidad">equiprobables</dfn>), como en un dado o una moneda sin trucar, la probabilidad se puede calcular sin experimentar.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Regla de Laplace</div><div class="caja-cuerpo"><p>Si todos los sucesos elementales son equiprobables:</p>
+<div class="centro"><p><span class="mat">\(P(A)=\dfrac{\text{casos favorables a }A}{\text{casos posibles}}\)</span></p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Probabilidades con un dado</div><div class="caja-cuerpo"><ul><li><span class="mat">\(P(\text{par})=\dfrac{3}{6}=\dfrac{1}{2}=0{,}5\)</span></li><li><span class="mat">\(P(\text{mayor que }4)=\dfrac{2}{6}=\dfrac{1}{3}\)</span></li><li><span class="mat">\(P(\text{no sacar un }6)=1-\dfrac{1}{6}=\dfrac{5}{6}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Bolas de una urna</div><div class="caja-cuerpo"><p>Una urna tiene 5 bolas rojas, 3 verdes y 2 azules. Se saca una al azar. En total hay 10 bolas.</p>
+<ol class="tareas cols-3"><li><strong></strong> <span class="mat">\(P(\text{roja})=\dfrac{5}{10}=\dfrac{1}{2}\)</span></li><li><strong></strong> <span class="mat">\(P(\text{verde})=\dfrac{3}{10}\)</span></li><li><strong></strong> <span class="mat">\(P(\text{no azul})=\dfrac{8}{10}=\dfrac{4}{5}\)</span></li></ol></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Laplace solo si los casos son igual de probables</div><div class="caja-cuerpo"><p>Al lanzar una chincheta hay dos resultados, pero <span class="mat">\(P(\text{punta arriba})\)</span> no es <span class="mat">\(\frac{1}{2}\)</span>, porque los dos resultados no son igual de probables. En esos casos la probabilidad se estima experimentando.</p></div></aside>
+<div class="actividad hago" id="act-13.3.1"><div class="act-cab"><span class="act-num">13.3.1</span></div><div class="act-cuerpo"><p>De una baraja española de 40 cartas se saca una carta al azar. Calcula la probabilidad de que sea:</p>
+<ol class="tareas cols-2"><li>Un oro</li><li>Un as</li><li>Una figura</li><li>El rey de copas</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Experimentos con dos pasos</h2>
+<p>Cuando el experimento se hace en dos pasos, como lanzar dos monedas o dos dados, conviene organizar los casos posibles con una tabla o un <dfn class="glosario" tabindex="0" data-def="esquema con ramas que muestra todos los resultados de un experimento de varios pasos">diagrama de árbol</dfn>.</p>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ <span class="mat">\((1,2)\)</span> y <span class="mat">\((2,1)\)</span> son casos distintos</div><div class="caja-cuerpo"><p>Al lanzar dos dados, sacar un 1 en el primero y un 2 en el segundo no es lo mismo que al revés. La suma 3 tiene 2 casos favorables de 36, no 1 de 21. Piensa en dos dados de colores distintos.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma de dos dados</div><div class="caja-cuerpo"><div class="minipage"><div class="tabla"><table><tr><td><span class="mat">\(+\)</span></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr></table></div></div>
+<div class="minipage"><p>Hay <span class="mat">\(6\cdot 6=36\)</span> casos posibles. La suma 7 aparece 6 veces, así que <span class="mat">\(P(\text{suma }7)=\dfrac{6}{36}=\dfrac{1}{6}\)</span>. Es la suma más probable.</p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Diagrama de árbol con dos monedas</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/fd391560611c28ef.svg" width="179" height="154" alt="" loading="lazy"></figure></div>
+<div class="minipage"><p><span class="mat">\(E=\{CC, CX, XC, XX\}\)</span></p>
+<p><span class="mat">\(P(\text{dos caras})=\dfrac{1}{4}\)</span></p>
+<p><span class="mat">\(P(\text{una cara y una cruz})=\dfrac{2}{4}=\dfrac{1}{2}\)</span></p></div></div></aside>
+<div class="actividad hago" id="act-13.3.2"><div class="act-cab"><span class="act-num">13.3.2</span></div><div class="act-cuerpo"><p>Se lanzan dos dados. Haz la tabla de las sumas y calcula la probabilidad de que la suma sea 3, de que sea 12 y de que sea mayor que 8.</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-13.3.3"><div class="act-cab"><span class="act-num">13.3.3</span></div><div class="act-cuerpo"><p>Dibuja el diagrama de árbol de lanzar una moneda y después un dado. ¿Cuántos resultados hay? Calcula la probabilidad de sacar cruz y un número primo.</p><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-13.3.4"><div class="act-cab"><span class="act-num">13.3.4</span></div><div class="act-cuerpo"><p>En el menú del comedor se puede elegir entre 3 primeros (sopa, ensalada o macarrones) y 2 segundos (pescado o pollo). Si Hugo elige al azar, ¿qué probabilidad hay de que coma macarrones con pollo? ¿Y de que no coma sopa?</p><textarea class="respuesta" rows="4" data-k="t4" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 13.2</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

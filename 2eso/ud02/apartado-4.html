@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 2.4 · Operaciones con fracciones</title>
+<meta name="description" content="Matemáticas 2º ESO: Operaciones con fracciones">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD02 · Fracciones y números decimales</a> › <span>Apartado 2.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 2.4</span></div><h1 class="titulo-sesion">Operaciones con fracciones</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suma y resta de fracciones</div><div class="caja-cuerpo"><ul><li>Con el <strong>mismo denominador</strong> se suman o restan los numeradores y se deja el denominador: <span class="mat">\(\dfrac{2}{7}+\dfrac{3}{7}=\dfrac{5}{7}\)</span></li><li>Con <strong>distinto denominador</strong> primero se reducen a común denominador usando el m.c.m. de los denominadores.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma y resta con distinto denominador</div><div class="caja-cuerpo"><div class="centro"><p><span class="mat">\(\dfrac{5}{6}-\dfrac{3}{8}\;\;\rightarrow\;\;\text{m.c.m.}(6,8)=24\;\;\rightarrow\;\;\dfrac{20}{24}-\dfrac{9}{24}=\dfrac{11}{24}\)</span></p></div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ No se suman los denominadores</div><div class="caja-cuerpo"><p><span class="mat">\(\dfrac{2}{3}+\dfrac{1}{4}\neq\dfrac{3}{7}\)</span>. Primero se reduce a común denominador: <span class="mat">\(\dfrac{8}{12}+\dfrac{3}{12}=\dfrac{11}{12}\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-2.4.1"><div class="act-cab"><span class="act-num">2.4.1</span></div><div class="act-cuerpo"><p>Calcula y simplifica el resultado:</p>
+<ol class="tareas cols-4"><li><span class="mat">\(\dfrac{2}{3}+\dfrac{1}{4}\)</span></li><li><span class="mat">\(\dfrac{5}{6}-\dfrac{3}{8}\)</span></li><li><span class="mat">\(\dfrac{1}{2}+\dfrac{2}{3}-\dfrac{5}{6}\)</span></li><li><span class="mat">\(3-\dfrac{4}{5}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Multiplicación y división de fracciones</div><div class="caja-cuerpo"><ul><li><strong>Multiplicación:</strong> se multiplican los numeradores entre sí y los denominadores entre sí. <span class="mat">\(\;\dfrac{a}{b}\cdot\dfrac{c}{d}=\dfrac{a\cdot c}{b\cdot d}\)</span></li><li><strong>División:</strong> se multiplica en cruz. <span class="mat">\(\;\dfrac{a}{b}:\dfrac{c}{d}=\dfrac{a\cdot d}{b\cdot c}\)</span></li><li>La <dfn class="glosario" tabindex="0" data-def="de una fracción a/b, la fracción b/a">inversa</dfn> de <span class="mat">\(\frac{a}{b}\)</span> es <span class="mat">\(\frac{b}{a}\)</span>. Dividir es multiplicar por la inversa.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Multiplicación y división</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><strong></strong> <span class="mat">\(\dfrac{3}{4}\cdot\dfrac{8}{9}=\dfrac{24}{36}=\dfrac{2}{3}\)</span></li><li><strong></strong> <span class="mat">\(\dfrac{5}{6}:\dfrac{10}{3}=\dfrac{15}{60}=\dfrac{1}{4}\)</span></li></ol></div></aside>
+<div class="actividad hago" id="act-2.4.2"><div class="act-cab"><span class="act-num">2.4.2</span></div><div class="act-cuerpo"><p>Calcula y simplifica el resultado:</p>
+<ol class="tareas cols-4"><li><span class="mat">\(\dfrac{2}{5}\cdot 15\)</span></li><li><span class="mat">\(\dfrac{7}{4}:\dfrac{7}{2}\)</span></li><li><span class="mat">\(\dfrac{4}{9}\cdot\dfrac{3}{8}\)</span></li><li><span class="mat">\(\dfrac{12}{5}:\dfrac{6}{25}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<p>En las operaciones combinadas se sigue la misma jerarquía que con los números enteros: paréntesis, multiplicaciones y divisiones y, por último, sumas y restas.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Operaciones combinadas con fracciones</div><div class="caja-cuerpo"><div class="mat-bloque">\[\begin{aligned}
+		 &amp; \frac{3}{5}-\frac{2}{5}\cdot\underbrace{\left(1-\frac{1}{4}\right)} \\
+		 &amp; \frac{3}{5}-\underbrace{\frac{2}{5}\cdot\frac{3}{4}}                \\
+		 &amp; \frac{3}{5}-\frac{6}{20}=\frac{12}{20}-\frac{6}{20}                 \\
+		 &amp; \frac{6}{20}=\frac{3}{10}
+	\end{aligned}\]</div></div></aside>
+<div class="actividad hago" id="act-2.4.3"><div class="act-cab"><span class="act-num">2.4.3</span></div><div class="act-cuerpo"><p>Calcula:</p>
+<ol class="tareas cols-3"><li><span class="mat">\(\dfrac{1}{2}+\dfrac{1}{3}\cdot\dfrac{3}{4}\)</span></li><li><span class="mat">\(\left(\dfrac{2}{3}-\dfrac{1}{2}\right):\dfrac{5}{6}\)</span></li><li><span class="mat">\(\dfrac{5}{6}-\dfrac{1}{3}:\dfrac{2}{3}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 2.3</a><a class="boton secundario" href="apartado-5.html">Apartado 2.5 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

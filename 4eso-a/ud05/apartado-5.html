@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 5.5 · Repartos proporcionales</title>
+<meta name="description" content="Matemáticas A 4º ESO: Repartos proporcionales">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD05 · Proporcionalidad</a> › <span>Apartado 5.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 5.5</span></div><h1 class="titulo-sesion">Repartos proporcionales</h1><p>Muchas veces hay que repartir una cantidad de forma justa, pero no a partes iguales: según el dinero que ha puesto cada socio, las horas que ha trabajado cada persona o los metros que ocupa cada empresa. Es un <dfn class="glosario" tabindex="0" data-def="reparto de una cantidad en partes directa o inversamente proporcionales a unos números dados">reparto proporcional</dfn>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Reparto directamente proporcional</div><div class="caja-cuerpo"><ul><li>Repartir una cantidad <span class="mat">\(N\)</span> en partes directamente proporcionales a <span class="mat">\(a\)</span>, <span class="mat">\(b\)</span> y <span class="mat">\(c\)</span> significa que <strong>a quien tiene más le toca más</strong>.</li><li>Se suman los números: <span class="mat">\(a+b+c\)</span>.</li><li>Se calcula lo que corresponde a cada unidad: <span class="mat">\(k=\dfrac{N}{a+b+c}\)</span>.</li><li>Se multiplica: las partes son <span class="mat">\(k\cdot a\)</span>,  <span class="mat">\(k\cdot b\)</span>  y  <span class="mat">\(k\cdot c\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Reparto directo</div><div class="caja-cuerpo"><ul><li>Ana, Borja y Carla montan un taller de bicicletas. Ana pone 2000 €, Borja 3000 € y Carla 5000 €. El primer año ganan 4000 €. ¿Cuánto le corresponde a cada uno?</li><li><strong></strong> Total aportado: <span class="mat">\(2000+3000+5000=10\,000\)</span> €.</li><li><strong></strong> Por cada euro aportado: <span class="mat">\(k=\dfrac{4000}{10\,000}=0{,}40\)</span> €.</li><li><strong></strong> Ana: <span class="mat">\(2000\cdot 0{,}40=800\)</span> €.  Borja: <span class="mat">\(3000\cdot 0{,}40=1200\)</span> €.  Carla: <span class="mat">\(5000\cdot 0{,}40=2000\)</span> €.</li><li><strong></strong> Comprobación: <span class="mat">\(800+1200+2000=4000\)</span> €.</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Reparto inversamente proporcional</div><div class="caja-cuerpo"><ul><li>Repartir <span class="mat">\(N\)</span> en partes inversamente proporcionales a <span class="mat">\(a\)</span>, <span class="mat">\(b\)</span> y <span class="mat">\(c\)</span> significa que <strong>a quien tiene más le toca menos</strong>.</li><li>Equivale a repartir de forma directa a los inversos: <span class="mat">\(\dfrac{1}{a}\)</span>, <span class="mat">\(\dfrac{1}{b}\)</span> y <span class="mat">\(\dfrac{1}{c}\)</span>.</li><li>Para no trabajar con fracciones, se multiplican los inversos por el m.c.m. de <span class="mat">\(a\)</span>, <span class="mat">\(b\)</span> y <span class="mat">\(c\)</span> y se hace un reparto directo con los números que salen.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Reparto inverso</div><div class="caja-cuerpo"><ul><li>Una empresa reparte un premio de 2200 € entre tres empleados de forma inversamente proporcional a los días que han faltado: 1, 2 y 3 días.</li><li><strong></strong> m.c.m.<span class="mat">\((1,2,3)=6\)</span>.  Números del reparto directo: <span class="mat">\(\dfrac{6}{1}=6\)</span>,  <span class="mat">\(\dfrac{6}{2}=3\)</span>,  <span class="mat">\(\dfrac{6}{3}=2\)</span>.</li><li><strong></strong> Suma: <span class="mat">\(6+3+2=11\)</span>.  <span class="mat">\(k=\dfrac{2200}{11}=200\)</span> €.</li><li><strong></strong> Partes: <span class="mat">\(6\cdot 200=1200\)</span> €,  <span class="mat">\(3\cdot 200=600\)</span> €  y  <span class="mat">\(2\cdot 200=400\)</span> €.</li><li><strong></strong> El que falta 1 día cobra el doble que el que falta 2 días y el triple que el que falta 3 días.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡No vale dar la vuelta al reparto directo!</div><div class="caja-cuerpo"><p>Si repartimos los 2200 € de forma directa a 1, 2 y 3 salen 366,67 €, 733,33 € y 1100 €. Darle la vuelta (1100 €, 733,33 € y 366,67 €) no es un reparto inverso: el que falta 1 día tiene que cobrar el doble que el que falta 2 días, y 1100 no es el doble de 733,33.</p></div></aside>
+<div class="actividad hago" id="act-5.5.1"><div class="act-cab"><span class="act-num">5.5.1</span></div><div class="act-cuerpo"><p>Haz los siguientes repartos</p>
+<ol class="tareas cols-1"><li>Reparte 900 € en partes directamente proporcionales a 2, 3 y 4.</li><li>Reparte 900 € en partes inversamente proporcionales a 2, 3 y 6.</li><li>Dos electricistas cobran 840 € por una instalación. Uno ha trabajado 5 horas y el otro 9. ¿Cuánto cobra cada uno?</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 5.4</a><a class="boton secundario" href="apartado-6.html">Apartado 5.6 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

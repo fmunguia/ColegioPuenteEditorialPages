@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 8.4 · Funciones lineales y afines</title>
+<meta name="description" content="Matemáticas 2º ESO: Funciones lineales y afines">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD08 · Funciones y gráficas</a> › <span>Apartado 8.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 8.4</span></div><h1 class="titulo-sesion">Funciones lineales y afines</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Función de proporcionalidad directa</div><div class="caja-cuerpo"><p>Su expresión es <span class="mat">\(y=mx\)</span>.</p>
+<ul><li>Su gráfica es una <strong>recta que pasa por el origen</strong>.</li><li><span class="mat">\(m\)</span> es la <dfn class="glosario" tabindex="0" data-def="lo que aumenta y en una recta cuando x aumenta 1">pendiente</dfn>: lo que aumenta <span class="mat">\(y\)</span> cuando <span class="mat">\(x\)</span> aumenta 1. También es la constante de proporcionalidad.</li><li>Si <span class="mat">\(m&gt;0\)</span> la función es creciente y si <span class="mat">\(m&lt;0\)</span> es decreciente.</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Función afín</div><div class="caja-cuerpo"><p>Su expresión es <span class="mat">\(y=mx+n\)</span>.</p>
+<ul><li>Su gráfica es una <strong>recta</strong> con pendiente <span class="mat">\(m\)</span>.</li><li><span class="mat">\(n\)</span> es la <dfn class="glosario" tabindex="0" data-def="valor de y donde una recta corta al eje Y">ordenada en el origen</dfn>: el punto donde la recta corta al eje <span class="mat">\(Y\)</span>, <span class="mat">\((0,n)\)</span>.</li><li>Si <span class="mat">\(m=0\)</span> la función es <strong>constante</strong>: <span class="mat">\(y=n\)</span>, una recta horizontal.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Rectas con distinta pendiente</div><div class="caja-cuerpo"><div class="minipage"><ul><li><span class="mat">\(y=2x\)</span>: pasa por <span class="mat">\((0,0)\)</span> y <span class="mat">\((1,2)\)</span>.</li><li><span class="mat">\(y=2x-3\)</span>: paralela a la anterior, corta al eje <span class="mat">\(Y\)</span> en <span class="mat">\(-3\)</span>.</li><li><span class="mat">\(y=-\frac{1}{2}x+2\)</span>: decreciente, corta al eje <span class="mat">\(Y\)</span> en 2.</li></ul>
+<p>Para dibujar una recta basta con dos puntos.</p></div>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/071ea3c416171e04.svg" width="221" height="245" alt="" loading="lazy"></figure></div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ La pendiente es la que multiplica a <span class="mat">\(x\)</span></div><div class="caja-cuerpo"><p>En <span class="mat">\(y=4-x\)</span> la pendiente es <span class="mat">\(-1\)</span> y la ordenada en el origen es 4, aunque el 4 esté delante. Escríbela como <span class="mat">\(y=-x+4\)</span> antes de leer <span class="mat">\(m\)</span> y <span class="mat">\(n\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-8.4.1"><div class="act-cab"><span class="act-num">8.4.1</span></div><div class="act-cuerpo"><p>Representa estas funciones con una tabla de valores e indica su pendiente y su ordenada en el origen:</p>
+<ol class="tareas cols-4"><li><span class="mat">\(y=3x\)</span></li><li><span class="mat">\(y=-x+4\)</span></li><li><span class="mat">\(y=\frac{1}{2}x-1\)</span></li><li><span class="mat">\(y=2\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Obtener la expresión de una recta</div><div class="caja-cuerpo"><p>Una recta pasa por <span class="mat">\((0,1)\)</span> y <span class="mat">\((2,7)\)</span>. La ordenada en el origen es <span class="mat">\(n=1\)</span>. Al pasar de <span class="mat">\(x=0\)</span> a <span class="mat">\(x=2\)</span>, <span class="mat">\(y\)</span> aumenta 6, así que <span class="mat">\(m=\dfrac{6}{2}=3\)</span>. La función es <span class="mat">\(y=3x+1\)</span>.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 8.3</a><a class="boton secundario" href="apartado-5.html">Apartado 8.5 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

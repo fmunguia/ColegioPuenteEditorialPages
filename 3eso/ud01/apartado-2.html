@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.2 · Divisibilidad</title>
+<meta name="description" content="Matemáticas 3º ESO: Divisibilidad">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD01 · Números racionales</a> › <span>Apartado 1.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.2</span></div><h1 class="titulo-sesion">Divisibilidad</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Múltiplos y divisores</div><div class="caja-cuerpo"><p>Si la división <span class="mat">\(a : b\)</span> es exacta, decimos que:</p>
+<ul><li><span class="mat">\(a\)</span> es <strong>múltiplo</strong> de <span class="mat">\(b\)</span>.</li><li><span class="mat">\(b\)</span> es <strong>divisor</strong> de <span class="mat">\(a\)</span>.</li></ul>
+<p>Por ejemplo, <span class="mat">\(36 : 4 = 9\)</span> es exacta, así que <span class="mat">\(36\)</span> es múltiplo de <span class="mat">\(4\)</span> y <span class="mat">\(4\)</span> es divisor de <span class="mat">\(36\)</span>.</p></div></aside>
+<p>Un número es <strong>primo</strong> si solo tiene dos divisores: el <span class="mat">\(1\)</span> y él mismo. Los primeros números primos son <span class="mat">\(2, 3, 5, 7, 11, 13, 17, 19, 23, 29\dots\)</span> Un número que tiene más de dos divisores es <strong>compuesto</strong>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Criterios de divisibilidad</div><div class="caja-cuerpo"><p>Un número es divisible:</p>
+<ul><li>entre <span class="mat">\(2\)</span> si acaba en cifra par.</li><li>entre <span class="mat">\(3\)</span> si la suma de sus cifras es múltiplo de <span class="mat">\(3\)</span>.</li><li>entre <span class="mat">\(5\)</span> si acaba en <span class="mat">\(0\)</span> o en <span class="mat">\(5\)</span>.</li><li>entre <span class="mat">\(11\)</span> si la diferencia entre la suma de las cifras en posición par y la suma de las cifras en posición impar es <span class="mat">\(0\)</span> o múltiplo de <span class="mat">\(11\)</span>.</li></ul></div></aside>
+<h2 class="subapartado">Factorización en números primos</h2>
+<p>Todo número compuesto se puede escribir, de forma única, como producto de números primos. Para obtenerlo se divide sucesivamente entre los primos <span class="mat">\(2, 3, 5, 7\dots\)</span> hasta llegar a <span class="mat">\(1\)</span>.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Factorización de 360</div><div class="caja-cuerpo"><div class="minipage"><div class="mat-bloque">\[\begin{array}{r|l}
+			360 &amp; 2 \\
+			180 &amp; 2 \\
+			90 &amp; 2 \\
+			45 &amp; 3 \\
+			15 &amp; 3 \\
+			5 &amp; 5 \\
+			1 &amp;
+		\end{array}\]</div></div>
+<div class="minipage"><div class="mat-bloque">\[360 = 2^3 \cdot 3^2 \cdot 5\]</div></div></div></aside>
+<h2 class="subapartado">Máximo común divisor y mínimo común múltiplo</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Cálculo del m.c.d. y del m.c.m.</div><div class="caja-cuerpo"><p>Se factorizan los números y:</p>
+<ul><li>El <strong>m.c.d.</strong> es el producto de los factores <strong>comunes</strong> elevados al <strong>menor</strong> exponente.</li><li>El <strong>m.c.m.</strong> es el producto de los factores <strong>comunes y no comunes</strong> elevados al <strong>mayor</strong> exponente.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. m.c.d. y m.c.m. de 60 y 72</div><div class="caja-cuerpo"><p><span class="mat">\(60 = 2^2 \cdot 3 \cdot 5 \qquad 72 = 2^3 \cdot 3^2\)</span></p>
+<ul><li><span class="mat">\(\text{m.c.d.}(60, 72) = 2^2 \cdot 3 = 12\)</span></li><li><span class="mat">\(\text{m.c.m.}(60, 72) = 2^3 \cdot 3^2 \cdot 5 = 360\)</span></li></ul></div></aside>
+<p>Para saber si un problema se resuelve con el m.c.d. o con el m.c.m. conviene preguntarse qué se busca: si hay que <strong>repartir o dividir</strong> en partes iguales lo más grandes posible, se usa el m.c.d.; si hay que saber cuándo <strong>vuelven a coincidir</strong> dos sucesos que se repiten, se usa el m.c.m.</p>
+<div class="actividad hago" id="act-1.2.1"><div class="act-cab"><span class="act-num">1.2.1</span></div><div class="act-cuerpo"><p>Factoriza y calcula el m.c.d. y el m.c.m. de <span class="mat">\(48\)</span> y <span class="mat">\(84\)</span>.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-1.2.2"><div class="act-cab"><span class="act-num">1.2.2</span></div><div class="act-cuerpo"><p>Resuelve: Ana va a la piscina cada 6 días y Luis cada 8. Hoy han coincidido. ¿Dentro de cuántos días volverán a coincidir?</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 1.1</a><a class="boton secundario" href="apartado-3.html">Apartado 1.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 9.2 · Función lineal</title>
+<meta name="description" content="Matemáticas 3º ESO: Función lineal">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD09 · Funciones lineales y cuadráticas</a> › <span>Apartado 9.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 9.2</span></div><h1 class="titulo-sesion">Función lineal</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Función lineal o afín</div><div class="caja-cuerpo"><p>Es una función de la forma</p>
+<div class="mat-bloque">\[y = mx + n\]</div>
+<p>Su gráfica es una recta.</p>
+<ul><li><span class="mat">\(m\)</span> es la <strong>pendiente</strong>.</li><li><span class="mat">\(n\)</span> es la <strong>ordenada en el origen</strong>: la recta corta al eje <span class="mat">\(Y\)</span> en el punto <span class="mat">\((0, n)\)</span>.</li></ul>
+<p>Si <span class="mat">\(m = 0\)</span> la función es <strong>constante</strong>, <span class="mat">\(y = n\)</span>, y su gráfica es una recta horizontal.</p></div></aside>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/f9fda68f52a90abb.svg" width="266" height="299" alt="" loading="lazy"></figure></div>
+<p>Para representar una recta basta con conocer <strong>dos de sus puntos</strong>. Lo más sencillo es hacer una tabla con dos valores de <span class="mat">\(x\)</span> y calcular <span class="mat">\(y\)</span>.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Representar una función lineal</div><div class="caja-cuerpo"><p><span class="mat">\(y = -2x + 3\)</span>.  Pendiente <span class="mat">\(m = -2\)</span> (decreciente), ordenada en el origen <span class="mat">\(n = 3\)</span>.</p>
+<div class="centro"><div class="tabla"><table><tr><td><span class="mat">\(x\)</span></td><td>0</td><td>2</td></tr><tr><td><span class="mat">\(y\)</span></td><td>3</td><td><span class="mat">\(-1\)</span></td></tr></table></div></div>
+<p>La recta pasa por <span class="mat">\((0, 3)\)</span> y <span class="mat">\((2, -1)\)</span>: por cada unidad que avanzamos hacia la derecha, baja 2.</p></div></aside>
+<h2 class="subapartado">Ecuación de la recta que pasa por dos puntos</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Pendiente a partir de dos puntos</div><div class="caja-cuerpo"><p>La pendiente de la recta que pasa por <span class="mat">\(A(x_1, y_1)\)</span> y <span class="mat">\(B(x_2, y_2)\)</span> es</p>
+<div class="mat-bloque">\[m = \dfrac{y_2 - y_1}{x_2 - x_1}\]</div>
+<p>Para obtener la ecuación, se calcula <span class="mat">\(m\)</span> y después <span class="mat">\(n\)</span> sustituyendo uno de los puntos en <span class="mat">\(y = mx + n\)</span>.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El mismo orden arriba y abajo</div><div class="caja-cuerpo"><p>En la fórmula de la pendiente, si arriba se empieza por el punto <span class="mat">\(B\)</span>, abajo también: <span class="mat">\(m = \dfrac{y_2 - y_1}{x_2 - x_1}\)</span>. Con <span class="mat">\(A(1, 2)\)</span> y <span class="mat">\(B(3, 8)\)</span>, calcular <span class="mat">\(\dfrac{8 - 2}{1 - 3} = -3\)</span> es un error: la pendiente es <span class="mat">\(3\)</span>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Recta que pasa por dos puntos</div><div class="caja-cuerpo"><p>Recta que pasa por <span class="mat">\(A(1, 2)\)</span> y <span class="mat">\(B(3, 8)\)</span>:</p>
+<div class="mat-bloque">\[m = \dfrac{8 - 2}{3 - 1} = 3 \qquad 2 = 3 \cdot 1 + n \;\Rightarrow\; n = -1 \qquad y = 3x - 1\]</div></div></aside>
+<p>Dos rectas con la <strong>misma pendiente</strong> son <strong>paralelas</strong>. Por ejemplo, <span class="mat">\(y = 2x\)</span> e <span class="mat">\(y = 2x + 1\)</span> son paralelas.</p>
+<div class="actividad hago" id="act-9.2.1"><div class="act-cab"><span class="act-num">9.2.1</span></div><div class="act-cuerpo"><p>Halla la ecuación de la recta que pasa por <span class="mat">\((-1, 3)\)</span> y <span class="mat">\((2, -3)\)</span>. ¿Es creciente o decreciente?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Modelización con funciones lineales</h2>
+<p>Muchas situaciones reales tienen una parte fija y otra que aumenta de forma constante: tarifas, alquileres, depósitos que se llenan…Todas se modelizan con funciones lineales.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Factura de la luz</div><div class="caja-cuerpo"><p>Una compañía eléctrica cobra una cuota fija de <span class="mat">\(12\)</span>&nbsp;€ al mes y <span class="mat">\(0,15\)</span>&nbsp;€ por cada kWh consumido. La factura es <span class="mat">\(y = 0,15x + 12\)</span>.</p>
+<ul><li>Con <span class="mat">\(300\)</span>&nbsp;kWh se pagan <span class="mat">\(0,15 \cdot 300 + 12 = 57\)</span>&nbsp;€.</li><li>Si la factura es de <span class="mat">\(72\)</span>&nbsp;€: <span class="mat">\(0,15x + 12 = 72 \;\Rightarrow\; x = 400\)</span>&nbsp;kWh.</li></ul>
+<p>La pendiente, <span class="mat">\(0,15\)</span>, es el precio de cada kWh; la ordenada en el origen, <span class="mat">\(12\)</span>, es lo que se paga aunque no se consuma nada.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 9.1</a><a class="boton secundario" href="apartado-3.html">Apartado 9.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

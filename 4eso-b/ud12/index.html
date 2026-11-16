@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD12 · Recuento y probabilidad</title>
+
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <span>UD12 · Recuento y probabilidad</span></nav></header>
+<main>
+<p class="subtitulo">Bloque V · Estadística y probabilidad</p><h1><span class="codigo">UD12</span> Recuento y probabilidad</h1><aside class="caja partida"><div class="caja-titulo">🔍 Traineras en la bahía</div><div class="caja-cuerpo"><p>En una regata de traineras en la bahía de Santander participan 8 embarcaciones, entre ellas las de Astillero, Pedreña, Castro y Santoña. Como solo hay 4 calles, se reman dos tandas, y tanto las traineras de cada tanda como las calles se sortean.</p>
+<p>Antes de calcular probabilidades hay que saber contar cuántos sorteos distintos son posibles. Para eso necesitamos la combinatoria.</p>
+<ul><li>¿De cuántas formas se pueden elegir las 4 traineras que reman en la primera tanda?</li><li>¿Y de cuántas formas se pueden colocar en las 4 calles de la primera tanda, si importa la calle de cada una?</li><li>¿Qué probabilidad hay de que Astillero reme en la primera tanda?</li></ul></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Contar con el principio de multiplicación, variaciones, permutaciones y combinaciones.</li><li>Describir experimentos aleatorios, su espacio muestral y sus sucesos.</li><li>Calcular probabilidades con la regla de Laplace y sus propiedades.</li><li>Calcular probabilidades en experimentos compuestos con diagramas de árbol.</li><li>Usar tablas de contingencia y probabilidades condicionadas.</li><li>Aplicar el teorema de la probabilidad total.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Simplifica <span class="mat">\(\dfrac{12}{40}\)</span>.</li><li>Escribe <span class="mat">\(0{,}35\)</span> como fracción irreducible.</li><li>Calcula <span class="mat">\(\dfrac{3}{4} \cdot \dfrac{2}{3}\)</span>.</li><li>Calcula <span class="mat">\(\dfrac{1}{2} + \dfrac{1}{3}\)</span>.</li><li>Calcula <span class="mat">\(1 - 0{,}35\)</span>.</li><li>Calcula <span class="mat">\(0{,}6 \cdot 0{,}02\)</span>.</li><li>Expresa <span class="mat">\(0{,}25\)</span> en porcentaje.</li><li>Escribe todos los resultados al lanzar dos monedas.</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Al lanzar dos dados y sumar los puntos, la suma puede valer cualquier número del 2 al 12. Son 11 resultados, pero no todos son igual de fáciles de conseguir: el 2 solo sale con <span class="mat">\((1, 1)\)</span>, mientras que el 7 sale con <span class="mat">\((1, 6)\)</span>, <span class="mat">\((2, 5)\)</span>, <span class="mat">\((3, 4)\)</span>, <span class="mat">\((4, 3)\)</span>, <span class="mat">\((5, 2)\)</span> y <span class="mat">\((6, 1)\)</span>.</p>
+<p>El gráfico muestra de cuántas formas se obtiene cada suma entre los 36 resultados posibles.</p>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/ac6dcfd57e4e3791.svg" width="402" height="218" alt="" loading="lazy"></figure></div>
+<ul><li>¿Cuál es la probabilidad de sacar un 7? ¿Y un 2?</li><li>¿Por qué no vale decir que la probabilidad de cada suma es <span class="mat">\(\dfrac{1}{11}\)</span>?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 12.1</span> Técnicas de recuento</a></li><li><a href="apartado-2.html"><span class="num">Apartado 12.2</span> Experimentos aleatorios</a></li><li><a href="apartado-3.html"><span class="num">Apartado 12.3</span> Operaciones con sucesos</a></li><li><a href="apartado-4.html"><span class="num">Apartado 12.4</span> Regla de Laplace</a></li><li><a href="apartado-5.html"><span class="num">Apartado 12.5</span> Propiedades de la probabilidad</a></li><li><a href="apartado-6.html"><span class="num">Apartado 12.6</span> Experimentos compuestos</a></li><li><a href="apartado-7.html"><span class="num">Apartado 12.7</span> Tablas de contingencia</a></li><li><a href="apartado-8.html"><span class="num">Apartado 12.8</span> Probabilidad condicionada</a></li><li><a href="apartado-9.html"><span class="num">Apartado 12.9</span> Taller digital</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
+
+<nav class="anterior-siguiente"><a class="boton secundario" href="../ud11/index.html">← UD11</a><span></span></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 13.2 · Frecuencia relativa y probabilidad</title>
+<meta name="description" content="Matemáticas 2º ESO: Frecuencia relativa y probabilidad">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD13 · Probabilidad</a> › <span>Apartado 13.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 13.2</span></div><h1 class="titulo-sesion">Frecuencia relativa y probabilidad</h1><p>Si lanzamos una chincheta no sabemos si caerá con la punta hacia arriba o apoyada de lado, ni podemos razonar qué es más probable. Lo que sí podemos hacer es <strong>experimentar</strong>: lanzarla muchas veces y anotar los resultados.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Ley de los grandes números</div><div class="caja-cuerpo"><p>Cuando un experimento aleatorio se repite muchas veces, la <strong>frecuencia relativa</strong> de un suceso se va acercando a un valor fijo. Ese valor es la <dfn class="glosario" tabindex="0" data-def="número entre 0 y 1 que mide lo posible que es que ocurra un suceso">probabilidad</dfn> del suceso, <span class="mat">\(P(A)\)</span>.</p>
+<div class="centro"><p><span class="mat">\(h(A)=\dfrac{\text{número de veces que ocurre }A}{\text{número de repeticiones}}\)</span></p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Lanzamientos de una chincheta</div><div class="caja-cuerpo"><div class="centro"><div class="tabla"><table><tr><td>Lanzamientos</td><td>10</td><td>50</td><td>100</td><td>500</td><td>1000</td></tr><tr><td>Veces «punta arriba»</td><td>7</td><td>31</td><td>64</td><td>305</td><td>612</td></tr><tr><td>Frecuencia relativa</td><td>0,70</td><td>0,62</td><td>0,64</td><td>0,61</td><td>0,612</td></tr></table></div></div>
+<p>La frecuencia relativa se estabiliza alrededor de 0,61. Podemos estimar que <span class="mat">\(P(\text{punta arriba})\approx 0{,}61\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Propiedades de la probabilidad</div><div class="caja-cuerpo"><ul><li>La probabilidad de un suceso es un número entre 0 y 1: <span class="mat">\(0\leq P(A)\leq 1\)</span>.</li><li><span class="mat">\(P(\text{suceso imposible})=0\)</span> y <span class="mat">\(P(\text{suceso seguro})=1\)</span>.</li><li>La suma de las probabilidades de todos los sucesos elementales es 1.</li><li><span class="mat">\(P(\bar{A})=1-P(A)\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Una probabilidad no puede ser mayor que 1</div><div class="caja-cuerpo"><p>Si te sale una probabilidad negativa o mayor que 1, hay un error. Por ejemplo, <span class="mat">\(\frac{7}{5}\)</span> no puede ser una probabilidad: seguramente has puesto los casos posibles en el numerador.</p></div></aside>
+<div class="actividad hago" id="act-13.2.1"><div class="act-cab"><span class="act-num">13.2.1</span></div><div class="act-cuerpo"><p>Lanza una moneda 50 veces y anota cuántas veces sale cara. Calcula la frecuencia relativa después de 10, 20, 30, 40 y 50 lanzamientos. Junta tus resultados con los de toda la clase. ¿A qué valor se acerca?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 13.1</a><a class="boton secundario" href="apartado-3.html">Apartado 13.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

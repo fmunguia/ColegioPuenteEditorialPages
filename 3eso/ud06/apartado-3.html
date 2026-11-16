@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 6.3 · Ecuaciones de segundo grado</title>
+<meta name="description" content="Matemáticas 3º ESO: Ecuaciones de segundo grado">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD06 · Ecuaciones</a> › <span>Apartado 6.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 6.3</span></div><h1 class="titulo-sesion">Ecuaciones de segundo grado</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Ecuación de segundo grado</div><div class="caja-cuerpo"><p>Una ecuación de segundo grado se puede escribir en la forma general</p>
+<div class="mat-bloque">\[ax^2 + bx + c = 0 \qquad (a \neq 0)\]</div>
+<p>Si <span class="mat">\(b = 0\)</span> o <span class="mat">\(c = 0\)</span> se dice que es <strong>incompleta</strong>.</p></div></aside>
+<h2 class="subapartado">Ecuaciones incompletas</h2>
+<p>Las ecuaciones incompletas se resuelven sin fórmula:</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Ecuaciones incompletas</div><div class="caja-cuerpo"><ul><li><p><strong>Si <span class="mat">\(b = 0\)</span>:</strong> <span class="mat">\(\; ax^2 + c = 0\)</span>. Se despeja <span class="mat">\(x^2\)</span> y se hace la raíz cuadrada, que da dos soluciones opuestas (o ninguna, si el número es negativo).</p>
+<div class="mat-bloque">\[x^2 - 49 = 0 \;\Rightarrow\; x^2 = 49 \;\Rightarrow\; x = \pm 7\]</div></li><li><p><strong>Si <span class="mat">\(c = 0\)</span>:</strong> <span class="mat">\(\; ax^2 + bx = 0\)</span>. Se saca factor común <span class="mat">\(x\)</span>. Un producto vale 0 si alguno de sus factores vale 0, así que una solución es siempre <span class="mat">\(x = 0\)</span>.</p>
+<div class="mat-bloque">\[3x^2 + 12x = 0 \;\Rightarrow\; 3x(x + 4) = 0 \;\Rightarrow\; x = 0, \ x = -4\]</div></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ No dividas entre <span class="mat">\(x\)</span></div><div class="caja-cuerpo"><p>Si en <span class="mat">\(3x^2 + 12x = 0\)</span> dividimos entre <span class="mat">\(x\)</span>, queda <span class="mat">\(3x + 12 = 0\)</span> y solo obtenemos <span class="mat">\(x = -4\)</span>: se pierde la solución <span class="mat">\(x = 0\)</span>. Hay que sacar factor común. Y en <span class="mat">\(x^2 = 49\)</span> no olvides la solución negativa: <span class="mat">\(x = \pm 7\)</span>.</p></div></aside>
+<h2 class="subapartado">Ecuaciones completas</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Fórmula de la ecuación de segundo grado</div><div class="caja-cuerpo"><p>Las soluciones de <span class="mat">\(ax^2 + bx + c = 0\)</span> son:</p>
+<div class="mat-bloque">\[x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}\]</div>
+<p>El número <span class="mat">\(\Delta = b^2 - 4ac\)</span> se llama <dfn class="glosario" tabindex="0" data-def="número b² − 4ac, que indica cuántas soluciones tiene una ecuación de segundo grado">discriminante</dfn> y decide cuántas soluciones hay:</p>
+<ul><li><span class="mat">\(\Delta &gt; 0\)</span>: dos soluciones distintas.</li><li><span class="mat">\(\Delta = 0\)</span>: una solución (doble).</li><li><span class="mat">\(\Delta &lt; 0\)</span>: ninguna solución real.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuación completa</div><div class="caja-cuerpo"><p><span class="mat">\(x^2 - 5x + 6 = 0\)</span>,  con <span class="mat">\(a = 1\)</span>, <span class="mat">\(b = -5\)</span>, <span class="mat">\(c = 6\)</span>:</p>
+<div class="mat-bloque">\[x = \dfrac{5 \pm \sqrt{25 - 24}}{2} = \dfrac{5 \pm 1}{2} \;\Longrightarrow\; x_1 = 3, \quad x_2 = 2\]</div>
+<p>Comprobación: <span class="mat">\(3^2 - 5 \cdot 3 + 6 = 0\)</span>  y  <span class="mat">\(2^2 - 5 \cdot 2 + 6 = 0\)</span>.</p></div></aside>
+<p>Si la ecuación no está en forma general, primero hay que quitar paréntesis y denominadores y pasar todos los términos a un miembro, igualando a cero.</p>
+<div class="actividad hago" id="act-6.3.1"><div class="act-cab"><span class="act-num">6.3.1</span></div><div class="act-cuerpo"><p>Resuelve:</p>
+<ol class="tareas cols-3"><li><span class="mat">\(x^2 - 36 = 0\)</span></li><li><span class="mat">\(2x^2 - 10x = 0\)</span></li><li><span class="mat">\(x^2 + 2x - 8 = 0\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-6.3.2"><div class="act-cab"><span class="act-num">6.3.2</span></div><div class="act-cuerpo"><p>Sin resolverlas, indica cuántas soluciones tienen:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(x^2 + 4x + 4 = 0\)</span></li><li><span class="mat">\(x^2 + x + 1 = 0\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 6.2</a><a class="boton secundario" href="apartado-4.html">Apartado 6.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

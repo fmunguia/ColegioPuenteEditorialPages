@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 7.3 · Métodos algebraicos</title>
+<meta name="description" content="Matemáticas 2º ESO: Métodos algebraicos">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD07 · Sistemas de ecuaciones lineales</a> › <span>Apartado 7.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 7.3</span></div><h1 class="titulo-sesion">Métodos algebraicos</h1><p>El método gráfico es visual, pero poco preciso si la solución no son números enteros. Los métodos algebraicos transforman el sistema en una ecuación con una sola incógnita.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Método de sustitución</div><div class="caja-cuerpo"><ol><li>Se despeja una incógnita en una de las ecuaciones.</li><li>Se sustituye su expresión en la otra ecuación.</li><li>Se resuelve la ecuación de primer grado que resulta.</li><li>Se calcula la otra incógnita.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Método de sustitución</div><div class="caja-cuerpo"><p><span class="mat">\(\left\lbrace\begin{array}{l}
+			3x+2y=12 \\
+			x-y=-1
+		\end{array}\right.\)</span></p>
+<ul><li>Despejamos <span class="mat">\(x\)</span> en la segunda: <span class="mat">\(x=y-1\)</span>.</li><li>Sustituimos en la primera: <span class="mat">\(3(y-1)+2y=12\;\rightarrow\;5y=15\;\rightarrow\;y=3\)</span>.</li><li>Calculamos <span class="mat">\(x=3-1=2\)</span>. Solución: <span class="mat">\(x=2\)</span>, <span class="mat">\(y=3\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ La solución es una pareja</div><div class="caja-cuerpo"><p>Al encontrar <span class="mat">\(y=3\)</span> todavía no has terminado: hay que calcular también <span class="mat">\(x\)</span>. La solución de un sistema siempre son dos valores, <span class="mat">\(x=2\)</span> e <span class="mat">\(y=3\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Método de igualación</div><div class="caja-cuerpo"><ol><li>Se despeja la misma incógnita en las dos ecuaciones.</li><li>Se igualan las dos expresiones.</li><li>Se resuelve la ecuación y se calcula la otra incógnita.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Método de igualación</div><div class="caja-cuerpo"><p><span class="mat">\(\left\lbrace\begin{array}{l}
+			y=2x-1 \\
+			y=5-x
+		\end{array}\right.\)</span>
+	<span class="mat">\(\;\rightarrow\;2x-1=5-x\;\rightarrow\;3x=6\;\rightarrow\;x=2,\;\;y=2\cdot 2-1=3\)</span></p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Método de reducción</div><div class="caja-cuerpo"><ol><li>Se multiplican las ecuaciones por los números necesarios para que una incógnita tenga coeficientes opuestos.</li><li>Se suman las dos ecuaciones y esa incógnita desaparece.</li><li>Se resuelve la ecuación y se calcula la otra incógnita.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Método de reducción</div><div class="caja-cuerpo"><p><span class="mat">\(\left\lbrace\begin{array}{l}
+			4x-3y=1 \\
+			2x+5y=33
+		\end{array}\right.\)</span></p>
+<ul><li>Multiplicamos la segunda por <span class="mat">\(-2\)</span>: <span class="mat">\(-4x-10y=-66\)</span>.</li><li>Sumamos: <span class="mat">\((4x-3y)+(-4x-10y)=1-66\;\rightarrow\;-13y=-65\;\rightarrow\;y=5\)</span>.</li><li>Sustituimos: <span class="mat">\(2x+25=33\;\rightarrow\;x=4\)</span>. Solución: <span class="mat">\(x=4\)</span>, <span class="mat">\(y=5\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Se multiplican los dos miembros</div><div class="caja-cuerpo"><p>Al multiplicar <span class="mat">\(2x+5y=33\)</span> por <span class="mat">\(-2\)</span> se multiplica también el segundo miembro: <span class="mat">\(-4x-10y=-66\)</span>, no <span class="mat">\(-4x-10y=33\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-7.3.1"><div class="act-cab"><span class="act-num">7.3.1</span></div><div class="act-cuerpo"><p>Resuelve cada sistema por el método indicado:</p>
+<ol class="tareas cols-3"><li>Sustitución <br> <span class="mat">\(\left\lbrace\begin{array}{l} x-2y=0 \\ 3x+y=14 \end{array}\right.\)</span></li><li>Igualación <br> <span class="mat">\(\left\lbrace\begin{array}{l} x+y=10 \\ x-y=2 \end{array}\right.\)</span></li><li>Reducción <br> <span class="mat">\(\left\lbrace\begin{array}{l} 2x+y=7 \\ x-3y=-7 \end{array}\right.\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 7.2</a><a class="boton secundario" href="apartado-4.html">Apartado 7.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

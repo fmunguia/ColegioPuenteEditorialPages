@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 8.2 · Resolución de ecuaciones</title>
+<meta name="description" content="Matemáticas 1º ESO: Resolución de ecuaciones">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD08 · Ecuaciones</a> › <span>Apartado 8.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 8.2</span></div><h1 class="titulo-sesion">Resolución de ecuaciones</h1><p>Una ecuación es como una balanza en equilibrio. Si hacemos lo mismo en los dos platillos, sigue equilibrada.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. La balanza</div><div class="caja-cuerpo"><div class="centro"><figure class="dibujo "><img src="../../figuras/5d8dba1cbe882ed4.svg" width="488" height="165" alt="" loading="lazy"></figure></div>
+<p><span class="mat">\(x + 2 = 5\)</span>. Si quitamos 2 pesas de cada platillo, queda <span class="mat">\(x = 3\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Reglas de transposición</div><div class="caja-cuerpo"><ul><li>Lo que está <strong>sumando</strong> en un miembro pasa al otro <strong>restando</strong>, y al revés.</li><li>Lo que está <strong>multiplicando</strong> a todo un miembro pasa al otro <strong>dividiendo</strong>, y al revés.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Al pasar al otro miembro, cambia la operación</div><div class="caja-cuerpo"><p>En <span class="mat">\(3x - 5 = 10\)</span>, el 5 está restando, así que pasa al otro miembro <strong>sumando</strong>: <span class="mat">\(3x = 10 + 5 = 15\)</span> y <span class="mat">\(x = 5\)</span>. Si escribes <span class="mat">\(3x = 10 - 5\)</span>, la solución sale mal. Comprueba siempre: <span class="mat">\(3 \cdot 5 - 5 = 10\)</span>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuaciones sencillas</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><strong></strong> <span class="mat">\(x - 4 = 9 \Rightarrow x = 9 + 4 = 13\)</span></li><li><strong></strong> <span class="mat">\(5x = 35 \Rightarrow x = \dfrac{35}{5} = 7\)</span></li><li><strong></strong> <span class="mat">\(\dfrac{x}{3} = 6 \Rightarrow x = 6 \cdot 3 = 18\)</span></li><li><strong></strong> <span class="mat">\(2x + 3 = 11 \Rightarrow 2x = 8 \Rightarrow x = 4\)</span></li></ol></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Pasos para resolver una ecuación</div><div class="caja-cuerpo"><ol><li>Quitar paréntesis.</li><li>Pasar los términos con <span class="mat">\(x\)</span> a un miembro y los números al otro.</li><li>Agrupar (reducir) los términos semejantes.</li><li>Despejar la <span class="mat">\(x\)</span>.</li><li>Comprobar la solución.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuación con <span class="mat">\(x\)</span> en los dos miembros</div><div class="caja-cuerpo"><div class="mat-bloque">\[\begin{aligned}
+		7x - 4 &amp;= 3x + 12 \\
+		7x - 3x &amp;= 12 + 4 \\
+		4x &amp;= 16 \\
+		x &amp;= 4
+	\end{aligned}\]</div>
+<p>Comprobación: <span class="mat">\(7 \cdot 4 - 4 = 24\)</span> y <span class="mat">\(3 \cdot 4 + 12 = 24\)</span>.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El signo del coeficiente va con él</div><div class="caja-cuerpo"><p>En <span class="mat">\(-3x = 12\)</span> el número que multiplica a la <span class="mat">\(x\)</span> es <span class="mat">\(-3\)</span>, y pasa dividiendo con su signo: <span class="mat">\(x = \dfrac{12}{-3} = -4\)</span>. No es <span class="mat">\(x = 4\)</span> ni <span class="mat">\(x = 12 + 3\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-8.2.1"><div class="act-cab"><span class="act-num">8.2.1</span></div><div class="act-cuerpo"><p>Resuelve</p>
+<ol class="tareas cols-3"><li><span class="mat">\(x + 8 = 3\)</span></li><li><span class="mat">\(6x = 42\)</span></li><li><span class="mat">\(\dfrac{x}{4} = 5\)</span></li><li><span class="mat">\(3x - 7 = 8\)</span></li><li><span class="mat">\(5x + 2 = 3x + 10\)</span></li><li><span class="mat">\(9 - 2x = x\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 8.1</a><a class="boton secundario" href="apartado-3.html">Apartado 8.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

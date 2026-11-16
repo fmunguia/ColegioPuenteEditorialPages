@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 10.4 · Ecuaciones de la recta</title>
+<meta name="description" content="Matemáticas B 4º ESO: Ecuaciones de la recta">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD10 · Geometría analítica</a> › <span>Apartado 10.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 10.4</span></div><h1 class="titulo-sesion">Ecuaciones de la recta</h1><p>Una recta queda determinada por un punto <span class="mat">\(P(p_1, p_2)\)</span> y un vector que marca su dirección, <span class="mat">\(\vec{v} = (v_1, v_2)\)</span>, llamado <strong>vector director</strong>. Según el problema conviene escribirla de una forma u otra; todas describen la misma recta.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Formas de la ecuación de la recta</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td>Vectorial</td><td><span class="mat">\((x, y) = (p_1, p_2) + t\,(v_1, v_2)\)</span></td></tr><tr><td>Paramétricas</td><td><span class="mat">\(x = p_1 + t\,v_1, \quad y = p_2 + t\,v_2\)</span></td></tr><tr><td>Continua</td><td><span class="mat">\(\dfrac{x - p_1}{v_1} = \dfrac{y - p_2}{v_2}\)</span></td></tr><tr><td>General o implícita</td><td><span class="mat">\(Ax + By + C = 0\)</span>,  con vector director <span class="mat">\((-B, A)\)</span></td></tr><tr><td>Punto-pendiente</td><td><span class="mat">\(y - p_2 = m\,(x - p_1)\)</span>,  con <span class="mat">\(m = \dfrac{v_2}{v_1}\)</span></td></tr><tr><td>Explícita</td><td><span class="mat">\(y = mx + n\)</span></td></tr></table></div></div></aside>
+<p>En la forma explícita, <span class="mat">\(m\)</span> es la <strong>pendiente</strong> (cuánto sube <span class="mat">\(y\)</span> cuando <span class="mat">\(x\)</span> aumenta 1) y <span class="mat">\(n\)</span> es la <strong>ordenada en el origen</strong> (el punto donde la recta corta al eje <span class="mat">\(y\)</span>). Es la misma función afín que estudiaste en la unidad de funciones elementales.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. De un punto y un vector a todas las formas</div><div class="caja-cuerpo"><p>Recta que pasa por <span class="mat">\(P(2,1)\)</span> con vector director <span class="mat">\(\vec{v} = (3,-2)\)</span>:</p>
+<ul><li>Vectorial: <span class="mat">\(\ (x,y) = (2,1) + t\,(3,-2)\)</span></li><li>Paramétricas: <span class="mat">\(\ x = 2 + 3t, \quad y = 1 - 2t\)</span></li><li>Continua: <span class="mat">\(\ \dfrac{x - 2}{3} = \dfrac{y - 1}{-2}\)</span></li><li>General: <span class="mat">\(\ -2(x-2) = 3(y-1) \Rightarrow 2x + 3y - 7 = 0\)</span></li><li>Explícita: <span class="mat">\(\ y = -\dfrac{2}{3}x + \dfrac{7}{3}\)</span>  (pendiente <span class="mat">\(-\dfrac{2}{3}\)</span>, ordenada en el origen <span class="mat">\(\dfrac{7}{3}\)</span>)</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Recta que pasa por dos puntos</div><div class="caja-cuerpo"><p>Por <span class="mat">\(A(1,4)\)</span> y <span class="mat">\(B(3,8)\)</span>: el vector director es <span class="mat">\(\vec{AB} = (2,4)\)</span> y la pendiente <span class="mat">\(m = \dfrac{4}{2} = 2\)</span>. En punto-pendiente, <span class="mat">\(y - 4 = 2(x - 1)\)</span>, es decir, <span class="mat">\(y = 2x + 2\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-10.4.1"><div class="act-cab"><span class="act-num">10.4.1</span></div><div class="act-cuerpo"><p>Escribe en todas las formas la recta que pasa por <span class="mat">\(A(-1,3)\)</span> y <span class="mat">\(B(2,-3)\)</span>. Indica su pendiente y su ordenada en el origen, y comprueba si el punto <span class="mat">\(C(0,1)\)</span> pertenece a ella.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 10.3</a><a class="boton secundario" href="apartado-5.html">Apartado 10.5 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

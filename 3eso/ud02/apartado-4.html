@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 2.4 · Notación científica</title>
+<meta name="description" content="Matemáticas 3º ESO: Notación científica">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD02 · Potencias y raíces</a> › <span>Apartado 2.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 2.4</span></div><h1 class="titulo-sesion">Notación científica</h1><p>En ciencia aparecen cantidades muy grandes, como la masa de la Tierra, o muy pequeñas, como el tamaño de una célula. Para escribirlas y operar con ellas de forma cómoda se usa la notación científica.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Notación científica</div><div class="caja-cuerpo"><p>Un número está en <strong>notación científica</strong> si se escribe como</p>
+<div class="mat-bloque">\[a \cdot 10^{n} \qquad \text{con } 1 \leq |a| &lt; 10 \text{ y } n \text{ entero.}\]</div>
+<ul><li>Números grandes: el exponente es positivo e indica cuántos lugares se mueve la coma hacia la <strong>derecha</strong>. <span class="mat">\(\quad 6\,400\,000 = 6,4 \cdot 10^{6}\)</span></li><li>Números pequeños: el exponente es negativo e indica cuántos lugares se mueve la coma hacia la <strong>izquierda</strong>. <span class="mat">\(\quad 0,000\,083 = 8,3 \cdot 10^{-5}\)</span></li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Operaciones en notación científica</div><div class="caja-cuerpo"><ul><li><strong>Multiplicación y división:</strong> se operan por separado las partes decimales y las potencias de 10.</li><li><strong>Suma y resta:</strong> se escriben los números con la misma potencia de 10 y se suman o restan las partes decimales.</li></ul>
+<p>Al terminar, si la parte decimal no cumple <span class="mat">\(1 \leq |a| &lt; 10\)</span>, se ajusta.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Operaciones en notación científica</div><div class="caja-cuerpo"><ul><li><span class="mat">\((3 \cdot 10^{5}) \cdot (4 \cdot 10^{-2}) = 12 \cdot 10^{3} = 1,2 \cdot 10^{4}\)</span></li><li><span class="mat">\((8,4 \cdot 10^{7}) : (2 \cdot 10^{3}) = 4,2 \cdot 10^{4}\)</span></li><li><span class="mat">\(5,2 \cdot 10^{6} + 3 \cdot 10^{5} = 5,2 \cdot 10^{6} + 0,3 \cdot 10^{6} = 5,5 \cdot 10^{6}\)</span></li></ul></div></aside>
+<p>En la calculadora científica, la tecla <span class="recuadro"><span class="mat">\(\times 10^x\)</span></span> (o <span class="recuadro">EXP</span>) introduce directamente la potencia de 10. Para escribir <span class="mat">\(2,5 \cdot 10^{-4}\)</span> se pulsa <span class="recuadro">2.5</span> <span class="recuadro"><span class="mat">\(\times 10^x\)</span></span> <span class="recuadro">(–)</span> <span class="recuadro">4</span>.</p>
+<div class="actividad hago" id="act-2.4.1"><div class="act-cab"><span class="act-num">2.4.1</span></div><div class="act-cuerpo"><p>Escribe en notación científica:  <span class="mat">\(380\,000\,000\)</span>   <span class="mat">\(0,000\,045\)</span></p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-2.4.2"><div class="act-cab"><span class="act-num">2.4.2</span></div><div class="act-cuerpo"><p>Calcula y expresa en notación científica:  <span class="mat">\((6 \cdot 10^{4}) \cdot (5 \cdot 10^{-9})\)</span></p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 2.3</a><a class="boton secundario" href="apartado-5.html">Apartado 2.5 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

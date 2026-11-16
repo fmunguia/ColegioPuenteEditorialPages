@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.5 · Divisibilidad</title>
+<meta name="description" content="Matemáticas A 4º ESO: Divisibilidad">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD01 · Números enteros</a> › <span>Apartado 1.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.5</span></div><h1 class="titulo-sesion">Divisibilidad</h1><p>Un <dfn class="glosario" tabindex="0" data-def="número natural mayor que 1 que solo es divisible entre 1 y entre sí mismo">número primo</dfn> solo es divisible entre 1 y entre él mismo. Los números compuestos son aquellos que tienen más de 2 divisores (no son primos).</p>
+<p>La <dfn class="glosario" tabindex="0" data-def="escritura de un número como producto de factores primos">factorización</dfn> de un número consiste en obtener todos los números primos que lo componen. Algunos de estos divisores pueden aparecer más de una vez y así se refleja en su exponente. De este modo un número descompuesto se puede obtener volviendo a multiplicar sus factores.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Factorización en números primos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/3b007409bae95313.svg" width="70" height="130" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/5cc150d2c9dee4de.svg" width="72" height="130" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(18=2\cdot3\cdot3=2\cdot3^2\)</span></td><td><span class="mat">\(28=2\cdot2\cdot7=2^2\cdot7\)</span></td></tr></table></div></div></aside>
+<p>Las reglas básicas para saber si un número es divisible por otro son las siguientes:</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Criterios de divisibilidad</div><div class="caja-cuerpo"><ul><li>Es divisible entre 2 si acaba en una cifra par (0, 2, 4, 6, 8)</li><li>Es divisible entre 3 si la suma de sus cifras también lo es.</li><li>Es divisible entre 5 si acaba en 0 o en 5.</li><li>Es divisible entre 9 si la suma de sus cifras también lo es.</li><li>Es divisible entre 11 si la suma de sus cifras situadas en lugar par menos la suma de las cifras de lugar impar es 0 o múltiplo de 11.</li></ul></div></aside>
+<div class="actividad hago" id="act-1.5.1"><div class="act-cab"><span class="act-num">1.5.1</span></div><div class="act-cuerpo"><p>Indica si son divisibles entre 2, 3, 5, 9 y 11</p>
+<ol class="tareas cols-2"><li><span class="mat">\(270\)</span></li><li><span class="mat">\(26807\)</span></li><li><span class="mat">\(35445\)</span></li><li><span class="mat">\(28237\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<p>Los conceptos de máximo común divisor (MCD) y mínimo común múltiplo (mcm) son muy útiles y se trabajará con ellos en temas posteriores. Es importante recordar su significado y su forma de calcular. El primero nos ayuda a hacer repartos óptimos y el segundo a encontrar un valor común entre varios. El primero representa el mayor de los divisores coincidentes y el segundo el menor de los múltiplos coincidentes.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 MCD y mcm</div><div class="caja-cuerpo"><ul><li>El <dfn class="glosario" tabindex="0" data-def="mayor de los divisores comunes de varios números; se escribe MCD">máximo común divisor</dfn> se obtiene multiplicando solo los factores comunes con su menor exponente.</li><li>El <dfn class="glosario" tabindex="0" data-def="menor de los múltiplos comunes (distintos de 0) de varios números; se escribe mcm">mínimo común múltiplo</dfn> se obtiene multiplicando los factores comunes y no comunes con su mayor exponente.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ejemplo mínimo común múltiplo</div><div class="caja-cuerpo"><ul><li>Los múltiplos de 6 son 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, ...</li><li>Los múltiplos de 15 son 15, 30, 45, 60, 75, 90, ...</li><li><span class="mat">\(6=2\cdot3\)</span> y <span class="mat">\(15=3\cdot5\)</span></li><li><span class="mat">\(mcm(6,15)=2\cdot3\cdot5=30\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ejemplo máximo común divisor</div><div class="caja-cuerpo"><ul><li>Los divisores de 60 son 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.</li><li>Los divisores de 24 son 1, 2, 3, 4, 6, 8, 12, 24.</li><li><span class="mat">\(60=2^2\cdot3\cdot5\)</span> y <span class="mat">\(24=2^3\cdot3\)</span></li><li><span class="mat">\(MCD(60,24)=2^2\cdot3=12\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Problema de reparto (Máximo Común Divisor)</div><div class="caja-cuerpo"><p>Una pastelera ha horneado 84 cruasanes y 120 napolitanas. Quiere prepararlos en bandejas con la misma cantidad de dulces en cada una, sin mezclarlos y usando el menor número de bandejas posible (es decir, bandejas lo más grandes posible). ¿Cuántos dulces debe poner en cada bandeja?</p>
+<p><strong>Resolución:</strong></p>
+<ol class="tareas cols-2"><li><strong></strong> <span class="mat">\(84 = 2^2 \cdot 3 \cdot 7\)</span></li><li><strong></strong> <span class="mat">\(120 = 2^3 \cdot 3 \cdot 5\)</span></li><li><strong></strong> <span class="mat">\(\text{M.C.D.}(84, 120) = 2^2 \cdot 3\)</span></li><li><strong></strong> <span class="mat">\(\text{M.C.D.}(84, 120) = 4 \cdot 3 = 12\)</span></li></ol>
+<p><strong>Solución:</strong> Debe poner 12 dulces en cada bandeja.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Problema de coincidencias (mínimo común múltiplo)</div><div class="caja-cuerpo"><p>En una pista de atletismo, Marcos tarda 12 minutos en dar una vuelta completa y Laura tarda 15 minutos. Si empiezan a correr a la vez desde la línea de salida, ¿cuánto tiempo pasará hasta que vuelvan a coincidir exactamente en la meta?</p>
+<p><strong>Resolución:</strong></p>
+<ol class="tareas cols-2"><li><strong></strong> <span class="mat">\(12 = 2^2 \cdot 3\)</span></li><li><strong></strong> <span class="mat">\(15 = 3 \cdot 5\)</span></li><li><strong></strong> <span class="mat">\(\text{m.c.m.}(12, 15) = 2^2 \cdot 3 \cdot 5\)</span></li><li><strong></strong> <span class="mat">\(\text{m.c.m.}(12, 15) = 4 \cdot 15 = 60\)</span></li></ol>
+<p><strong>Solución:</strong> Volverán a coincidir en la meta al cabo de 60 minutos (1 hora).</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¿M.C.D. o m.c.m.?</div><div class="caja-cuerpo"><p>Si hay que <strong>repartir</strong> en partes iguales lo más grandes posible, se busca el M.C.D. (el resultado es menor o igual que los datos). Si hay que buscar cuándo <strong>coinciden</strong> dos sucesos que se repiten, se busca el m.c.m. (el resultado es mayor o igual que los datos).</p></div></aside>
+<div class="actividad hago" id="act-1.5.2"><div class="act-cab"><span class="act-num">1.5.2</span></div><div class="act-cuerpo"><p>Calcula</p>
+<ol class="tareas cols-2"><li><span class="mat">\(mcm(18,24,15)\)</span></li><li><span class="mat">\(MCD(60,90,48)\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 1.4</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

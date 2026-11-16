@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD10 · Geometría analítica</title>
+
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <span>UD10 · Geometría analítica</span></nav></header>
+<main>
+<p class="subtitulo">Bloque IV · Geometría</p><h1><span class="codigo">UD10</span> Geometría analítica</h1><aside class="caja partida"><div class="caja-titulo">🔍 Un plano de Santander con coordenadas</div><div class="caja-cuerpo"><p>Sobre un plano simplificado de Santander dibujamos una cuadrícula en la que cada cuadro mide 1 km. Ponemos el origen en la estación de tren, <span class="mat">\(E(0, 0)\)</span>. Con esos ejes, la playa del Sardinero queda más o menos en <span class="mat">\(S(4, 4)\)</span> y el Palacio de la Magdalena en <span class="mat">\(M(5, 2)\)</span>.</p>
+<p>Con las coordenadas de los puntos podemos calcular desplazamientos, distancias en línea recta y puntos intermedios sin medir nada sobre el plano: basta con hacer cuentas.</p>
+<ul><li>¿Qué desplazamiento, en horizontal y en vertical, lleva de la estación a la Magdalena?</li><li>¿A qué distancia en línea recta están la estación y la Magdalena?</li><li>¿Dónde está el punto que queda justo a mitad de camino entre la estación y el Sardinero?</li></ul></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Calcular las coordenadas y el módulo de un vector.</li><li>Operar con vectores y reconocer vectores paralelos.</li><li>Calcular puntos medios, distancias y comprobar alineaciones.</li><li>Escribir la ecuación de una recta en sus distintas formas.</li><li>Estudiar la posición relativa de dos rectas.</li><li>Trasladar figuras con un vector.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Representa <span class="mat">\(A(-2, 3)\)</span> y <span class="mat">\(B(4, -1)\)</span>.</li><li>Calcula <span class="mat">\(\sqrt{3^2 + 4^2}\)</span>.</li><li>Indica la pendiente de <span class="mat">\(y = -3x + 2\)</span>.</li><li>Despeja <span class="mat">\(y\)</span> en <span class="mat">\(2x + 3y = 6\)</span>.</li><li>¿Pasa la recta <span class="mat">\(y = 2x - 1\)</span> por <span class="mat">\((2, 3)\)</span>?</li><li>Escribe la recta de pendiente 3 y ordenada en el origen <span class="mat">\(-2\)</span>.</li><li>Resuelve <span class="mat">\(\begin{cases} 2x + y = 7 \\ x - y = 2 \end{cases}\)</span></li><li>Calcula <span class="mat">\(\dfrac{-4 + 6}{2}\)</span> y <span class="mat">\(\dfrac{3 + 8}{2}\)</span>.</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Una lancha cruza la bahía de Santander en línea recta y a velocidad constante. Sale del punto <span class="mat">\((0, 0)\)</span> y cada minuto avanza 1 unidad hacia la derecha y 2 hacia arriba, es decir, se desplaza según el vector <span class="mat">\((1, 2)\)</span>.</p>
+<p>Su posición a los <span class="mat">\(t\)</span> minutos es <span class="mat">\((x, y) = (0, 0) + t \cdot (1, 2) = (t, 2t)\)</span>. Esta expresión es una ecuación de la recta que sigue la lancha.</p>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/be7712d62b4290fb.svg" width="211" height="288" alt="" loading="lazy"></figure></div>
+<ul><li>¿Dónde estará la lancha a los 4 minutos?</li><li>¿Pasará por el punto <span class="mat">\((5, 9)\)</span>? ¿Y por <span class="mat">\((6, 12)\)</span>?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 10.1</span> Vectores en el plano</a></li><li><a href="apartado-2.html"><span class="num">Apartado 10.2</span> Operaciones con vectores</a></li><li><a href="apartado-3.html"><span class="num">Apartado 10.3</span> Aplicaciones de los vectores</a></li><li><a href="apartado-4.html"><span class="num">Apartado 10.4</span> Ecuaciones de la recta</a></li><li><a href="apartado-5.html"><span class="num">Apartado 10.5</span> Posiciones relativas de dos rectas</a></li><li><a href="apartado-6.html"><span class="num">Apartado 10.6</span> Traslaciones</a></li><li><a href="apartado-7.html"><span class="num">Apartado 10.7</span> Taller digital</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
+
+<nav class="anterior-siguiente"><a class="boton secundario" href="../ud09/index.html">← UD09</a><a class="boton secundario" href="../ud11/index.html">UD11 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

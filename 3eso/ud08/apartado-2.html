@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 8.2 · Características de una función</title>
+<meta name="description" content="Matemáticas 3º ESO: Características de una función">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD08 · Funciones y gráficas</a> › <span>Apartado 8.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 8.2</span></div><h1 class="titulo-sesion">Características de una función</h1><p>Para estudiar una función a partir de su gráfica usaremos este ejemplo: la temperatura en Astillero a lo largo de un día de primavera.</p>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/cd5e962c423e3e29.svg" width="546" height="384" alt="" loading="lazy"></figure></div>
+<h2 class="subapartado">Dominio y recorrido</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Dominio y recorrido</div><div class="caja-cuerpo"><ul><li>El <dfn class="glosario" tabindex="0" data-def="conjunto de valores que puede tomar la variable independiente de una función">dominio</dfn> es el conjunto de valores que puede tomar la variable independiente <span class="mat">\(x\)</span>. Se lee en el eje horizontal.</li><li>El <dfn class="glosario" tabindex="0" data-def="conjunto de valores que toma la variable dependiente de una función">recorrido</dfn> es el conjunto de valores que toma la variable dependiente <span class="mat">\(y\)</span>. Se lee en el eje vertical.</li></ul>
+<p>En la gráfica de la temperatura, el dominio es <span class="mat">\([0, 24]\)</span> (las horas del día) y el recorrido <span class="mat">\([6, 16]\)</span> (las temperaturas alcanzadas).</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ No confundas dominio y recorrido</div><div class="caja-cuerpo"><p>El dominio se lee en el eje <strong>horizontal</strong> (<span class="mat">\(x\)</span>) y el recorrido en el eje <strong>vertical</strong> (<span class="mat">\(y\)</span>). En la gráfica de la temperatura, decir que el dominio es <span class="mat">\([6, 16]\)</span> es un error: esos son los valores de la temperatura, no de la hora.</p></div></aside>
+<p>Cuando la función viene dada por una fórmula, hay valores que no se pueden usar: en <span class="mat">\(f(x) = \dfrac{1}{x - 3}\)</span> no podemos tomar <span class="mat">\(x = 3\)</span>, porque no se puede dividir entre 0; y en <span class="mat">\(f(x) = \sqrt{x - 2}\)</span> solo podemos tomar <span class="mat">\(x \geq 2\)</span>, porque no existe la raíz cuadrada de un número negativo. El contexto también limita el dominio: el lado de un cuadrado no puede ser negativo.</p>
+<h2 class="subapartado">Continuidad</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Función continua</div><div class="caja-cuerpo"><p>Una función es <strong>continua</strong> si su gráfica se puede dibujar sin levantar el lápiz del papel. Si tiene saltos o huecos, es <strong>discontinua</strong>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Una función discontinua</div><div class="caja-cuerpo"><div class="minipage"><p>Un aparcamiento cobra <span class="mat">\(2\)</span>&nbsp;€ por cada hora o fracción. Pasar de 59 a 61 minutos hace que el precio salte de <span class="mat">\(2\)</span>&nbsp;€ a <span class="mat">\(4\)</span>&nbsp;€: la gráfica tiene forma de escalera y es discontinua.</p></div>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/1b1667cf9186a72a.svg" width="155" height="226" alt="" loading="lazy"></figure></div></div></aside>
+<h2 class="subapartado">Crecimiento, máximos y mínimos</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Crecimiento y extremos</div><div class="caja-cuerpo"><ul><li>Una función es <strong>creciente</strong> en un intervalo si, al aumentar <span class="mat">\(x\)</span>, también aumenta <span class="mat">\(y\)</span>: la gráfica sube.</li><li>Es <strong>decreciente</strong> si, al aumentar <span class="mat">\(x\)</span>, <span class="mat">\(y\)</span> disminuye: la gráfica baja.</li><li>Tiene un <strong>máximo relativo</strong> en un punto si pasa de creciente a decreciente, y un <strong>mínimo relativo</strong> si pasa de decreciente a creciente.</li><li>El <strong>máximo absoluto</strong> es el mayor valor que toma la función, y el <strong>mínimo absoluto</strong> el menor.</li></ul>
+<p>En la gráfica de la temperatura: es decreciente en <span class="mat">\((0, 4)\)</span> y en <span class="mat">\((14, 24)\)</span>, creciente en <span class="mat">\((4, 14)\)</span>, tiene un mínimo en <span class="mat">\((4, 6)\)</span> y un máximo en <span class="mat">\((14, 16)\)</span>. A las 14:00 se alcanzó la temperatura más alta, <span class="mat">\(16\)</span>&nbsp;ºC.</p></div></aside>
+<h2 class="subapartado">Puntos de corte con los ejes</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Puntos de corte</div><div class="caja-cuerpo"><ul><li>Con el <strong>eje <span class="mat">\(Y\)</span></strong>: es el punto <span class="mat">\((0, f(0))\)</span>. Se calcula haciendo <span class="mat">\(x = 0\)</span>.</li><li>Con el <strong>eje <span class="mat">\(X\)</span></strong>: son los puntos en los que <span class="mat">\(y = 0\)</span>. Se calculan resolviendo la ecuación <span class="mat">\(f(x) = 0\)</span>.</li></ul>
+<p>Por ejemplo, <span class="mat">\(f(x) = x^2 - 4\)</span> corta al eje <span class="mat">\(Y\)</span> en <span class="mat">\((0, -4)\)</span> y al eje <span class="mat">\(X\)</span> en <span class="mat">\((-2, 0)\)</span> y <span class="mat">\((2, 0)\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-8.2.1"><div class="act-cab"><span class="act-num">8.2.1</span></div><div class="act-cuerpo"><p>Halla los puntos de corte con los ejes de <span class="mat">\(f(x) = 2x - 6\)</span> y de <span class="mat">\(g(x) = x^2 - 9\)</span>.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Funciones periódicas</h2>
+<p>Algunos fenómenos naturales se repiten cada cierto tiempo. En la bahía de Santander, la marea sube y baja con un ciclo de unas 12 horas y 25 minutos: la altura del agua es una <strong>función periódica</strong>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Función periódica</div><div class="caja-cuerpo"><p>Una función es <strong>periódica</strong> si su gráfica se repite cada cierto intervalo, llamado <strong>periodo</strong>.</p></div></aside>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/532d781424c07270.svg" width="672" height="179" alt="" loading="lazy"></figure></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 8.1</a><a class="boton secundario" href="apartado-3.html">Apartado 8.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

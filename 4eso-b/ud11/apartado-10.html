@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 11.10 · Taller digital</title>
+<meta name="description" content="Matemáticas B 4º ESO: Taller digital">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD11 · Estadística</a> › <span>Apartado 11.10</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 11.10</span></div><h1 class="titulo-sesion">Taller digital</h1><aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Hoja de cálculo: estadística en dos minutos</div><div class="caja-cuerpo"><p>Con los datos en la columna <code>A</code> (y, si son bidimensionales, la segunda variable en la <code>B</code>):</p>
+<div class="tabla"><table><tr><td>Media</td><td><code>=PROMEDIO(A2:A51)</code></td></tr><tr><td>Mediana</td><td><code>=MEDIANA(A2:A51)</code></td></tr><tr><td>Desviación típica</td><td><code>=DESVEST.P(A2:A51)</code></td></tr><tr><td>Primer cuartil</td><td><code>=CUARTIL.INC(A2:A51; 1)</code></td></tr><tr><td>Correlación</td><td><code>=COEF.DE.CORREL(A2:A51; B2:B51)</code></td></tr><tr><td>Pendiente de la recta</td><td><code>=PENDIENTE(B2:B51; A2:A51)</code></td></tr><tr><td>Ordenada en el origen</td><td><code>=INTERSECCION.EJE(B2:B51; A2:A51)</code></td></tr></table></div>
+<p>Para la nube de puntos, inserta un gráfico de dispersión y añade una línea de tendencia lineal con su ecuación y <span class="mat">\(R^2\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-11.10.1"><div class="act-cab"><span class="act-num">11.10.1</span></div><div class="act-cuerpo"><p>Recoged en clase la altura y la longitud del pie de todos los alumnos. Con la hoja de cálculo, dibujad la nube de puntos, calculad la correlación y usad la recta de regresión para estimar la longitud del pie de una persona de 1,80 m. ¿Es fiable la estimación?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-9.html">← Apartado 11.9</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

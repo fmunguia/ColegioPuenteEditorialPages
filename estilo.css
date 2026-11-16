@@ -215,6 +215,15 @@ label.opcion.fallo { background: #fce8e6; }
 .resultado.mal { color: var(--mal); }
 .nota-test { font-size: 1.15rem; font-weight: 700; padding: 10px 14px; border-radius: 8px; background: var(--fondo-2); margin: 8px 0; }
 
+/* Libros por apartados (Matemáticas): fórmulas de MathJax, subapartados y GeoGebra */
+.mat mjx-container { white-space: nowrap; }
+.mat-bloque { overflow-x: auto; overflow-y: hidden; margin: .6em 0; text-align: center; }
+.tabla .mat, .tareas .mat { white-space: normal; }
+h2.subapartado { font-size: 1.15rem; margin: 1.5em 0 .5em; color: color-mix(in srgb, var(--principal) 85%, black); }
+.recuadro { border: 1px solid currentColor; padding: 0 .3em; }
+.boton-geogebra { background: #6557D2; border-color: #6557D2; }
+.geogebra { margin: .6em 0 .2em; }
+
 /* Barra de respuestas y navegación */
 .barra-respuestas { margin-top: 32px; padding: 12px 14px; border-radius: 10px; background: var(--fondo-2); }
 .guardado { margin: .4em 0 0; }

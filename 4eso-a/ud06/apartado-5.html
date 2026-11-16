@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 6.5 · Valor numérico de un polinomio</title>
+<meta name="description" content="Matemáticas A 4º ESO: Valor numérico de un polinomio">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD06 · Monomios y polinomios</a> › <span>Apartado 6.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 6.5</span></div><h1 class="titulo-sesion">Valor numérico de un polinomio</h1><p>El <strong>valor numérico</strong> de un polinomio <span class="mat">\(P(x)\)</span> para un número determinado <span class="mat">\(x = a\)</span> es el resultado que se obtiene al sustituir la variable <span class="mat">\(x\)</span> por dicho número <span class="mat">\(a\)</span> y realizar las operaciones indicadas respetando rigurosamente la jerarquía de las operaciones.</p>
+<p>Sustituir números positivos no suele presentar dificultades, pero cuando trabajamos con valores negativos debemos prestar máxima atención a cómo afectan los exponentes a los signos de las bases.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Potencias de números negativos y uso de paréntesis</div><div class="caja-cuerpo"><p>Al elevar un número negativo a una potencia, el signo del resultado dependerá exclusivamente de si el exponente es par o impar:</p>
+<ul><li><strong>Exponente par:</strong> El resultado siempre es <strong>positivo</strong>. <br>
+		Ejemplo: <span class="mat">\((-3)^2 = (-3) \cdot (-3) = +9\)</span></li><li><strong>Exponente impar:</strong> El resultado conserva el signo <strong>negativo</strong>. <br>
+		Ejemplo: <span class="mat">\((-2)^3 = (-2) \cdot (-2) \cdot (-2) = -8\)</span></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡No es lo mismo <span class="mat">\(-x^2\)</span> que <span class="mat">\((-x)^2\)</span>!</div><div class="caja-cuerpo"><p>En <span class="mat">\((-x)^n\)</span> el signo menos está dentro del paréntesis y le afecta el exponente. En <span class="mat">\(-x^n\)</span> el signo menos está fuera: primero se calcula la potencia y después se cambia el signo. Por ejemplo, <span class="mat">\(-5^2=-25\)</span>, pero <span class="mat">\((-5)^2=25\)</span>. Al sustituir <span class="mat">\(x=-3\)</span> en <span class="mat">\(-x^2\)</span> se obtiene <span class="mat">\(-(-3)^2=-9\)</span>, no <span class="mat">\(9\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-6.5.1"><div class="act-cab"><span class="act-num">6.5.1</span></div><div class="act-cuerpo"><p>Dado el polinomio <span class="mat">\(P(x) = 2x^3 - x^2 + 4x - 5\)</span>, calcula su valor numérico para <span class="mat">\(x = -2\)</span>.</p>
+<aside class="caja principal"><div class="caja-cuerpo"></div></aside><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-6.5.2"><div class="act-cab"><span class="act-num">6.5.2</span></div><div class="act-cuerpo"><p>Dado el polinomio <span class="mat">\(Q(x) = -x^4 + 3x^2 - 2x\)</span>, calcula su valor numérico para <span class="mat">\(x = -1\)</span>.</p>
+<aside class="caja principal"><div class="caja-cuerpo"></div></aside><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 6.4</a><a class="boton secundario" href="apartado-6.html">Apartado 6.6 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

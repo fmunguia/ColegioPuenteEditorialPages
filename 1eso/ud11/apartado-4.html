@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 11.4 · Regla de Laplace</title>
+<meta name="description" content="Matemáticas 1º ESO: Regla de Laplace">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD11 · Probabilidad</a> › <span>Apartado 11.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 11.4</span></div><h1 class="titulo-sesion">Regla de Laplace</h1><p>Cuando todos los resultados tienen la misma posibilidad de salir (dado no trucado, moneda equilibrada...), podemos calcular la probabilidad sin hacer el experimento.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Regla de Laplace</div><div class="caja-cuerpo"><div class="centro"><p><span class="mat">\(P(A) = \dfrac{\text{número de casos favorables}}{\text{número de casos posibles}}\)</span></p></div>
+<p>Solo se puede usar si todos los resultados son igual de probables.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Aplicando la regla de Laplace</div><div class="caja-cuerpo"><p>Lanzamos un dado:</p>
+<ul><li><span class="mat">\(P(\text{salir 3}) = \dfrac{1}{6}\)</span></li><li><span class="mat">\(P(\text{salir par}) = \dfrac{3}{6} = \dfrac{1}{2}\)</span></li><li><span class="mat">\(P(\text{múltiplo de 3}) = \dfrac{2}{6} = \dfrac{1}{3}\)</span></li></ul>
+<p>En una bolsa hay 5 bolas rojas, 3 verdes y 2 azules. <span class="mat">\(P(\text{roja}) = \dfrac{5}{10} = \dfrac{1}{2}\)</span>.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Los casos posibles son todos</div><div class="caja-cuerpo"><p>En una bolsa con 5 bolas rojas y 5 azules, <span class="mat">\(P(\text{roja}) = \frac{5}{10} = \frac{1}{2}\)</span>, no <span class="mat">\(\frac{5}{5}\)</span>. En el denominador van <strong>todos</strong> los casos posibles, no los que no son favorables.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Solo con resultados igual de probables</div><div class="caja-cuerpo"><p>Al lanzar dos monedas no hay tres resultados igual de probables (dos caras, dos cruces, una de cada), sino cuatro: <span class="mat">\(CC\)</span>, <span class="mat">\(CX\)</span>, <span class="mat">\(XC\)</span> y <span class="mat">\(XX\)</span>. Por eso <span class="mat">\(P(\text{una de cada}) = \frac{2}{4} = \frac{1}{2}\)</span>, no <span class="mat">\(\frac{1}{3}\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suceso contrario</div><div class="caja-cuerpo"><p>El <dfn class="glosario" tabindex="0" data-def="suceso que ocurre cuando no ocurre otro; P(Ā) = 1 − P(A)">suceso contrario</dfn> de <span class="mat">\(A\)</span>, <span class="mat">\(\bar{A}\)</span>, ocurre cuando no ocurre <span class="mat">\(A\)</span>. Se cumple que <span class="mat">\(P(\bar{A}) = 1 - P(A)\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-11.4.1"><div class="act-cab"><span class="act-num">11.4.1</span></div><div class="act-cuerpo"><p>En una urna hay 4 bolas blancas, 6 negras y 2 rojas. Se saca una al azar. Calcula:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(P(\text{blanca})\)</span></li><li><span class="mat">\(P(\text{negra})\)</span></li><li><span class="mat">\(P(\text{no roja})\)</span></li><li><span class="mat">\(P(\text{verde})\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. ¿Cuántas veces esperamos que ocurra?</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/54a587f008eed610.svg" width="168" height="168" alt="" loading="lazy"></figure></td><td>En la ruleta de la tómbola hay 8 sectores iguales. <ul><li><span class="mat">\(P(\text{balón}) = \frac{1}{8}\)</span>. Si juegan 200 personas, esperamos unos <span class="mat">\(200 \cdot \frac{1}{8} = 25\)</span> balones.</li><li><span class="mat">\(P(\text{caramelo}) = \frac{2}{8} = \frac{1}{4}\)</span>: unas <span class="mat">\(200 \cdot \frac{1}{4} = 50\)</span> bolsas.</li><li><span class="mat">\(P(\text{premio}) = 1 - \frac{4}{8} = \frac{1}{2}\)</span>: la mitad de las tiradas tienen premio.</li></ul> Son valores aproximados: con el azar nunca se sabe el número exacto.</td></tr></table></div></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 11.3</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

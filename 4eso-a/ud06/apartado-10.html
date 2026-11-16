@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 6.10 · Regla de Ruffini</title>
+<meta name="description" content="Matemáticas A 4º ESO: Regla de Ruffini">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD06 · Monomios y polinomios</a> › <span>Apartado 6.10</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 6.10</span></div><h1 class="titulo-sesion">Regla de Ruffini</h1><p>La “Regla de Ruffini” es un método abreviado para dividir un polinomio <span class="mat">\(P(x)\)</span> entre un binomio de la forma <span class="mat">\((x - a)\)</span>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Procedimiento de Ruffini</div><div class="caja-cuerpo"><p>Para dividir <span class="mat">\(P(x)\)</span> entre <span class="mat">\((x - a)\)</span>:</p>
+<ol><li>Colocamos en una fila los coeficientes de <span class="mat">\(P(x)\)</span> (incluyendo ceros).</li><li>En el lateral izquierdo colocamos el valor <span class="mat">\(a\)</span> (el opuesto del término independiente del divisor).</li><li>Bajamos el primer coeficiente, multiplicamos por <span class="mat">\(a\)</span>, sumamos al siguiente, y repetimos.</li><li>El último número obtenido es el “resto”. Los anteriores son los coeficientes del “cociente” (que tiene un grado menos que <span class="mat">\(P(x)\)</span>).</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Uso de la Regla de Ruffini</div><div class="caja-cuerpo"><p>Divide <span class="mat">\((2x^3 - 5x^2 + 6) : (x - 2)\)</span> usando Ruffini.</p>
+<div class="mat-bloque">\[\begin{array}{r|rrrr}
+		  &amp; 2 &amp; -5 &amp; 0 &amp; 6 \\
+		2 &amp;   &amp; 4 &amp; -2 &amp; -4 \\ \hline
+		  &amp; 2 &amp; -1 &amp; -2 &amp; \mathbf{2}
+	\end{array}\]</div>
+<p><strong>Cociente:</strong> <span class="mat">\(C(x) = 2x^2 - x - 2\)</span>  <strong>Resto:</strong> <span class="mat">\(R = 2\)</span></p></div></aside>
+<div class="actividad hago" id="act-6.10.1"><div class="act-cab"><span class="act-num">6.10.1</span></div><div class="act-cuerpo"><p>Realiza las siguientes divisiones aplicando la regla de Ruffini e indica el cociente y el resto:</p>
+<ol class="tareas cols-2"><li><span class="mat">\((x^3 - 4x^2 + x + 6) : (x - 3)\)</span></li><li><span class="mat">\((x^4 - 16) : (x + 2)\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-9.html">← Apartado 6.9</a><a class="boton secundario" href="apartado-11.html">Apartado 6.11 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

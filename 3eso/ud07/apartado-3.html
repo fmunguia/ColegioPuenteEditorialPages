@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 7.3 · Métodos de resolución</title>
+<meta name="description" content="Matemáticas 3º ESO: Métodos de resolución">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD07 · Sistemas de ecuaciones</a> › <span>Apartado 7.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 7.3</span></div><h1 class="titulo-sesion">Métodos de resolución</h1><p>Los tres métodos algebraicos consisten en conseguir una ecuación con una sola incógnita, resolverla y sustituir el valor obtenido para hallar la otra.</p>
+<h2 class="subapartado">Método de sustitución</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Sustitución</div><div class="caja-cuerpo"><p>Se despeja una incógnita en una de las ecuaciones y se sustituye en la otra. Es cómodo cuando alguna incógnita tiene coeficiente 1 o <span class="mat">\(-1\)</span>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Método de sustitución</div><div class="caja-cuerpo"><p><span class="mat">\(\left\{ \begin{array}{l} x + y = 7 \\ 2x - y = 5 \end{array} \right.\)</span>   Despejamos <span class="mat">\(y\)</span> en la primera: <span class="mat">\(y = 7 - x\)</span>.</p>
+<div class="mat-bloque">\[2x - (7 - x) = 5 \;\Rightarrow\; 3x - 7 = 5 \;\Rightarrow\; x = 4 \qquad y = 7 - 4 = 3\]</div>
+<p>Solución: <span class="mat">\(x = 4\)</span>, <span class="mat">\(y = 3\)</span>.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Al sustituir, usa paréntesis</div><div class="caja-cuerpo"><p>Si sustituimos <span class="mat">\(y = 7 - x\)</span> en <span class="mat">\(2x - y = 5\)</span> sin paréntesis, escribimos <span class="mat">\(2x - 7 - x = 5\)</span> y sale <span class="mat">\(x = 12\)</span>, que está mal. Lo correcto es <span class="mat">\(2x - (7 - x) = 5\)</span>, es decir, <span class="mat">\(3x - 7 = 5\)</span>.</p></div></aside>
+<h2 class="subapartado">Método de igualación</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Igualación</div><div class="caja-cuerpo"><p>Se despeja la misma incógnita en las dos ecuaciones y se igualan las expresiones obtenidas.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Método de igualación</div><div class="caja-cuerpo"><p><span class="mat">\(\left\{ \begin{array}{l} y = 2x - 1 \\ y = -x + 8 \end{array} \right.\)</span>   Las dos ya tienen la <span class="mat">\(y\)</span> despejada:</p>
+<div class="mat-bloque">\[2x - 1 = -x + 8 \;\Rightarrow\; 3x = 9 \;\Rightarrow\; x = 3 \qquad y = 2 \cdot 3 - 1 = 5\]</div>
+<p>Solución: <span class="mat">\(x = 3\)</span>, <span class="mat">\(y = 5\)</span>.</p></div></aside>
+<h2 class="subapartado">Método de reducción</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Reducción</div><div class="caja-cuerpo"><p>Se multiplican las ecuaciones por números adecuados para que una incógnita tenga coeficientes opuestos. Al sumar las dos ecuaciones, esa incógnita desaparece.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Método de reducción</div><div class="caja-cuerpo"><p><span class="mat">\(\left\{ \begin{array}{l} 3x + 2y = 7 \\ 2x + 5y = 12 \end{array} \right.\)</span>   Multiplicamos la primera por <span class="mat">\(2\)</span> y la segunda por <span class="mat">\(-3\)</span>:</p>
+<div class="mat-bloque">\[\begin{array}{rcr}
+		6x + 4y &amp;=&amp; 14 \\
+		-6x - 15y &amp;=&amp; -36 \\ \hline
+		-11y &amp;=&amp; -22
+	\end{array} \qquad y = 2 \qquad 3x + 4 = 7 \;\Rightarrow\; x = 1\]</div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Se multiplica toda la ecuación</div><div class="caja-cuerpo"><p>Al multiplicar una ecuación por un número hay que multiplicar <strong>todos</strong> sus términos, también el del segundo miembro: <span class="mat">\(3x + 2y = 7\)</span> por <span class="mat">\(2\)</span> es <span class="mat">\(6x + 4y = 14\)</span>, y no <span class="mat">\(6x + 4y = 7\)</span>.</p></div></aside>
+<p>Si el sistema tiene paréntesis o denominadores, primero se simplifica cada ecuación hasta dejarla en la forma <span class="mat">\(ax + by = c\)</span>.</p>
+<div class="actividad hago" id="act-7.3.1"><div class="act-cab"><span class="act-num">7.3.1</span></div><div class="act-cuerpo"><p>Resuelve cada sistema por el método indicado:</p>
+<ol class="tareas cols-3"><li>Sustitución: <span class="mat">\(\left\{ \begin{array}{l} x - 2y = 1 \\ 3x + y = 10 \end{array} \right.\)</span></li><li>Igualación: <span class="mat">\(\left\{ \begin{array}{l} x = 3y - 2 \\ x = y + 4 \end{array} \right.\)</span></li><li>Reducción: <span class="mat">\(\left\{ \begin{array}{l} 2x + 3y = 12 \\ 4x - 3y = 6 \end{array} \right.\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 7.2</a><a class="boton secundario" href="apartado-4.html">Apartado 7.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

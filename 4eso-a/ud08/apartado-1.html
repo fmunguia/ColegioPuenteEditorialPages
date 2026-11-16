@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 8.1 · Sistemas de ecuaciones lineales</title>
+<meta name="description" content="Matemáticas A 4º ESO: Sistemas de ecuaciones lineales">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD08 · Sistemas de ecuaciones</a> › <span>Apartado 8.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 8.1</span></div><h1 class="titulo-sesion">Sistemas de ecuaciones lineales</h1><p>Un <dfn class="glosario" tabindex="0" data-def="conjunto de ecuaciones de primer grado que deben cumplirse a la vez">sistema de ecuaciones lineales</dfn> está formado por dos o más ecuaciones de primer grado con dos o más incógnitas. Resolver el sistema consiste en encontrar los valores de las incógnitas que satisfacen simultáneamente todas las ecuaciones.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Métodos de resolución de sistemas lineales</div><div class="caja-cuerpo"><ul><li><strong>Sustitución:</strong> Se despeja una incógnita en una ecuación y se sustituye su expresión en la otra.</li><li><strong>Igualación:</strong> Se despeja la misma incógnita en ambas ecuaciones y se igualan las expresiones resultantes.</li><li><strong>Reducción:</strong> Se multiplican las ecuaciones por números convenientes para que, al sumarlas, se elimine una de las incógnitas.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Resolución por sustitución</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\begin{cases} 2x + y = 5 \\ 3x - 2y = 4 \end{cases}\)</span></li><li><strong></strong> </li><li>Despejamos <span class="mat">\(y\)</span> en la primera ecuación (<span class="mat">\(y = 5 - 2x\)</span>) y la sustituimos en la segunda:</li><li><strong></strong> <span class="mat">\(3x - 2(5 - 2x) = 4 \implies 3x - 10 + 4x = 4 \implies 7x = 14 \implies x = 2\)</span></li><li>Sustituyendo el valor de <span class="mat">\(x\)</span>: <span class="mat">\(y = 5 - 2(2) \implies y = 1\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Resolución por igualación</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\begin{cases} 2x + y = 5 \\ 3x - 2y = 4 \end{cases}\)</span></li><li><strong></strong> </li><li>Despejamos <span class="mat">\(y\)</span> en ambas ecuaciones: <span class="mat">\(y = 5 - 2x\)</span> y <span class="mat">\(y = \frac{3x - 4}{2}\)</span>. Igualamos:</li><li><strong></strong> <span class="mat">\(5 - 2x = \frac{3x - 4}{2} \implies 10 - 4x = 3x - 4 \implies 14 = 7x \implies x = 2 \implies y = 1\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Resolución por reducción</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\begin{cases} 2x + y = 5 \\ 3x - 2y = 4 \end{cases}\)</span></li><li><strong></strong> </li><li>Multiplicamos la primera ecuación por 2 para que los coeficientes de <span class="mat">\(y\)</span> sean opuestos:</li><li><strong></strong> <span class="mat">\(\begin{cases} 4x + 2y = 10 \\ 3x - 2y = 4 \end{cases}\)</span></li><li>Sumando ambas ecuaciones en vertical obtenemos: <span class="mat">\(7x = 14 \implies x = 2\)</span>.</li><li>Sustituyendo este valor en cualquiera de las ecuaciones iniciales, obtenemos que <span class="mat">\(y = 1\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡Multiplica todos los términos!</div><div class="caja-cuerpo"><p>Al multiplicar una ecuación por un número, hay que multiplicar <strong>los dos miembros</strong>, también el término independiente. Si multiplicamos <span class="mat">\(2x+y=5\)</span> por 2, se obtiene <span class="mat">\(4x+2y=10\)</span>, no <span class="mat">\(4x+2y=5\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-8.1.1"><div class="act-cab"><span class="act-num">8.1.1</span></div><div class="act-cuerpo"><p>Resuelve los siguientes sistemas utilizando el método que consideres más adecuado:</p>
+<ol class="tareas cols-3"><li><span class="mat">\(\begin{cases} x - 3y = -5 \\ 2x + y = 4 \end{cases}\)</span></li><li><span class="mat">\(\begin{cases} 4x - y = 7 \\ 3x + 2y = 8 \end{cases}\)</span></li><li><span class="mat">\(\begin{cases} 3x - 4y = -6 \\ 2x + 4y = 16 \end{cases}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 8.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

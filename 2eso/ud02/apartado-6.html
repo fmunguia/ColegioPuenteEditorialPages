@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 2.6 · Números decimales</title>
+<meta name="description" content="Matemáticas 2º ESO: Números decimales">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD02 · Fracciones y números decimales</a> › <span>Apartado 2.6</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 2.6</span></div><h1 class="titulo-sesion">Números decimales</h1><p>Al dividir el numerador entre el denominador de una fracción se obtiene su <strong>expresión decimal</strong>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Tipos de números decimales</div><div class="caja-cuerpo"><ul><li><strong>Decimal exacto:</strong> tiene un número limitado de cifras decimales. <span class="mat">\(\frac{3}{8}=0{,}375\)</span></li><li><strong>Periódico puro:</strong> el periodo empieza justo después de la coma. <span class="mat">\(\frac{2}{11}=0{,}181818\ldots=0{,}\overline{18}\)</span></li><li><strong>Periódico mixto:</strong> hay cifras antes del periodo que no se repiten (anteperiodo). <span class="mat">\(\frac{5}{12}=0{,}41666\ldots=0{,}41\overline{6}\)</span></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El periodo es solo lo que se repite</div><div class="caja-cuerpo"><p>En <span class="mat">\(0{,}41666\ldots\)</span> solo se repite el 6. Se escribe <span class="mat">\(0{,}41\overline{6}\)</span>, no <span class="mat">\(0{,}\overline{416}\)</span>, que sería <span class="mat">\(0{,}416416\ldots\)</span></p></div></aside>
+<div class="actividad hago" id="act-2.6.1"><div class="act-cab"><span class="act-num">2.6.1</span></div><div class="act-cuerpo"><p>Escribe la expresión decimal e indica de qué tipo es:</p>
+<ol class="tareas cols-4"><li><span class="mat">\(\dfrac{7}{4}\)</span></li><li><span class="mat">\(\dfrac{7}{6}\)</span></li><li><span class="mat">\(\dfrac{4}{15}\)</span></li><li><span class="mat">\(\dfrac{5}{9}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Fracción generatriz</h2>
+<p>Todo decimal exacto o periódico se puede escribir como fracción. Esa fracción se llama <dfn class="glosario" tabindex="0" data-def="fracción irreducible que da un número decimal exacto o periódico">fracción generatriz</dfn>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Cálculo de la fracción generatriz</div><div class="caja-cuerpo"><ul><li><strong>Exacto:</strong> el número sin coma partido por la unidad seguida de tantos ceros como cifras decimales. <span class="mat">\(\;0{,}75=\dfrac{75}{100}=\dfrac{3}{4}\)</span></li><li><strong>Periódico puro:</strong> el número sin coma menos la parte entera, partido por tantos nueves como cifras tiene el periodo. <span class="mat">\(\;3{,}\overline{2}=\dfrac{32-3}{9}=\dfrac{29}{9}\)</span></li><li><strong>Periódico mixto:</strong> el número sin coma menos la parte que no se repite, partido por tantos nueves como cifras del periodo seguidos de tantos ceros como cifras del anteperiodo. <span class="mat">\(\;2{,}5\overline{4}=\dfrac{254-25}{90}=\dfrac{229}{90}\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-2.6.2"><div class="act-cab"><span class="act-num">2.6.2</span></div><div class="act-cuerpo"><p>Calcula la fracción generatriz y simplifícala:</p>
+<ol class="tareas cols-4"><li><span class="mat">\(2{,}4\)</span></li><li><span class="mat">\(0{,}125\)</span></li><li><span class="mat">\(0{,}\overline{37}\)</span></li><li><span class="mat">\(1{,}2\overline{34}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Aproximación y estimación</h2>
+<p>En la vida cotidiana no siempre se necesitan todas las cifras de un número. Se aproxima con la precisión que pide la situación: los precios a céntimos, las distancias a kilómetros…</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Redondeo y truncamiento</div><div class="caja-cuerpo"><ul><li><strong>Truncar</strong> a un orden es eliminar todas las cifras a partir de ese orden. <span class="mat">\(\;3{,}1416\rightarrow 3{,}14\)</span> (a las centésimas).</li><li><strong>Redondear</strong> es truncar y, si la primera cifra eliminada es 5 o mayor, sumar 1 a la última cifra que queda. <span class="mat">\(\;2{,}678\rightarrow 2{,}68\)</span> (a las centésimas).</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Estimación de una compra</div><div class="caja-cuerpo"><p>Para saber si 20 € bastan para comprar tres artículos de 4,95 €, 7,10 € y 6,85 € se redondea a las unidades: <span class="mat">\(5+7+7=19\)</span>. Es suficiente. El cálculo exacto da 18,90 €.</p></div></aside>
+<div class="actividad hago" id="act-2.6.3"><div class="act-cab"><span class="act-num">2.6.3</span></div><div class="act-cuerpo"><p>Redondea y trunca a las centésimas: 3,14159; 0,6666… y 12,495.</p><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-2.6.4"><div class="act-cab"><span class="act-num">2.6.4</span></div><div class="act-cuerpo"><p>Estima, redondeando a las unidades, si con 50 € hay suficiente para comprar productos de 12,80 €, 9,45 €, 15,20 € y 11,60 €. Después calcula el precio exacto.</p><textarea class="respuesta" rows="4" data-k="t4" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-2.6.5"><div class="act-cab"><span class="act-num">2.6.5</span></div><div class="act-cuerpo"><p>Una cinta de 2 m se corta en 3 trozos iguales. ¿Cuánto mide cada trozo, redondeado a los centímetros? ¿Y a los milímetros?</p><textarea class="respuesta" rows="4" data-k="t5" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-5.html">← Apartado 2.5</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

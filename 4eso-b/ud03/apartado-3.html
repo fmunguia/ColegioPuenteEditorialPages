@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 3.3 · División de polinomios</title>
+<meta name="description" content="Matemáticas B 4º ESO: División de polinomios">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD03 · Polinomios</a> › <span>Apartado 3.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 3.3</span></div><h1 class="titulo-sesion">División de polinomios</h1><p>Dividir dos polinomios <span class="mat">\(P(x)\)</span> (dividendo) entre <span class="mat">\(Q(x)\)</span> (divisor) consiste en hallar un cociente <span class="mat">\(C(x)\)</span> y un resto <span class="mat">\(R(x)\)</span> tales que <span class="mat">\(P(x) = Q(x) \cdot C(x) + R(x)\)</span>, con el grado de <span class="mat">\(R(x)\)</span> menor que el de <span class="mat">\(Q(x)\)</span>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Algoritmo de la división</div><div class="caja-cuerpo"><p>Para dividir polinomios seguimos estos pasos:</p>
+<ol><li>Ordenamos los polinomios de mayor a menor grado y dejamos huecos si falta algún término en el dividendo.</li><li>Dividimos el primer término del dividendo entre el primero del divisor para obtener el primer término del cociente.</li><li>Multiplicamos ese término por todo el divisor y restamos el resultado al dividendo.</li><li>Repetimos el proceso con el nuevo dividendo obtenido hasta que su grado sea menor que el del divisor.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. División de polinomios</div><div class="caja-cuerpo"><p>Realiza la división: <span class="mat">\((6x^3 + 5x^2 - 1) : (2x^2 + 3x)\)</span>.</p>
+<div class="mat-bloque">\[\begin{array}{r|l}
+		6x^3 + 5x^2 + 0x - 1 &amp; 2x^2 + 3x \\ 
+		-6x^3 - 9x^2 \phantom{+ 0x - 1} &amp; 3x - 2 \\ 
+		-4x^2 + 0x - 1 &amp; \\
+		4x^2 + 6x \phantom{- 1} &amp; \\ 
+		6x - 1 &amp; 
+	\end{array}\]</div>
+<p><strong>Cociente:</strong> <span class="mat">\(C(x) = 3x - 2\)</span>  <strong>Resto:</strong> <span class="mat">\(R(x) = 6x - 1\)</span></p></div></aside>
+<div class="actividad hago" id="act-3.3.1"><div class="act-cab"><span class="act-num">3.3.1</span></div><div class="act-cuerpo"><p>Calcula el cociente y el resto de la siguiente división:</p>
+<div class="mat-bloque">\[(x^4 - 3x^2 + 2x - 5) : (x^2 - 2)\]</div><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Regla de Ruffini</h2>
+<p>La “Regla de Ruffini” es un método abreviado para dividir un polinomio <span class="mat">\(P(x)\)</span> entre un binomio de la forma <span class="mat">\((x - a)\)</span>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Procedimiento de Ruffini</div><div class="caja-cuerpo"><p>Para dividir <span class="mat">\(P(x)\)</span> entre <span class="mat">\((x - a)\)</span>:</p>
+<ol><li>Colocamos en una fila los coeficientes de <span class="mat">\(P(x)\)</span> (incluyendo ceros).</li><li>En el lateral izquierdo colocamos el valor <span class="mat">\(a\)</span> (el opuesto del término independiente del divisor).</li><li>Bajamos el primer coeficiente, multiplicamos por <span class="mat">\(a\)</span>, sumamos al siguiente, y repetimos.</li><li>El último número obtenido es el “resto”. Los anteriores son los coeficientes del “cociente” (que tiene un grado menos que <span class="mat">\(P(x)\)</span>).</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Uso de la Regla de Ruffini</div><div class="caja-cuerpo"><p>Divide <span class="mat">\((2x^3 - 5x^2 + 6) : (x - 2)\)</span> usando Ruffini.</p>
+<div class="mat-bloque">\[\begin{array}{r|rrrr}
+		  &amp; 2 &amp; -5 &amp; 0 &amp; 6 \\
+		2 &amp;   &amp; 4 &amp; -2 &amp; -4 \\ \hline
+		  &amp; 2 &amp; -1 &amp; -2 &amp; \mathbf{2}
+	\end{array}\]</div>
+<p><strong>Cociente:</strong> <span class="mat">\(C(x) = 2x^2 - x - 2\)</span>  <strong>Resto:</strong> <span class="mat">\(R = 2\)</span></p></div></aside>
+<div class="actividad hago" id="act-3.3.2"><div class="act-cab"><span class="act-num">3.3.2</span></div><div class="act-cuerpo"><p>Realiza las siguientes divisiones aplicando la regla de Ruffini e indica el cociente y el resto:</p>
+<ol class="tareas cols-2"><li><span class="mat">\((x^3 - 4x^2 + x + 6) : (x - 3)\)</span></li><li><span class="mat">\((x^4 - 16) : (x + 2)\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Aplicaciones de la regla de Ruffini</h2>
+<p>La regla de Ruffini no es solo un método para dividir; es una herramienta fundamental para analizar las propiedades de los polinomios.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Teorema del resto</div><div class="caja-cuerpo"><p>El resto de la división de un polinomio <span class="mat">\(P(x)\)</span> entre el binomio <span class="mat">\((x - a)\)</span> es igual al valor numérico del polinomio para <span class="mat">\(x = a\)</span>. Es decir:</p>
+<div class="mat-bloque">\[\text{Resto} = P(a)\]</div>
+<p>Esto nos permite calcular el valor de un polinomio sin sustituir directamente la <span class="mat">\(x\)</span>, simplemente aplicando Ruffini.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cálculo del valor numérico</div><div class="caja-cuerpo"><p>Halla el valor de <span class="mat">\(P(x) = x^4 - 3x^2 + 5x - 10\)</span> para <span class="mat">\(x = 2\)</span>.
+	Aplicamos Ruffini con <span class="mat">\(a = 2\)</span>:</p>
+<div class="mat-bloque">\[\begin{array}{r|rrrrr}
+		  &amp; 1 &amp; 0 &amp; -3 &amp; 5 &amp; -10 \\
+		2 &amp;   &amp; 2 &amp; 4 &amp; 2 &amp; 14 \\ \hline
+		  &amp; 1 &amp; 2 &amp; 1 &amp; 7 &amp; \mathbf{4}
+	\end{array}\]</div>
+<p>Como el resto es <span class="mat">\(4\)</span>, sabemos que <span class="mat">\(\mathbf{P(2) = 4}\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Raíces y Factorización</div><div class="caja-cuerpo"><p>Decimos que un número <span class="mat">\(a\)</span> es una <strong>raíz</strong> de un polinomio <span class="mat">\(P(x)\)</span> si su valor numérico es cero (<span class="mat">\(P(a) = 0\)</span>).</p>
+<ul><li>Si al aplicar Ruffini con <span class="mat">\(a\)</span> el resto es <strong>cero</strong>, entonces <span class="mat">\(a\)</span> es una raíz.</li><li>Si <span class="mat">\(a\)</span> es una raíz, entonces <span class="mat">\((x - a)\)</span> es un <strong>factor</strong> del polinomio.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Búsqueda de raíces</div><div class="caja-cuerpo"><p>Comprueba si <span class="mat">\(x = 1\)</span> y <span class="mat">\(x = -1\)</span> son raíces de <span class="mat">\(P(x) = x^3 - 3x^2 + 4\)</span>.</p>
+<ul><li><p>Para <span class="mat">\(x = 1\)</span>:</p>
+<div class="mat-bloque">\[\begin{array}{r|rrrr}
+			  &amp; 1 &amp; -3 &amp; 0 &amp; 4 \\
+			1 &amp;   &amp; 1 &amp; -2 &amp; -2 \\ \hline
+			  &amp; 1 &amp; -2 &amp; -2 &amp; \mathbf{2}
+		\end{array}
+		\rightarrow \text{Resto } \neq 0, \text{ no es raíz.}\]</div></li><li><p>Para <span class="mat">\(x = -1\)</span>:</p>
+<div class="mat-bloque">\[\begin{array}{r|rrrr}
+			  &amp; 1 &amp; -3 &amp; 0 &amp; 4 \\
+			-1 &amp;   &amp; -1 &amp; 4 &amp; -4 \\ \hline
+			  &amp; 1 &amp; -4 &amp; 4 &amp; \mathbf{0}
+		\end{array}
+		\rightarrow \text{Resto } = 0, \text{ \textbf{sí es raíz}.}\]</div></li></ul></div></aside>
+<div class="actividad hago" id="act-3.3.3"><div class="act-cab"><span class="act-num">3.3.3</span></div><div class="act-cuerpo"><p>Dado el polinomio <span class="mat">\(P(x) = 2x^3 - 4x^2 + kx - 6\)</span>:</p>
+<ol><li>Utiliza la regla de Ruffini para hallar el valor de <span class="mat">\(k\)</span> sabiendo que <span class="mat">\(x = 3\)</span> es una raíz del polinomio.</li><li>Una vez hallado <span class="mat">\(k\)</span>, indica cuál es el valor numérico de <span class="mat">\(P(1)\)</span>.</li></ol><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 3.2</a><a class="boton secundario" href="apartado-4.html">Apartado 3.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

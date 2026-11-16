@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 12.3 · Cuerpos de revolución</title>
+<meta name="description" content="Matemáticas 3º ESO: Cuerpos de revolución">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD12 · Cuerpos geométricos</a> › <span>Apartado 12.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 12.3</span></div><h1 class="titulo-sesion">Cuerpos de revolución</h1><p>Los <dfn class="glosario" tabindex="0" data-def="cuerpos que se obtienen al girar una figura plana alrededor de un eje">cuerpos de revolución</dfn> se obtienen al girar una figura plana alrededor de un eje: un rectángulo genera un cilindro, un triángulo rectángulo genera un cono y un semicírculo genera una esfera.</p>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/8e63e5fada7e54bb.svg" width="334" height="126" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Áreas y volúmenes de cuerpos de revolución</div><div class="caja-cuerpo"><ul><li><strong>Cilindro:</strong> <span class="mat">\(\quad A_\text{lateral} = 2\pi r h \qquad A_\text{total} = 2\pi r h + 2\pi r^2 \qquad V = \pi r^2 h\)</span></li><li><p><strong>Cono:</strong> <span class="mat">\(\quad A_\text{lateral} = \pi r g \qquad A_\text{total} = \pi r g + \pi r^2 \qquad V = \dfrac{\pi r^2 h}{3}\)</span></p>
+<p>La generatriz <span class="mat">\(g\)</span> cumple <span class="mat">\(g^2 = h^2 + r^2\)</span>.</p></li><li><strong>Esfera:</strong> <span class="mat">\(\quad A = 4\pi r^2 \qquad V = \dfrac{4}{3}\pi r^3\)</span></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ La pirámide y el cono, entre 3</div><div class="caja-cuerpo"><p>Una pirámide o un cono ocupan la tercera parte que el prisma o el cilindro con la misma base y la misma altura. Si olvidas dividir entre <span class="mat">\(3\)</span>, el volumen sale el triple: el cono de <span class="mat">\(r = 6\)</span> y <span class="mat">\(h = 8\)</span> tiene <span class="mat">\(96\pi\)</span>&nbsp;cm<span class="mat">\(^3\)</span>, no <span class="mat">\(288\pi\)</span>&nbsp;cm<span class="mat">\(^3\)</span>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cilindro, cono y esfera</div><div class="caja-cuerpo"><ul><li>Cilindro de <span class="mat">\(r = 3\)</span>&nbsp;cm y <span class="mat">\(h = 10\)</span>&nbsp;cm:  <span class="mat">\(A = 60\pi + 18\pi = 78\pi \approx 245,04\)</span>&nbsp;cm<span class="mat">\(^2\)</span>;  <span class="mat">\(V = 90\pi \approx 282,74\)</span>&nbsp;cm<span class="mat">\(^3\)</span>.</li><li>Cono de <span class="mat">\(r = 6\)</span>&nbsp;cm y <span class="mat">\(h = 8\)</span>&nbsp;cm:  <span class="mat">\(g = 10\)</span>&nbsp;cm;  <span class="mat">\(A = 60\pi + 36\pi = 96\pi \approx 301,59\)</span>&nbsp;cm<span class="mat">\(^2\)</span>;  <span class="mat">\(V = 96\pi \approx 301,59\)</span>&nbsp;cm<span class="mat">\(^3\)</span>.</li><li>Esfera de <span class="mat">\(r = 5\)</span>&nbsp;cm:  <span class="mat">\(A = 100\pi \approx 314,16\)</span>&nbsp;cm<span class="mat">\(^2\)</span>;  <span class="mat">\(V = \dfrac{500\pi}{3} \approx 523,60\)</span>&nbsp;cm<span class="mat">\(^3\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Volumen y capacidad</div><div class="caja-cuerpo"><div class="mat-bloque">\[1 \text{ dm}^3 = 1 \text{ L} \qquad 1 \text{ cm}^3 = 1 \text{ mL} \qquad 1 \text{ m}^3 = 1\,000 \text{ L}\]</div></div></aside>
+<div class="actividad hago" id="act-12.3.1"><div class="act-cab"><span class="act-num">12.3.1</span></div><div class="act-cuerpo"><p>Un depósito cilíndrico tiene <span class="mat">\(1\)</span>&nbsp;m de radio y <span class="mat">\(2\)</span>&nbsp;m de altura. ¿Cuántos litros caben?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 12.2</a><a class="boton secundario" href="apartado-4.html">Apartado 12.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

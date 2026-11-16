@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 2.6 · Aproximaciones y errores</title>
+<meta name="description" content="Matemáticas 3º ESO: Aproximaciones y errores">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD02 · Potencias y raíces</a> › <span>Apartado 2.6</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 2.6</span></div><h1 class="titulo-sesion">Aproximaciones y errores</h1><p>En la vida real casi nunca usamos todas las cifras de un número: el precio se da en céntimos y la estatura en centímetros. Para quedarnos con menos cifras aproximamos.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Truncamiento y redondeo</div><div class="caja-cuerpo"><ul><li><strong>Truncar:</strong> se eliminan las cifras a partir del orden indicado.</li><li><strong>Redondear</strong>: se truncan, pero si la primera cifra eliminada es <span class="mat">\(5\)</span> o mayor, se suma una unidad a la última cifra que se conserva.</li></ul>
+<p>Por ejemplo, <span class="mat">\(\pi = 3,14159\ldots\)</span> truncado a las milésimas es <span class="mat">\(3,141\)</span> y redondeado es <span class="mat">\(3,142\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Errores</div><div class="caja-cuerpo"><ul><li><strong>Error absoluto</strong>: diferencia entre el valor real y la aproximación, en valor absoluto. <span class="mat">\(\quad E_a = |\,\text{valor real} - \text{aproximación}\,|\)</span></li><li><strong>Error relativo</strong>: cociente entre el error absoluto y el valor real. Se suele dar en porcentaje. <span class="mat">\(\quad E_r = \dfrac{E_a}{\text{valor real}}\)</span></li></ul>
+<p>El error relativo permite comparar la calidad de dos aproximaciones: cuanto menor es, mejor es la aproximación.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Comparar dos aproximaciones</div><div class="caja-cuerpo"><p>Equivocarse en <span class="mat">\(1\)</span>&nbsp;cm al medir un lápiz de <span class="mat">\(15\)</span>&nbsp;cm no es lo mismo que equivocarse en <span class="mat">\(1\)</span>&nbsp;cm al medir un aula de <span class="mat">\(800\)</span>&nbsp;cm:</p>
+<div class="mat-bloque">\[E_r = \dfrac{1}{15} \approx 0,067 = 6,7\% \qquad\qquad E_r = \dfrac{1}{800} = 0,00125 = 0,125\%\]</div>
+<p>El error absoluto es el mismo, pero la medida del aula es mucho más precisa.</p></div></aside>
+<div class="actividad hago" id="act-2.6.1"><div class="act-cab"><span class="act-num">2.6.1</span></div><div class="act-cuerpo"><p>Aproxima <span class="mat">\(\dfrac{2}{3} = 0,666\ldots\)</span> redondeando a las centésimas y calcula el error absoluto y el relativo.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-5.html">← Apartado 2.5</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

@@ -1,5 +1,40 @@
 [
  {
+  "clave": "1ESO",
+  "libro": "Matemáticas",
+  "curso": "1º ESO",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/1eso/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/1eso/classroom.json"
+ },
+ {
+  "clave": "2ESO",
+  "libro": "Matemáticas",
+  "curso": "2º ESO",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/2eso/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/2eso/classroom.json"
+ },
+ {
+  "clave": "3ESO",
+  "libro": "Matemáticas",
+  "curso": "3º ESO",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/3eso/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/3eso/classroom.json"
+ },
+ {
+  "clave": "4ESO-A",
+  "libro": "Matemáticas A",
+  "curso": "4º ESO",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-a/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-a/classroom.json"
+ },
+ {
+  "clave": "4ESO-B",
+  "libro": "Matemáticas B",
+  "curso": "4º ESO",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/classroom.json"
+ },
+ {
   "clave": "SistemasControlRobotica",
   "libro": "Sistemas de Control y Robótica I",
   "curso": "3º ESO",

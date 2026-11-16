@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD04 · Sucesiones</title>
+
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD04 · Sucesiones</span></nav></header>
+<main>
+<p class="subtitulo">Bloque II · Álgebra</p><h1><span class="codigo">UD04</span> Sucesiones</h1><aside class="caja partida"><div class="caja-titulo">🔍 Ahorrando para ir a los Picos de Europa</div><div class="caja-cuerpo"><p>Lucía y Marcos quieren ahorrar para el viaje de fin de curso a los Picos de Europa. Lucía mete <span class="mat">\(5\)</span>&nbsp;€ en la hucha la primera semana y, cada semana, <span class="mat">\(2\)</span>&nbsp;€ más que la anterior. Marcos empieza con <span class="mat">\(1\)</span>&nbsp;€ y cada semana mete el doble que la anterior.</p>
+<ul><li>¿Cuánto mete cada uno en la hucha la sexta semana?</li><li>¿Quién habrá ahorrado más al cabo de ocho semanas?</li><li>¿Te parece que Marcos podrá seguir así todo el curso?</li></ul>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/c77e29cc9de83c23.svg" width="470" height="206" alt="" loading="lazy"></figure></div></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Descubrir patrones y escribir los términos de una sucesión.</li><li>Hallar el término general y usar la forma recurrente.</li><li>Reconocer progresiones aritméticas y geométricas.</li><li>Calcular cualquier término y la suma de varios términos.</li><li>Generar sucesiones con una hoja de cálculo.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ul><li>Para continuar una serie de figuras o de números hay que fijarse en qué cambia de un paso al siguiente y qué se mantiene.</li><li>Una potencia es una multiplicación repetida: <span class="mat">\(2^5 = 32\)</span>,  <span class="mat">\(3^4 = 81\)</span>.</li><li>En una expresión se calculan primero los paréntesis y después los productos: <span class="mat">\(4 + (10 - 1) \cdot 3 = 4 + 27 = 31\)</span>.</li><li>Para resolver <span class="mat">\(3x + 2 = 17\)</span> se pasa el <span class="mat">\(2\)</span> restando y el <span class="mat">\(3\)</span> dividiendo: <span class="mat">\(x = 5\)</span>.</li></ul>
+<p>Comprueba que sabes hacer estos ejercicios de cursos anteriores:</p>
+<ol class="tareas cols-2"><li>Continúa: <span class="mat">\(2, 5, 8, 11, \ldots\)</span></li><li>Continúa: <span class="mat">\(1, 2, 4, 8, \ldots\)</span></li><li>Calcula <span class="mat">\(2^6\)</span> y <span class="mat">\(3^5\)</span>.</li><li>Calcula <span class="mat">\(7 + (20 - 1) \cdot 4\)</span>.</li><li>Resuelve <span class="mat">\(3x - 1 = 20\)</span>.</li><li>Calcula <span class="mat">\(1 + 2 + 3 + \ldots + 10\)</span>.</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>En la sucesión de Fibonacci, <span class="mat">\(1, 1, 2, 3, 5, 8, 13, 21, \ldots\)</span>, cada término es la suma de los dos anteriores. Con cuadrados de esos lados se puede construir un rectángulo cada vez mayor, como el del dibujo. Esta sucesión aparece en la naturaleza: el número de espirales de una piña o de las pipas de un girasol suele ser un término de la sucesión de Fibonacci.</p>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/d958015edd254342.svg" width="251" height="160" alt="" loading="lazy"></figure></div>
+<ul><li>Divide cada término entre el anterior: <span class="mat">\(\frac{8}{5}\)</span>, <span class="mat">\(\frac{13}{8}\)</span>, <span class="mat">\(\frac{21}{13}\)</span>… ¿A qué número se acercan los resultados?</li><li>¿Qué medidas tendrá el rectángulo si añades dos cuadrados más?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 4.1</span> Sucesiones y patrones</a></li><li><a href="apartado-2.html"><span class="num">Apartado 4.2</span> Término general y forma recurrente</a></li><li><a href="apartado-3.html"><span class="num">Apartado 4.3</span> Progresiones aritméticas</a></li><li><a href="apartado-4.html"><span class="num">Apartado 4.4</span> Progresiones geométricas</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
+
+<nav class="anterior-siguiente"><a class="boton secundario" href="../ud03/index.html">← UD03</a><a class="boton secundario" href="../ud05/index.html">UD05 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 7.7 · Ecuaciones exponenciales</title>
+<meta name="description" content="Matemáticas A 4º ESO: Ecuaciones exponenciales">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD07 · Ecuaciones</a> › <span>Apartado 7.7</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 7.7</span></div><h1 class="titulo-sesion">Ecuaciones exponenciales</h1><p>Se denominan ecuaciones exponenciales todas las que tengan la incógnita en el exponente.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Recordatorio de las propiedades de las potencias</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(a^m\cdot a^n=a^{m+n}\)</span></li><li><span class="mat">\(a^m: a^n=a^{m-n}\)</span></li><li><span class="mat">\(\left(  a^m \right) ^n = a^{m\cdot n}\)</span></li><li><span class="mat">\(a^{-m} =\frac{1}{a^m}\)</span></li><li><span class="mat">\(( a\cdot b\cdot c ) ^m=a^m\cdot b^m\cdot c^m\)</span></li><li><span class="mat">\(\left( \frac{a}{b} \right) ^n = \frac{a^n}{b^n}\)</span></li><li><span class="mat">\(a^0=1\)</span></li><li><span class="mat">\(a^1=a\)</span></li><li><span class="mat">\(\sqrt[n]{a^p}=a^{\frac{p}{n}}\)</span></li></ol></div></aside>
+<p>Las ecuaciones exponenciales pueden clasificarse en tres grupos.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Tipos de ecuaciones exponenciales</div><div class="caja-cuerpo"><ul><li>Tipo I: En los dos miembros de la ecuación tenemos potencias de la misma base.</li><li><strong></strong> <span class="mat">\(\sqrt[x]{10^{x-1}}=\frac{1}{100}\)</span></li><li><strong></strong> </li><li>Tipo II: Hay sumas y restas de potencias de la misma base. Se suelen resolver con un cambio de variable.</li><li><strong></strong> <span class="mat">\(2^{x+1}+2^{x-1}=20\)</span></li><li><strong></strong> </li><li>Tipo III: En los dos miembros de la ecuación tenemos números que no se pueden expresar como potencias de la misma base. Se resuelven con logaritmos</li><li><strong></strong> <span class="mat">\(2^{3x+1}=9\)</span></li></ul></div></aside>
+<p>También se pueden hacer sistemas de ecuaciones exponenciales.</p>
+<h2 class="subapartado">Ecuaciones exponenciales: tipo I</h2>
+<p>A cada lado del igual hay una potencia de la misma base. Para resolver basta con igualar los exponentes.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuaciones exponenciales tipo I</div><div class="caja-cuerpo"><ul><li><span class="mat">\(2^{x+3}=32 \rightarrow 2^{x+3}=2^5 \rightarrow x+3=5 \rightarrow x=2\)</span></li><li><span class="mat">\(2^{1+x}=\frac{1}{8} \rightarrow 2^{1+x}=2^{-3} \rightarrow 1+x = -3 \rightarrow x= -4\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-7.7.1"><div class="act-cab"><span class="act-num">7.7.1</span></div><div class="act-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(3^{x-5}=81\)</span></li><li><span class="mat">\(\sqrt[3+x]{2^8}=4\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Ecuaciones exponenciales: tipo II</h2>
+<p>Se resuelven haciendo un cambio de variable.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuaciones exponenciales tipo II</div><div class="caja-cuerpo"><ul><li>En primer lugar, tenemos que utilizar las propiedades de las potencias para transformar un poco la ecuación</li><li><strong></strong> <span class="mat">\(2^{x+1}+2^{x-1}=20 \rightarrow 2^x\cdot 2^1+\frac{2^x}{2^1}=20\)</span></li><li><strong></strong> </li><li>Ahora se hace un cambio de variable. Llamamos <span class="mat">\(2^x = t\)</span>  por lo tanto, la ecuación cambia.</li><li><strong></strong> <span class="mat">\(2t + \frac{t}{2}=20 \rightarrow 4t + t =40 \rightarrow 5t=40 \rightarrow t=8\)</span></li><li><strong></strong> </li><li>Por último, tenemos que deshacer el cambio de variable para obtener el valor de la incógnita principal <span class="mat">\(x\)</span>.</li><li><strong></strong> <span class="mat">\(2^x=t \rightarrow 2^x=8 \rightarrow 2^x=2^3 \rightarrow x=3\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-7.7.2"><div class="act-cab"><span class="act-num">7.7.2</span></div><div class="act-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(2^{x+2}-2^{x}=24\)</span></li><li><span class="mat">\(3^{x+1}+3^{x-1}=30\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Ecuaciones exponenciales: tipo III</h2>
+<p>Estas ecuaciones se resuelven gracias a las propiedades de los logaritmos.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuaciones exponenciales tipo III</div><div class="caja-cuerpo"><ul><li>En esta ecuación, el primer miembro es una potencia de 2, pero el segundo miembro no se puede expresar como potencia. Tomamos logaritmos en los dos miembros de la ecuación.</li><li><strong></strong> <span class="mat">\(2^{x+5}=19 \rightarrow \log 2^{x+5} = \log 19\)</span></li><li><strong></strong> </li><li>Utilizaremos la propiedad de la potencia de un logaritmo.</li><li><strong></strong> <span class="mat">\((x+5)\cdot \log 2 = \log 19 \rightarrow x+5 = \frac{\log 19}{\log 2} \rightarrow x=\frac{\log 19}{\log 2} -5 \rightarrow x=-0,752\)</span></li></ul></div></aside>
+<p>Las funciones exponenciales tienen aplicaciones muy diversas en áreas como la economía, la biología, la física, ...</p>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-6.html">← Apartado 7.6</a><a class="boton secundario" href="apartado-8.html">Apartado 7.8 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

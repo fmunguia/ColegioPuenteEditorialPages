@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 10.8 · Recta de regresión</title>
+<meta name="description" content="Matemáticas A 4º ESO: Recta de regresión">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD10 · Estadística</a> › <span>Apartado 10.8</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 10.8</span></div><h1 class="titulo-sesion">Recta de regresión</h1><p>Si al analizar la nube de puntos y el coeficiente de correlación deducimos que existe una relación lineal fuerte entre las variables (ya sea positiva o negativa), podemos buscar una línea recta que se ajuste lo mejor posible a esa nube de puntos.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Recta de regresión</div><div class="caja-cuerpo"><p>Es la recta matemática que mejor se adapta a la nube de puntos en un diagrama de dispersión minimizando las distancias entre los puntos reales y la propia recta. Su ecuación matemática principal es:</p>
+<ul><li><strong></strong> <span class="mat">\(y - \bar{y} = \dfrac{\sigma_{xy}}{\sigma_x^2} \cdot (x - \bar{x})\)</span></li></ul>
+<p>Donde <span class="mat">\(\bar{x}\)</span> e <span class="mat">\(\bar{y}\)</span> son las medias de cada variable, <span class="mat">\(\sigma_{xy}\)</span> es la covarianza y <span class="mat">\(\sigma_x^2\)</span> es la varianza de <span class="mat">\(X\)</span>.</p></div></aside>
+<p><strong>¿Para qué sirve?</strong> 
+La principal utilidad de la recta de regresión es hacer <strong>estimaciones o predicciones</strong>. Si conocemos el valor de una variable <span class="mat">\(X\)</span>, podemos sustituirlo en la ecuación de la recta para predecir el valor esperado de la variable <span class="mat">\(Y\)</span>. 
+<em>Importante:</em> Estas predicciones solo son fiables si la correlación entre las variables es fuerte.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Recta de regresión y nube de puntos</div><div class="caja-cuerpo"><figure class="dibujo "><img src="../../figuras/a01de8c90b2f0aba.svg" width="306" height="307" alt="" loading="lazy"></figure></div></aside>
+<div class="actividad hago" id="act-10.8.1"><div class="act-cab"><span class="act-num">10.8.1</span></div><div class="act-cuerpo"><p>Con GeoGebra o una hoja de cálculo, calcula la recta de regresión de los datos de horas de estudio y nota del apartado anterior y estima la nota de un alumno que estudia 6 horas. ¿Es fiable esa estimación?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-7.html">← Apartado 10.7</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

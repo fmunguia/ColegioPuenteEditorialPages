@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 12.8 · Probabilidad condicionada</title>
+<meta name="description" content="Matemáticas B 4º ESO: Probabilidad condicionada">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD12 · Recuento y probabilidad</a> › <span>Apartado 12.8</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 12.8</span></div><h1 class="titulo-sesion">Probabilidad condicionada</h1><p>En la tabla de contingencia hemos visto que, cuando sabemos algo del resultado, el universo se reduce. Esa idea se escribe con una fórmula general.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Probabilidad condicionada</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(P(A|B) = \dfrac{P(A \cap B)}{P(B)} \qquad \text{y por tanto} \qquad P(A \cap B) = P(B) \cdot P(A|B)\)</span></li><li><strong></strong> </li><li><span class="mat">\(P(A|B)\)</span> se lee «probabilidad de <span class="mat">\(A\)</span> sabiendo que ha ocurrido <span class="mat">\(B\)</span>»</li><li>En un diagrama de árbol, las probabilidades de las ramas del segundo nivel son probabilidades condicionadas</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ <span class="mat">\(P(A|B)\)</span> no es lo mismo que <span class="mat">\(P(B|A)\)</span></div><div class="caja-cuerpo"><p>En la tabla de las gafas, la probabilidad de llevar gafas sabiendo que es chico es <span class="mat">\(P(G|C) = \dfrac{10}{40} = 0{,}25\)</span>, pero la probabilidad de ser chico sabiendo que lleva gafas es <span class="mat">\(P(C|G) = \dfrac{10}{25} = 0{,}4\)</span>. El denominador es siempre el total de la condición.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Sucesos dependientes e independientes</div><div class="caja-cuerpo"><ul><li><span class="mat">\(A\)</span> y <span class="mat">\(B\)</span> son <strong>independientes</strong> si saber que ha ocurrido uno no cambia la probabilidad del otro: <span class="mat">\(\ P(A|B) = P(A)\)</span></li><li>Equivale a <span class="mat">\(\ P(A \cap B) = P(A) \cdot P(B)\)</span></li><li>Las extracciones <strong>con</strong> reemplazamiento son independientes; <strong>sin</strong> reemplazamiento, dependientes</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Extracciones sin reemplazamiento</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/5081a2827dceb795.svg" width="170" height="190" alt="" loading="lazy"></figure></td><td>Una urna tiene 4 bolas rojas y 6 azules. Sacamos dos sin devolver. <ul><li><span class="mat">\(P(R_1 \cap R_2) = \dfrac{4}{10} \cdot \dfrac{3}{9} = \dfrac{2}{15}\)</span></li><li><span class="mat">\(P(\text{distinto color}) = \dfrac{4}{10}\cdot\dfrac{6}{9} + \dfrac{6}{10}\cdot\dfrac{4}{9} = \dfrac{8}{15}\)</span></li></ul></td></tr></table></div></div></aside>
+<h2 class="subapartado">Probabilidad total</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Teorema de la probabilidad total</div><div class="caja-cuerpo"><p>Si <span class="mat">\(A_1, A_2, \dots\)</span> son sucesos que no pueden ocurrir a la vez y cubren todos los casos, la probabilidad de cualquier suceso <span class="mat">\(B\)</span> es la suma de los caminos del árbol que llegan a <span class="mat">\(B\)</span>:</p>
+<ul><li><strong></strong> <span class="mat">\(P(B) = P(A_1)\cdot P(B|A_1) + P(A_2)\cdot P(B|A_2) + \cdots\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Piezas defectuosas</div><div class="caja-cuerpo"><p>Una fábrica tiene dos máquinas. La <span class="mat">\(M_1\)</span> hace el 60 % de las piezas, con un 2 % defectuosas; la <span class="mat">\(M_2\)</span> hace el 40 %, con un 5 % defectuosas.</p>
+<ul><li><strong></strong> <span class="mat">\(P(D) = 0,6 \cdot 0,02 + 0,4 \cdot 0,05 = 0,012 + 0,020 = 0,032\)</span></li><li>Si una pieza es defectuosa, la probabilidad de que venga de <span class="mat">\(M_1\)</span> es <span class="mat">\(\ P(M_1|D) = \dfrac{0,012}{0,032} = 0,375\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-12.8.1"><div class="act-cab"><span class="act-num">12.8.1</span></div><div class="act-cuerpo"><p>El 70 % de los alumnos de un centro va andando y el resto en autobús. Llegan tarde el 5 % de los que van andando y el 15 % de los que van en autobús. Calcula la probabilidad de que un alumno elegido al azar llegue tarde.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-7.html">← Apartado 12.7</a><a class="boton secundario" href="apartado-9.html">Apartado 12.9 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

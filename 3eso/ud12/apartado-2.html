@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 12.2 · Áreas y volúmenes de prismas y pirámides</title>
+<meta name="description" content="Matemáticas 3º ESO: Áreas y volúmenes de prismas y pirámides">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD12 · Cuerpos geométricos</a> › <span>Apartado 12.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 12.2</span></div><h1 class="titulo-sesion">Áreas y volúmenes de prismas y pirámides</h1><p>Para calcular el área de un cuerpo geométrico conviene imaginar su <dfn class="glosario" tabindex="0" data-def="figura que se obtiene al extender sobre el plano todas las caras de un cuerpo">desarrollo plano</dfn>: las caras extendidas sobre el plano. El área total es la suma de las áreas de todas las caras.</p>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/45a0ce6cea3343e7.svg" width="354" height="138" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Prismas y pirámides</div><div class="caja-cuerpo"><p><strong>Prisma:</strong></p>
+<div class="mat-bloque">\[A_\text{lateral} = \text{perímetro de la base} \cdot h \qquad A_\text{total} = A_\text{lateral} + 2 A_\text{base} \qquad V = A_\text{base} \cdot h\]</div>
+<p><strong>Pirámide regular:</strong></p>
+<div class="mat-bloque">\[A_\text{lateral} = \dfrac{\text{perímetro de la base} \cdot \text{apotema}}{2} \qquad A_\text{total} = A_\text{lateral} + A_\text{base} \qquad V = \dfrac{A_\text{base} \cdot h}{3}\]</div>
+<p>La <strong>apotema</strong> de una pirámide es la altura de sus caras laterales. Se calcula con el teorema de Pitágoras a partir de la altura de la pirámide y la apotema de la base.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ortoedro</div><div class="caja-cuerpo"><p>Una caja de <span class="mat">\(5 \times 4 \times 3\)</span>&nbsp;cm:</p>
+<div class="mat-bloque">\[A = 2(5 \cdot 4 + 5 \cdot 3 + 4 \cdot 3) = 94 \text{ cm}^2 \qquad V = 5 \cdot 4 \cdot 3 = 60 \text{ cm}^3\]</div>
+<p>Su diagonal, aplicando dos veces el teorema de Pitágoras, mide <span class="mat">\(\sqrt{5^2 + 4^2 + 3^2} = \sqrt{50} \approx 7,07\)</span>&nbsp;cm.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Pirámide cuadrangular</div><div class="caja-cuerpo"><p>Pirámide de base cuadrada de <span class="mat">\(6\)</span>&nbsp;cm de lado y <span class="mat">\(4\)</span>&nbsp;cm de altura. La apotema de la base es <span class="mat">\(3\)</span>&nbsp;cm, así que la apotema de la pirámide es <span class="mat">\(\sqrt{4^2 + 3^2} = 5\)</span>&nbsp;cm.</p>
+<div class="mat-bloque">\[A_\text{lateral} = \dfrac{24 \cdot 5}{2} = 60 \text{ cm}^2 \qquad A_\text{total} = 60 + 36 = 96 \text{ cm}^2 \qquad V = \dfrac{36 \cdot 4}{3} = 48 \text{ cm}^3\]</div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Apotema y altura no son lo mismo</div><div class="caja-cuerpo"><p>En la pirámide anterior, la altura (<span class="mat">\(4\)</span>&nbsp;cm) va del vértice al centro de la base, y la apotema (<span class="mat">\(5\)</span>&nbsp;cm), del vértice al centro de un lado de la base. El área lateral se calcula con la apotema, y el volumen, con la altura.</p></div></aside>
+<div class="actividad hago" id="act-12.2.1"><div class="act-cab"><span class="act-num">12.2.1</span></div><div class="act-cuerpo"><p>Calcula el área total y el volumen de un cubo de <span class="mat">\(4\)</span>&nbsp;cm de arista. ¿Cuánto mide su diagonal?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 12.1</a><a class="boton secundario" href="apartado-3.html">Apartado 12.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

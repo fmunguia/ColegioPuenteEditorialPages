@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.4 · Máximo común divisor y mínimo común múltiplo</title>
+<meta name="description" content="Matemáticas 2º ESO: Máximo común divisor y mínimo común múltiplo">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD01 · Divisibilidad y números enteros</a> › <span>Apartado 1.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.4</span></div><h1 class="titulo-sesion">Máximo común divisor y mínimo común múltiplo</h1><p>El <dfn class="glosario" tabindex="0" data-def="el mayor de los divisores comunes de varios números (m.c.d.)">máximo común divisor</dfn> (m.c.d.) de varios números es el mayor de sus divisores comunes. Sirve para hacer repartos en partes iguales lo más grandes posible.</p>
+<p>El <dfn class="glosario" tabindex="0" data-def="el menor de los múltiplos comunes de varios números, sin contar el 0 (m.c.m.)">mínimo común múltiplo</dfn> (m.c.m.) de varios números es el menor de sus múltiplos comunes, sin contar el 0. Sirve para saber cuándo vuelven a coincidir sucesos que se repiten.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Cálculo del m.c.d. y el m.c.m.</div><div class="caja-cuerpo"><p>Primero se descomponen los números en factores primos y después:</p>
+<ul><li><strong>m.c.d.</strong>: se multiplican solo los factores <strong>comunes</strong> con el <strong>menor</strong> exponente.</li><li><strong>m.c.m.</strong>: se multiplican los factores <strong>comunes y no comunes</strong> con el <strong>mayor</strong> exponente.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. m.c.d. y m.c.m. de 12 y 18</div><div class="caja-cuerpo"><ul><li>Divisores de 12: 1, 2, 3, 4, 6, 12. Divisores de 18: 1, 2, 3, 6, 9, 18.</li><li>Múltiplos de 12: 12, 24, 36, 48… Múltiplos de 18: 18, 36, 54…</li><li>Con la factorización: <span class="mat">\(12=2^2\cdot 3\)</span> y <span class="mat">\(18=2\cdot 3^2\)</span>.</li><li><span class="mat">\(\text{m.c.d.}(12,18)=2\cdot 3=6\)</span></li><li><span class="mat">\(\text{m.c.m.}(12,18)=2^2\cdot 3^2=36\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-1.4.1"><div class="act-cab"><span class="act-num">1.4.1</span></div><div class="act-cuerpo"><p>Calcula el m.c.d. y el m.c.m. de:</p>
+<ol class="tareas cols-3"><li><span class="mat">\(24\)</span> y <span class="mat">\(36\)</span></li><li><span class="mat">\(40\)</span> y <span class="mat">\(60\)</span></li><li><span class="mat">\(30\)</span>, <span class="mat">\(45\)</span> y <span class="mat">\(60\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¿m.c.d. o m.c.m.?</div><div class="caja-cuerpo"><p>El m.c.d. nunca es mayor que el menor de los números y el m.c.m. nunca es menor que el mayor. Si te sale <span class="mat">\(\text{m.c.d.}(12,18)=36\)</span>, has calculado el m.c.m.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Problema de reparto (m.c.d.)</div><div class="caja-cuerpo"><p>En el aula de plástica hay 48 rotuladores rojos y 36 azules. Se quieren guardar en estuches iguales, sin mezclar colores y con el mayor número posible de rotuladores en cada estuche. ¿Cuántos rotuladores irán en cada estuche? ¿Cuántos estuches harán falta?</p>
+<p><strong>Resolución:</strong></p>
+<ol class="tareas cols-2"><li><strong></strong> <span class="mat">\(48=2^4\cdot 3\)</span></li><li><strong></strong> <span class="mat">\(36=2^2\cdot 3^2\)</span></li><li><strong></strong> <span class="mat">\(\text{m.c.d.}(48,36)=2^2\cdot 3=12\)</span></li><li><strong></strong> <span class="mat">\(48:12=4\)</span> y <span class="mat">\(36:12=3\)</span></li></ol>
+<p><strong>Solución:</strong> Irán 12 rotuladores en cada estuche y harán falta <span class="mat">\(4+3=7\)</span> estuches.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Problema de coincidencias (m.c.m.)</div><div class="caja-cuerpo"><p>Desde la parada de Astillero salen dos líneas de autobús: una cada 12 minutos y otra cada 18 minutos. Si a las 8:00 salen las dos a la vez, ¿a qué hora volverán a coincidir?</p>
+<p><strong>Resolución:</strong></p>
+<ol class="tareas cols-2"><li><strong></strong> <span class="mat">\(12=2^2\cdot 3\)</span></li><li><strong></strong> <span class="mat">\(18=2\cdot 3^2\)</span></li><li><strong></strong> <span class="mat">\(\text{m.c.m.}(12,18)=2^2\cdot 3^2\)</span></li><li><strong></strong> <span class="mat">\(\text{m.c.m.}(12,18)=36\)</span></li></ol>
+<p><strong>Solución:</strong> Volverán a coincidir 36 minutos después, a las 8:36.</p></div></aside>
+<div class="actividad hago" id="act-1.4.2"><div class="act-cab"><span class="act-num">1.4.2</span></div><div class="act-cuerpo"><p>Se quiere embaldosar el suelo de una habitación de 360 cm de largo y 420 cm de ancho con baldosas cuadradas lo más grandes posible y sin cortar ninguna. ¿Cuánto medirá el lado de cada baldosa? ¿Cuántas baldosas harán falta?</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 1.3</a><a class="boton secundario" href="apartado-5.html">Apartado 1.5 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

@@ -1,0 +1,1366 @@
+{
+ "clave": "4ESO-B",
+ "libro": "Matemáticas B",
+ "curso": "4º ESO",
+ "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/index.html",
+ "temas": [
+  {
+   "codigo": "UD01",
+   "titulo": "UD01 · Números reales",
+   "bloque": "Bloque I · Números",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 1.1 · Conjuntos numéricos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 1.2 · Paso de decimal a fracción (Fracción generatriz)",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 1.3 · Intervalos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 1.4 · Unión e intersección de intervalos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 1.5 · Valor absoluto",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 1.6 · Aproximaciones y errores",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 1.7 · Notación científica",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD01 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Indica el menor conjunto al que pertenecen √(36), −10/5, 0,3̅ y √(3).",
+      "solucion": "ℕ, ℤ, ℚ e 𝕀."
+     },
+     {
+      "enunciado": "Calcula la fracción generatriz de 1,2̅ y de 0,15̅.",
+      "solucion": "11/9 y 7/45."
+     },
+     {
+      "enunciado": "Escribe como intervalo los números que cumplen −2 < x ≤ 5.",
+      "solucion": "(−2, 5]"
+     },
+     {
+      "enunciado": "Calcula [−1, 4) ∪ (2, 7] y [−1, 4) ∩ (2, 7].",
+      "solucion": "[−1, 7] y (2, 4)."
+     },
+     {
+      "enunciado": "Expresa con un intervalo los números que cumplen |x − 3| ≤ 2.",
+      "solucion": "[1, 5]"
+     },
+     {
+      "enunciado": "Redondea √(5) = 2,236 06… a las centésimas y calcula el error absoluto.",
+      "solucion": "2,24; error ≈ 0,004."
+     },
+     {
+      "enunciado": "Una medida de 50 m tiene un error de 0,5 m. Calcula el error relativo en porcentaje.",
+      "solucion": "1 %"
+     },
+     {
+      "enunciado": "Escribe en notación científica 230 000 000 y 0,000 067.",
+      "solucion": "2,3 · 10⁸ y 6,7 · 10⁻⁵."
+     },
+     {
+      "enunciado": "Calcula (3 · 10⁵) · (4 · 10⁻²) en notación científica.",
+      "solucion": "1,2 · 10⁴"
+     }
+    ],
+    "rubrica": [
+     "Clasifico números en los distintos conjuntos.",
+     "Calculo la fracción generatriz de un decimal.",
+     "Escribo y opero intervalos, también con valor absoluto.",
+     "Aproximo números y calculo errores absolutos y relativos.",
+     "Escribo y opero en notación científica."
+    ],
+    "titulo": "UD01 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud01/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD02",
+   "titulo": "UD02 · Radicales y logaritmos",
+   "bloque": "Bloque I · Números",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud02/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 2.1 · Propiedades de las potencias",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud02/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 2.2 · Radicales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud02/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 2.3 · Racionalización",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud02/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 2.4 · Logaritmos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud02/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD02 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud02/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Simplifica (2⁵ · 4⁻¹)/(8).",
+      "solucion": "1"
+     },
+     {
+      "enunciado": "Escribe ⁵√(x³) como potencia y a^(2/3) como radical.",
+      "solucion": "x^(3/5) y ³√(a²)."
+     },
+     {
+      "enunciado": "Extrae factores: √(50) y ³√(54).",
+      "solucion": "5√(2) y 3³√(2)."
+     },
+     {
+      "enunciado": "Calcula √(12) + √(27) − √(48).",
+      "solucion": "√(3)"
+     },
+     {
+      "enunciado": "Calcula √(2) · ³√(2) y da el resultado como un solo radical.",
+      "solucion": "⁶√(32)"
+     },
+     {
+      "enunciado": "Racionaliza 6/√(3) y (1)/(√(2) − 1).",
+      "solucion": "2√(3) y √(2) + 1."
+     },
+     {
+      "enunciado": "Calcula log_2 64, log 0,01 y log_5 √(5).",
+      "solucion": "6, −2 y 1/2."
+     },
+     {
+      "enunciado": "Sabiendo que log 2 ≈ 0,301, calcula log 8 y log 5.",
+      "solucion": "0,903 y 0,699."
+     },
+     {
+      "enunciado": "Una población se triplica cada año. ¿Cuántos años tarda en multiplicarse por 100?",
+      "solucion": "log_3 100 ≈ 4,19 años."
+     }
+    ],
+    "rubrica": [
+     "Aplico las propiedades de las potencias.",
+     "Paso de potencia a radical y simplifico radicales.",
+     "Opero con radicales del mismo y de distinto índice.",
+     "Racionalizo denominadores.",
+     "Calculo logaritmos y uso sus propiedades."
+    ],
+    "titulo": "UD02 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud02/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD03",
+   "titulo": "UD03 · Polinomios",
+   "bloque": "Bloque II · Álgebra",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud03/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 3.1 · Monomios",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud03/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 3.2 · Polinomios",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud03/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 3.3 · División de polinomios",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud03/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 3.4 · Factorización",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud03/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 3.5 · Fracciones algebraicas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud03/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD03 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud03/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Indica el coeficiente y el grado del monomio −3/4x²y³.",
+      "solucion": "Coeficiente −3/4 y grado 5."
+     },
+     {
+      "enunciado": "Calcula el valor numérico de P(x) = x³ − 2x² + 3 para x = −1.",
+      "solucion": "P(−1) = 0"
+     },
+     {
+      "enunciado": "Si A = 3x² − x + 2 y B = x² + 4x − 5, calcula A − B.",
+      "solucion": "2x² − 5x + 7"
+     },
+     {
+      "enunciado": "Calcula (2x − 3)(x² + x − 1).",
+      "solucion": "2x³ − x² − 5x + 3"
+     },
+     {
+      "enunciado": "Desarrolla (3x − 2)² y (x + 5)(x − 5).",
+      "solucion": "9x² − 12x + 4 y x² − 25."
+     },
+     {
+      "enunciado": "Divide por Ruffini (x³ − 2x² − x + 5) : (x − 2).",
+      "solucion": "Cociente x² − 1 y resto 3."
+     },
+     {
+      "enunciado": "Sin dividir, halla el resto de (x¹⁰ − 1) : (x + 1).",
+      "solucion": "P(−1) = 0"
+     },
+     {
+      "enunciado": "Factoriza x³ − x² − 6x.",
+      "solucion": "x(x − 3)(x + 2)"
+     },
+     {
+      "enunciado": "Simplifica (x² − 1)/(x² + 2x + 1).",
+      "solucion": "(x − 1)/(x + 1)"
+     },
+     {
+      "enunciado": "Calcula 2/x − (1)/(x + 2) y (x² − 4)/(x) : (x + 2)/(x²).",
+      "solucion": "(x + 4)/(x(x + 2)) y x(x − 2)"
+     }
+    ],
+    "rubrica": [
+     "Calculo el valor numérico y sumo y resto polinomios.",
+     "Multiplico polinomios y uso las identidades notables.",
+     "Divido polinomios y aplico la regla de Ruffini.",
+     "Uso el teorema del resto para buscar raíces.",
+     "Factorizo polinomios, simplifico fracciones algebraicas y opero con ellas."
+    ],
+    "titulo": "UD03 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud03/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD04",
+   "titulo": "UD04 · Ecuaciones e inecuaciones",
+   "bloque": "Bloque II · Álgebra",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 4.1 · Ecuaciones de primer grado",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.2 · Ecuaciones de segundo grado",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.3 · Ecuaciones factorizables",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.4 · Ecuaciones bicuadráticas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.5 · Ecuaciones racionales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.6 · Ecuaciones irracionales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.7 · Ecuaciones exponenciales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.8 · Ecuaciones logarítmicas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-8.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.9 · Inecuaciones",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-9.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 4.10 · Taller digital",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/apartado-10.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD04 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Resuelve (x − 1)/(2) − (x + 1)/(3) = 1.",
+      "solucion": "x = 11"
+     },
+     {
+      "enunciado": "Resuelve x² − 7x + 10 = 0.",
+      "solucion": "x = 2 y x = 5."
+     },
+     {
+      "enunciado": "Resuelve 3x² − 12x = 0.",
+      "solucion": "x = 0 y x = 4."
+     },
+     {
+      "enunciado": "Resuelve x⁴ − 5x² + 4 = 0.",
+      "solucion": "x = ± 1 y x = ± 2."
+     },
+     {
+      "enunciado": "Resuelve 1/x + (1)/(x + 1) = 3/2.",
+      "solucion": "x = 1 y x = −2/3."
+     },
+     {
+      "enunciado": "Resuelve √(2x + 3) = x.",
+      "solucion": "x = 3 (x = −1 es falsa)."
+     },
+     {
+      "enunciado": "Resuelve 2^(x + 1) = 32.",
+      "solucion": "x = 4"
+     },
+     {
+      "enunciado": "Resuelve log (x + 1) + log (x − 1) = log 3.",
+      "solucion": "x = 2 (x = −2 no vale)."
+     },
+     {
+      "enunciado": "Resuelve 3 − 2x ≤ 7.",
+      "solucion": "x ≥ −2, es decir, [−2, +∞)."
+     },
+     {
+      "enunciado": "Resuelve x² − 4x + 3 > 0.",
+      "solucion": "(−∞, 1) ∪ (3, +∞)"
+     }
+    ],
+    "rubrica": [
+     "Resuelvo ecuaciones de primer y segundo grado.",
+     "Resuelvo ecuaciones bicuadradas y factorizables.",
+     "Resuelvo ecuaciones racionales e irracionales y compruebo las soluciones.",
+     "Resuelvo ecuaciones exponenciales y logarítmicas.",
+     "Resuelvo inecuaciones y doy la solución con intervalos.",
+     "Planteo problemas con ecuaciones e inecuaciones."
+    ],
+    "titulo": "UD04 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud04/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD05",
+   "titulo": "UD05 · Sistemas de ecuaciones",
+   "bloque": "Bloque II · Álgebra",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 5.1 · Interpretación gráfica de los sistemas lineales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 5.2 · Sistemas de ecuaciones lineales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 5.3 · Sistemas con paréntesis y denominadores",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 5.4 · Sistemas de ecuaciones no lineales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 5.5 · Sistemas exponenciales y logarítmicos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 5.6 · Sistemas de inecuaciones",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 5.7 · Inecuaciones lineales con dos incógnitas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD05 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Clasifica sin resolver: begincases 2x − y = 3 \\ 4x − 2y = 5 endcases",
+      "solucion": "Incompatible."
+     },
+     {
+      "enunciado": "Resuelve por sustitución: begincases x + 2y = 7 \\ 3x − y = 7 endcases",
+      "solucion": "x = 3, y = 2"
+     },
+     {
+      "enunciado": "Resuelve por reducción: begincases 2x + 3y = 12 \\ 5x − 3y = 9 endcases",
+      "solucion": "x = 3, y = 2"
+     },
+     {
+      "enunciado": "Resuelve: begincases x/2 + y/3 = 3 \\ x − y = 1 endcases",
+      "solucion": "x = 4, y = 3"
+     },
+     {
+      "enunciado": "Resuelve: begincases x − y = 2 \\ x² + y² = 20 endcases",
+      "solucion": "(4, 2) y (−2, −4)."
+     },
+     {
+      "enunciado": "Resuelve: begincases 2^(x) · 2^(y) = 32 \\ 2^(x) : 2^(y) = 2 endcases",
+      "solucion": "x = 3, y = 2"
+     },
+     {
+      "enunciado": "Resuelve: begincases log x + log y = 3 \\ x = 10y endcases",
+      "solucion": "x = 100, y = 10"
+     },
+     {
+      "enunciado": "Resuelve: begincases 2x − 1 > 3 \\ x + 4 ≤ 10 endcases",
+      "solucion": "(2, 6]"
+     },
+     {
+      "enunciado": "¿Está el punto (1, 1) en la región 3x − 2y < 2?",
+      "solucion": "Sí: 3 − 2 = 1 < 2."
+     },
+     {
+      "enunciado": "En un aparcamiento hay 30 vehículos entre coches y motos, y 100 ruedas. ¿Cuántos hay de cada tipo?",
+      "solucion": "20 coches y 10 motos."
+     }
+    ],
+    "rubrica": [
+     "Clasifico sistemas e interpreto su solución gráficamente.",
+     "Resuelvo sistemas lineales por los tres métodos.",
+     "Simplifico sistemas con paréntesis y denominadores.",
+     "Resuelvo sistemas no lineales, exponenciales y logarítmicos.",
+     "Resuelvo sistemas de inecuaciones y represento regiones del plano.",
+     "Planteo problemas con sistemas."
+    ],
+    "titulo": "UD05 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud05/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD06",
+   "titulo": "UD06 · Estudio de funciones",
+   "bloque": "Bloque III · Funciones",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 6.1 · Introducción",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 6.2 · Representación de funciones",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 6.3 · Características de funciones",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 6.4 · Simetrías",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 6.5 · Tasa de variación media",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 6.6 · Cálculo del dominio de definición",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD06 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Halla el dominio de f(x) = (x + 1)/(x² − 4).",
+      "solucion": "ℝ setminus {−2, 2}"
+     },
+     {
+      "enunciado": "Halla el dominio de g(x) = √(6 − 2x).",
+      "solucion": "(−∞, 3]"
+     },
+     {
+      "enunciado": "Halla el dominio de h(x) = log (x + 4).",
+      "solucion": "(−4, +∞)"
+     },
+     {
+      "enunciado": "Estudia la simetría de f(x) = x⁴ − 3x².",
+      "solucion": "Par."
+     },
+     {
+      "enunciado": "Estudia la simetría de g(x) = x³ + x.",
+      "solucion": "Impar."
+     },
+     {
+      "enunciado": "Calcula la TVM de f(x) = x² + 1 en [0, 2].",
+      "solucion": "2"
+     },
+     {
+      "enunciado": "Un pueblo pasa de 50 000 a 55 000 habitantes. Calcula la tasa de variación relativa.",
+      "solucion": "0,1, es decir, un 10 %."
+     },
+     {
+      "enunciado": "Indica el crecimiento y los extremos de f(x) = x².",
+      "solucion": "Decreciente en (−∞, 0), creciente en (0, +∞) y mínimo en (0, 0)."
+     },
+     {
+      "enunciado": "¿Cuál es el recorrido de f(x) = x² − 4?",
+      "solucion": "[−4, +∞)"
+     },
+     {
+      "enunciado": "Una función periódica de periodo 5 cumple f(2) = 7. ¿Cuánto vale f(12)?",
+      "solucion": "7"
+     }
+    ],
+    "rubrica": [
+     "Interpreto funciones dadas por tablas, gráficas y fórmulas.",
+     "Estudio la continuidad, el crecimiento, los extremos y la periodicidad.",
+     "Reconozco el dominio, el recorrido y las asíntotas.",
+     "Estudio la simetría de una función.",
+     "Calculo e interpreto tasas de variación.",
+     "Calculo el dominio a partir de la fórmula."
+    ],
+    "titulo": "UD06 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud06/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD07",
+   "titulo": "UD07 · Funciones elementales",
+   "bloque": "Bloque III · Funciones",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 7.1 · Funciones lineales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.2 · Funciones cuadráticas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.3 · Funciones exponenciales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.4 · Funciones de proporcionalidad inversa",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.5 · Funciones con valor absoluto",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.6 · Funciones con radicales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.7 · Funciones logarítmicas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.8 · Funciones definidas a trozos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-8.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.9 · Transformaciones de gráficas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-9.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 7.10 · Taller digital",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/apartado-10.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD07 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Halla la ecuación de la recta que pasa por (−1, 3) y (2, 9).",
+      "solucion": "y = 2x + 5"
+     },
+     {
+      "enunciado": "Halla el vértice de f(x) = x² − 6x + 5.",
+      "solucion": "V(3, −4)"
+     },
+     {
+      "enunciado": "Halla los cortes con los ejes de f(x) = x² − 6x + 5.",
+      "solucion": "(1, 0), (5, 0) y (0, 5)."
+     },
+     {
+      "enunciado": "¿Es creciente o decreciente f(x) = 0,5^(x)? ¿Por qué punto pasa siempre?",
+      "solucion": "Decreciente; pasa por (0, 1)."
+     },
+     {
+      "enunciado": "Indica el dominio y las asíntotas de f(x) = 4/x.",
+      "solucion": "ℝ setminus {0}; asíntotas x = 0 e y = 0."
+     },
+     {
+      "enunciado": "Escribe f(x) = |x + 1| como función a trozos.",
+      "solucion": "−x − 1 si x < −1; x + 1 si x ≥ −1."
+     },
+     {
+      "enunciado": "Halla el dominio de f(x) = √(2x − 4).",
+      "solucion": "[2, +∞)"
+     },
+     {
+      "enunciado": "Si f(x) = log_3 x, calcula f(9) y f(1/3).",
+      "solucion": "2 y −1."
+     },
+     {
+      "enunciado": "¿Qué traslación lleva y = x² a y = (x + 3)² + 2?",
+      "solucion": "3 unidades a la izquierda y 2 hacia arriba; V(−3, 2)."
+     },
+     {
+      "enunciado": "Una colonia de 500 bacterias se duplica cada hora. Escribe la función y calcula cuántas hay a las 5 horas.",
+      "solucion": "f(t) = 500 · 2^(t); 16 000 bacterias."
+     }
+    ],
+    "rubrica": [
+     "Represento rectas y parábolas e interpreto sus parámetros.",
+     "Reconozco y represento funciones exponenciales, logarítmicas e inversas.",
+     "Represento funciones con radicales y con valor absoluto.",
+     "Represento e interpreto funciones a trozos.",
+     "Obtengo gráficas mediante traslaciones y simetrías.",
+     "Elijo el modelo de función adecuado para una situación."
+    ],
+    "titulo": "UD07 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud07/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD08",
+   "titulo": "UD08 · Semejanza y medida",
+   "bloque": "Bloque IV · Geometría",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 8.1 · Teorema de Tales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 8.2 · Semejanza",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 8.3 · Teorema de Pitágoras",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 8.4 · Perímetros y áreas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 8.5 · La circunferencia y el círculo",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 8.6 · Cálculo de áreas y volúmenes: poliedros",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 8.7 · Cuerpos de revolución",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 8.8 · Taller digital",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/apartado-8.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD08 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Tres paralelas cortan a dos secantes. En una determinan segmentos de 4 y 6 cm; en la otra, el primero mide 6 cm. ¿Cuánto mide el segundo?",
+      "solucion": "9 cm"
+     },
+     {
+      "enunciado": "Un palo de 2 m da una sombra de 1,5 m. A la misma hora, un edificio da una sombra de 12 m. ¿Cuánto mide el edificio?",
+      "solucion": "16 m"
+     },
+     {
+      "enunciado": "¿Son semejantes dos triángulos de lados 5, 12, 13 y 15, 36, 39?",
+      "solucion": "Sí, con razón k = 3."
+     },
+     {
+      "enunciado": "En un mapa a escala 1 : 50 000, dos pueblos están a 8 cm. ¿Qué distancia real los separa?",
+      "solucion": "4 km"
+     },
+     {
+      "enunciado": "Dos cuerpos son semejantes con razón 3. ¿Por cuánto se multiplican el área y el volumen?",
+      "solucion": "El área por 9 y el volumen por 27."
+     },
+     {
+      "enunciado": "Las proyecciones de los catetos sobre la hipotenusa miden 4 y 9 cm. ¿Cuánto mide la altura?",
+      "solucion": "6 cm"
+     },
+     {
+      "enunciado": "La hipotenusa de un triángulo rectángulo mide 10 cm y un cateto 6 cm. ¿Cuánto mide el otro?",
+      "solucion": "8 cm"
+     },
+     {
+      "enunciado": "Calcula el área de un hexágono regular de 4 cm de lado y 3,46 cm de apotema.",
+      "solucion": "41,52 cm²"
+     },
+     {
+      "enunciado": "Calcula el área total y el volumen de un cilindro de radio 2 cm y altura 5 cm.",
+      "solucion": "28π ≈ 87,96 cm² y 20π ≈ 62,83 cm³."
+     },
+     {
+      "enunciado": "Calcula el volumen de una esfera de 3 cm de radio.",
+      "solucion": "36π ≈ 113,10 cm³"
+     }
+    ],
+    "rubrica": [
+     "Aplico el teorema de Tales y los criterios de semejanza.",
+     "Uso escalas y la razón de semejanza en áreas y volúmenes.",
+     "Aplico los teoremas de Pitágoras, del cateto y de la altura.",
+     "Calculo perímetros y áreas de figuras planas.",
+     "Calculo áreas y volúmenes de cuerpos geométricos."
+    ],
+    "titulo": "UD08 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud08/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD09",
+   "titulo": "UD09 · Trigonometría",
+   "bloque": "Bloque IV · Geometría",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 9.1 · Medida de ángulos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 9.2 · Razones trigonométricas de un ángulo agudo",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 9.3 · Relaciones fundamentales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 9.4 · Resolución de triángulos rectángulos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 9.5 · Problemas de alturas y distancias",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 9.6 · Razones de cualquier ángulo",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 9.7 · Identidades y ecuaciones trigonométricas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 9.8 · Taller digital",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/apartado-8.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD09 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Pasa 150^(°) a radianes y π/5 rad a grados.",
+      "solucion": "5π/6 rad y 36^(°)."
+     },
+     {
+      "enunciado": "Los catetos miden 5 y 12. Calcula las razones del ángulo opuesto al cateto de 5.",
+      "solucion": "sin = 5/13, cos = 12/13, tan = 5/12"
+     },
+     {
+      "enunciado": "Si α es agudo y cos α = 0,6, calcula sin α y tan α.",
+      "solucion": "0,8 y 4/3."
+     },
+     {
+      "enunciado": "Simplifica (1 − cos² α)/(sin α cos α).",
+      "solucion": "tan α"
+     },
+     {
+      "enunciado": "Resuelve el triángulo rectángulo con a = 10 y B = 40^(°).",
+      "solucion": "C = 50^(°), b ≈ 6,43, c ≈ 7,66"
+     },
+     {
+      "enunciado": "Demuestra que cos² α (1 + tan² α) = 1.",
+      "solucion": "cos² α + sin² α = 1"
+     },
+     {
+      "enunciado": "Un edificio de 30 m da sombra con el sol a 35^(°) de altura. ¿Cuánto mide la sombra?",
+      "solucion": "(30)/(tan 35^(°)) ≈ 42,84 m"
+     },
+     {
+      "enunciado": "Si sin α = −0,8 y α está en el cuarto cuadrante, calcula cos α y tan α.",
+      "solucion": "0,6 y −4/3."
+     },
+     {
+      "enunciado": "Calcula sin calculadora sin 210^(°) y cos 135^(°).",
+      "solucion": "−1/2 y −√(2)/2."
+     },
+     {
+      "enunciado": "Resuelve 2 cos x + 1 = 0 entre 0^(°) y 360^(°).",
+      "solucion": "120^(°) y 240^(°)."
+     }
+    ],
+    "rubrica": [
+     "Paso ángulos de grados a radianes y al revés.",
+     "Calculo razones y uso las relaciones fundamentales.",
+     "Resuelvo triángulos y problemas de alturas y distancias.",
+     "Calculo las razones de cualquier ángulo.",
+     "Simplifico, demuestro igualdades y resuelvo ecuaciones."
+    ],
+    "titulo": "UD09 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud09/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD10",
+   "titulo": "UD10 · Geometría analítica",
+   "bloque": "Bloque IV · Geometría",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 10.1 · Vectores en el plano",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 10.2 · Operaciones con vectores",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 10.3 · Aplicaciones de los vectores",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 10.4 · Ecuaciones de la recta",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 10.5 · Posiciones relativas de dos rectas",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 10.6 · Traslaciones",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 10.7 · Taller digital",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD10 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "Calcula las coordenadas y el módulo de A⃗B⃗ si A(−1, 2) y B(3, 5).",
+      "solucion": "(4, 3) y módulo 5."
+     },
+     {
+      "enunciado": "Si u⃗ = (1, −2) y v⃗ = (3, 4), calcula 2u⃗ − v⃗.",
+      "solucion": "(−1, −8)"
+     },
+     {
+      "enunciado": "¿Son paralelos (6, −4) y (−3, 2)?",
+      "solucion": "Sí: (6, −4) = −2 · (−3, 2)."
+     },
+     {
+      "enunciado": "Halla el punto medio de A(−2, 5) y B(4, 1).",
+      "solucion": "(1, 3)"
+     },
+     {
+      "enunciado": "Halla el simétrico de A(2, 3) respecto de M(0, 1).",
+      "solucion": "(−2, −1)"
+     },
+     {
+      "enunciado": "Escribe en forma continua y general la recta que pasa por P(1, 2) con vector director (2, 3).",
+      "solucion": "(x − 1)/(2) = (y − 2)/(3); 3x − 2y + 1 = 0"
+     },
+     {
+      "enunciado": "Halla la pendiente y la ordenada en el origen de 4x + 2y − 6 = 0.",
+      "solucion": "m = −2, n = 3"
+     },
+     {
+      "enunciado": "¿Qué posición tienen y = 3x + 1 e y = 3x − 4?",
+      "solucion": "Paralelas."
+     },
+     {
+      "enunciado": "Halla la perpendicular a y = −1/3x + 2 que pasa por (1, 1).",
+      "solucion": "y = 3x − 2"
+     },
+     {
+      "enunciado": "Traslada el punto P(2, −1) según el vector (−3, 4).",
+      "solucion": "P'(−1, 3)"
+     }
+    ],
+    "rubrica": [
+     "Calculo coordenadas y módulos de vectores y opero con ellos.",
+     "Calculo puntos medios y distancias y compruebo alineaciones.",
+     "Escribo la ecuación de una recta en sus distintas formas.",
+     "Estudio la posición relativa de dos rectas.",
+     "Traslado figuras con un vector."
+    ],
+    "titulo": "UD10 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud10/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD11",
+   "titulo": "UD11 · Estadística",
+   "bloque": "Bloque V · Estadística y probabilidad",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 11.1 · Introducción a la estadística",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.2 · Muestreo y representatividad",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.3 · Tablas de frecuencia",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.4 · Gráficos estadísticos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.5 · Parámetros estadísticos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.6 · Medidas de dispersión",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.7 · Distribuciones bidimensionales",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.8 · Correlación",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-8.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.9 · Recta de regresión",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-9.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 11.10 · Taller digital",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/apartado-10.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD11 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "¿De qué tipo es la variable «tiempo que tardas en llegar al instituto»?",
+      "solucion": "Cuantitativa continua."
+     },
+     {
+      "enunciado": "En una población de 600 mujeres y 400 hombres se quiere una muestra estratificada de 50 personas. ¿Cuántas de cada grupo?",
+      "solucion": "30 mujeres y 20 hombres."
+     },
+     {
+      "enunciado": "Con los datos 2, 3, 3, 4, 5, 5, 5, 6, ¿cuál es la frecuencia relativa del 5?",
+      "solucion": "3/8 = 0,375"
+     },
+     {
+      "enunciado": "Calcula la media, la mediana y la moda de 3, 5, 5, 6, 8, 9.",
+      "solucion": "x̄ = 6, M_e = 5,5, M_o = 5"
+     },
+     {
+      "enunciado": "De 48 personas, 12 prefieren el fútbol. ¿Cuántos grados le corresponden en un diagrama de sectores?",
+      "solucion": "90^(°)"
+     },
+     {
+      "enunciado": "Calcula el rango y la desviación típica de 1, 3, 5.",
+      "solucion": "R = 4 y sigma = √(8/3) ≈ 1,63"
+     },
+     {
+      "enunciado": "Unos datos tienen media 50 y desviación típica 5. Calcula el coeficiente de variación.",
+      "solucion": "0,1, es decir, un 10 %."
+     },
+     {
+      "enunciado": "¿Qué indica un coeficiente de correlación r = −0,92?",
+      "solucion": "Correlación negativa fuerte."
+     },
+     {
+      "enunciado": "La recta de regresión es y = 2x + 3. Estima y para x = 4.",
+      "solucion": "y = 11"
+     },
+     {
+      "enunciado": "¿Es fiable una estimación con la recta de regresión si r = 0,15?",
+      "solucion": "No: la correlación es muy débil."
+     }
+    ],
+    "rubrica": [
+     "Distingo población, muestra y tipos de variables y elijo muestras representativas.",
+     "Construyo tablas de frecuencias y gráficos adecuados.",
+     "Calculo e interpreto la media, la mediana y la moda.",
+     "Calculo e interpreto medidas de dispersión.",
+     "Interpreto la correlación y hago estimaciones con la recta de regresión."
+    ],
+    "titulo": "UD11 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud11/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD12",
+   "titulo": "UD12 · Recuento y probabilidad",
+   "bloque": "Bloque V · Estadística y probabilidad",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/index.html",
+   "tareas": [
+    {
+     "titulo": "Apartado 12.1 · Técnicas de recuento",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 12.2 · Experimentos aleatorios",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 12.3 · Operaciones con sucesos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 12.4 · Regla de Laplace",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 12.5 · Propiedades de la probabilidad",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 12.6 · Experimentos compuestos",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 12.7 · Tablas de contingencia",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 12.8 · Probabilidad condicionada",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-8.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Apartado 12.9 · Taller digital",
+     "descripcion": "Lee el apartado y haz sus actividades. Escribe las respuestas en la página.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/apartado-9.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD12 · Repaso de la unidad",
+     "descripcion": "Actividades de repaso con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [],
+    "preguntas": [
+     {
+      "enunciado": "¿De cuántas formas se puede formar el podio de una carrera con 10 atletas?",
+      "solucion": "V_10,3 = 720"
+     },
+     {
+      "enunciado": "¿Cuántas comisiones de 3 personas se pueden formar con 7 personas?",
+      "solucion": "C_7,3 = 35"
+     },
+     {
+      "enunciado": "¿Cuántas palabras, con o sin sentido, se pueden formar con las letras de ROMA?",
+      "solucion": "P_4 = 24"
+     },
+     {
+      "enunciado": "Al lanzar un dado, ¿qué probabilidad hay de sacar un número primo?",
+      "solucion": "3/6 = 1/2"
+     },
+     {
+      "enunciado": "Si P(A) = 0,3, ¿cuánto vale P(Ā)?",
+      "solucion": "0,7"
+     },
+     {
+      "enunciado": "Si P(A) = 0,4, P(B) = 0,5 y P(A ∩ B) = 0,2, calcula P(A ∪ B). ¿Son independientes?",
+      "solucion": "0,7; sí, porque 0,4 · 0,5 = 0,2."
+     },
+     {
+      "enunciado": "Se lanzan dos monedas. ¿Qué probabilidad hay de obtener dos caras?",
+      "solucion": "1/4"
+     },
+     {
+      "enunciado": "Una urna tiene 3 bolas rojas y 2 azules. Se sacan dos sin devolver. ¿Qué probabilidad hay de que las dos sean rojas?",
+      "solucion": "3/5 · 2/4 = 3/10"
+     },
+     {
+      "enunciado": "Con la tabla de las gafas, calcula la probabilidad de que una alumna elegida al azar lleve gafas.",
+      "solucion": "P(G|M) = 15/60 = 0,25"
+     },
+     {
+      "enunciado": "Llueve el 30 % de los días. Si llueve, el autobús se retrasa con probabilidad 0,4; si no, con 0,1. ¿Qué probabilidad hay de que se retrase?",
+      "solucion": "0,3 · 0,4 + 0,7 · 0,1 = 0,19"
+     }
+    ],
+    "rubrica": [
+     "Elijo la técnica de recuento adecuada y la aplico.",
+     "Describo experimentos aleatorios y opero con sucesos.",
+     "Calculo probabilidades con la regla de Laplace y sus propiedades.",
+     "Uso diagramas de árbol en experimentos compuestos.",
+     "Calculo probabilidades condicionadas y aplico la probabilidad total."
+    ],
+    "titulo": "UD12 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/ud12/autoevaluacion.html"
+   }
+  }
+ ]
+}

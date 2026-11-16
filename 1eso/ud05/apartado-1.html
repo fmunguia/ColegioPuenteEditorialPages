@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 5.1 · Potencias</title>
+<meta name="description" content="Matemáticas 1º ESO: Potencias">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD05 · Potencias y raíces</a> › <span>Apartado 5.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 5.1</span></div><h1 class="titulo-sesion">Potencias</h1><p>Una bacteria se divide en dos cada hora. Después de 5 horas habrá <span class="mat">\(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32\)</span> bacterias. Esta multiplicación repetida se escribe de forma abreviada como una <dfn class="glosario" tabindex="0" data-def="forma abreviada de escribir una multiplicación de factores iguales: 2⁵ = 2 · 2 · 2 · 2 · 2">potencia</dfn>: <span class="mat">\(2^5\)</span>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Potencia</div><div class="caja-cuerpo"><div class="centro"><p><span class="mat">\(a^n = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ veces}}\)</span></p></div>
+<ul><li><span class="mat">\(a\)</span> es la <dfn class="glosario" tabindex="0" data-def="en una potencia, el número que se multiplica por sí mismo">base</dfn>: el número que se multiplica.</li><li><span class="mat">\(n\)</span> es el <dfn class="glosario" tabindex="0" data-def="en una potencia, el número de veces que se multiplica la base">exponente</dfn>: las veces que se multiplica.</li><li><span class="mat">\(5^2\)</span> se lee «cinco al cuadrado» y <span class="mat">\(5^3\)</span> «cinco al cubo».</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cuadrados y cubos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/649eb59a6c759558.svg" width="85" height="85" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/1a9ced9b895b325c.svg" width="106" height="106" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(3^2 = 3 \cdot 3 = 9\)</span> cuadraditos</td><td><span class="mat">\(3^3 = 3 \cdot 3 \cdot 3 = 27\)</span> cubitos</td></tr></table></div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Una potencia no es una multiplicación por el exponente</div><div class="caja-cuerpo"><p><span class="mat">\(5^3\)</span> no es <span class="mat">\(5 \cdot 3 = 15\)</span>. El exponente indica cuántas veces se repite la base como factor: <span class="mat">\(5^3 = 5 \cdot 5 \cdot 5 = 125\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-5.1.1"><div class="act-cab"><span class="act-num">5.1.1</span></div><div class="act-cuerpo"><p>Escribe como potencia y calcula</p>
+<ol class="tareas cols-2"><li><span class="mat">\(4 \cdot 4 \cdot 4\)</span></li><li><span class="mat">\(10 \cdot 10 \cdot 10 \cdot 10\)</span></li><li><span class="mat">\(7 \cdot 7\)</span></li><li><span class="mat">\(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Potencias de números enteros</div><div class="caja-cuerpo"><ul><li>Si la base es positiva, el resultado es positivo.</li><li>Si la base es negativa y el exponente es <strong>par</strong>, el resultado es positivo: <span class="mat">\((-2)^4 = 16\)</span>.</li><li>Si la base es negativa y el exponente es <strong>impar</strong>, el resultado es negativo: <span class="mat">\((-2)^3 = -8\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¿Dónde está el signo?</div><div class="caja-cuerpo"><p><span class="mat">\((-3)^2 = (-3) \cdot (-3) = 9\)</span>, pero <span class="mat">\(-3^2 = -(3 \cdot 3) = -9\)</span>. Sin paréntesis, el exponente solo afecta al 3, no al signo. La calculadora también lo hace así.</p></div></aside>
+<div class="actividad hago" id="act-5.1.2"><div class="act-cab"><span class="act-num">5.1.2</span></div><div class="act-cuerpo"><p>Calcula</p>
+<ol class="tareas cols-4"><li><span class="mat">\((-5)^2\)</span></li><li><span class="mat">\((-1)^7\)</span></li><li><span class="mat">\((-3)^3\)</span></li><li><span class="mat">\(-2^4\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 5.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

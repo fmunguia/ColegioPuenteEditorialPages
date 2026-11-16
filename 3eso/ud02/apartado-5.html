@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 2.5 · Raíces</title>
+<meta name="description" content="Matemáticas 3º ESO: Raíces">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD02 · Potencias y raíces</a> › <span>Apartado 2.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 2.5</span></div><h1 class="titulo-sesion">Raíces</h1><p>La raíz es la operación inversa de la potencia: elevar al cuadrado y extraer la raíz cuadrada se deshacen la una a la otra.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Raíz <span class="mat">\(n\)</span>-ésima</div><div class="caja-cuerpo"><div class="mat-bloque">\[\sqrt[n]{a} = b \iff b^n = a\]</div>
+<p><span class="mat">\(n\)</span> es el <strong>índice</strong>, <span class="mat">\(a\)</span> el <dfn class="glosario" tabindex="0" data-def="número del que se calcula la raíz">radicando</dfn> y <span class="mat">\(b\)</span> la <strong>raíz</strong>. Si el índice es 2 no se escribe: <span class="mat">\(\sqrt{a}\)</span> es la raíz cuadrada.</p>
+<ul><li>Índice impar: hay una sola raíz, con el mismo signo que el radicando. <span class="mat">\(\sqrt[3]{-8} = -2\)</span></li><li>Índice par y radicando positivo: hay dos raíces opuestas. <span class="mat">\(\sqrt{25} = \pm 5\)</span></li><li>Índice par y radicando negativo: <strong>no existe</strong> ninguna raíz real. <span class="mat">\(\sqrt{-4}\)</span> no existe.</li></ul></div></aside>
+<h2 class="subapartado">Raíz cuadrada exacta y entera</h2>
+<p>Los números como <span class="mat">\(1, 4, 9, 16, 25\dots\)</span> son <strong>cuadrados perfectos</strong> y su raíz cuadrada es exacta. Si un número no es cuadrado perfecto, su <strong>raíz entera</strong> es el mayor número cuyo cuadrado no lo supera, y el <strong>resto</strong> es lo que falta.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Raíz entera de 40</div><div class="caja-cuerpo"><p><span class="mat">\(6^2 = 36 \leq 40 &lt; 49 = 7^2\)</span>. La raíz entera es <span class="mat">\(6\)</span> y el resto es <span class="mat">\(40 - 36 = 4\)</span>. Por tanto, <span class="mat">\(\sqrt{40}\)</span> está entre <span class="mat">\(6\)</span> y <span class="mat">\(7\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-2.5.1"><div class="act-cab"><span class="act-num">2.5.1</span></div><div class="act-cuerpo"><p>Calcula la raíz entera y el resto:  <span class="mat">\(\sqrt{50}\)</span>   <span class="mat">\(\sqrt{200}\)</span></p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Raíz de una fracción y simplificación de raíces</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Propiedades de las raíces</div><div class="caja-cuerpo"><div class="mat-bloque">\[\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b} \qquad\qquad \sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}\]</div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ La raíz de una suma no es la suma de las raíces</div><div class="caja-cuerpo"><p>Igual que en las potencias, no hay ninguna propiedad para la suma: <span class="mat">\(\sqrt{9 + 16} = \sqrt{25} = 5\)</span>, pero <span class="mat">\(\sqrt{9} + \sqrt{16} = 3 + 4 = 7\)</span>.</p></div></aside>
+<p>Con la primera propiedad podemos <strong>extraer factores</strong> de una raíz cuadrada: se factoriza el radicando y cada factor elevado al cuadrado sale fuera de la raíz.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Extraer factores</div><div class="caja-cuerpo"><ul><li><span class="mat">\(\sqrt{\dfrac{36}{49}} = \dfrac{6}{7}\)</span></li><li><span class="mat">\(\sqrt{72} = \sqrt{2^3 \cdot 3^2} = \sqrt{2^2 \cdot 3^2 \cdot 2} = 2 \cdot 3 \cdot \sqrt{2} = 6\sqrt{2}\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-2.5.2"><div class="act-cab"><span class="act-num">2.5.2</span></div><div class="act-cuerpo"><p>Extrae factores:  <span class="mat">\(\sqrt{50}\)</span>   <span class="mat">\(\sqrt{48}\)</span></p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 2.4</a><a class="boton secundario" href="apartado-6.html">Apartado 2.6 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

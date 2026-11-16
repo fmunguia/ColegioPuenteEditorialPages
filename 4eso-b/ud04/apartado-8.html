@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 4.8 · Ecuaciones logarítmicas</title>
+<meta name="description" content="Matemáticas B 4º ESO: Ecuaciones logarítmicas">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD04 · Ecuaciones e inecuaciones</a> › <span>Apartado 4.8</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 4.8</span></div><h1 class="titulo-sesion">Ecuaciones logarítmicas</h1><p>Una ecuación es logarítmica cuando la incógnita está en el argumento de un logaritmo. La estrategia es usar las propiedades de los logaritmos hasta llegar a una igualdad de la forma <span class="mat">\(\log_a A = \log_a B\)</span>, y entonces <span class="mat">\(A = B\)</span>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Pasos para resolver ecuaciones logarítmicas</div><div class="caja-cuerpo"><ul><li>Agrupar cada miembro en un único logaritmo con las propiedades: <span class="mat">\(\ \log A + \log B = \log (A\cdot B)\)</span>, <span class="mat">\(\ n\log A = \log A^n\)</span></li><li>Si queda un número suelto, escribirlo como logaritmo: <span class="mat">\(\ 2 = \log 100\)</span>, <span class="mat">\(\ 1 = \log 10\)</span></li><li>Igualar los argumentos y resolver la ecuación resultante</li><li><strong>Comprobar las soluciones:</strong> se descartan las que hacen negativo o cero el argumento de algún logaritmo de la ecuación original</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuación logarítmica</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\log x + \log (x - 3) = 1\)</span></li><li><span class="mat">\(\log [x(x-3)] = \log 10 \Rightarrow x^2 - 3x - 10 = 0 \Rightarrow x = 5\)</span> o <span class="mat">\(x = -2\)</span></li><li><span class="mat">\(x = -2\)</span> no vale, porque <span class="mat">\(\log(-2)\)</span> no existe. Solución: <span class="mat">\(x = 5\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Exponencial que se resuelve con logaritmos</div><div class="caja-cuerpo"><p>Cuando no se pueden igualar las bases, se toman logaritmos en los dos miembros:</p>
+<ul><li><strong></strong> <span class="mat">\(3^x = 20 \Rightarrow x \log 3 = \log 20 \Rightarrow x = \dfrac{\log 20}{\log 3} \approx 2,73\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-4.8.1"><div class="act-cab"><span class="act-num">4.8.1</span></div><div class="act-cuerpo"><p>Resuelve y comprueba las soluciones:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\log (x + 6) = 2 \log x\)</span></li><li><span class="mat">\(2 \log x - \log (x - 16) = 2\)</span></li><li><span class="mat">\(\log_2 (x - 1) + \log_2 (x + 1) = 3\)</span></li><li><span class="mat">\(5^{x-1} = 12\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-7.html">← Apartado 4.7</a><a class="boton secundario" href="apartado-9.html">Apartado 4.9 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

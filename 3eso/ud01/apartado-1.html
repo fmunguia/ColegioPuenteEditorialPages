@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.1 · Números enteros</title>
+<meta name="description" content="Matemáticas 3º ESO: Números enteros">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD01 · Números racionales</a> › <span>Apartado 1.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.1</span></div><h1 class="titulo-sesion">Números enteros</h1><p>Los números naturales sirven para contar, pero no bastan para expresar situaciones como una temperatura bajo cero, una deuda o un sótano. Para ello ampliamos los naturales con los números negativos y el cero, y obtenemos el conjunto de los números enteros.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Números naturales y enteros</div><div class="caja-cuerpo"><ul><li><span class="mat">\(\mathbb{N} = \{1,2,3,4,5,\dots\}\)</span></li><li><span class="mat">\(\mathbb{Z} = \{\dots,-3,-2,-1,0,1,2,3,\dots\}\)</span></li></ul>
+<p>El <dfn class="glosario" tabindex="0" data-def="distancia que separa un número del cero">valor absoluto</dfn> de un número entero es la distancia que lo separa del cero: <span class="mat">\(|-7| = 7\)</span>, <span class="mat">\(|7| = 7\)</span>. Dos números con el mismo valor absoluto y distinto signo son <strong>opuestos</strong>.</p></div></aside>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/13d4659ea3946656.svg" width="486" height="77" alt="" loading="lazy"></figure></div>
+<h2 class="subapartado">Operaciones con números enteros</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Reglas de los signos</div><div class="caja-cuerpo"><ul><li><strong>Suma:</strong> si los dos números tienen el mismo signo, se suman sus valores absolutos y se mantiene el signo. Si tienen distinto signo, se restan sus valores absolutos y se pone el signo del que tiene mayor valor absoluto.</li><li><strong>Resta:</strong> restar un número es sumar su opuesto: <span class="mat">\(a - (-b) = a + b\)</span>.</li><li><p><strong>Multiplicación y división:</strong></p>
+<div class="mat-bloque">\[(+)\cdot(+) = + \qquad (-)\cdot(-) = + \qquad (+)\cdot(-) = - \qquad (-)\cdot(+) = -\]</div></li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Jerarquía de las operaciones</div><div class="caja-cuerpo"><p>Cuando aparecen varias operaciones, se resuelven en este orden:</p>
+<ol><li>Paréntesis y corchetes, empezando por los más interiores.</li><li>Potencias y raíces.</li><li>Multiplicaciones y divisiones, de izquierda a derecha.</li><li>Sumas y restas, de izquierda a derecha.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Operación combinada con enteros</div><div class="caja-cuerpo"><div class="mat-bloque">\[\begin{aligned}
+		12 - 3 \cdot (5 - 9) + 8 : (-2) &amp;= 12 - 3 \cdot (-4) + 8 : (-2) \\
+		&amp;= 12 + 12 - 4 \\
+		&amp;= 20
+	\end{aligned}\]</div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡Cuidado con la jerarquía!</div><div class="caja-cuerpo"><p>En <span class="mat">\(12 - 3 \cdot (-4)\)</span> no se puede restar primero <span class="mat">\(12 - 3\)</span>: la multiplicación va antes.</p>
+<div class="mat-bloque">\[12 - 3 \cdot (-4) = 12 + 12 = 24, \quad \text{y no } 9 \cdot (-4) = -36.\]</div></div></aside>
+<div class="actividad hago" id="act-1.1.1"><div class="act-cab"><span class="act-num">1.1.1</span></div><div class="act-cuerpo"><p>Calcula respetando la jerarquía: <span class="mat">\(-5 + 4 \cdot (-3) - (-18) : 6\)</span></p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-1.1.2"><div class="act-cab"><span class="act-num">1.1.2</span></div><div class="act-cuerpo"><p>Calcula: <span class="mat">\(-2 \cdot [\,7 - (3 - 10)\,] + 25\)</span></p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 1.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

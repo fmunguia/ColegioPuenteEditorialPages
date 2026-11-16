@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 3.2 · Polinomios</title>
+<meta name="description" content="Matemáticas B 4º ESO: Polinomios">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD03 · Polinomios</a> › <span>Apartado 3.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 3.2</span></div><h1 class="titulo-sesion">Polinomios</h1><p>Un polinomio es la suma o resta de varios monomios con diferente parte literal.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Polinomios</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(x^4-2x^3+x\)</span></li><li><strong></strong> </li><li><strong></strong> <span class="mat">\(-4a^5+2a^3-3a^2\)</span></li></ul></div></aside>
+<p>El grado de un polinomio viene determinado por el mayor grado de los monomios que lo conforman.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Grado de polinomios</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(2x^3-3x^2+x\)</span> grado 3</li><li><strong></strong> </li><li><strong></strong> <span class="mat">\(a^5-7a^3+6a^2-a\)</span> grado 5</li></ul></div></aside>
+<div class="actividad hago" id="act-3.2.1"><div class="act-cab"><span class="act-num">3.2.1</span></div><div class="act-cuerpo"><p>Indica el grado de los siguientes polinomios:</p>
+<ol class="tareas cols-3"><li><span class="mat">\(4x^4-7x^2+x\)</span></li><li><span class="mat">\(-x^6+x^5+3x^4-x^2\)</span></li><li><span class="mat">\(3a^4-2a^3+a\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Valor numérico de un polinomio</h2>
+<p>El <strong>valor numérico</strong> de un polinomio <span class="mat">\(P(x)\)</span> para un número determinado <span class="mat">\(x = a\)</span> es el resultado que se obtiene al sustituir la variable <span class="mat">\(x\)</span> por dicho número <span class="mat">\(a\)</span> y realizar las operaciones indicadas respetando rigurosamente la jerarquía de las operaciones.</p>
+<p>Sustituir números positivos no suele presentar dificultades, pero cuando trabajamos con valores negativos debemos prestar máxima atención a cómo afectan los exponentes a los signos de las bases.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Potencias de números negativos y uso de paréntesis</div><div class="caja-cuerpo"><p>Al elevar un número negativo a una potencia, el signo del resultado dependerá exclusivamente de si el exponente es par o impar:</p>
+<ul><li><strong>Exponente par:</strong> El resultado siempre es <strong>positivo</strong>. <br>
+		Ejemplo: <span class="mat">\((-3)^2 = (-3) \cdot (-3) = +9\)</span></li><li><strong>Exponente impar:</strong> El resultado conserva el signo <strong>negativo</strong>. <br>
+		Ejemplo: <span class="mat">\((-2)^3 = (-2) \cdot (-2) \cdot (-2) = -8\)</span></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ <span class="mat">\(-x^2\)</span> no es lo mismo que <span class="mat">\((-x)^2\)</span></div><div class="caja-cuerpo"><p>En <span class="mat">\((-x)^n\)</span> el paréntesis hace que el exponente afecte también al signo. En <span class="mat">\(-x^n\)</span> el signo queda fuera: primero se calcula la potencia y después se cambia el signo.</p>
+<p>Por ejemplo, <span class="mat">\(-5^2 = -25\)</span>, pero <span class="mat">\((-5)^2 = +25\)</span>. Al sustituir un valor negativo en un polinomio, escríbelo siempre entre paréntesis: si <span class="mat">\(x = -3\)</span>, entonces <span class="mat">\(x^2 = (-3)^2 = 9\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-3.2.2"><div class="act-cab"><span class="act-num">3.2.2</span></div><div class="act-cuerpo"><p>Dado el polinomio <span class="mat">\(P(x) = 2x^3 - x^2 + 4x - 5\)</span>, calcula su valor numérico para <span class="mat">\(x = -2\)</span>.</p>
+<aside class="caja principal"><div class="caja-cuerpo"></div></aside><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-3.2.3"><div class="act-cab"><span class="act-num">3.2.3</span></div><div class="act-cuerpo"><p>Dado el polinomio <span class="mat">\(Q(x) = -x^4 + 3x^2 - 2x\)</span>, calcula su valor numérico para <span class="mat">\(x = -1\)</span>.</p>
+<aside class="caja principal"><div class="caja-cuerpo"></div></aside><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Suma y resta de polinomios</h2>
+<p>Para sumar o restar polinomios debemos tener en cuenta los monomios que los componen. Lo primero que haremos es agrupar los monomios semejantes y, posteriormente, operar entre ellos.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma de polinomios</div><div class="caja-cuerpo"><ul><li>Dados los polinomios: <span class="mat">\(A=2x^2-6x+1\)</span>  y <span class="mat">\(B=-3x^2+2x+4\)</span></li><li><strong></strong> Calcula: <span class="mat">\(A+B\)</span></li><li><strong></strong> <span class="mat">\(A+B=(2x^2-6x+1)+ (-3x^2+2x+4 )=\)</span></li><li><strong></strong> <span class="mat">\(=2x^2-6x+1-3x^2+2x+4=\)</span></li><li><strong></strong> <span class="mat">\(=2x^2-3x^2-6x+2x+1+4=\)</span></li><li><strong></strong> <span class="mat">\(=-x^2-4x+5\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Resta de polinomios</div><div class="caja-cuerpo"><ul><li>Dados los polinomios: <span class="mat">\(A=2x^2-6x+1\)</span>  y <span class="mat">\(B=-3x^2+2x+4\)</span></li><li><strong></strong> Calcula: <span class="mat">\(A-B\)</span></li><li><strong></strong> <span class="mat">\(A-B=(2x^2-6x+1)-(-3x^2+2x+4 )=\)</span></li><li><strong></strong> <span class="mat">\(=2x^2-6x+1+3x^2-2x-4 =\)</span></li><li><strong></strong> <span class="mat">\(=2x^2+3x^2-6x-2x+1-4=\)</span></li><li><strong></strong> <span class="mat">\(=5x^2-8x-3\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-3.2.4"><div class="act-cab"><span class="act-num">3.2.4</span></div><div class="act-cuerpo"><p>Dados los polinomios <span class="mat">\(A=4x^2-x+5\)</span> y <span class="mat">\(B=-2x^2+6x-3\)</span>, calcula:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(A+B\)</span></li><li><span class="mat">\(A-B\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t4" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Multiplicaciones de monomios y polinomios</h2>
+<p>En la primera de las situaciones multiplicaremos un monomio por un polinomio aplicando la propiedad distributiva. Para multiplicar un monomio por un polinomio tenemos que multiplicar el monomio por cada término que forman el polinomio.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Multiplicación de monomio por polinomio</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(2x\cdot (3x^2-5x-2)=6x^3-10x^2-4x\)</span></li><li><strong></strong> </li><li><strong></strong> <span class="mat">\((-4x^3 )\cdot (4x^4-5x^3+x^2-x)=-16x^7+20x^6-4x^5+4x^4\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-3.2.5"><div class="act-cab"><span class="act-num">3.2.5</span></div><div class="act-cuerpo"><p>Opera:</p>
+<ol class="tareas cols-1"><li><span class="mat">\(3\cdot (5x^4-3x^3+x)=\)</span></li><li><span class="mat">\(2x\cdot (-x^3+6x^2-5)=\)</span></li><li><span class="mat">\((-3x^2 )\cdot (7x^4-3x^3+5x^2-6x)=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t5" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<p>En la segunda de las situaciones mutiplicaremos un polinomio por otro. En este caso, cuando tengamos dos polinomios multiplicándose entre sí, debemos multiplicar cada uno de los monomios que compone cada uno de los polinomios por los monomios del otro polinomio. Después, reduciremos aquellos monomios que sean semejantes.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Multiplicación de polinomios</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\((x^2-3x)\cdot (2x^3-6x^2+x-7)=\)</span></li><li><strong></strong> <span class="mat">\(=2x^5-6x^4+x^3-7x^2-6x^4+18x^3-3x^2+21x=\)</span></li><li><strong></strong> <span class="mat">\(=2x^5-6x^4-6x^4+x^3+18x^3-7x^2-3x^2+21x=\)</span></li><li><strong></strong> <span class="mat">\(=2x^5-12x^4+19x^3-10x^2+21x\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-3.2.6"><div class="act-cab"><span class="act-num">3.2.6</span></div><div class="act-cuerpo"><p>Opera:</p>
+<ol class="tareas cols-2"><li><span class="mat">\((x^2-x)\cdot (2x^2-3x+2)=\)</span></li><li><span class="mat">\((x^3+5)\cdot (-x^4+2x^2-3x)=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t6" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Operaciones con polinomios y denominadores numéricos</h2>
+<p>En muchas ocasiones, nos encontramos con expresiones algebraicas en las que los polinomios están divididos por números enteros. El dominio de estas operaciones es un paso fundamental y un excelente adelanto para resolver con éxito las ecuaciones con denominadores que se estudiarán más adelante.</p>
+<p>Para sumar o restar expresiones polinómicas con denominadores, el objetivo es reducir todas las fracciones a un único denominador común de forma análoga a como lo hacemos con las fracciones numéricas.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Procedimiento con denominadores numéricos</div><div class="caja-cuerpo"><p>Para operar expresiones con polinomios y denominadores se siguen estos pasos:</p>
+<ol><li><strong>Mínimo común múltiplo:</strong> Se calcula el m.c.m. de todos los denominadores numéricos de la expresión. Este será el denominador común.</li><li><strong>Modificación de numeradores:</strong> Para cada fracción, se divide el m.c.m. entre su denominador original, y el número resultante se multiplica por <strong>todo</strong> el polinomio del numerador (aplicando la propiedad distributiva).</li><li><strong>Agrupación y simplificación:</strong> Se unifican todos los numeradores sobre el mismo denominador común y se reducen los términos semejantes.</li></ol></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El signo menos delante de una fracción</div><div class="caja-cuerpo"><p>El signo menos afecta a todos los términos del numerador, como si fuera un paréntesis:</p>
+<div class="mat-bloque">\[-\dfrac{x - 5}{6} = \dfrac{-x + 5}{6}, \quad \text{no} \quad \dfrac{-x - 5}{6}.\]</div></div></aside>
+<div class="actividad hago" id="act-3.2.7"><div class="act-cab"><span class="act-num">3.2.7</span></div><div class="act-cuerpo"><p>Opera y simplifica la siguiente expresión polinómica con denominadores:
+	<br></p>
+<div class="mat-bloque">\[\dfrac{x^2 - 2x}{3} + \dfrac{3x + 1}{2} - \dfrac{x^2 - 5}{6}\]</div>
+<aside class="caja principal"><div class="caja-cuerpo"></div></aside><textarea class="respuesta" rows="4" data-k="t7" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 3.1</a><a class="boton secundario" href="apartado-3.html">Apartado 3.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

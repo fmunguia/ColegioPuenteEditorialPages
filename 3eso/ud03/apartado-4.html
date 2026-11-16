@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 3.4 · Proporcionalidad compuesta</title>
+<meta name="description" content="Matemáticas 3º ESO: Proporcionalidad compuesta">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD03 · Proporcionalidad y porcentajes</a> › <span>Apartado 3.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 3.4</span></div><h1 class="titulo-sesion">Proporcionalidad compuesta</h1><p>En muchos problemas intervienen más de dos magnitudes. Por ejemplo, el pienso que se gasta en una granja depende a la vez del número de animales y del número de días.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Regla de tres compuesta</div><div class="caja-cuerpo"><p>Hay <dfn class="glosario" tabindex="0" data-def="relación entre tres o más magnitudes en la que una de ellas es proporcional a cada una de las demás">proporcionalidad compuesta</dfn> cuando una magnitud es proporcional, de forma directa o inversa, a cada una de las otras. Estos problemas se resuelven con una <strong>regla de tres compuesta</strong>:</p>
+<ol><li>Colocamos los datos en dos filas, con la magnitud de la incógnita <span class="mat">\(x\)</span> en la última columna.</li><li>Comparamos <strong>cada</strong> magnitud con la de la incógnita, suponiendo que las demás no cambian, y anotamos si la proporcionalidad es directa (D) o inversa (I).</li><li>Igualamos la razón de la incógnita al producto de las otras razones. Las razones de las magnitudes inversas se escriben al revés.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Dos magnitudes directas</div><div class="caja-cuerpo"><p>En una granja de Liébana, 5 vacas comen <span class="mat">\(300\)</span>&nbsp;kg de pienso en 6 días. ¿Cuánto pienso comerán 8 vacas en 10 días?</p>
+<div class="centro"><div class="tabla"><table><tr><td>Vacas</td><td>Días</td><td>Pienso (kg)</td></tr><tr><td>5</td><td>6</td><td>300</td></tr><tr><td>8</td><td>10</td><td><span class="mat">\(x\)</span></td></tr></table></div></div>
+<p>Más vacas comen más pienso (D) y en más días se come más pienso (D):</p>
+<div class="mat-bloque">\[\dfrac{300}{x} = \dfrac{5}{8} \cdot \dfrac{6}{10} = \dfrac{30}{80} \;\Longrightarrow\; x = \dfrac{300 \cdot 80}{30} = 800 \text{ kg}\]</div>
+<p><strong>Reducción a la unidad:</strong> una vaca come en un día <span class="mat">\(300 : (5 \cdot 6) = 10\)</span>&nbsp;kg, así que 8 vacas en 10 días comen <span class="mat">\(10 \cdot 8 \cdot 10 = 800\)</span>&nbsp;kg.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Dos magnitudes inversas</div><div class="caja-cuerpo"><p>Cuatro cortacéspedes, trabajando 5 horas al día, siegan un campo de golf en 6 días. ¿Cuántos días tardarán 3 cortacéspedes trabajando 8 horas al día?</p>
+<div class="centro"><div class="tabla"><table><tr><td>Cortacéspedes</td><td>Horas al día</td><td>Días</td></tr><tr><td>4</td><td>5</td><td>6</td></tr><tr><td>3</td><td>8</td><td><span class="mat">\(x\)</span></td></tr></table></div></div>
+<p>Con menos máquinas se tardan más días (I) y con más horas al día se tardan menos días (I). Las dos razones se escriben al revés:</p>
+<div class="mat-bloque">\[\dfrac{6}{x} = \dfrac{3}{4} \cdot \dfrac{8}{5} = \dfrac{24}{20} \;\Longrightarrow\; x = \dfrac{6 \cdot 20}{24} = 5 \text{ días}\]</div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Cada magnitud se compara con la de la incógnita</div><div class="caja-cuerpo"><p>No basta con mirar si las magnitudes crecen o decrecen entre ellas: cada una se compara solo con la de la incógnita, dejando fijas las demás. Si en el ejemplo anterior se toman las dos como directas, salen <span class="mat">\(6 \cdot \dfrac{3}{4} \cdot \dfrac{8}{5} = 7{,}2\)</span> días, y 3 máquinas trabajando 8 horas al día no pueden tardar más que 4 trabajando 5 horas.</p></div></aside>
+<div class="actividad hago" id="act-3.4.1"><div class="act-cab"><span class="act-num">3.4.1</span></div><div class="act-cuerpo"><p>Resuelve: Tres grifos iguales llenan un depósito de <span class="mat">\(12\,000\)</span>&nbsp;L en 5 horas. ¿Cuánto tardarán 5 grifos en llenar un depósito de <span class="mat">\(30\,000\)</span>&nbsp;L?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 3.3</a><a class="boton secundario" href="apartado-5.html">Apartado 3.5 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

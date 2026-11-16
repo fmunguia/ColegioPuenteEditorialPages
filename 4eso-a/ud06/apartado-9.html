@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 6.9 · División de polinomios</title>
+<meta name="description" content="Matemáticas A 4º ESO: División de polinomios">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD06 · Monomios y polinomios</a> › <span>Apartado 6.9</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 6.9</span></div><h1 class="titulo-sesion">División de polinomios</h1><p>Dividir dos polinomios <span class="mat">\(P(x)\)</span> (dividendo) entre <span class="mat">\(Q(x)\)</span> (divisor) consiste en hallar un cociente <span class="mat">\(C(x)\)</span> y un resto <span class="mat">\(R(x)\)</span> tales que <span class="mat">\(P(x) = Q(x) \cdot C(x) + R(x)\)</span>, con el grado de <span class="mat">\(R(x)\)</span> menor que el de <span class="mat">\(Q(x)\)</span>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Algoritmo de la división</div><div class="caja-cuerpo"><p>Para dividir polinomios seguimos estos pasos:</p>
+<ol><li>Ordenamos los polinomios de mayor a menor grado y dejamos huecos si falta algún término en el dividendo.</li><li>Dividimos el primer término del dividendo entre el primero del divisor para obtener el primer término del cociente.</li><li>Multiplicamos ese término por todo el divisor y restamos el resultado al dividendo.</li><li>Repetimos el proceso con el nuevo dividendo obtenido hasta que su grado sea menor que el del divisor.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. División de polinomios</div><div class="caja-cuerpo"><p>Realiza la división: <span class="mat">\((6x^3 + 5x^2 - 1) : (2x^2 + 3x)\)</span>.</p>
+<div class="mat-bloque">\[\begin{array}{r|l}
+		6x^3 + 5x^2 + 0x - 1 &amp; 2x^2 + 3x \\ 
+		-6x^3 - 9x^2 \phantom{+ 0x - 1} &amp; 3x - 2 \\ 
+		-4x^2 + 0x - 1 &amp; \\
+		4x^2 + 6x \phantom{- 1} &amp; \\ 
+		6x - 1 &amp; 
+	\end{array}\]</div>
+<p><strong>Cociente:</strong> <span class="mat">\(C(x) = 3x - 2\)</span>  <strong>Resto:</strong> <span class="mat">\(R(x) = 6x - 1\)</span></p></div></aside>
+<div class="actividad hago" id="act-6.9.1"><div class="act-cab"><span class="act-num">6.9.1</span></div><div class="act-cuerpo"><p>Calcula el cociente y el resto de la siguiente división:</p>
+<div class="mat-bloque">\[(x^4 - 3x^2 + 2x - 5) : (x^2 - 2)\]</div><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-8.html">← Apartado 6.8</a><a class="boton secundario" href="apartado-10.html">Apartado 6.10 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

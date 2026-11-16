@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 3.5 · Fracciones algebraicas</title>
+<meta name="description" content="Matemáticas B 4º ESO: Fracciones algebraicas">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD03 · Polinomios</a> › <span>Apartado 3.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 3.5</span></div><h1 class="titulo-sesion">Fracciones algebraicas</h1><p>Una fracción algebraica es el cociente de dos polinomios. Con ellas se opera igual que con las fracciones numéricas: el papel que tenían los factores primos lo hacen ahora los factores de los polinomios. Por eso, antes de operar, conviene factorizar.</p>
+<h2 class="subapartado">Simplificación</h2>
+<p>Simplificar una fracción algebraica consiste en obtener una fracción equivalente más sencilla.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Regla de simplificación</div><div class="caja-cuerpo"><p>Para simplificar una fracción algebraica:</p>
+<ol><li>Factorizamos completamente el numerador y el denominador.</li><li>Cancelamos los factores que sean comunes a ambos (los que se repiten arriba y abajo).</li></ol></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Solo se simplifican factores</div><div class="caja-cuerpo"><p>Solo se pueden tachar factores que multiplican a todo el numerador y a todo el denominador, nunca sumandos. Por ejemplo, <span class="mat">\(\dfrac{x + 6}{x + 3} \neq 2\)</span>: para <span class="mat">\(x = 1\)</span> vale <span class="mat">\(\dfrac{7}{4}\)</span>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Simplificación</div><div class="caja-cuerpo"><p>Simplifica la fracción: <span class="mat">\(\dfrac{x^2 - 4}{x^2 - 4x + 4}\)</span></p>
+<ol><li>Factorizamos numerador (dif. de cuadrados): <span class="mat">\((x+2)(x-2)\)</span>.</li><li>Factorizamos denominador (id. notable): <span class="mat">\((x-2)^2\)</span>.</li><li><span class="mat">\(\dfrac{(x+2)\cancel{(x-2)}}{(x-2)\cancel{(x-2)}} = \mathbf{\dfrac{x+2}{x-2}}\)</span></li></ol></div></aside>
+<div class="actividad hago" id="act-3.5.1"><div class="act-cab"><span class="act-num">3.5.1</span></div><div class="act-cuerpo"><p>Simplifica estas fracciones algebraicas factorizando previamente:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\dfrac{x^2 - 6x + 9}{x^2 - 9}\)</span></li><li><span class="mat">\(\dfrac{2x^2 - 4x}{x^2 - 4}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Suma y resta</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suma y resta de fracciones algebraicas</div><div class="caja-cuerpo"><ol><li>Factorizamos los denominadores.</li><li>Calculamos el <strong>m.c.m.</strong> de los denominadores: el producto de los factores comunes y no comunes, cada uno con su mayor exponente.</li><li>Multiplicamos cada numerador por lo que le falta a su denominador para llegar al m.c.m.</li><li>Sumamos o restamos los numeradores, dejamos el denominador común y simplificamos si se puede.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma y resta</div><div class="caja-cuerpo"><ul><li><p><span class="mat">\(\dfrac{x}{x^2 - 1} + \dfrac{2}{x + 1}\)</span>. Como <span class="mat">\(x^2 - 1 = (x + 1)(x - 1)\)</span>, el m.c.m. es <span class="mat">\((x + 1)(x - 1)\)</span>:</p>
+<div class="mat-bloque">\[\dfrac{x}{(x + 1)(x - 1)} + \dfrac{2(x - 1)}{(x + 1)(x - 1)} = \dfrac{x + 2x - 2}{(x + 1)(x - 1)} = \dfrac{3x - 2}{x^2 - 1}\]</div></li><li><p><span class="mat">\(\dfrac{x + 3}{x^2 - 2x} - \dfrac{2}{x - 2}\)</span>. Como <span class="mat">\(x^2 - 2x = x(x - 2)\)</span>, el m.c.m. es <span class="mat">\(x(x - 2)\)</span>:</p>
+<div class="mat-bloque">\[\dfrac{x + 3}{x(x - 2)} - \dfrac{2x}{x(x - 2)} = \dfrac{x + 3 - 2x}{x(x - 2)} = \dfrac{3 - x}{x^2 - 2x}\]</div></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Los denominadores no se suman</div><div class="caja-cuerpo"><p>Primero se reduce a común denominador. Por ejemplo, <span class="mat">\(\dfrac{1}{x} + \dfrac{1}{x + 1} \neq \dfrac{2}{2x + 1}\)</span>: para <span class="mat">\(x = 1\)</span>, la primera expresión vale <span class="mat">\(\dfrac{3}{2}\)</span> y la segunda, <span class="mat">\(\dfrac{2}{3}\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-3.5.2"><div class="act-cab"><span class="act-num">3.5.2</span></div><div class="act-cuerpo"><p>Calcula y simplifica el resultado:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\dfrac{2}{x} + \dfrac{3}{x + 1}\)</span></li><li><span class="mat">\(\dfrac{x}{x - 3} - \dfrac{18}{x^2 - 9}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Multiplicación y división</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Multiplicación y división de fracciones algebraicas</div><div class="caja-cuerpo"><div class="mat-bloque">\[\dfrac{P}{Q} \cdot \dfrac{R}{S} = \dfrac{P \cdot R}{Q \cdot S} \qquad\qquad \dfrac{P}{Q} : \dfrac{R}{S} = \dfrac{P \cdot S}{Q \cdot R}\]</div>
+<p>Antes de multiplicar conviene factorizar todos los polinomios: así se tachan los factores comunes sin desarrollar productos largos.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Producto y cociente</div><div class="caja-cuerpo"><ul><li><span class="mat">\(\dfrac{x^2 - 9}{2x} \cdot \dfrac{4x^2}{x + 3} = \dfrac{(x + 3)(x - 3) \cdot 4x^2}{2x\,(x + 3)} = 2x(x - 3)\)</span></li><li><span class="mat">\(\dfrac{x^2 + 2x + 1}{x - 2} : \dfrac{x + 1}{x^2 - 4} = \dfrac{(x + 1)^2 (x + 2)(x - 2)}{(x - 2)(x + 1)} = (x + 1)(x + 2)\)</span></li><li><span class="mat">\(\left(1 + \dfrac{1}{x}\right) : \dfrac{x + 1}{x^2} = \dfrac{x + 1}{x} \cdot \dfrac{x^2}{x + 1} = x\)</span>. Como con los números, primero se hacen los paréntesis, después productos y cocientes, y al final sumas y restas.</li></ul></div></aside>
+<div class="actividad hago" id="act-3.5.3"><div class="act-cab"><span class="act-num">3.5.3</span></div><div class="act-cuerpo"><p>Calcula y simplifica el resultado:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\dfrac{x + 2}{x} \cdot \dfrac{x^2}{x^2 - 4}\)</span></li><li><span class="mat">\(\dfrac{x^2 - x}{x + 5} : \dfrac{x - 1}{x^2 - 25}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 3.4</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

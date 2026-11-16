@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 9.1 · Medida de ángulos</title>
+<meta name="description" content="Matemáticas B 4º ESO: Medida de ángulos">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD09 · Trigonometría</a> › <span>Apartado 9.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 9.1</span></div><h1 class="titulo-sesion">Medida de ángulos</h1><p>La trigonometría estudia la relación entre los ángulos y los lados de un triángulo. Antes de empezar necesitamos dos formas de medir ángulos: en grados sexagesimales, la que ya conoces, y en radianes, la que usan la calculadora científica y las matemáticas de Bachillerato.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Grados sexagesimales</div><div class="caja-cuerpo"><ul><li>Una circunferencia completa mide <span class="mat">\(360^\circ\)</span></li><li>Cada grado se divide en 60 minutos y cada minuto en 60 segundos: <span class="mat">\(1^\circ = 60'\)</span>, <span class="mat">\(\ 1' = 60''\)</span></li><li><strong></strong> <span class="mat">\(35^\circ\,24'\,36'' = 35 + \dfrac{24}{60} + \dfrac{36}{3600} = 35,41^\circ\)</span></li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Radianes</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/d3a6c76adfb6ee8a.svg" width="174" height="165" alt="" loading="lazy"></figure></td><td><ul><li>Un <strong>radián</strong> es el ángulo cuyo arco mide lo mismo que el radio</li><li>La circunferencia completa mide <span class="mat">\(2\pi\)</span> rad</li><li><strong></strong> <span class="mat">\(360^\circ = 2\pi \text{ rad} \qquad 180^\circ = \pi \text{ rad}\)</span></li></ul></td></tr></table></div></div></aside>
+<p>Para pasar de una unidad a otra basta con una regla de tres a partir de la equivalencia <span class="mat">\(180^\circ = \pi\)</span> rad.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Conversión entre grados y radianes</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><span class="mat">\(60^\circ = 60 \cdot \dfrac{\pi}{180} = \dfrac{\pi}{3} \text{ rad}\)</span></td><td><span class="mat">\(\dfrac{3\pi}{4} \text{ rad} = \dfrac{3\pi}{4} \cdot \dfrac{180}{\pi} = 135^\circ\)</span></td></tr></table></div>
+<div class="centro"><div class="tabla"><table><tr><td>Grados</td><td><span class="mat">\(0^\circ\)</span></td><td><span class="mat">\(30^\circ\)</span></td><td><span class="mat">\(45^\circ\)</span></td><td><span class="mat">\(60^\circ\)</span></td><td><span class="mat">\(90^\circ\)</span></td><td><span class="mat">\(180^\circ\)</span></td><td><span class="mat">\(270^\circ\)</span></td></tr><tr><td>Radianes</td><td><span class="mat">\(0\)</span></td><td><span class="mat">\(\dfrac{\pi}{6}\)</span></td><td><span class="mat">\(\dfrac{\pi}{4}\)</span></td><td><span class="mat">\(\dfrac{\pi}{3}\)</span></td><td><span class="mat">\(\dfrac{\pi}{2}\)</span></td><td><span class="mat">\(\pi\)</span></td><td><span class="mat">\(\dfrac{3\pi}{2}\)</span></td></tr></table></div></div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Revisa el modo de la calculadora</div><div class="caja-cuerpo"><p>La calculadora puede trabajar en grados (DEG) o en radianes (RAD). En modo RAD, <span class="mat">\(\sin 30\)</span> da <span class="mat">\(-0{,}988\)</span>, porque calcula el seno de 30 radianes. Antes de empezar, comprueba que aparece la indicación D o DEG en la pantalla.</p></div></aside>
+<div class="actividad hago" id="act-9.1.1"><div class="act-cab"><span class="act-num">9.1.1</span></div><div class="act-cuerpo"><p>Expresa en radianes: <span class="mat">\(45^\circ\)</span>, <span class="mat">\(120^\circ\)</span>, <span class="mat">\(240^\circ\)</span> y <span class="mat">\(330^\circ\)</span>. Expresa en grados: <span class="mat">\(\dfrac{\pi}{10}\)</span>, <span class="mat">\(\dfrac{2\pi}{3}\)</span> y <span class="mat">\(\dfrac{7\pi}{4}\)</span> rad.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 9.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

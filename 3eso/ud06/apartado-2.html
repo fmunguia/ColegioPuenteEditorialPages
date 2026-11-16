@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 6.2 · Ecuaciones de primer grado</title>
+<meta name="description" content="Matemáticas 3º ESO: Ecuaciones de primer grado">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD06 · Ecuaciones</a> › <span>Apartado 6.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 6.2</span></div><h1 class="titulo-sesion">Ecuaciones de primer grado</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Pasos para resolver una ecuación de primer grado</div><div class="caja-cuerpo"><ol><li>Quitar los <strong>denominadores</strong>, multiplicando los dos miembros por el m.c.m. de los denominadores.</li><li>Quitar los <strong>paréntesis</strong>, aplicando la propiedad distributiva y prestando atención a los signos.</li><li><strong>Agrupar</strong> los términos con <span class="mat">\(x\)</span> en un miembro y los números en el otro.</li><li><strong>Reducir</strong> los términos semejantes.</li><li><strong>Despejar</strong> la <span class="mat">\(x\)</span>.</li><li><strong>Comprobar</strong> la solución en la ecuación inicial.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuación con paréntesis</div><div class="caja-cuerpo"><div class="mat-bloque">\[\begin{aligned}
+		3(x - 2) - 2(x + 1) &amp;= 4 \\
+		3x - 6 - 2x - 2 &amp;= 4 \\
+		x - 8 &amp;= 4 \\
+		x &amp;= 12
+	\end{aligned}\]</div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ecuación con denominadores</div><div class="caja-cuerpo"><div class="mat-bloque">\[\begin{aligned}
+		\dfrac{x}{2} - \dfrac{x - 1}{3} &amp;= 2 &amp;&amp; \text{m.c.m.}(2, 3) = 6 \\
+		3x - 2(x - 1) &amp;= 12 &amp;&amp; \text{multiplicamos todo por 6} \\
+		3x - 2x + 2 &amp;= 12 \\
+		x &amp;= 10
+	\end{aligned}\]</div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El signo menos afecta a todo el numerador</div><div class="caja-cuerpo"><p>Al quitar el denominador en <span class="mat">\(-\dfrac{x - 1}{3}\)</span> hay que escribir <span class="mat">\(-2(x - 1) = -2x + 2\)</span>, y no <span class="mat">\(-2x - 1\)</span>. Pon siempre el numerador entre paréntesis antes de multiplicar.</p></div></aside>
+<div class="actividad hago" id="act-6.2.1"><div class="act-cab"><span class="act-num">6.2.1</span></div><div class="act-cuerpo"><p>Resuelve:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(5x - 3 = 2x + 9\)</span></li><li><span class="mat">\(\dfrac{x + 1}{2} - \dfrac{x - 2}{5} = 2\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Número de soluciones</h2>
+<p>Al resolver una ecuación de primer grado, al final podemos encontrarnos con tres casos:</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Tipos de ecuaciones de primer grado</div><div class="caja-cuerpo"><ul><li><span class="mat">\(a x = b\)</span> con <span class="mat">\(a \neq 0\)</span>: <strong>una solución</strong>, <span class="mat">\(x = \dfrac{b}{a}\)</span>.</li><li><span class="mat">\(0 x = 0\)</span>: <strong>infinitas soluciones</strong>. Cualquier número cumple la igualdad; es una <dfn class="glosario" tabindex="0" data-def="igualdad algebraica que se cumple para cualquier valor de las letras">identidad</dfn>.</li><li><span class="mat">\(0 x = b\)</span> con <span class="mat">\(b \neq 0\)</span>: <strong>ninguna solución</strong>. Ningún número multiplicado por 0 da <span class="mat">\(b\)</span>.</li></ul></div></aside>
+<div class="actividad hago" id="act-6.2.2"><div class="act-cab"><span class="act-num">6.2.2</span></div><div class="act-cuerpo"><p>¿Cuántas soluciones tiene cada ecuación?</p>
+<ol class="tareas cols-2"><li><span class="mat">\(2(x + 3) = 2x + 6\)</span></li><li><span class="mat">\(3x - (x - 4) = 2x + 1\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 6.1</a><a class="boton secundario" href="apartado-3.html">Apartado 6.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

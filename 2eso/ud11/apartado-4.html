@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 11.4 · Volúmenes</title>
+<meta name="description" content="Matemáticas 2º ESO: Volúmenes">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD11 · Cuerpos geométricos</a> › <span>Apartado 11.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 11.4</span></div><h1 class="titulo-sesion">Volúmenes</h1><p>El <dfn class="glosario" tabindex="0" data-def="espacio que ocupa un cuerpo; se mide en unidades cúbicas">volumen</dfn> es el espacio que ocupa un cuerpo. Se mide en unidades cúbicas: cm<span class="mat">\(^3\)</span>, m<span class="mat">\(^3\)</span>… La <dfn class="glosario" tabindex="0" data-def="lo que cabe dentro de un recipiente; se mide en litros">capacidad</dfn> es lo que cabe dentro de un recipiente y se mide en litros.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Unidades de volumen y capacidad</div><div class="caja-cuerpo"><ul><li>Cada unidad de volumen es 1000 veces la inmediata inferior: 1 m<span class="mat">\(^3\)</span> = 1000 dm<span class="mat">\(^3\)</span> = 1 000 000 cm<span class="mat">\(^3\)</span>.</li><li>1 dm<span class="mat">\(^3\)</span> = 1 litro (L) <span class="mat">\(\quad\)</span> 1 cm<span class="mat">\(^3\)</span> = 1 mililitro (mL) <span class="mat">\(\quad\)</span> 1 m<span class="mat">\(^3\)</span> = 1000 L</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Las unidades de volumen van de 1000 en 1000</div><div class="caja-cuerpo"><p>Para pasar de m<span class="mat">\(^3\)</span> a dm<span class="mat">\(^3\)</span> no se multiplica por 10 ni por 100, sino por 1000, porque un cubo de 1 m de arista contiene <span class="mat">\(10\cdot 10\cdot 10\)</span> cubos de 1 dm. Así, <span class="mat">\(2{,}5\)</span> m<span class="mat">\(^3\)</span> son 2500 dm<span class="mat">\(^3\)</span>, es decir, 2500 L.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Volúmenes de cuerpos geométricos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><strong>Prisma y cilindro</strong></td><td><span class="mat">\(V=A_{\text{base}}\cdot h\)</span> <span class="mat">\(\quad\)</span> (cilindro: <span class="mat">\(V=\pi r^2 h\)</span>)</td></tr><tr><td><strong>Pirámide y cono</strong></td><td><span class="mat">\(V=\dfrac{A_{\text{base}}\cdot h}{3}\)</span> <span class="mat">\(\quad\)</span> (cono: <span class="mat">\(V=\dfrac{\pi r^2 h}{3}\)</span>)</td></tr><tr><td><strong>Esfera</strong></td><td><span class="mat">\(V=\dfrac{4}{3}\pi r^3\)</span></td></tr></table></div></div></aside>
+<p>Fíjate en que una pirámide tiene la tercera parte del volumen de un prisma con la misma base y la misma altura. Lo mismo ocurre con el cono y el cilindro.</p>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ No olvides dividir entre 3</div><div class="caja-cuerpo"><p>El volumen de una pirámide o de un cono es <span class="mat">\(\frac{A_{\text{base}}\cdot h}{3}\)</span>. Si no divides entre 3, obtienes el volumen del prisma o del cilindro que lo envuelve, que es el triple.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Capacidad de una lata</div><div class="caja-cuerpo"><p>Una lata cilíndrica tiene 4 cm de radio y 12 cm de altura.</p>
+<div class="centro"><p><span class="mat">\(V=\pi\cdot 4^2\cdot 12\approx 603{,}19\)</span> cm<span class="mat">\(^3\approx 603\)</span> mL</p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Litros de una piscina</div><div class="caja-cuerpo"><p>Una piscina tiene forma de ortoedro de <span class="mat">\(25\times 10\times 2\)</span> m. Su volumen es <span class="mat">\(V=25\cdot 10\cdot 2=500\)</span> m<span class="mat">\(^3\)</span>, es decir, <span class="mat">\(500\,000\)</span> litros.</p></div></aside>
+<div class="actividad hago" id="act-11.4.1"><div class="act-cab"><span class="act-num">11.4.1</span></div><div class="act-cuerpo"><p>Calcula el volumen de:</p>
+<ol class="tareas cols-1"><li>Un cubo de 4 cm de arista.</li><li>Una pirámide de base cuadrada de 6 cm de lado y 4 cm de altura.</li><li>Un cono de 3 cm de radio y 4 cm de altura.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-11.4.2"><div class="act-cab"><span class="act-num">11.4.2</span></div><div class="act-cuerpo"><p>Un brik de zumo mide <span class="mat">\(6\times 4\times 10\)</span> cm. ¿Cabe en él un litro de zumo? ¿Cuántos mililitros caben?</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-11.4.3"><div class="act-cab"><span class="act-num">11.4.3</span></div><div class="act-cuerpo"><p>Un vaso cilíndrico mide 6 cm de diámetro y 10 cm de altura. ¿Cuántos vasos se pueden llenar con una botella de 1,5 L?</p><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-11.4.4"><div class="act-cab"><span class="act-num">11.4.4</span></div><div class="act-cuerpo"><p>Una canica de 1 cm de radio, ¿ocupa más o menos de 4 cm<span class="mat">\(^3\)</span>? ¿Cuántas canicas iguales habría que juntar para tener el volumen de un cubo de 10 cm de arista? Redondea.</p><textarea class="respuesta" rows="4" data-k="t4" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 11.3</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

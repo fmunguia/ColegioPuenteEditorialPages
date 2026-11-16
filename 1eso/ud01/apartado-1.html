@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.1 · Los números naturales</title>
+<meta name="description" content="Matemáticas 1º ESO: Los números naturales">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD01 · Naturales y divisibilidad</a> › <span>Apartado 1.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.1</span></div><h1 class="titulo-sesion">Los números naturales</h1><p>Los <dfn class="glosario" tabindex="0" data-def="números que usamos para contar: 1, 2, 3, 4…">números naturales</dfn> son los que usamos para contar: 3 hermanos, 25 alumnos en clase o 1 200 barcos que han pasado por la ría de Astillero en un año. Se representan con el símbolo <span class="mat">\(\mathbb{N}\)</span>.</p>
+<p>Las cifras que usamos hoy (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) se llaman indoarábigas. Nacieron en la India y llegaron a Europa a través de los árabes hace unos mil años. Antes, en la península se usaban los números romanos, que no tenían cero y hacían muy difíciles las cuentas.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Sistema de numeración decimal</div><div class="caja-cuerpo"><ul><li><span class="mat">\(\mathbb{N} = \{1,2,3,4,5,6,\ldots\}\)</span></li><li>Es un sistema <strong>decimal</strong>: 10 unidades de un orden forman 1 unidad del orden siguiente.</li><li>Es un sistema <dfn class="glosario" tabindex="0" data-def="sistema de numeración en el que el valor de cada cifra depende del lugar que ocupa">posicional</dfn>: el valor de cada cifra depende del lugar que ocupa.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Valor de posición</div><div class="caja-cuerpo"><p>En el número <span class="mat">\(\mathbf{4\,507\,382}\)</span>:</p>
+<ol class="tareas cols-2"><li><strong></strong> 4 unidades de millón <span class="mat">\(\rightarrow 4\,000\,000\)</span></li><li><strong></strong> 5 centenas de millar <span class="mat">\(\rightarrow 500\,000\)</span></li><li><strong></strong> 0 decenas de millar <span class="mat">\(\rightarrow 0\)</span></li><li><strong></strong> 7 unidades de millar <span class="mat">\(\rightarrow 7\,000\)</span></li><li><strong></strong> 3 centenas <span class="mat">\(\rightarrow 300\)</span></li><li><strong></strong> 8 decenas <span class="mat">\(\rightarrow 80\)</span></li><li><strong></strong> 2 unidades <span class="mat">\(\rightarrow 2\)</span></li></ol>
+<p><span class="mat">\(4\,507\,382 = 4\,000\,000 + 500\,000 + 7\,000 + 300 + 80 + 2\)</span></p></div></aside>
+<div class="actividad hago" id="act-1.1.1"><div class="act-cab"><span class="act-num">1.1.1</span></div><div class="act-cuerpo"><p>Escribe con cifras y descompón según el valor de posición</p>
+<ol class="tareas cols-1"><li>Doscientos tres mil cuarenta y cinco.</li><li>Siete millones ochenta mil seiscientos.</li><li>Un millón un mil uno.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<p>Con números grandes muchas veces no necesitamos el valor exacto y nos basta con una aproximación. Para <strong>redondear</strong> a un orden de unidades miramos la cifra siguiente: si es 5 o mayor sumamos 1; si es menor que 5 la dejamos igual. Después cambiamos por ceros las cifras de la derecha.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Redondeo</div><div class="caja-cuerpo"><p>El estadio de El Sardinero tiene 22 222 asientos.</p>
+<ul><li>Redondeado a los millares: <span class="mat">\(22\,000\)</span> (la cifra siguiente es 2, menor que 5).</li><li>Redondeado a las decenas: <span class="mat">\(22\,220\)</span>.</li></ul>
+<p>El número <span class="mat">\(38\,762\)</span> redondeado a los millares es <span class="mat">\(39\,000\)</span> (la cifra siguiente es 7).</p></div></aside>
+<div class="actividad hago" id="act-1.1.2"><div class="act-cab"><span class="act-num">1.1.2</span></div><div class="act-cuerpo"><p>Redondea a las centenas y a los millares</p>
+<ol class="tareas cols-3"><li><span class="mat">\(5\,481\)</span></li><li><span class="mat">\(72\,950\)</span></li><li><span class="mat">\(109\,049\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 1.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

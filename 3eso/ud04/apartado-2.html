@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 4.2 · Término general y forma recurrente</title>
+<meta name="description" content="Matemáticas 3º ESO: Término general y forma recurrente">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD04 · Sucesiones</a> › <span>Apartado 4.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 4.2</span></div><h1 class="titulo-sesion">Término general y forma recurrente</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Término general</div><div class="caja-cuerpo"><p>El <dfn class="glosario" tabindex="0" data-def="fórmula que da cualquier término de una sucesión a partir de su posición">término general</dfn> <span class="mat">\(a_n\)</span> es una fórmula que permite calcular cualquier término a partir de su posición <span class="mat">\(n\)</span>.</p>
+<div class="centro"><div class="tabla"><table><tr><td><span class="mat">\(n\)</span></td><td>1</td><td>2</td><td>3</td><td>4</td><td><span class="mat">\(\ldots\)</span></td></tr><tr><td><span class="mat">\(a_n = 2n - 1\)</span></td><td>1</td><td>3</td><td>5</td><td>7</td><td><span class="mat">\(\ldots\)</span></td></tr></table></div></div>
+<p>Con el término general podemos saber, sin escribir todos los anteriores, que la figura 50 tendrá <span class="mat">\(a_{50} = 2 \cdot 50 - 1 = 99\)</span> cuadrados.</p></div></aside>
+<p>Para encontrar el término general conviene comparar cada término con su posición y buscar la regla que los relaciona.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Encontrar el término general</div><div class="caja-cuerpo"><ul><li><span class="mat">\(2, 4, 6, 8, \ldots\)</span>  Cada término es el doble de su posición: <span class="mat">\(a_n = 2n\)</span>.</li><li><span class="mat">\(5, 10, 15, 20, \ldots\)</span>  Son los múltiplos de 5: <span class="mat">\(a_n = 5n\)</span>.</li><li><span class="mat">\(\dfrac{1}{2}, \dfrac{1}{4}, \dfrac{1}{8}, \dfrac{1}{16}, \ldots\)</span>  El denominador es una potencia de 2: <span class="mat">\(a_n = \dfrac{1}{2^n}\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Forma recurrente</div><div class="caja-cuerpo"><p>Una sucesión está definida de <dfn class="glosario" tabindex="0" data-def="forma de definir una sucesión calculando cada término a partir de los anteriores">forma recurrente</dfn> cuando cada término se calcula a partir de los anteriores. La más famosa es la <strong>sucesión de Fibonacci</strong>, en la que cada término es la suma de los dos anteriores:</p>
+<div class="mat-bloque">\[a_1 = 1, \quad a_2 = 1, \quad a_n = a_{n-1} + a_{n-2} \qquad 1, 1, 2, 3, 5, 8, 13, 21, \ldots\]</div></div></aside>
+<div class="actividad hago" id="act-4.2.1"><div class="act-cab"><span class="act-num">4.2.1</span></div><div class="act-cuerpo"><p>Calcula <span class="mat">\(a_1\)</span>, <span class="mat">\(a_2\)</span>, <span class="mat">\(a_3\)</span> y <span class="mat">\(a_{10}\)</span> de la sucesión <span class="mat">\(a_n = 3n - 2\)</span>. Después, halla el término general de <span class="mat">\(5, 8, 11, 14, \ldots\)</span></p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 4.1</a><a class="boton secundario" href="apartado-3.html">Apartado 4.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 10.3 · Perímetros y áreas de polígonos</title>
+<meta name="description" content="Matemáticas 2º ESO: Perímetros y áreas de polígonos">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD10 · Pitágoras, perímetros y áreas</a> › <span>Apartado 10.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 10.3</span></div><h1 class="titulo-sesion">Perímetros y áreas de polígonos</h1><p>El <dfn class="glosario" tabindex="0" data-def="longitud del contorno de una figura">perímetro</dfn> es la longitud del contorno de una figura y se obtiene sumando sus lados. El <dfn class="glosario" tabindex="0" data-def="medida de la superficie que encierra una figura">área</dfn> es la medida de la superficie que encierra y se expresa en unidades cuadradas (cm<span class="mat">\(^2\)</span>, m<span class="mat">\(^2\)</span>…).</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Áreas de polígonos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><strong>Cuadrado</strong> de lado <span class="mat">\(l\)</span></td><td><span class="mat">\(A=l^2\)</span></td></tr><tr><td><strong>Rectángulo</strong> de base <span class="mat">\(b\)</span> y altura <span class="mat">\(h\)</span></td><td><span class="mat">\(A=b\cdot h\)</span></td></tr><tr><td><strong>Paralelogramo</strong> (romboide)</td><td><span class="mat">\(A=b\cdot h\)</span></td></tr><tr><td><strong>Triángulo</strong></td><td><span class="mat">\(A=\dfrac{b\cdot h}{2}\)</span></td></tr><tr><td><strong>Rombo</strong> de diagonales <span class="mat">\(D\)</span> y <span class="mat">\(d\)</span></td><td><span class="mat">\(A=\dfrac{D\cdot d}{2}\)</span></td></tr><tr><td><strong>Trapecio</strong> de bases <span class="mat">\(B\)</span> y <span class="mat">\(b\)</span> y altura <span class="mat">\(h\)</span></td><td><span class="mat">\(A=\dfrac{(B+b)\cdot h}{2}\)</span></td></tr><tr><td><strong>Polígono regular</strong> de perímetro <span class="mat">\(P\)</span> y apotema <span class="mat">\(a\)</span></td><td><span class="mat">\(A=\dfrac{P\cdot a}{2}\)</span></td></tr></table></div></div></aside>
+<p>Muchas veces falta algún dato para aplicar la fórmula y se puede obtener con el teorema de Pitágoras.</p>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ La altura no es el lado inclinado</div><div class="caja-cuerpo"><p>En triángulos, romboides y trapecios, la altura es perpendicular a la base. En un trapecio isósceles de bases 14 y 8 cm y lados de 5 cm, la altura no es 5 cm, sino <span class="mat">\(\sqrt{5^2-3^2}=4\)</span> cm.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Área de un triángulo equilátero</div><div class="caja-cuerpo"><p>Triángulo equilátero de 6 cm de lado. La altura divide la base en dos partes de 3 cm:</p>
+<div class="centro"><p><span class="mat">\(h=\sqrt{6^2-3^2}=\sqrt{27}\approx 5{,}20\)</span> cm <span class="mat">\(\qquad A=\dfrac{6\cdot 5{,}20}{2}\approx 15{,}6\)</span> cm<span class="mat">\(^2\)</span></p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Área y perímetro de un rombo</div><div class="caja-cuerpo"><p>Rombo de diagonales 24 y 10 cm.</p>
+<ul><li>Área: <span class="mat">\(A=\dfrac{24\cdot 10}{2}=120\)</span> cm<span class="mat">\(^2\)</span>.</li><li>Las diagonales se cortan en su punto medio y forman triángulos rectángulos de catetos 12 y 5 cm. El lado es <span class="mat">\(\sqrt{12^2+5^2}=13\)</span> cm, así que el perímetro es <span class="mat">\(4\cdot 13=52\)</span> cm.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Área de un hexágono regular</div><div class="caja-cuerpo"><p>En un hexágono regular el lado es igual al radio. Si el lado mide 4 cm, la apotema es <span class="mat">\(a=\sqrt{4^2-2^2}=\sqrt{12}\approx 3{,}46\)</span> cm.</p>
+<div class="centro"><p><span class="mat">\(A=\dfrac{P\cdot a}{2}=\dfrac{24\cdot 3{,}46}{2}\approx 41{,}5\)</span> cm<span class="mat">\(^2\)</span></p></div></div></aside>
+<div class="actividad hago" id="act-10.3.1"><div class="act-cab"><span class="act-num">10.3.1</span></div><div class="act-cuerpo"><p>Calcula el perímetro y el área de:</p>
+<ol class="tareas cols-1"><li>Un rectángulo de base 12 cm y diagonal 13 cm.</li><li>Un trapecio rectángulo de bases 12 y 7 cm y altura 12 cm.</li><li>Un cuadrado de diagonal 10 cm.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 10.2</a><a class="boton secundario" href="apartado-4.html">Apartado 10.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

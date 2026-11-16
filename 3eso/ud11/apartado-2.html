@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 11.2 · Movimientos en el plano</title>
+<meta name="description" content="Matemáticas 3º ESO: Movimientos en el plano">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD11 · Movimientos en el plano</a> › <span>Apartado 11.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 11.2</span></div><h1 class="titulo-sesion">Movimientos en el plano</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Movimiento</div><div class="caja-cuerpo"><p>Un <strong>movimiento</strong> o <strong>isometría</strong> es una transformación que cambia una figura de posición sin cambiar su forma ni su tamaño: conserva las distancias y los ángulos. La figura transformada se llama <strong>imagen</strong> o <strong>homóloga</strong>, y sus puntos se escriben con prima: <span class="mat">\(A'\)</span>, <span class="mat">\(B'\)</span>…</p>
+<p>Hay tres tipos de movimientos: <strong>traslaciones</strong>, <strong>giros</strong> y <strong>simetrías</strong>.</p></div></aside>
+<h2 class="subapartado">Traslaciones</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Traslación</div><div class="caja-cuerpo"><p>Una <dfn class="glosario" tabindex="0" data-def="movimiento que desplaza todos los puntos de una figura según un mismo vector">traslación</dfn> de vector <span class="mat">\(\vec{v}\)</span> desplaza cada punto de la figura según ese vector:</p>
+<div class="mat-bloque">\[P' = P + \vec{v}\]</div>
+<p>Todos los puntos se mueven la misma distancia, en la misma dirección y en el mismo sentido.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Traslación de un triángulo</div><div class="caja-cuerpo"><div class="minipage"><p>Trasladamos el triángulo <span class="mat">\(A(1, 1)\)</span>, <span class="mat">\(B(3, 1)\)</span>, <span class="mat">\(C(2, 4)\)</span> según <span class="mat">\(\vec{v} = (4, -2)\)</span>:</p>
+<div class="mat-bloque">\[\begin{aligned}
+			A' &amp;= (1 + 4, \ 1 - 2) = (5, -1) \\
+			B' &amp;= (3 + 4, \ 1 - 2) = (7, -1) \\
+			C' &amp;= (2 + 4, \ 4 - 2) = (6, 2)
+		\end{aligned}\]</div></div>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/93f18b1f4c1169ac.svg" width="189" height="166" alt="" loading="lazy"></figure></div></div></aside>
+<h2 class="subapartado">Giros</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Giro</div><div class="caja-cuerpo"><p>Un <dfn class="glosario" tabindex="0" data-def="movimiento que hace rotar una figura un ángulo alrededor de un punto, el centro">giro</dfn> de centro <span class="mat">\(O\)</span> y ángulo <span class="mat">\(\alpha\)</span> transforma cada punto <span class="mat">\(P\)</span> en otro punto <span class="mat">\(P'\)</span> tal que <span class="mat">\(OP = OP'\)</span> y el ángulo <span class="mat">\(\widehat{POP'}\)</span> mide <span class="mat">\(\alpha\)</span>.</p>
+<p>Por convenio, el ángulo es <strong>positivo</strong> si el giro es en sentido contrario a las agujas del reloj, y <strong>negativo</strong> si es en el sentido de las agujas.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Los giros positivos van al revés que el reloj</div><div class="caja-cuerpo"><p>Un giro de <span class="mat">\(90^\circ\)</span> lleva <span class="mat">\((2, 0)\)</span> a <span class="mat">\((0, 2)\)</span>, hacia arriba, y no a <span class="mat">\((0, -2)\)</span>. Si el ángulo es positivo, se gira en sentido <strong>contrario</strong> a las agujas del reloj.</p></div></aside>
+<p>Cuando el centro es el origen de coordenadas, algunos giros se calculan de forma muy sencilla:</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Giros con centro en el origen</div><div class="caja-cuerpo"><ul><li>Giro de <span class="mat">\(90^\circ\)</span>:  <span class="mat">\((x, y) \longrightarrow (-y, x)\)</span></li><li>Giro de <span class="mat">\(180^\circ\)</span>:  <span class="mat">\((x, y) \longrightarrow (-x, -y)\)</span></li><li>Giro de <span class="mat">\(270^\circ\)</span> (o <span class="mat">\(-90^\circ\)</span>):  <span class="mat">\((x, y) \longrightarrow (y, -x)\)</span></li></ul></div></aside>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/f2da8fa9c4c7c399.svg" width="243" height="194" alt="" loading="lazy"></figure></div>
+<div class="actividad hago" id="act-11.2.1"><div class="act-cab"><span class="act-num">11.2.1</span></div><div class="act-cuerpo"><p>Gira el punto <span class="mat">\(P(2, 5)\)</span> con centro en el origen <span class="mat">\(90^\circ\)</span>, <span class="mat">\(180^\circ\)</span> y <span class="mat">\(270^\circ\)</span>.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Simetrías</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Simetría axial y simetría central</div><div class="caja-cuerpo"><ul><li>La <dfn class="glosario" tabindex="0" data-def="movimiento que refleja una figura respecto a una recta, el eje, como en un espejo">simetría axial</dfn> de eje <span class="mat">\(e\)</span> transforma cada punto <span class="mat">\(P\)</span> en otro <span class="mat">\(P'\)</span> de forma que el eje <span class="mat">\(e\)</span> es la mediatriz del segmento <span class="mat">\(PP'\)</span>. Es como el reflejo en un espejo.</li><li>La <strong>simetría central</strong> de centro <span class="mat">\(O\)</span> transforma cada punto <span class="mat">\(P\)</span> en otro <span class="mat">\(P'\)</span> de forma que <span class="mat">\(O\)</span> es el punto medio de <span class="mat">\(PP'\)</span>. Equivale a un giro de <span class="mat">\(180^\circ\)</span>.</li></ul>
+<p>Con los ejes de coordenadas:</p>
+<ul><li>Simetría respecto al eje <span class="mat">\(X\)</span>:  <span class="mat">\((x, y) \longrightarrow (x, -y)\)</span></li><li>Simetría respecto al eje <span class="mat">\(Y\)</span>:  <span class="mat">\((x, y) \longrightarrow (-x, y)\)</span></li><li>Simetría respecto al origen:  <span class="mat">\((x, y) \longrightarrow (-x, -y)\)</span></li></ul></div></aside>
+<p>Una figura tiene <strong>eje de simetría</strong> si al aplicarle la simetría respecto a ese eje queda igual. Por ejemplo, un cuadrado tiene 4 ejes de simetría y un triángulo equilátero tiene 3.</p>
+<div class="actividad hago" id="act-11.2.2"><div class="act-cab"><span class="act-num">11.2.2</span></div><div class="act-cuerpo"><p>Halla el simétrico de <span class="mat">\(Q(-4, 3)\)</span> respecto al eje <span class="mat">\(X\)</span>, al eje <span class="mat">\(Y\)</span> y al origen.</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 11.1</a><a class="boton secundario" href="apartado-3.html">Apartado 11.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

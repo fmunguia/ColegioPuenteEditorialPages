@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 9.4 · Movimientos en el plano</title>
+<meta name="description" content="Matemáticas 2º ESO: Movimientos en el plano">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD09 · Semejanza y movimientos en el plano</a> › <span>Apartado 9.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 9.4</span></div><h1 class="titulo-sesion">Movimientos en el plano</h1><p>Un <dfn class="glosario" tabindex="0" data-def="transformación que cambia la posición de una figura sin cambiar su forma ni su tamaño">movimiento</dfn> es una transformación que cambia la posición de una figura sin cambiar su forma ni su tamaño. La figura que se obtiene es igual (congruente) a la original.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Traslación</div><div class="caja-cuerpo"><p>Una <dfn class="glosario" tabindex="0" data-def="movimiento que desplaza todos los puntos según un mismo vector">traslación</dfn> de vector <span class="mat">\(\vec{v}=(v_1,v_2)\)</span> desplaza cada punto según ese vector:</p>
+<div class="centro"><p><span class="mat">\(P(x,y)\;\longrightarrow\;P'(x+v_1,\;y+v_2)\)</span></p></div></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Giro</div><div class="caja-cuerpo"><p>Un <dfn class="glosario" tabindex="0" data-def="movimiento que hace girar los puntos un ángulo alrededor de un centro">giro</dfn> de centro <span class="mat">\(O\)</span> y ángulo <span class="mat">\(\alpha\)</span> hace girar cada punto alrededor de <span class="mat">\(O\)</span> el ángulo <span class="mat">\(\alpha\)</span>. Se considera positivo el sentido contrario a las agujas del reloj.</p>
+<ul><li>Giro de 90º con centro en el origen: <span class="mat">\(P(x,y)\rightarrow P'(-y,x)\)</span>.</li><li>Giro de 180º con centro en el origen: <span class="mat">\(P(x,y)\rightarrow P'(-x,-y)\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Simetría axial</div><div class="caja-cuerpo"><p>Una <dfn class="glosario" tabindex="0" data-def="movimiento que refleja cada punto al otro lado de un eje, a la misma distancia">simetría</dfn> de eje <span class="mat">\(e\)</span> transforma cada punto <span class="mat">\(P\)</span> en otro <span class="mat">\(P'\)</span> al otro lado de <span class="mat">\(e\)</span> y a la misma distancia, de forma que el segmento <span class="mat">\(PP'\)</span> es perpendicular a <span class="mat">\(e\)</span>.</p>
+<ul><li>Respecto al eje <span class="mat">\(X\)</span>: <span class="mat">\(P(x,y)\rightarrow P'(x,-y)\)</span>.</li><li>Respecto al eje <span class="mat">\(Y\)</span>: <span class="mat">\(P(x,y)\rightarrow P'(-x,y)\)</span>.</li></ul>
+<p>Una figura tiene <strong>eje de simetría</strong> si al aplicarle esa simetría queda igual.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Movimientos de un triángulo</div><div class="caja-cuerpo"><div class="minipage"><p>Triángulo <span class="mat">\(ABC\)</span> con <span class="mat">\(A(1,1)\)</span>, <span class="mat">\(B(3,1)\)</span> y <span class="mat">\(C(1,2)\)</span>:</p>
+<ul><li>Traslación de vector <span class="mat">\((2,1)\)</span>: <span class="mat">\(A'(3,2)\)</span>, <span class="mat">\(B'(5,2)\)</span>, <span class="mat">\(C'(3,3)\)</span>.</li><li>Simetría de eje <span class="mat">\(Y\)</span>: <span class="mat">\(A'(-1,1)\)</span>, <span class="mat">\(B'(-3,1)\)</span>, <span class="mat">\(C'(-1,2)\)</span>.</li><li>Giro de 180º: <span class="mat">\(A'(-1,-1)\)</span>, <span class="mat">\(B'(-3,-1)\)</span>, <span class="mat">\(C'(-1,-2)\)</span>.</li></ul></div>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/908a901530517051.svg" width="270" height="197" alt="" loading="lazy"></figure></div></div></aside>
+<div class="actividad hago" id="act-9.4.1"><div class="act-cab"><span class="act-num">9.4.1</span></div><div class="act-cuerpo"><p>Dibuja el cuadrilátero de vértices <span class="mat">\(A(1,0)\)</span>, <span class="mat">\(B(4,0)\)</span>, <span class="mat">\(C(4,2)\)</span> y <span class="mat">\(D(2,3)\)</span> y aplícale:</p>
+<ol class="tareas cols-1"><li>Una traslación de vector <span class="mat">\((-5,2)\)</span>.</li><li>Una simetría de eje <span class="mat">\(X\)</span>.</li><li>Un giro de 90º con centro en el origen.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Mosaicos y frisos</h2>
+<p>Los movimientos aparecen continuamente en el arte y la arquitectura. Un <dfn class="glosario" tabindex="0" data-def="banda decorativa formada al trasladar un motivo en una dirección">friso</dfn> es una banda decorativa formada al repetir un motivo con traslaciones en una dirección. Un <dfn class="glosario" tabindex="0" data-def="recubrimiento del plano con piezas que no dejan huecos ni se superponen">mosaico</dfn> cubre el plano sin dejar huecos ni superponer piezas. Los mosaicos de la Alhambra de Granada son un ejemplo famoso, y también los dibujos del artista neerlandés M. C. Escher.</p>
+<p>Solo hay tres polígonos regulares que forman mosaicos por sí solos: el triángulo equilátero, el cuadrado y el hexágono regular, porque sus ángulos dividen exactamente a 360º.</p>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/3967dcc4e752550c.svg" width="210" height="104" alt="" loading="lazy"></figure></div>
+<div class="actividad hago" id="act-9.4.2"><div class="act-cab"><span class="act-num">9.4.2</span></div><div class="act-cuerpo"><p>Con GeoGebra, dibuja un polígono y usa las herramientas «Traslada objeto por un vector», «Rota alrededor de un punto» y «Refleja objeto en recta» para diseñar un friso.</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 9.3</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 4.3 · Radicales</title>
+<meta name="description" content="Matemáticas A 4º ESO: Radicales">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD04 · Números reales</a> › <span>Apartado 4.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 4.3</span></div><h1 class="titulo-sesion">Radicales</h1><p>Un <dfn class="glosario" tabindex="0" data-def="expresión de la forma ⁿ√(a), con índice n y radicando a">radical</dfn> siempre se puede expresar en forma de potencia, utilizando esta igualdad:</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Definición de radicales</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\sqrt[n]{a^m}=a^{\dfrac{m}{n}}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Definición de radicales</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(\sqrt{5}=5^{\frac{1}{2}}\)</span></li><li><span class="mat">\(\sqrt[3]{2}=2^{\frac{1}{3}}\)</span></li><li><span class="mat">\(\sqrt[5]{a^3}=a^{\frac{3}{5}}\)</span></li><li><span class="mat">\(\sqrt[3]{6^{-4}}=6^{-\frac{4}{3}}\)</span></li></ol></div></aside>
+<p>Radicales equivalentes: si se multiplican o dividen el índice y el exponente de un radical por un mismo número natural, se obtiene otro radical equivalente.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Radicales equivalentes</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(a^{\frac{m}{n}}=a^{\frac{k\cdot m}{k\cdot n}}=\sqrt[n]{a^m}=\sqrt[k\cdot n]{a^{k\cdot m}}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Radicales equivalentes</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(\sqrt[6]{2^9}=2^{\frac{9}{6}}=2^{\frac{3}{2}}=\sqrt{2^3}=\sqrt{8}=2\sqrt{2}\)</span></li><li><span class="mat">\(\sqrt[3]{5^2}=5^{\frac{2}{3}}=5^{\frac{4}{6}}=\sqrt[6]{5^4}\)</span></li><li><span class="mat">\(\sqrt[12]{a^3}=\sqrt[4]{a}\)</span></li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Extraer factores de un radical</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\sqrt{a^3}=\sqrt{a\cdot a^2}=a\sqrt{a}\)</span></li><li><strong></strong> </li><li><strong></strong> <span class="mat">\(\sqrt[3]{81}=\sqrt[3]{3^4}=\sqrt[3]{3\cdot 3^3}=3\sqrt[3]{3}\)</span></li><li><strong></strong> </li><li><strong></strong> <span class="mat">\(\sqrt[4]{a^5\cdot b^7\cdot d^8}=a\cdot b\cdot d^2\sqrt[4]{a\cdot b^3}\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-4.3.1"><div class="act-cab"><span class="act-num">4.3.1</span></div><div class="act-cuerpo"><p>Extrae los factores:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\sqrt[3]{a^4\cdot b^6\cdot d^{10}}=\)</span></li><li><span class="mat">\(\sqrt[4]{128}=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Introducción de factores</div><div class="caja-cuerpo"><ul><li>Para introducir factores en un radical, los elevamos al índice correspondiente.</li><li><strong></strong> </li><li><strong></strong> <span class="mat">\(a\cdot \sqrt[n]{b}=\sqrt[n]{a^n\cdot b}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ejemplo introducción de factores</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(3\cdot \sqrt{3} = \sqrt{3^2\cdot 3} = \sqrt{3^3}\)</span></li><li><span class="mat">\(2\cdot \sqrt[3]{5} = \sqrt[3]{2^3\cdot 5} = \sqrt[3]{40}\)</span></li></ol></div></aside>
+<div class="actividad hago" id="act-4.3.2"><div class="act-cab"><span class="act-num">4.3.2</span></div><div class="act-cuerpo"><p>Introduce los factores:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(5\sqrt{2}=\)</span></li><li><span class="mat">\(8\sqrt[4]{2}=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Multiplicar y dividir radicales por el mismo índice</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\sqrt[n]{a}\cdot \sqrt[n]{b}=\sqrt[n]{a\cdot b}\)</span></li><li><strong></strong> </li><li><strong></strong> <span class="mat">\(\dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}=\sqrt[n]{\dfrac{a}{b}}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Multiplicar y dividir radicales por el mismo índice</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(\sqrt[3]{2}\cdot \sqrt[3]{5}=\sqrt[3]{2\cdot 5}=\sqrt[3]{10}\)</span></li><li><span class="mat">\(\dfrac{\sqrt{12}}{\sqrt{3}}=\sqrt{\dfrac{12}{3}}=\sqrt{4}=2\)</span></li></ol></div></aside>
+<div class="actividad hago" id="act-4.3.3"><div class="act-cab"><span class="act-num">4.3.3</span></div><div class="act-cuerpo"><p>Agrupa en una única raíz:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\sqrt{2}\cdot \sqrt{5}\cdot \sqrt{10}=\)</span></li><li><span class="mat">\(\dfrac{\sqrt[3]{54}}{\sqrt[3]{2}}=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Potencia de un radical</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\({\left(\sqrt[n]{a}\right)}^m=\sqrt[n]{a^m}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ejemplo de potencias de radicales</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\({\left(\sqrt[4]{2}\right)}^3=\sqrt[4]{2^3}\)</span></li><li><span class="mat">\({\left(\sqrt[3]{a^2}\right)}^2=\sqrt[3]{a^4}=a\cdot \sqrt[3]{a}\)</span></li></ol></div></aside>
+<div class="actividad hago" id="act-4.3.4"><div class="act-cab"><span class="act-num">4.3.4</span></div><div class="act-cuerpo"><p>Calcula estas potencias:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\left(5\sqrt{2}\right)^3=\)</span></li><li><span class="mat">\(\left(\sqrt[3]{5^2}\right)^5 =\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t4" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Radical de un radical</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\sqrt[n]{\sqrt[m]{a}}=\sqrt[n\cdot m]{a}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Radical de un radical</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(\sqrt{\sqrt{a}}=\sqrt[4]{a}\)</span></li><li><span class="mat">\(\sqrt[3]{\sqrt{128}}=\sqrt[6]{128}=\sqrt[6]{2^7}=2\cdot \sqrt[6]{2}\)</span></li></ol></div></aside>
+<div class="actividad hago" id="act-4.3.5"><div class="act-cab"><span class="act-num">4.3.5</span></div><div class="act-cuerpo"><p>Junta estos radicales en uno:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\sqrt{\sqrt[2]{8}}=\)</span></li><li><span class="mat">\(\sqrt[2]{\sqrt[3]{\sqrt[4]{2^6 }}}=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t5" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Multiplicación y división de radicales de distinto índice</div><div class="caja-cuerpo"><ul><li>Se debe obtener el índice común, que es el mínimo común múltiplo de los índices</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Multiplicación y división de radicales de distinto índice</div><div class="caja-cuerpo"><ol class="tareas cols-1"><li><span class="mat">\(\sqrt{2}\cdot \sqrt[3]{2^2}=\sqrt[6]{2^3}\cdot \sqrt[6]{2^4}=\sqrt[6]{2^3\cdot 2^4}= \sqrt[6]{2^7}=2\cdot \sqrt[6]{2}\)</span></li><li><span class="mat">\(\dfrac{\sqrt[4]{27}}{\sqrt[3]{9}}=\dfrac{\sqrt[4]{3^3}}{\sqrt[3]{3^2}}=\sqrt[12]{\dfrac{3^9}{3^8}}=\sqrt[12]{3}\)</span></li></ol></div></aside>
+<div class="actividad hago" id="act-4.3.6"><div class="act-cab"><span class="act-num">4.3.6</span></div><div class="act-cuerpo"><p>Junta estos radicales en uno:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\sqrt[3]{3}\sqrt[4]{3^3}=\)</span></li><li><span class="mat">\(\sqrt[2]{5^2}\sqrt[7]{5^{10}}=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t6" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suma y resta de radicales</div><div class="caja-cuerpo"><ul><li>Solo se pueden sumar o restar <dfn class="glosario" tabindex="0" data-def="radicales con el mismo índice y el mismo radicando">radicales semejantes</dfn>, es decir, con el mismo índice y el mismo radicando.</li><li>Si tienen el mismo índice pero el radicando es distinto, intentaremos extraer factores para transformarlos en radicales semejantes.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma y resta de radicales</div><div class="caja-cuerpo"><ol class="tareas cols-1"><li><span class="mat">\(2\sqrt{3}-5\sqrt{3}+4\sqrt{3}=\sqrt{3}\)</span></li><li><span class="mat">\(2\sqrt{2}+\sqrt{8}-3\sqrt{32}=2\sqrt{2}+\sqrt{2^3}-3\sqrt{2^5}=2\sqrt{2}+2\sqrt{2}-3\cdot 2^2\sqrt{2}=-8\sqrt{2}\)</span></li></ol></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡Los radicales no se suman como los productos!</div><div class="caja-cuerpo"><p><span class="mat">\(\sqrt{2}+\sqrt{3}\neq\sqrt{5}\)</span> y <span class="mat">\(\sqrt{9+16}=5\neq\sqrt{9}+\sqrt{16}=7\)</span>. La raíz se reparte en productos y cocientes, pero no en sumas: solo se suman radicales semejantes, como <span class="mat">\(2\sqrt{3}+5\sqrt{3}=7\sqrt{3}\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-4.3.7"><div class="act-cab"><span class="act-num">4.3.7</span></div><div class="act-cuerpo"><p>Junta estos radicales en uno:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(5\sqrt{3}-2\sqrt{5}-7\sqrt{3}=\)</span></li><li><span class="mat">\(2\sqrt{18}-3\sqrt{27}-\sqrt{36}=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t7" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 4.2</a><a class="boton secundario" href="apartado-4.html">Apartado 4.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

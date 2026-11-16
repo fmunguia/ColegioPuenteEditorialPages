@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.1 · Conjuntos numéricos</title>
+<meta name="description" content="Matemáticas B 4º ESO: Conjuntos numéricos">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD01 · Números reales</a> › <span>Apartado 1.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.1</span></div><h1 class="titulo-sesion">Conjuntos numéricos</h1><p>Cada conjunto de números nació para resolver un problema que el anterior no podía: los naturales para contar, los enteros para restar sin límite, los racionales para repartir y los reales para medir cualquier longitud, como la diagonal de un cuadrado de lado 1.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 De los naturales a los reales</div><div class="caja-cuerpo"><ul><li><strong>Naturales:</strong> <span class="mat">\(\mathbb{N} = \{1, 2, 3, \dots\}\)</span></li><li><strong>Enteros:</strong> <span class="mat">\(\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}\)</span></li><li><strong>Racionales:</strong> <span class="mat">\(\mathbb{Q}\)</span>, los que se pueden escribir como fracción <span class="mat">\(\dfrac{a}{b}\)</span> con <span class="mat">\(a, b\)</span> enteros y <span class="mat">\(b \neq 0\)</span>. Su expresión decimal es exacta o periódica</li><li><strong>Irracionales:</strong> <span class="mat">\(\mathbb{I}\)</span>, los que tienen infinitas cifras decimales no periódicas: <span class="mat">\(\sqrt{2}\)</span>, <span class="mat">\(\pi\)</span>, <span class="mat">\(e\)</span>, <span class="mat">\(\varphi = \dfrac{1+\sqrt{5}}{2}\)</span></li><li><strong>Reales:</strong> <span class="mat">\(\mathbb{R} = \mathbb{Q} \cup \mathbb{I}\)</span></li><li><strong></strong> <span class="mat">\(\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \qquad \mathbb{I} \subset \mathbb{R}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Clasificación de números</div><div class="caja-cuerpo"><div class="centro"><div class="tabla"><table><tr><td>Número</td><td><span class="mat">\(\mathbb{N}\)</span></td><td><span class="mat">\(\mathbb{Z}\)</span></td><td><span class="mat">\(\mathbb{Q}\)</span></td><td><span class="mat">\(\mathbb{I}\)</span></td><td><span class="mat">\(\mathbb{R}\)</span></td></tr><tr><td><span class="mat">\(-7\)</span></td><td></td><td>✓</td><td>✓</td><td></td><td>✓</td></tr><tr><td><span class="mat">\(\dfrac{12}{4}\)</span></td><td>✓</td><td>✓</td><td>✓</td><td></td><td>✓</td></tr><tr><td><span class="mat">\(2,\overline{13}\)</span></td><td></td><td></td><td>✓</td><td></td><td>✓</td></tr><tr><td><span class="mat">\(\sqrt{12}\)</span></td><td></td><td></td><td></td><td>✓</td><td>✓</td></tr><tr><td><span class="mat">\(\sqrt{\dfrac{9}{4}}\)</span></td><td></td><td></td><td>✓</td><td></td><td>✓</td></tr></table></div></div>
+<p>La raíz cuadrada de un número natural es natural o irracional: nunca es un decimal periódico.</p></div></aside>
+<div class="actividad hago" id="act-1.1.1"><div class="act-cab"><span class="act-num">1.1.1</span></div><div class="act-cuerpo"><p>Clasifica los números <span class="mat">\(\ 0,25\)</span>, <span class="mat">\(\ -\sqrt{16}\)</span>, <span class="mat">\(\ \sqrt{20}\)</span>, <span class="mat">\(\ 1,0\overline{3}\)</span>, <span class="mat">\(\ \dfrac{\pi}{2}\)</span>, <span class="mat">\(\ 3,010010001\dots\\)</span> y <span class="mat">\(\ -\dfrac{8}{2}\\)</span> indicando el menor conjunto al que pertenecen.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Representación de irracionales</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/6caf667484a2350d.svg" width="197" height="107" alt="" loading="lazy"></figure></td><td><ul><li>Los irracionales de la forma <span class="mat">\(\sqrt{n}\)</span> se pueden situar exactamente en la recta con el teorema de Pitágoras y un compás</li><li>La hipotenusa de un triángulo de catetos 1 y 1 mide <span class="mat">\(\sqrt{2}\)</span></li><li>Con catetos 1 y 2 se obtiene <span class="mat">\(\sqrt{5}\)</span></li></ul></td></tr></table></div></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 1.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

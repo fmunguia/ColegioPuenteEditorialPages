@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 8.3 · Sistemas de ecuaciones no lineales</title>
+<meta name="description" content="Matemáticas A 4º ESO: Sistemas de ecuaciones no lineales">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD08 · Sistemas de ecuaciones</a> › <span>Apartado 8.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 8.3</span></div><h1 class="titulo-sesion">Sistemas de ecuaciones no lineales</h1><p>Un sistema de ecuaciones es no lineal cuando al menos una de las ecuaciones que lo forman no es de primer grado (aparecen incógnitas al cuadrado, productos de incógnitas, raíces o incógnitas en el denominador).</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Resolución de sistemas no lineales</div><div class="caja-cuerpo"><ul><li>Generalmente se utiliza el <strong>método de sustitución</strong>.</li><li>Se despeja una incógnita en la ecuación más sencilla (normalmente la de primer grado).</li><li>Se sustituye en la otra ecuación, lo que suele dar lugar a una ecuación de segundo grado.</li><li>Es fundamental <strong>comprobar las soluciones</strong> obtenidas en ambas ecuaciones originales, ya que pueden aparecer soluciones no válidas.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Sistema de segundo grado</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\begin{cases} x + y = 5 \\ x^2 + y^2 = 13 \end{cases}\)</span></li><li>Despejamos <span class="mat">\(y\)</span> en la primera ecuación: <span class="mat">\(y = 5 - x\)</span></li><li>Sustituimos en la segunda: <span class="mat">\(x^2 + (5 - x)^2 = 13\)</span></li><li>Desarrollamos la identidad notable: <span class="mat">\(x^2 + 25 - 10x + x^2 = 13\)</span></li><li>Agrupamos términos: <span class="mat">\(2x^2 - 10x + 12 = 0 \rightarrow x^2 - 5x + 6 = 0\)</span></li><li>Resolvemos la ecuación de segundo grado: <span class="mat">\(x_1 = 3\)</span> y <span class="mat">\(x_2 = 2\)</span></li><li>Calculamos los valores de <span class="mat">\(y\)</span>:</li><li><strong></strong> Si <span class="mat">\(x_1 = 3 \rightarrow y_1 = 5 - 3 = 2\)</span></li><li><strong></strong> Si <span class="mat">\(x_2 = 2 \rightarrow y_2 = 5 - 2 = 3\)</span></li><li><strong></strong> Soluciones: <span class="mat">\((3, 2)\)</span> y <span class="mat">\((2, 3)\)</span></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡Cada <span class="mat">\(x\)</span> tiene su <span class="mat">\(y\)</span>!</div><div class="caja-cuerpo"><p>Las soluciones de un sistema son <strong>parejas</strong> de valores. En el ejemplo, la solución no es «<span class="mat">\(x=3\)</span>, <span class="mat">\(x=2\)</span>, <span class="mat">\(y=2\)</span>, <span class="mat">\(y=3\)</span>», sino los pares <span class="mat">\((3,2)\)</span> y <span class="mat">\((2,3)\)</span>. Calcula la <span class="mat">\(y\)</span> que corresponde a cada valor de <span class="mat">\(x\)</span> y no mezcles los pares.</p></div></aside>
+<div class="actividad hago" id="act-8.3.1"><div class="act-cab"><span class="act-num">8.3.1</span></div><div class="act-cuerpo"><p>Resuelve los siguientes sistemas de ecuaciones no lineales:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\begin{cases} x - y = 1 \\ x^2 + y = 7 \end{cases}\)</span></li><li><span class="mat">\(\begin{cases} x \cdot y = 6 \\ x + y = 5 \end{cases}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 8.2</a><a class="boton secundario" href="apartado-4.html">Apartado 8.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

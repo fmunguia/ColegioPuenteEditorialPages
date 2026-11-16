@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 2.2 · Paso de decimal a fracción (Fracción generatriz)</title>
+<meta name="description" content="Matemáticas A 4º ESO: Paso de decimal a fracción (Fracción generatriz)">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD02 · Fracciones</a> › <span>Apartado 2.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 2.2</span></div><h1 class="titulo-sesion">Paso de decimal a fracción (Fracción generatriz)</h1><p>Todo número decimal exacto o periódico se puede expresar en forma de fracción. A la fracción irreducible equivalente que representa a un número decimal se le llama <dfn class="glosario" tabindex="0" data-def="fracción irreducible que da lugar a un número decimal exacto o periódico">fracción generatriz</dfn>. El método para calcular esta fracción depende del tipo de número decimal que tengamos.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 1. Decimal exacto</div><div class="caja-cuerpo"><ul><li><strong>Numerador:</strong> Se escribe el número completo sin la coma.</li><li><strong>Denominador:</strong> Se escribe la unidad (<span class="mat">\(1\)</span>) seguida de tantos ceros como cifras decimales tenga el número.</li><li>Finalmente, siempre se debe intentar simplificar la fracción resultante para obtener la fracción irreducible.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Paso de decimal exacto a fracción</div><div class="caja-cuerpo"><div class="centro"><p><span class="mat">\(2,45 = \dfrac{245}{100} \xrightarrow{:5} \dfrac{49}{20}\)</span> <br>
+		<span class="mat">\(0,008 = \dfrac{8}{1000} \xrightarrow{:8} \dfrac{1}{125}\)</span></p></div></div></aside>
+<div class="actividad hago" id="act-2.2.1"><div class="act-cab"><span class="act-num">2.2.1</span></div><div class="act-cuerpo"><p>Calcula la fracción generatriz de los siguientes números decimales exactos y simplifica:</p>
+<ol class="tareas cols-3"><li><span class="mat">\(0,6\)</span></li><li><span class="mat">\(1,25\)</span></li><li><span class="mat">\(3,14\)</span></li><li><span class="mat">\(0,05\)</span></li><li><span class="mat">\(12,4\)</span></li><li><span class="mat">\(2,125\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 2. Decimal periódico puro</div><div class="caja-cuerpo"><ul><li><strong>Numerador:</strong> Se escribe el número completo sin la coma y se le resta la parte entera (todo lo que hay antes de la coma).</li><li><strong>Denominador:</strong> Se escriben tantos nueves (<span class="mat">\(9\)</span>) como cifras tenga el periodo (la parte decimal que se repite).</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Paso de decimal periódico puro a fracción</div><div class="caja-cuerpo"><div class="centro"><p><span class="mat">\(2,\overline{34} = \dfrac{234 - 2}{99} = \dfrac{232}{99}\)</span> <br>
+		<span class="mat">\(0,\overline{6} = \dfrac{6 - 0}{9} = \dfrac{6}{9} \xrightarrow{:3} \dfrac{2}{3}\)</span></p></div></div></aside>
+<div class="actividad hago" id="act-2.2.2"><div class="act-cab"><span class="act-num">2.2.2</span></div><div class="act-cuerpo"><p>Calcula la fracción generatriz de los siguientes decimales periódicos puros:</p>
+<ol class="tareas cols-3"><li><span class="mat">\(1,\overline{5}\)</span></li><li><span class="mat">\(0,\overline{42}\)</span></li><li><span class="mat">\(3,\overline{9}\)</span></li><li><span class="mat">\(12,\overline{3}\)</span></li><li><span class="mat">\(0,\overline{07}\)</span></li><li><span class="mat">\(5,\overline{123}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 3. Decimal periódico mixto</div><div class="caja-cuerpo"><ul><li><strong>Numerador:</strong> Se escribe el número entero sin la coma y se le resta la parte que está fuera del periodo (la parte entera unida al anteperiodo).</li><li><strong>Denominador:</strong> Se escriben tantos nueves (<span class="mat">\(9\)</span>) como cifras tenga el periodo, seguidos de tantos ceros (<span class="mat">\(0\)</span>) como cifras tenga el anteperiodo (los decimales que no se repiten).</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Paso de decimal periódico mixto a fracción</div><div class="caja-cuerpo"><div class="centro"><p><span class="mat">\(1,2\overline{5} = \dfrac{125 - 12}{90} = \dfrac{113}{90}\)</span> <br>
+		<span class="mat">\(0,0\overline{45} = \dfrac{45 - 0}{990} = \dfrac{45}{990} \xrightarrow{:45} \dfrac{1}{22}\)</span></p></div></div></aside>
+<div class="actividad hago" id="act-2.2.3"><div class="act-cab"><span class="act-num">2.2.3</span></div><div class="act-cuerpo"><p>Calcula la fracción generatriz de los siguientes decimales periódicos mixtos y simplifica:</p>
+<ol class="tareas cols-3"><li><span class="mat">\(0,1\overline{6}\)</span></li><li><span class="mat">\(2,4\overline{5}\)</span></li><li><span class="mat">\(0,03\overline{6}\)</span></li><li><span class="mat">\(1,2\overline{34}\)</span></li><li><span class="mat">\(3,0\overline{1}\)</span></li><li><span class="mat">\(0,12\overline{5}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 2.1</a><a class="boton secundario" href="apartado-3.html">Apartado 2.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

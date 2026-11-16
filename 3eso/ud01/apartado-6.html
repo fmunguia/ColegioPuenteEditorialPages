@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.6 · Fracción generatriz</title>
+<meta name="description" content="Matemáticas 3º ESO: Fracción generatriz">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD01 · Números racionales</a> › <span>Apartado 1.6</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.6</span></div><h1 class="titulo-sesion">Fracción generatriz</h1><p>Todos los decimales exactos y periódicos son racionales, así que se pueden escribir como fracción. Esa fracción se llama <dfn class="glosario" tabindex="0" data-def="fracción que da lugar a un número decimal exacto o periódico">fracción generatriz</dfn>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Cálculo de la fracción generatriz</div><div class="caja-cuerpo"><ul><li><p><strong>Exacto:</strong> el número sin coma, dividido entre la unidad seguida de tantos ceros como cifras decimales.</p>
+<div class="mat-bloque">\[2,35 = \dfrac{235}{100} = \dfrac{47}{20}\]</div></li><li><p><strong>Periódico puro:</strong> el número sin coma menos la parte entera, dividido entre tantos nueves como cifras tiene el periodo.</p>
+<div class="mat-bloque">\[1,\overline{27} = \dfrac{127 - 1}{99} = \dfrac{126}{99} = \dfrac{14}{11}\]</div></li><li><p><strong>Periódico mixto:</strong> el número sin coma menos la parte que no se repite, dividido entre tantos nueves como cifras tiene el periodo seguidos de tantos ceros como cifras tiene el anteperiodo.</p>
+<div class="mat-bloque">\[0,1\overline{6} = \dfrac{16 - 1}{90} = \dfrac{15}{90} = \dfrac{1}{6}\]</div></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. ¿Por qué funciona? El caso de <span class="mat">\(0,\overline{3}\)</span></div><div class="caja-cuerpo"><p>Llamamos <span class="mat">\(x = 0,333\ldots\)</span> Multiplicando por <span class="mat">\(10\)</span>:</p>
+<div class="mat-bloque">\[\begin{aligned}
+		10x &amp;= 3,333\ldots \\
+		x &amp;= 0,333\ldots
+	\end{aligned}\]</div>
+<p>Restando, las infinitas cifras decimales se anulan: <span class="mat">\(9x = 3\)</span>, de donde <span class="mat">\(x = \dfrac{3}{9} = \dfrac{1}{3}\)</span>.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Un periodo no es un decimal exacto</div><div class="caja-cuerpo"><p><span class="mat">\(0,\overline{3} \neq \dfrac{3}{10}\)</span>: el <span class="mat">\(3\)</span> se repite sin fin, así que el número es algo mayor que <span class="mat">\(0,3\)</span>. Su fracción generatriz es <span class="mat">\(\dfrac{3}{9} = \dfrac{1}{3}\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-1.6.1"><div class="act-cab"><span class="act-num">1.6.1</span></div><div class="act-cuerpo"><p>Halla la fracción generatriz y simplifica: <span class="mat">\(3,\overline{4}\)</span>  y  <span class="mat">\(2,1\overline{3}\)</span></p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-5.html">← Apartado 1.5</a><a class="boton secundario" href="apartado-7.html">Apartado 1.7 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

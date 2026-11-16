@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 5.3 · Sistemas con paréntesis y denominadores</title>
+<meta name="description" content="Matemáticas B 4º ESO: Sistemas con paréntesis y denominadores">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD05 · Sistemas de ecuaciones</a> › <span>Apartado 5.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 5.3</span></div><h1 class="titulo-sesion">Sistemas con paréntesis y denominadores</h1><p>En muchas ocasiones, los sistemas de ecuaciones lineales no se presentan en su forma general reducida <span class="mat">\(\begin{cases} ax + by = c \\ a'x + b'y = c' \end{cases}\)</span>. Antes de aplicar cualquiera de los tres métodos de resolución, es imprescindible <strong>simplificar</strong> el sistema.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Pasos para simplificar un sistema</div><div class="caja-cuerpo"><ol><li><strong>Quitar paréntesis:</strong> Aplicando la propiedad distributiva.</li><li><strong>Quitar denominadores:</strong> Multiplicando todos los términos de la ecuación por el mínimo común múltiplo (m.c.m.) de los denominadores.</li><li><strong>Agrupar términos:</strong> Pasando los términos con incógnita (<span class="mat">\(x\)</span> e <span class="mat">\(y\)</span>) a un miembro de la ecuación y los números independientes al otro.</li><li><strong>Reducir:</strong> Sumando o restando los términos semejantes para obtener la forma general.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Sistema con paréntesis y denominadores</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(\begin{cases} 2(x+1) + 3(y-1) = 7 \\ \dfrac{x+5}{2} - \dfrac{y+2}{4} = 2 \end{cases}\)</span></li><li><strong></strong> </li><li><strong>Paso 1: Simplificamos la primera ecuación.</strong></li><li>Quitamos paréntesis: <span class="mat">\(2x + 2 + 3y - 3 = 7\)</span></li><li>Agrupamos y reducimos: <span class="mat">\(2x + 3y = 7 - 2 + 3 \implies \mathbf{2x + 3y = 8}\)</span></li><li><strong></strong> </li><li><strong>Paso 2: Simplificamos la segunda ecuación.</strong></li><li>El m.c.m. de 2 y 4 es 4. Multiplicamos toda la ecuación por 4:</li><li><strong></strong> <span class="mat">\(4 \cdot \left( \dfrac{x+5}{2} \right) - 4 \cdot \left( \dfrac{y+2}{4} \right) = 4 \cdot 2 \implies 2(x+5) - (y+2) = 8\)</span></li><li>Quitamos paréntesis prestando especial atención al signo menos delante de la fracción: <span class="mat">\(2x + 10 - y - 2 = 8\)</span></li><li>Agrupamos y reducimos: <span class="mat">\(2x - y = 8 - 10 + 2 \implies \mathbf{2x - y = 0}\)</span></li><li><strong></strong> </li><li><strong>Paso 3: Resolvemos el sistema equivalente simplificado.</strong></li><li><strong></strong> <span class="mat">\(\begin{cases} 2x + 3y = 8 \\ 2x - y = 0 \end{cases}\)</span></li><li>Aplicamos, por ejemplo, el método de sustitución. Despejamos <span class="mat">\(y\)</span> en la segunda ecuación (<span class="mat">\(y = 2x\)</span>) y sustituimos en la primera:</li><li><strong></strong> <span class="mat">\(2x + 3(2x) = 8 \implies 2x + 6x = 8 \implies 8x = 8 \implies \mathbf{x = 1}\)</span></li><li>Sustituimos para hallar <span class="mat">\(y\)</span>: <span class="mat">\(y = 2(1) \implies \mathbf{y = 2}\)</span>.</li></ul></div></aside>
+<div class="actividad hago" id="act-5.3.1"><div class="act-cab"><span class="act-num">5.3.1</span></div><div class="act-cuerpo"><p>Simplifica a su forma general y resuelve los siguientes sistemas:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(\begin{cases} 3(x-1) - y = 2 \\ \dfrac{x}{2} + \dfrac{y+2}{3} = 2 \end{cases}\)</span></li><li><span class="mat">\(\begin{cases} \dfrac{x-1}{2} + y = 0 \\ 2(x+y) - 3y = 7 \end{cases}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 5.2</a><a class="boton secundario" href="apartado-4.html">Apartado 5.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

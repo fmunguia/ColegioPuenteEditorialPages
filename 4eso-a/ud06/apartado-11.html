@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 6.11 · Aplicaciones de la regla de Ruffini</title>
+<meta name="description" content="Matemáticas A 4º ESO: Aplicaciones de la regla de Ruffini">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD06 · Monomios y polinomios</a> › <span>Apartado 6.11</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 6.11</span></div><h1 class="titulo-sesion">Aplicaciones de la regla de Ruffini</h1><p>La regla de Ruffini no es solo un método para dividir; es una herramienta fundamental para analizar las propiedades de los polinomios.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Teorema del resto</div><div class="caja-cuerpo"><p>El resto de la división de un polinomio <span class="mat">\(P(x)\)</span> entre el binomio <span class="mat">\((x - a)\)</span> es igual al valor numérico del polinomio para <span class="mat">\(x = a\)</span>. Es decir:</p>
+<div class="mat-bloque">\[\text{Resto} = P(a)\]</div>
+<p>Esto nos permite calcular el valor de un polinomio sin sustituir directamente la <span class="mat">\(x\)</span>, simplemente aplicando Ruffini.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cálculo del valor numérico</div><div class="caja-cuerpo"><p>Halla el valor de <span class="mat">\(P(x) = x^4 - 3x^2 + 5x - 10\)</span> para <span class="mat">\(x = 2\)</span>.
+	Aplicamos Ruffini con <span class="mat">\(a = 2\)</span>:</p>
+<div class="mat-bloque">\[\begin{array}{r|rrrrr}
+		  &amp; 1 &amp; 0 &amp; -3 &amp; 5 &amp; -10 \\
+		2 &amp;   &amp; 2 &amp; 4 &amp; 2 &amp; 14 \\ \hline
+		  &amp; 1 &amp; 2 &amp; 1 &amp; 7 &amp; \mathbf{4}
+	\end{array}\]</div>
+<p>Como el resto es <span class="mat">\(4\)</span>, sabemos que <span class="mat">\(\mathbf{P(2) = 4}\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Raíces y Factorización</div><div class="caja-cuerpo"><p>Decimos que un número <span class="mat">\(a\)</span> es una <dfn class="glosario" tabindex="0" data-def="número que anula un polinomio: su valor numérico es cero">raíz</dfn> de un polinomio <span class="mat">\(P(x)\)</span> si su valor numérico es cero (<span class="mat">\(P(a) = 0\)</span>).</p>
+<ul><li>Si al aplicar Ruffini con <span class="mat">\(a\)</span> el resto es <strong>cero</strong>, entonces <span class="mat">\(a\)</span> es una raíz.</li><li>Si <span class="mat">\(a\)</span> es una raíz, entonces <span class="mat">\((x - a)\)</span> es un <strong>factor</strong> del polinomio.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Búsqueda de raíces</div><div class="caja-cuerpo"><p>Comprueba si <span class="mat">\(x = 1\)</span> y <span class="mat">\(x = -1\)</span> son raíces de <span class="mat">\(P(x) = x^3 - 3x^2 + 4\)</span>.</p>
+<ul><li><p>Para <span class="mat">\(x = 1\)</span>:</p>
+<div class="mat-bloque">\[\begin{array}{r|rrrr}
+			  &amp; 1 &amp; -3 &amp; 0 &amp; 4 \\
+			1 &amp;   &amp; 1 &amp; -2 &amp; -2 \\ \hline
+			  &amp; 1 &amp; -2 &amp; -2 &amp; \mathbf{2}
+		\end{array}
+		\rightarrow \text{Resto } \neq 0, \text{ no es raíz.}\]</div></li><li><p>Para <span class="mat">\(x = -1\)</span>:</p>
+<div class="mat-bloque">\[\begin{array}{r|rrrr}
+			  &amp; 1 &amp; -3 &amp; 0 &amp; 4 \\
+			-1 &amp;   &amp; -1 &amp; 4 &amp; -4 \\ \hline
+			  &amp; 1 &amp; -4 &amp; 4 &amp; \mathbf{0}
+		\end{array}
+		\rightarrow \text{Resto } = 0, \text{ \textbf{sí es raíz}.}\]</div></li></ul></div></aside>
+<div class="actividad hago" id="act-6.11.1"><div class="act-cab"><span class="act-num">6.11.1</span></div><div class="act-cuerpo"><p>Dado el polinomio <span class="mat">\(P(x) = 2x^3 - 4x^2 + kx - 6\)</span>:</p>
+<ol><li>Utiliza la regla de Ruffini para hallar el valor de <span class="mat">\(k\)</span> sabiendo que <span class="mat">\(x = 3\)</span> es una raíz del polinomio.</li><li>Una vez hallado <span class="mat">\(k\)</span>, indica cuál es el valor numérico de <span class="mat">\(P(1)\)</span>.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-10.html">← Apartado 6.10</a><a class="boton secundario" href="apartado-12.html">Apartado 6.12 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

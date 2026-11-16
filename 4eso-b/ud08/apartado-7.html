@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 8.7 · Cuerpos de revolución</title>
+<meta name="description" content="Matemáticas B 4º ESO: Cuerpos de revolución">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD08 · Semejanza y medida</a> › <span>Apartado 8.7</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 8.7</span></div><h1 class="titulo-sesion">Cuerpos de revolución</h1><p>Son los cuerpos geométricos que se generan al girar una figura plana alrededor de un eje. Tienen superficies curvas.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cilindro (Giro de un rectángulo)</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/6e54e37a6d5361ce.svg" width="123" height="197" alt="" loading="lazy"></figure></div>
+<div class="minipage"><p><strong>Área Lateral:</strong> <span class="mat">\(A_L = 2 \cdot \pi \cdot r \cdot h\)</span> <br>
+        <strong>Área Total:</strong> <span class="mat">\(A_T = 2\pi r(h + r)\)</span> <br>
+        <strong>Volumen:</strong> <span class="mat">\(V = \pi \cdot r^2 \cdot h\)</span></p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cono (Giro de un triángulo rectángulo)</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/ec47568868c9c7df.svg" width="125" height="181" alt="" loading="lazy"></figure></div>
+<div class="minipage"><p><strong>Área Lateral:</strong> <span class="mat">\(A_L = \pi \cdot r \cdot g\)</span> <br>
+        <strong>Área Total:</strong> <span class="mat">\(A_T = \pi r(g + r)\)</span> <br>
+        <strong>Volumen:</strong> <span class="mat">\(V = \dfrac{\pi \cdot r^2 \cdot h}{3}\)</span> <br>
+        <em>(<span class="mat">\(g\)</span>: generatriz, Pitágoras: <span class="mat">\(g^2 = h^2 + r^2\)</span>)</em></p></div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Generatriz y altura no son lo mismo</div><div class="caja-cuerpo"><p>En el área lateral del cono se usa la generatriz <span class="mat">\(g\)</span>, y en el volumen, la altura <span class="mat">\(h\)</span>. Si <span class="mat">\(r = 3\)</span> cm y <span class="mat">\(g = 5\)</span> cm, la altura es <span class="mat">\(h = 4\)</span> cm y el volumen es <span class="mat">\(\dfrac{\pi \cdot 3^2 \cdot 4}{3} = 12\pi\)</span> cm<span class="mat">\(^3\)</span>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Esfera (Giro de un semicírculo)</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/540aa6435a98570e.svg" width="162" height="160" alt="" loading="lazy"></figure></div>
+<div class="minipage"><p><strong>Área Total:</strong> <span class="mat">\(A_T = 4 \cdot \pi \cdot r^2\)</span> <br>
+        <strong>Volumen:</strong> <span class="mat">\(V = \dfrac{4}{3} \cdot \pi \cdot r^3\)</span></p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Área y Volumen de un Tronco de Cono</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/a02b581ce11b066f.svg" width="224" height="171" alt="" loading="lazy"></figure></div>
+<div class="minipage"><p><strong>Parte 1: Planteamiento y dimensiones completas</strong> <br>
+        Calcula el volumen y el área total de un tronco de cono con radio mayor <span class="mat">\(R = 6\text{ cm}\)</span>, radio menor <span class="mat">\(r = 2\text{ cm}\)</span> y altura <span class="mat">\(h_t = 4\text{ cm}\)</span>.<br>
+        Si lo cerramos hacia arriba, obtenemos un cono grande y uno pequeño (la punta). Por el Teorema de Tales, hallamos la altura <span class="mat">\(x\)</span> del cono pequeño:</p>
+<div class="mat-bloque">\[\frac{4 + x}{6} = \frac{x}{2} \Rightarrow 2(4 + x) = 6x\]</div>
+<div class="mat-bloque">\[8 + 2x = 6x \Rightarrow 4x = 8 \Rightarrow x = 2\text{ cm}\]</div>
+<ul><li><strong>Cono pequeño:</strong> <span class="mat">\(r = 2\text{ cm}\)</span>, <span class="mat">\(h = 2\text{ cm}\)</span>.</li><li><strong>Cono grande:</strong> <span class="mat">\(R = 6\text{ cm}\)</span>, <span class="mat">\(H = 6\text{ cm}\)</span>.</li></ul></div>
+<p><strong>Parte 2: Cálculo de Volumen y Área Total</strong> <br>
+    <strong>Volumen:</strong> Restamos al volumen del cono grande el del cono pequeño (<span class="mat">\(V = \dfrac{1}{3}\pi \cdot r^2 \cdot h\)</span>).</p>
+<ul><li><span class="mat">\(V_{\text{grande}} = \dfrac{1}{3} \pi \cdot 6^2 \cdot 6 = 72\pi\text{ cm}^3 \quad \text{y} \quad V_{\text{pequeño}} = \dfrac{1}{3} \pi \cdot 2^2 \cdot 2 = \dfrac{8}{3}\pi\text{ cm}^3\)</span></li><li><span class="mat">\(V_{\text{tronco}} = 72\pi - \dfrac{8}{3}\pi = \dfrac{208}{3}\pi \approx \mathbf{217{,}82\text{ cm}^3}\)</span></li></ul>
+<p><strong>Área Total:</strong> Calculamos la generatriz (<span class="mat">\(g = \sqrt{r^2 + h^2}\)</span>) de cada cono para el área lateral (<span class="mat">\(A_L = \pi r g\)</span>).</p>
+<ul><li>Generatrices: <span class="mat">\(G = \sqrt{6^2 + 6^2} = \sqrt{72} \approx 8{,}49\text{ cm}\)</span>  y  <span class="mat">\(g = \sqrt{2^2 + 2^2} = \sqrt{8} \approx 2{,}83\text{ cm}\)</span>.</li><li><span class="mat">\(A_{L\text{ tronco}} = (\pi \cdot 6 \cdot 8{,}49) - (\pi \cdot 2 \cdot 2{,}83) \approx 159{,}94 - 17{,}77 = 142{,}17\text{ cm}^2\)</span></li><li>Bases: <span class="mat">\(A_{\text{bases}} = (\pi \cdot 6^2) + (\pi \cdot 2^2) = 36\pi + 4\pi = 40\pi \approx 125{,}66\text{ cm}^2\)</span></li><li><strong>Área Total</strong> <span class="mat">\(= 142{,}17 + 125{,}66 = \mathbf{267{,}83\text{ cm}^2}\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Área y Volumen de un Tronco de Pirámide</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/23956a76fce0b566.svg" width="234" height="184" alt="" loading="lazy"></figure></div>
+<div class="minipage"><p><strong>Parte 1: Planteamiento y dimensiones completas</strong> <br>
+        Calcula el volumen y el área de un tronco de pirámide cuadrangular. Arista mayor <span class="mat">\(L = 8\text{ cm}\)</span>, arista menor <span class="mat">\(l = 4\text{ cm}\)</span> y altura <span class="mat">\(h_t = 6\text{ cm}\)</span>.<br>
+        Llamamos <span class="mat">\(x\)</span> a la altura de la pirámide pequeña. Aplicamos semejanza usando las mitades de los lados de las bases (<span class="mat">\(4\text{ cm}\)</span> y <span class="mat">\(2\text{ cm}\)</span>):</p>
+<div class="mat-bloque">\[\frac{6 + x}{4} = \frac{x}{2} \Rightarrow 2(6 + x) = 4x\]</div>
+<div class="mat-bloque">\[12 + 2x = 4x \Rightarrow 2x = 12 \Rightarrow x = 6\text{ cm}\]</div>
+<ul><li><strong>Pirámide pequeña:</strong> <span class="mat">\(l = 4\text{ cm}\)</span>, <span class="mat">\(h = 6\text{ cm}\)</span>.</li><li><strong>Pirámide grande:</strong> <span class="mat">\(L = 8\text{ cm}\)</span>, <span class="mat">\(H = 12\text{ cm}\)</span>.</li></ul></div>
+<p><strong>Parte 2: Cálculo de Volumen y Área Total</strong> <br>
+    <strong>Volumen:</strong> Diferencia de los volúmenes (<span class="mat">\(V = \dfrac{1}{3} \cdot A_{\text{base}} \cdot h\)</span>).</p>
+<ul><li><span class="mat">\(V_{\text{grande}} = \dfrac{1}{3} \cdot (8^2) \cdot 12 = 256\text{ cm}^3 \quad \text{y} \quad V_{\text{pequeño}} = \dfrac{1}{3} \cdot (4^2) \cdot 6 = 32\text{ cm}^3\)</span></li><li><span class="mat">\(V_{\text{tronco}} = 256 - 32 = \mathbf{224\text{ cm}^3}\)</span></li></ul>
+<p><strong>Área Total:</strong> Calculamos la apotema (<span class="mat">\(Ap = \sqrt{h^2 + (l/2)^2}\)</span>) de las caras laterales.</p>
+<ul><li>Apotemas: <span class="mat">\(Ap = \sqrt{12^2 + 4^2} = \sqrt{160} \approx 12{,}65\text{ cm}\)</span>  y  <span class="mat">\(ap = \sqrt{6^2 + 2^2} = \sqrt{40} \approx 6{,}32\text{ cm}\)</span>.</li><li>El área lateral es la resta de las áreas de los 4 triángulos de cada pirámide:</li><li><span class="mat">\(A_{L\text{ tronco}} = 4 \cdot \left(\dfrac{8 \cdot 12{,}65}{2}\right) - 4 \cdot \left(\dfrac{4 \cdot 6{,}32}{2}\right) \approx 202{,}4 - 50{,}56 = 151{,}84\text{ cm}^2\)</span></li><li><strong>Área Total</strong> <span class="mat">\(= 151{,}84 + 8^2 + 4^2 = 151{,}84 + 64 + 16 = \mathbf{231{,}84\text{ cm}^2}\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-8.7.1"><div class="act-cab"><span class="act-num">8.7.1</span></div><div class="act-cuerpo"><p>Calcula el área total y el volumen de un cilindro de 5 cm de radio y 8 cm de altura.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-6.html">← Apartado 8.6</a><a class="boton secundario" href="apartado-8.html">Apartado 8.8 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

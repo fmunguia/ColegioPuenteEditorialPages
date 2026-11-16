@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 14.1 · Experimentos aleatorios y sucesos</title>
+<meta name="description" content="Matemáticas 3º ESO: Experimentos aleatorios y sucesos">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD14 · Probabilidad</a> › <span>Apartado 14.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 14.1</span></div><h1 class="titulo-sesion">Experimentos aleatorios y sucesos</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Experimentos deterministas y aleatorios</div><div class="caja-cuerpo"><ul><li>Un experimento es <strong>determinista</strong> si, al repetirlo en las mismas condiciones, siempre se obtiene el mismo resultado. Calentar agua a nivel del mar hasta que hierva: siempre ocurre a <span class="mat">\(100\)</span>&nbsp;ºC.</li><li>Un experimento es <strong>aleatorio</strong> si no se puede predecir su resultado, aunque se conozcan todos los resultados posibles. Lanzar un dado.</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Espacio muestral y sucesos</div><div class="caja-cuerpo"><ul><li>El <dfn class="glosario" tabindex="0" data-def="conjunto de todos los resultados posibles de un experimento aleatorio">espacio muestral</dfn> <span class="mat">\(E\)</span> es el conjunto de todos los resultados posibles. Al lanzar un dado, <span class="mat">\(E = \{1, 2, 3, 4, 5, 6\}\)</span>.</li><li>Un <dfn class="glosario" tabindex="0" data-def="cualquier subconjunto del espacio muestral">suceso</dfn> es cualquier subconjunto del espacio muestral. «Salir par» es el suceso <span class="mat">\(A = \{2, 4, 6\}\)</span>.</li><li>Un <strong>suceso elemental</strong> tiene un solo resultado. El <strong>suceso seguro</strong> es <span class="mat">\(E\)</span> y el <strong>suceso imposible</strong> es el que no tiene ningún resultado, <span class="mat">\(\varnothing\)</span>.</li><li>El <dfn class="glosario" tabindex="0" data-def="el que ocurre cuando no ocurre un suceso dado">suceso contrario</dfn> de <span class="mat">\(A\)</span>, <span class="mat">\(\bar{A}\)</span>, ocurre cuando no ocurre <span class="mat">\(A\)</span>. Si <span class="mat">\(A = \{2, 4, 6\}\)</span>, <span class="mat">\(\bar{A} = \{1, 3, 5\}\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Operaciones con sucesos</div><div class="caja-cuerpo"><ul><li><strong>Unión</strong> <span class="mat">\(A \cup B\)</span>: ocurre <span class="mat">\(A\)</span> <strong>o</strong> <span class="mat">\(B\)</span> (o los dos).</li><li><strong>Intersección</strong> <span class="mat">\(A \cap B\)</span>: ocurren <span class="mat">\(A\)</span> <strong>y</strong> <span class="mat">\(B\)</span> a la vez.</li><li>Dos sucesos son <strong>incompatibles</strong> si no pueden ocurrir a la vez: <span class="mat">\(A \cap B = \varnothing\)</span>.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Operaciones con sucesos</div><div class="caja-cuerpo"><p>Al lanzar un dado, sean <span class="mat">\(A =\)</span> «salir par» <span class="mat">\(= \{2, 4, 6\}\)</span> y <span class="mat">\(B =\)</span> «salir mayor que 4» <span class="mat">\(= \{5, 6\}\)</span>.</p>
+<div class="mat-bloque">\[A \cup B = \{2, 4, 5, 6\} \qquad A \cap B = \{6\}\]</div>
+<p><span class="mat">\(A\)</span> y <span class="mat">\(B\)</span> son compatibles, porque pueden ocurrir a la vez si sale un 6.</p></div></aside>
+<div class="actividad hago" id="act-14.1.1"><div class="act-cab"><span class="act-num">14.1.1</span></div><div class="act-cuerpo"><p>Escribe el espacio muestral de lanzar dos monedas. ¿Cuántos resultados tiene? Escribe el suceso «salir al menos una cara».</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 14.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

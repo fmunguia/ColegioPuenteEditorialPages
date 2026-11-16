@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 11.4 · Propiedades de la probabilidad</title>
+<meta name="description" content="Matemáticas A 4º ESO: Propiedades de la probabilidad">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD11 · Probabilidad</a> › <span>Apartado 11.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 11.4</span></div><h1 class="titulo-sesion">Propiedades de la probabilidad</h1><p>A partir de la definición de probabilidad, se deducen una serie de propiedades matemáticas fundamentales que nos permiten resolver problemas más complejos sin necesidad de contar todos los casos elementales a mano.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Propiedades fundamentales</div><div class="caja-cuerpo"><ul><li>La probabilidad de cualquier suceso <span class="mat">\(A\)</span> siempre es un valor comprendido entre 0 y 1: <span class="mat">\(0 \leq P(A) \leq 1\)</span>.</li><li>Probabilidad del suceso seguro: <span class="mat">\(P(E) = 1\)</span>.</li><li>Probabilidad del suceso imposible: <span class="mat">\(P(\emptyset) = 0\)</span>.</li><li>Probabilidad del suceso contrario: <span class="mat">\(P(\bar{A}) = 1 - P(A)\)</span>.</li><li>Probabilidad de la unión: <span class="mat">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span>. <br> (Nota: Si <span class="mat">\(A\)</span> y <span class="mat">\(B\)</span> son sucesos incompatibles, su intersección es nula, por lo que <span class="mat">\(P(A \cap B) = 0\)</span>).</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡No cuentes dos veces la intersección!</div><div class="caja-cuerpo"><p>Al sumar <span class="mat">\(P(A)+P(B)\)</span>, los resultados comunes se cuentan dos veces. Al lanzar un dado, con <span class="mat">\(A=\)</span> «par» y <span class="mat">\(B=\)</span> «mayor que 3», <span class="mat">\(P(A)+P(B)=\frac{3}{6}+\frac{3}{6}=1\)</span>, pero <span class="mat">\(A\cup B=\{2,4,5,6\}\)</span> y <span class="mat">\(P(A\cup B)=\frac{4}{6}\)</span>. Hay que restar <span class="mat">\(P(A\cap B)=\frac{2}{6}\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-11.4.1"><div class="act-cab"><span class="act-num">11.4.1</span></div><div class="act-cuerpo"><p>Sabiendo que <span class="mat">\(P(A) = 0,5\)</span>, <span class="mat">\(P(B) = 0,4\)</span> y que la probabilidad de la intersección es <span class="mat">\(P(A \cap B) = 0,1\)</span>, calcula la probabilidad de que ocurra <span class="mat">\(A\)</span> o <span class="mat">\(B\)</span> (es decir, <span class="mat">\(P(A \cup B)\)</span>) y la probabilidad de que no ocurra <span class="mat">\(A\)</span>.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 11.3</a><a class="boton secundario" href="apartado-5.html">Apartado 11.5 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

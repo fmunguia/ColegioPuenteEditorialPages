@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 7.4 · Operaciones con monomios</title>
+<meta name="description" content="Matemáticas 1º ESO: Operaciones con monomios">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD07 · Lenguaje algebraico</a> › <span>Apartado 7.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 7.4</span></div><h1 class="titulo-sesion">Operaciones con monomios</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suma y resta de monomios</div><div class="caja-cuerpo"><p>Solo se pueden sumar o restar monomios semejantes. Se suman o restan los coeficientes y se deja la misma parte literal. Si no son semejantes, la suma se deja indicada.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma y resta</div><div class="caja-cuerpo"><ul><li><span class="mat">\(3x + 5x = 8x\)</span></li><li><span class="mat">\(7a^2 - 2a^2 = 5a^2\)</span></li><li><span class="mat">\(4x + 2y - x + 3y = 3x + 5y\)</span></li><li><span class="mat">\(2x + 3\)</span> no se puede simplificar más.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Al sumar, el exponente no cambia</div><div class="caja-cuerpo"><p><span class="mat">\(3x + 2x = 5x\)</span>, no <span class="mat">\(5x^2\)</span>: tres equis más dos equis son cinco equis, igual que 3 manzanas y 2 manzanas son 5 manzanas. El exponente solo cambia al multiplicar: <span class="mat">\(3x \cdot 2x = 6x^2\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Producto de monomios</div><div class="caja-cuerpo"><p>Se multiplican los coeficientes y las partes literales (sumando los exponentes de la misma letra).</p>
+<div class="centro"><p><span class="mat">\(3x \cdot 4x^2 = 12x^3 \qquad -2a \cdot 5b = -10ab\)</span></p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Quitar paréntesis</div><div class="caja-cuerpo"><p>Para multiplicar un número por un paréntesis se multiplica por cada término (propiedad distributiva):</p>
+<ul><li><span class="mat">\(3(x + 4) = 3x + 12\)</span></li><li><span class="mat">\(-2(5 - x) = -10 + 2x\)</span></li><li><span class="mat">\(2(x + 1) + 3(x - 2) = 2x + 2 + 3x - 6 = 5x - 4\)</span></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Multiplica todos los términos del paréntesis</div><div class="caja-cuerpo"><p><span class="mat">\(2(x + 4)\)</span> no es <span class="mat">\(2x + 4\)</span>: el 2 multiplica a la <span class="mat">\(x\)</span> y también al 4, así que <span class="mat">\(2(x + 4) = 2x + 8\)</span>.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El signo menos delante de un paréntesis</div><div class="caja-cuerpo"><p>Un signo <span class="mat">\(-\)</span> delante de un paréntesis cambia el signo de <strong>todos</strong> sus términos: <span class="mat">\(5x - (2x - 3) = 5x - 2x + 3 = 3x + 3\)</span>, no <span class="mat">\(3x - 3\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-7.4.1"><div class="act-cab"><span class="act-num">7.4.1</span></div><div class="act-cuerpo"><p>Simplifica</p>
+<ol class="tareas cols-2"><li><span class="mat">\(6x - 2x + x\)</span></li><li><span class="mat">\(5a + 3b - 2a - b\)</span></li><li><span class="mat">\(2x \cdot 7x\)</span></li><li><span class="mat">\(4(x - 3)\)</span></li><li><span class="mat">\(-3(2x + 1)\)</span></li><li><span class="mat">\(5(x + 2) - 2(x + 1)\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Problema con expresiones algebraicas</div><div class="caja-cuerpo"><p>Un triángulo tiene un lado de <span class="mat">\(x\)</span>&nbsp;cm, otro 4&nbsp;cm más largo y el tercero el doble que el primero. Escribe su perímetro de la forma más sencilla y calcúlalo para <span class="mat">\(x = 6\)</span>.</p>
+<p><strong>Resolución:</strong> los lados miden <span class="mat">\(x\)</span>, <span class="mat">\(x + 4\)</span> y <span class="mat">\(2x\)</span>. El perímetro es <span class="mat">\(x + (x + 4) + 2x = 4x + 4\)</span>.</p>
+<p><strong>Solución:</strong> el perímetro es <span class="mat">\(4x + 4\)</span>. Para <span class="mat">\(x = 6\)</span>: <span class="mat">\(4 \cdot 6 + 4 = 28\)</span>&nbsp;cm.</p></div></aside>
+<div class="actividad hago" id="act-7.4.2"><div class="act-cab"><span class="act-num">7.4.2</span></div><div class="act-cuerpo"><p>Escribe y reduce</p>
+<ol class="tareas cols-1"><li>Un rectángulo mide <span class="mat">\(x\)</span>&nbsp;cm de alto y 5&nbsp;cm más de ancho. Escribe su perímetro y calcúlalo para <span class="mat">\(x = 3\)</span>.</li><li>Pablo tiene <span class="mat">\(x\)</span> euros, su hermana 10&nbsp;€ más que él y su primo la mitad que Pablo. ¿Cuánto dinero tienen entre los tres?</li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 7.3</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

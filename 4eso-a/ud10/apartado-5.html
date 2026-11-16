@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 10.5 · Medidas de dispersión</title>
+<meta name="description" content="Matemáticas A 4º ESO: Medidas de dispersión">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD10 · Estadística</a> › <span>Apartado 10.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 10.5</span></div><h1 class="titulo-sesion">Medidas de dispersión</h1><p>Mientras que las medidas de centralización nos indican dónde se sitúa el centro de los datos, las <strong>medidas de dispersión</strong> cuantifican cuán alejados o agrupados están los valores respecto a ese centro.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Principales medidas de dispersión</div><div class="caja-cuerpo"><ul><li><strong>Rango o Recorrido (<span class="mat">\(R\)</span>):</strong> Diferencia entre el valor máximo y el mínimo. <span class="mat">\(R = x_{max} - x_{min}\)</span>.</li><li><p><strong>Varianza (<span class="mat">\(\sigma^2\)</span>):</strong> Promedio de los cuadrados de las desviaciones respecto a la media.</p>
+<div class="mat-bloque">\[\sigma^2 = \frac{\sum f_i \cdot x_i^2}{N} - \bar{x}^2\]</div></li><li><strong>Desviación típica (<span class="mat">\(\sigma\)</span>):</strong> Raíz cuadrada positiva de la varianza. Es la medida más usada pues tiene las mismas unidades que los datos. <span class="mat">\(\sigma = \sqrt{\sigma^2}\)</span>.</li><li><strong>Coeficiente de variación (<span class="mat">\(CV\)</span>):</strong> Relación entre la desviación típica y la media. Sirve para comparar la dispersión de poblaciones distintas. <span class="mat">\(CV = \frac{\sigma}{|\bar{x}|}\)</span>.</li></ul></div></aside>
+<div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/a180ea06c3ad0461.svg" width="192" height="130" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/f36dc5d804282945.svg" width="192" height="130" alt="" loading="lazy"></figure></td></tr></table></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cálculo de dispersión</div><div class="caja-cuerpo"><p>Dadas las notas de un grupo en un examen: <span class="mat">\(4, 5, 6, 7, 8\)</span>.</p>
+<ul><li>Media: <span class="mat">\(\bar{x} = \frac{4+5+6+7+8}{5} = 6\)</span>.</li><li>Varianza: <span class="mat">\(\sigma^2 = \frac{4^2+5^2+6^2+7^2+8^2}{5} - 6^2 = \frac{190}{5} - 36 = 38 - 36 = 2\)</span>.</li><li>Desviación típica: <span class="mat">\(\sigma = \sqrt{2} \approx 1,41\)</span>.</li><li>CV: <span class="mat">\(CV = \frac{1,41}{6} \approx 0,235\)</span> (23,5 %).</li></ul></div></aside>
+<div class="actividad hago" id="act-10.5.1"><div class="act-cab"><span class="act-num">10.5.1</span></div><div class="act-cuerpo"><p>Dos jugadores de baloncesto, A y B, han anotado los siguientes puntos en 5 partidos:</p>
+<ul><li>Jugador A: <span class="mat">\(18, 20, 22, 19, 21\)</span></li><li>Jugador B: <span class="mat">\(10, 30, 5, 25, 30\)</span></li></ul>
+<p>Calcula la media y la desviación típica de ambos. ¿Cuál de los dos es más regular en su juego?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 10.4</a><a class="boton secundario" href="apartado-6.html">Apartado 10.6 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

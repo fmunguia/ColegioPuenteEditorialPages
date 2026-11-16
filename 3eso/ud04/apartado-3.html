@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 4.3 · Progresiones aritméticas</title>
+<meta name="description" content="Matemáticas 3º ESO: Progresiones aritméticas">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD04 · Sucesiones</a> › <span>Apartado 4.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 4.3</span></div><h1 class="titulo-sesion">Progresiones aritméticas</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Progresión aritmética</div><div class="caja-cuerpo"><p>Una <dfn class="glosario" tabindex="0" data-def="sucesión en la que cada término es el anterior más un número fijo, la diferencia">progresión aritmética</dfn> es una sucesión en la que cada término se obtiene sumando al anterior un número fijo <span class="mat">\(d\)</span>, llamado <strong>diferencia</strong>.</p>
+<div class="mat-bloque">\[a_n = a_1 + (n - 1) \cdot d\]</div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Término general de una progresión aritmética</div><div class="caja-cuerpo"><p>En <span class="mat">\(4, 9, 14, 19, \ldots\)</span> el primer término es <span class="mat">\(a_1 = 4\)</span> y la diferencia <span class="mat">\(d = 5\)</span>.</p>
+<div class="mat-bloque">\[a_n = 4 + (n - 1) \cdot 5 = 5n - 1 \qquad a_{20} = 5 \cdot 20 - 1 = 99\]</div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Es <span class="mat">\(n - 1\)</span>, no <span class="mat">\(n\)</span></div><div class="caja-cuerpo"><p>Del primer término al término <span class="mat">\(n\)</span> hay <span class="mat">\(n - 1\)</span> saltos. En <span class="mat">\(4, 9, 14, \ldots\)</span> el término <span class="mat">\(20\)</span> es <span class="mat">\(4 + 19 \cdot 5 = 99\)</span>, y no <span class="mat">\(4 + 20 \cdot 5 = 104\)</span>.</p></div></aside>
+<h2 class="subapartado">Suma de términos</h2>
+<p>Cuentan que, de niño, Carl Friedrich Gauss sumó en pocos segundos los números del 1 al 100. Se dio cuenta de que, emparejando el primero con el último, el segundo con el penúltimo, etc., todas las parejas suman lo mismo:</p>
+<div class="mat-bloque">\[1 + 100 = 2 + 99 = 3 + 98 = \ldots = 101\]</div>
+<p>Hay 50 parejas, así que la suma es <span class="mat">\(50 \cdot 101 = 5\,050\)</span>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suma de los <span class="mat">\(n\)</span> primeros términos de una progresión aritmética</div><div class="caja-cuerpo"><div class="mat-bloque">\[S_n = \dfrac{(a_1 + a_n) \cdot n}{2}\]</div></div></aside>
+<div class="actividad hago" id="act-4.3.1"><div class="act-cab"><span class="act-num">4.3.1</span></div><div class="act-cuerpo"><p>En la progresión <span class="mat">\(4, 9, 14, 19, \ldots\)</span>, calcula la suma de los 20 primeros términos.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 4.2</a><a class="boton secundario" href="apartado-4.html">Apartado 4.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

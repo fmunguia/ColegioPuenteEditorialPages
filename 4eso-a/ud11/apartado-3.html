@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 11.3 · Regla de Laplace</title>
+<meta name="description" content="Matemáticas A 4º ESO: Regla de Laplace">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD11 · Probabilidad</a> › <span>Apartado 11.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 11.3</span></div><h1 class="titulo-sesion">Regla de Laplace</h1><p>Cuando en un experimento aleatorio todos los sucesos elementales tienen la misma posibilidad de ocurrir (son <em>equiprobables</em>, como en un dado no trucado o una moneda perfecta), podemos calcular la probabilidad de un suceso <span class="mat">\(A\)</span> utilizando la regla de Laplace.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Regla de Laplace</div><div class="caja-cuerpo"><p>La probabilidad de un suceso <span class="mat">\(A\)</span> es el cociente entre el número de casos favorables al suceso y el número de casos posibles totales.</p>
+<ul><li><strong></strong> <span class="mat">\(P(A) = \dfrac{\text{Casos favorables al suceso A}}{\text{Casos posibles totales}}\)</span></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡Laplace solo vale si los casos son equiprobables!</div><div class="caja-cuerpo"><p>Al lanzar dos dados, la suma puede valer 2, 3, …, 12: once resultados. Pero <span class="mat">\(P(\text{suma }7)\)</span> no es <span class="mat">\(\frac{1}{11}\)</span>, porque esas sumas no son igual de probables. Hay que contar los 36 pares equiprobables: la suma 7 sale en 6 de ellos, así que <span class="mat">\(P=\frac{6}{36}=\frac{1}{6}\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-11.3.1"><div class="act-cab"><span class="act-num">11.3.1</span></div><div class="act-cuerpo"><p>En una baraja española clásica de 40 cartas, extraemos una carta completamente al azar. Calcula la probabilidad de los siguientes sucesos:</p>
+<ol class="tareas cols-2"><li>Sacar un Rey.</li><li>Sacar una carta de Oros.</li><li>Sacar una figura (Sota, Caballo o Rey).</li><li>Sacar el As de Copas.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 11.2</a><a class="boton secundario" href="apartado-4.html">Apartado 11.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

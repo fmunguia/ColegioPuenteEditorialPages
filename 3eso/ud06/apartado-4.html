@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 6.4 · Resolución de problemas</title>
+<meta name="description" content="Matemáticas 3º ESO: Resolución de problemas">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD06 · Ecuaciones</a> › <span>Apartado 6.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 6.4</span></div><h1 class="titulo-sesion">Resolución de problemas</h1><p>Las ecuaciones son una herramienta muy potente para resolver problemas. Conviene seguir siempre los mismos pasos:</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Pasos para resolver un problema con ecuaciones</div><div class="caja-cuerpo"><ol><li><strong>Leer</strong> el enunciado e identificar qué se pregunta.</li><li><strong>Elegir la incógnita</strong>: escribir qué representa <span class="mat">\(x\)</span>.</li><li><strong>Plantear</strong> la ecuación traduciendo el enunciado al lenguaje algebraico.</li><li><strong>Resolver</strong> la ecuación.</li><li><strong>Interpretar y comprobar</strong>: ¿responde a la pregunta? ¿Tiene sentido en el contexto? Por ejemplo, una longitud o una edad no pueden ser negativas.</li></ol></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Problema de edades</div><div class="caja-cuerpo"><p>Marta tiene el triple de años que su hijo. Dentro de 12 años tendrá el doble. ¿Qué edad tiene cada uno?</p>
+<p>Edad del hijo: <span class="mat">\(x\)</span>. Edad de Marta: <span class="mat">\(3x\)</span>. Dentro de 12 años: <span class="mat">\(3x + 12 = 2(x + 12)\)</span>.</p>
+<div class="mat-bloque">\[3x + 12 = 2x + 24 \;\Longrightarrow\; x = 12\]</div>
+<p>El hijo tiene 12 años y Marta 36. Comprobación: dentro de 12 años tendrán 24 y 48, y <span class="mat">\(48 = 2 \cdot 24\)</span>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Problema de segundo grado</div><div class="caja-cuerpo"><p>Un jardín rectangular tiene <span class="mat">\(60\)</span>&nbsp;m<span class="mat">\(^2\)</span> de superficie y su largo mide 4&nbsp;m más que su ancho. ¿Cuáles son sus dimensiones?</p>
+<p>Ancho: <span class="mat">\(x\)</span>. Largo: <span class="mat">\(x + 4\)</span>.  <span class="mat">\(x(x + 4) = 60 \;\Rightarrow\; x^2 + 4x - 60 = 0\)</span></p>
+<div class="mat-bloque">\[x = \dfrac{-4 \pm \sqrt{16 + 240}}{2} = \dfrac{-4 \pm 16}{2} \;\Longrightarrow\; x_1 = 6, \quad x_2 = -10\]</div>
+<p>La solución negativa no tiene sentido para una longitud. El jardín mide <span class="mat">\(6\)</span>&nbsp;m por <span class="mat">\(10\)</span>&nbsp;m.</p></div></aside>
+<h2 class="subapartado">Ecuaciones con tecnología</h2>
+<p>Programas como GeoGebra resuelven ecuaciones de forma inmediata: en la <strong>vista CAS</strong> basta escribir <code>Resuelve(x^2 + 4x - 60 = 0)</code>. También podemos representar <span class="mat">\(y = x^2 + 4x - 60\)</span> y observar en qué puntos corta al eje <span class="mat">\(X\)</span>: esos puntos son las soluciones. La tecnología es muy útil para comprobar resultados, pero plantear la ecuación e interpretar las soluciones sigue siendo cosa nuestra.</p>
+<div class="actividad hago" id="act-6.4.1"><div class="act-cab"><span class="act-num">6.4.1</span></div><div class="act-cuerpo"><p>Resuelve: el perímetro de un rectángulo mide <span class="mat">\(34\)</span>&nbsp;cm y su diagonal <span class="mat">\(13\)</span>&nbsp;cm. ¿Cuánto miden sus lados?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 6.3</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

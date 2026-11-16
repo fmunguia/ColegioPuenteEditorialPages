@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 8.2 · Semejanza</title>
+<meta name="description" content="Matemáticas B 4º ESO: Semejanza">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD08 · Semejanza y medida</a> › <span>Apartado 8.2</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 8.2</span></div><h1 class="titulo-sesion">Semejanza</h1><p>Dos figuras son <strong>semejantes</strong> si tienen la misma forma aunque distinto tamaño: sus ángulos son iguales y sus lados son proporcionales. El cociente entre lados correspondientes es la <strong>razón de semejanza</strong> <span class="mat">\(k\)</span>.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Criterios de semejanza de triángulos</div><div class="caja-cuerpo"><p>Dos triángulos son semejantes si se cumple cualquiera de estas condiciones:</p>
+<ul><li>Tienen <strong>dos ángulos iguales</strong> (el tercero también lo será)</li><li>Tienen <strong>los tres lados proporcionales</strong></li><li>Tienen <strong>un ángulo igual</strong> y los lados que lo forman proporcionales</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Razón de semejanza en perímetros, áreas y volúmenes</div><div class="caja-cuerpo"><p>Si dos figuras son semejantes con razón <span class="mat">\(k\)</span>:</p>
+<ul><li>Las longitudes y los perímetros están en razón <span class="mat">\(k\)</span></li><li>Las áreas están en razón <span class="mat">\(k^2\)</span></li><li>Los volúmenes están en razón <span class="mat">\(k^3\)</span></li></ul>
+<p>Ejemplo: si duplicamos las medidas de una caja (<span class="mat">\(k = 2\)</span>), su superficie se multiplica por 4 y su capacidad por 8.</p></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Las áreas no aumentan en la razón <span class="mat">\(k\)</span></div><div class="caja-cuerpo"><p>Si duplicas el lado de un cuadrado de 3 cm, el área no se duplica: pasa de 9 cm<span class="mat">\(^2\)</span> a 36 cm<span class="mat">\(^2\)</span>, es decir, se multiplica por <span class="mat">\(2^2 = 4\)</span>. Y el volumen de un cubo se multiplicaría por <span class="mat">\(2^3 = 8\)</span>.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Planos y maquetas</div><div class="caja-cuerpo"><p>Una <strong>escala</strong> <span class="mat">\(1 : n\)</span> es una razón de semejanza: 1 cm del plano son <span class="mat">\(n\)</span> cm reales.</p>
+<ul><li>En un mapa a escala <span class="mat">\(1 : 25\,000\)</span>, 6 cm son <span class="mat">\(150\,000\)</span> cm <span class="mat">\(= 1,5\)</span> km</li><li>Una habitación de <span class="mat">\(8\)</span> cm<span class="mat">\(^2\)</span> en un plano <span class="mat">\(1 : 100\)</span> mide <span class="mat">\(8 \cdot 100^2 = 80\,000\)</span> cm<span class="mat">\(^2 = 8\)</span> m<span class="mat">\(^2\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-8.2.1"><div class="act-cab"><span class="act-num">8.2.1</span></div><div class="act-cuerpo"><p>Los lados de un triángulo miden 6, 8 y 10 cm. Otro triángulo semejante tiene un perímetro de 60 cm. Calcula sus lados y la razón entre las áreas de los dos triángulos.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Teoremas del cateto y de la altura</h2>
+<p>Al trazar la altura sobre la hipotenusa de un triángulo rectángulo se forman dos triángulos semejantes al original. De esa semejanza salen dos relaciones muy útiles.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Cateto y altura</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/7f58e0525d629f9f.svg" width="200" height="141" alt="" loading="lazy"></figure></td><td><ul><li><strong>Teorema de la altura:</strong> <span class="mat">\(\ h^2 = m \cdot n\)</span></li><li><strong>Teorema del cateto:</strong> <span class="mat">\(\ b^2 = a \cdot m\)</span>, <span class="mat">\(\ c^2 = a \cdot n\)</span></li><li><span class="mat">\(m\)</span> y <span class="mat">\(n\)</span> son las proyecciones de los catetos sobre la hipotenusa <span class="mat">\(a\)</span></li></ul></td></tr></table></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Aplicación</div><div class="caja-cuerpo"><p>Si las proyecciones miden <span class="mat">\(m = 9\)</span> cm y <span class="mat">\(n = 16\)</span> cm: <span class="mat">\(\ h = \sqrt{9 \cdot 16} = 12\)</span> cm, <span class="mat">\(\ b = \sqrt{25 \cdot 9} = 15\)</span> cm y <span class="mat">\(\ c = \sqrt{25 \cdot 16} = 20\)</span> cm.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-1.html">← Apartado 8.1</a><a class="boton secundario" href="apartado-3.html">Apartado 8.3 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

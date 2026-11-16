@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.6 · Aproximaciones y errores</title>
+<meta name="description" content="Matemáticas B 4º ESO: Aproximaciones y errores">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD01 · Números reales</a> › <span>Apartado 1.6</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.6</span></div><h1 class="titulo-sesion">Aproximaciones y errores</h1><p>Los irracionales tienen infinitas cifras, y cualquier medida real tiene una precisión limitada. Por eso trabajamos con aproximaciones, y conviene saber cuánto nos equivocamos.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Truncamiento y redondeo</div><div class="caja-cuerpo"><ul><li><strong>Truncar:</strong> se eliminan las cifras a partir del orden indicado. <span class="mat">\(\ \pi \approx 3,141\)</span> (a las milésimas)</li><li><strong>Redondear:</strong> si la primera cifra eliminada es <span class="mat">\(5\)</span> o mayor, se suma uno a la última cifra que se conserva. <span class="mat">\(\ \pi \approx 3,142\)</span> (a las milésimas)</li><li>El redondeo nunca comete un error mayor que media unidad del orden de la última cifra</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Error absoluto y error relativo</div><div class="caja-cuerpo"><ul><li><strong>Error absoluto:</strong> <span class="mat">\(\ E_a = |\text{valor real} - \text{valor aproximado}|\)</span>. Tiene las mismas unidades que la medida</li><li><strong>Error relativo:</strong> <span class="mat">\(\ E_r = \dfrac{E_a}{|\text{valor real}|}\)</span>. No tiene unidades y se suele dar en porcentaje</li><li>Cota de error: si no conocemos el valor real, damos un número que seguro que es mayor que el error. Al redondear a las décimas, la cota es <span class="mat">\(0,05\)</span></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Comparar la calidad de dos medidas</div><div class="caja-cuerpo"><p>Medimos una mesa de 1,25 m y obtenemos 1,24 m. Medimos un pasillo de 15,30 m y obtenemos 15,20 m.</p>
+<ul><li>Mesa: <span class="mat">\(\ E_a = 0,01\)</span> m, <span class="mat">\(\ E_r = \dfrac{0,01}{1,25} = 0,008 = 0,8\%\)</span></li><li>Pasillo: <span class="mat">\(\ E_a = 0,10\)</span> m, <span class="mat">\(\ E_r = \dfrac{0,10}{15,30} \approx 0,0065 = 0,65\%\)</span></li></ul>
+<p>El error absoluto del pasillo es diez veces mayor, pero en proporción la medida del pasillo es más precisa.</p></div></aside>
+<div class="actividad hago" id="act-1.6.1"><div class="act-cab"><span class="act-num">1.6.1</span></div><div class="act-cuerpo"><p>Aproxima <span class="mat">\(\sqrt{3} = 1,7320508\dots\)</span> por truncamiento y por redondeo a las centésimas. Calcula en cada caso el error absoluto y el relativo. ¿Cuál de las dos aproximaciones es mejor?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-5.html">← Apartado 1.5</a><a class="boton secundario" href="apartado-7.html">Apartado 1.7 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

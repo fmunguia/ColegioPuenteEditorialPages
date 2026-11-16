@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 5.3 · Polinomios</title>
+<meta name="description" content="Matemáticas 2º ESO: Polinomios">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD05 · Lenguaje algebraico y polinomios</a> › <span>Apartado 5.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 5.3</span></div><h1 class="titulo-sesion">Polinomios</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Polinomio</div><div class="caja-cuerpo"><p>Un <dfn class="glosario" tabindex="0" data-def="suma de monomios no semejantes">polinomio</dfn> es una suma de monomios no semejantes. Cada monomio es un <strong>término</strong>.</p>
+<ul><li>El <strong>grado</strong> del polinomio es el mayor grado de sus términos.</li><li>El <dfn class="glosario" tabindex="0" data-def="término de un polinomio que no tiene letra">término independiente</dfn> es el que no tiene letra.</li><li>Se suele escribir <strong>ordenado</strong>, de mayor a menor grado.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Elementos de un polinomio</div><div class="caja-cuerpo"><p><span class="mat">\(P(x)=3x^3-2x^2+5x-4\)</span> es un polinomio de grado 3 con cuatro términos. Su término independiente es <span class="mat">\(-4\)</span>. Su valor numérico para <span class="mat">\(x=2\)</span> es <span class="mat">\(P(2)=24-8+10-4=22\)</span>.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suma y resta de polinomios</div><div class="caja-cuerpo"><ul><li>Para <strong>sumar</strong> se agrupan y suman los términos semejantes.</li><li>Para <strong>restar</strong> se suma el opuesto: se cambian de signo todos los términos del polinomio que se resta.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma y resta de polinomios</div><div class="caja-cuerpo"><p>Con <span class="mat">\(P(x)=3x^3-2x^2+5x-4\)</span> y <span class="mat">\(Q(x)=-x^3+4x^2-x+6\)</span>:</p>
+<ul><li><span class="mat">\(P(x)+Q(x)=(3-1)x^3+(-2+4)x^2+(5-1)x+(-4+6)=2x^3+2x^2+4x+2\)</span></li><li><span class="mat">\(P(x)-Q(x)=3x^3-2x^2+5x-4+x^3-4x^2+x-6=4x^3-6x^2+6x-10\)</span></li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El signo menos afecta a todo el paréntesis</div><div class="caja-cuerpo"><p><span class="mat">\(-(x^2-3x+1)=-x^2+3x-1\)</span>. Si solo cambias el signo del primer término, el resultado de la resta sale mal.</p></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Multiplicación de polinomios</div><div class="caja-cuerpo"><ul><li><strong>Monomio por polinomio:</strong> se multiplica el monomio por cada término (propiedad distributiva). <span class="mat">\(\;-3x^2\cdot(2x^2-x+5)=-6x^4+3x^3-15x^2\)</span></li><li><strong>Polinomio por polinomio:</strong> se multiplica cada término del primero por cada término del segundo y después se agrupan los términos semejantes.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Producto de dos polinomios</div><div class="caja-cuerpo"><div class="mat-bloque">\[\begin{aligned}
+		(2x-3)\cdot(x^2+4x-1) &amp; =2x^3+8x^2-2x-3x^2-12x+3 \\
+		                      &amp; =2x^3+5x^2-14x+3
+	\end{aligned}\]</div></div></aside>
+<div class="actividad hago" id="act-5.3.1"><div class="act-cab"><span class="act-num">5.3.1</span></div><div class="act-cuerpo"><p>Con <span class="mat">\(A(x)=2x^2-3x+1\)</span> y <span class="mat">\(B(x)=x-4\)</span>, calcula:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(A(x)+B(x)\)</span></li><li><span class="mat">\(A(x)-B(x)\)</span></li><li><span class="mat">\(A(x)\cdot B(x)\)</span></li><li><span class="mat">\(A(-2)\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 5.2</a><a class="boton secundario" href="apartado-4.html">Apartado 5.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

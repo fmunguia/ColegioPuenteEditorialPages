@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 11.1 · Poliedros</title>
+<meta name="description" content="Matemáticas 2º ESO: Poliedros">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD11 · Cuerpos geométricos</a> › <span>Apartado 11.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 11.1</span></div><h1 class="titulo-sesion">Poliedros</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Poliedro</div><div class="caja-cuerpo"><p>Un <dfn class="glosario" tabindex="0" data-def="cuerpo geométrico limitado por polígonos">poliedro</dfn> es un cuerpo geométrico limitado por polígonos.</p>
+<ul><li><strong>Caras</strong>: los polígonos que lo limitan.</li><li><strong>Aristas</strong>: los segmentos donde se unen dos caras.</li><li><strong>Vértices</strong>: los puntos donde se unen tres o más aristas.</li></ul></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Fórmula de Euler</div><div class="caja-cuerpo"><p>En los poliedros convexos (sin entrantes) el número de caras <span class="mat">\(C\)</span>, vértices <span class="mat">\(V\)</span> y aristas <span class="mat">\(A\)</span> cumple:</p>
+<div class="centro"><p><span class="mat">\(C+V=A+2\)</span></p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Comprobación de la fórmula de Euler</div><div class="caja-cuerpo"><p>Un cubo tiene 6 caras, 8 vértices y 12 aristas: <span class="mat">\(6+8=12+2\)</span>.</p></div></aside>
+<h2 class="subapartado">Poliedros regulares</h2>
+<p>Un poliedro es <dfn class="glosario" tabindex="0" data-def="poliedro cuyas caras son polígonos regulares iguales y en cada vértice concurre el mismo número de caras">regular</dfn> si todas sus caras son polígonos regulares iguales y en cada vértice concurre el mismo número de caras. Solo existen cinco, conocidos como <strong>sólidos platónicos</strong>: tetraedro, cubo (hexaedro), octaedro, dodecaedro e icosaedro.</p>
+<div class="centro"><div class="tabla"><table><tr><th><strong>Poliedro</strong></th><th><strong>Tipo de cara</strong></th><th><strong>Caras</strong> (<span class="mat">\(C\)</span>)</th><th><strong>Vértices</strong> (<span class="mat">\(V\)</span>)</th><th><strong>Aristas</strong> (<span class="mat">\(A\)</span>)</th></tr><tr><td>Tetraedro</td><td>triángulos</td><td>4</td><td>4</td><td>6</td></tr><tr><td>Cubo</td><td>cuadrados</td><td>6</td><td>8</td><td>12</td></tr><tr><td>Octaedro</td><td>triángulos</td><td>8</td><td>6</td><td>12</td></tr><tr><td>Dodecaedro</td><td>pentágonos</td><td>12</td><td>20</td><td>30</td></tr><tr><td>Icosaedro</td><td>triángulos</td><td>20</td><td>12</td><td>30</td></tr></table></div></div>
+<h2 class="subapartado">Prismas y pirámides</h2>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Prisma y pirámide</div><div class="caja-cuerpo"><ul><li>Un <dfn class="glosario" tabindex="0" data-def="poliedro con dos bases iguales y paralelas y caras laterales que son paralelogramos">prisma</dfn> tiene dos bases iguales y paralelas y caras laterales que son paralelogramos. Se nombra según el polígono de la base: prisma triangular, cuadrangular, hexagonal… Un <dfn class="glosario" tabindex="0" data-def="prisma con todas sus caras rectangulares">ortoedro</dfn> es un prisma con todas sus caras rectangulares.</li><li>Una <dfn class="glosario" tabindex="0" data-def="poliedro con una base poligonal y caras laterales triangulares que se unen en un vértice">pirámide</dfn> tiene una base poligonal y caras laterales triangulares que se unen en un vértice común. La <strong>apotema</strong> de una pirámide regular es la altura de cada cara lateral.</li></ul></div></aside>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/cd3ffaa189a0f493.svg" width="334" height="163" alt="" loading="lazy"></figure></div>
+<div class="actividad hago" id="act-11.1.1"><div class="act-cab"><span class="act-num">11.1.1</span></div><div class="act-cuerpo"><p>Cuenta las caras, vértices y aristas de un prisma hexagonal y de una pirámide pentagonal. Comprueba que cumplen la fórmula de Euler.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 11.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

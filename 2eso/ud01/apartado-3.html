@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.3 · Números primos y compuestos</title>
+<meta name="description" content="Matemáticas 2º ESO: Números primos y compuestos">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD01 · Divisibilidad y números enteros</a> › <span>Apartado 1.3</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.3</span></div><h1 class="titulo-sesion">Números primos y compuestos</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Números primos y compuestos</div><div class="caja-cuerpo"><ul><li>Un número es <dfn class="glosario" tabindex="0" data-def="número que solo tiene dos divisores: el 1 y él mismo">primo</dfn> si solo tiene dos divisores: el 1 y él mismo. Por ejemplo 2, 3, 5, 7, 11, 13…</li><li>Un número es <dfn class="glosario" tabindex="0" data-def="número que tiene más de dos divisores">compuesto</dfn> si tiene más de dos divisores. Por ejemplo <span class="mat">\(12\)</span>, que tiene seis divisores.</li><li>El 1 no se considera ni primo ni compuesto.</li></ul></div></aside>
+<p>Hace más de 2200 años, el matemático griego Eratóstenes ideó un procedimiento para encontrar todos los primos menores que un número dado. Se conoce como <strong>criba de Eratóstenes</strong> y es un ejemplo muy antiguo de algoritmo: una lista de pasos que, repetidos, resuelven el problema.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Criba de Eratóstenes</div><div class="caja-cuerpo"><ol><li>Escribe los números del 2 al 100.</li><li>Rodea el primer número que no esté tachado: es primo.</li><li>Tacha todos sus múltiplos.</li><li>Vuelve al paso 2 hasta que no queden números sin rodear ni tachar.</li></ol>
+<p>Los primos menores que 100 son: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89 y 97.</p></div></aside>
+<h2 class="subapartado">Factorización en números primos</h2>
+<p>Todo número compuesto se puede escribir como un producto de números primos. A esta expresión se le llama <dfn class="glosario" tabindex="0" data-def="expresión de un número como producto de factores primos">descomposición factorial</dfn>. Para obtenerla se divide el número entre el primo más pequeño posible y se repite con el cociente hasta llegar a 1. Los factores repetidos se escriben en forma de potencia.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Factorización en números primos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/0a2e14ceb0d8ac3a.svg" width="72" height="168" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/f2246f5d7dbf480e.svg" width="75" height="200" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(36=2\cdot 2\cdot 3\cdot 3=2^2\cdot 3^2\)</span></td><td><span class="mat">\(252=2\cdot 2\cdot 3\cdot 3\cdot 7=2^2\cdot 3^2\cdot 7\)</span></td></tr></table></div></div></aside>
+<div class="actividad hago" id="act-1.3.1"><div class="act-cab"><span class="act-num">1.3.1</span></div><div class="act-cuerpo"><p>Descompón en factores primos:</p>
+<ol class="tareas cols-4"><li><span class="mat">\(48\)</span></li><li><span class="mat">\(90\)</span></li><li><span class="mat">\(150\)</span></li><li><span class="mat">\(360\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-2.html">← Apartado 1.2</a><a class="boton secundario" href="apartado-4.html">Apartado 1.4 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

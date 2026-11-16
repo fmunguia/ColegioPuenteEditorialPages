@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 12.5 · Propiedades de la probabilidad</title>
+<meta name="description" content="Matemáticas B 4º ESO: Propiedades de la probabilidad">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD12 · Recuento y probabilidad</a> › <span>Apartado 12.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 12.5</span></div><h1 class="titulo-sesion">Propiedades de la probabilidad</h1><p>A partir de la definición de probabilidad, se deducen una serie de propiedades matemáticas fundamentales que nos permiten resolver problemas más complejos sin necesidad de contar todos los casos elementales a mano.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Propiedades fundamentales</div><div class="caja-cuerpo"><ul><li>La probabilidad de cualquier suceso <span class="mat">\(A\)</span> siempre es un valor comprendido entre 0 y 1: <span class="mat">\(0 \leq P(A) \leq 1\)</span>.</li><li>Probabilidad del suceso seguro: <span class="mat">\(P(E) = 1\)</span>.</li><li>Probabilidad del suceso imposible: <span class="mat">\(P(\emptyset) = 0\)</span>.</li><li>Probabilidad del suceso contrario: <span class="mat">\(P(\bar{A}) = 1 - P(A)\)</span>.</li><li>Probabilidad de la unión: <span class="mat">\(P(A \cup B) = P(A) + P(B) - P(A \cap B)\)</span>. <br> (Nota: Si <span class="mat">\(A\)</span> y <span class="mat">\(B\)</span> son sucesos incompatibles, su intersección es nula, por lo que <span class="mat">\(P(A \cap B) = 0\)</span>).</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ En la unión se resta la intersección</div><div class="caja-cuerpo"><p>Al lanzar un dado, <span class="mat">\(P(\text{par}) = \dfrac{3}{6}\)</span> y <span class="mat">\(P(\text{mayor que } 3) = \dfrac{3}{6}\)</span>, pero <span class="mat">\(P(\text{par o mayor que } 3)\)</span> no es 1. Los resultados 4 y 6 se contarían dos veces: <span class="mat">\(\dfrac{3}{6} + \dfrac{3}{6} - \dfrac{2}{6} = \dfrac{4}{6}\)</span>.</p></div></aside>
+<div class="actividad hago" id="act-12.5.1"><div class="act-cab"><span class="act-num">12.5.1</span></div><div class="act-cuerpo"><p>Sabiendo que <span class="mat">\(P(A) = 0,5\)</span>, <span class="mat">\(P(B) = 0,4\)</span> y que la probabilidad de la intersección es <span class="mat">\(P(A \cap B) = 0,1\)</span>, calcula la probabilidad de que ocurra <span class="mat">\(A\)</span> o <span class="mat">\(B\)</span> (es decir, <span class="mat">\(P(A \cup B)\)</span>) y la probabilidad de que no ocurra <span class="mat">\(A\)</span>.</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>Utilizando la propiedad de la unión:<br>
+	<span class="mat">\(P(A \cup B) = P(A) + P(B) - P(A \cap B) = 0,5 + 0,4 - 0,1 = 0,8\)</span>.<br>
+	Utilizando la propiedad del suceso contrario:<br>
+	<span class="mat">\(P(\bar{A}) = 1 - P(A) = 1 - 0,5 = 0,5\)</span>.</p><p class="autonota" data-k="s1">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 12.4</a><a class="boton secundario" href="apartado-6.html">Apartado 12.6 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

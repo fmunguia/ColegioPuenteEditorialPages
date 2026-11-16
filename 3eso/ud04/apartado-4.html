@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 4.4 · Progresiones geométricas</title>
+<meta name="description" content="Matemáticas 3º ESO: Progresiones geométricas">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD04 · Sucesiones</a> › <span>Apartado 4.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 4.4</span></div><h1 class="titulo-sesion">Progresiones geométricas</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Progresión geométrica</div><div class="caja-cuerpo"><p>Una <dfn class="glosario" tabindex="0" data-def="sucesión en la que cada término es el anterior multiplicado por un número fijo, la razón">progresión geométrica</dfn> es una sucesión en la que cada término se obtiene multiplicando el anterior por un número fijo <span class="mat">\(r\)</span>, llamado <strong>razón</strong>.</p>
+<div class="mat-bloque">\[a_n = a_1 \cdot r^{\,n - 1}\]</div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Término general de una progresión geométrica</div><div class="caja-cuerpo"><p>En <span class="mat">\(3, 6, 12, 24, \ldots\)</span> el primer término es <span class="mat">\(a_1 = 3\)</span> y la razón <span class="mat">\(r = 2\)</span>.</p>
+<div class="mat-bloque">\[a_n = 3 \cdot 2^{\,n - 1} \qquad a_{8} = 3 \cdot 2^{7} = 384\]</div></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Comprueba más de dos términos</div><div class="caja-cuerpo"><p><span class="mat">\(2, 4, \ldots\)</span> puede continuar como <span class="mat">\(2, 4, 6, 8\)</span> (aritmética, <span class="mat">\(d = 2\)</span>) o como <span class="mat">\(2, 4, 8, 16\)</span> (geométrica, <span class="mat">\(r = 2\)</span>). Antes de decidir qué tipo de progresión es, comprueba la diferencia o la razón con varios términos.</p></div></aside>
+<p>Si la razón es mayor que 1 los términos crecen muy deprisa; si está entre 0 y 1, los términos se hacen cada vez más pequeños; y si es negativa, los signos se alternan.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suma de términos de una progresión geométrica</div><div class="caja-cuerpo"><ul><li><p>Suma de los <span class="mat">\(n\)</span> primeros términos (<span class="mat">\(r \neq 1\)</span>):</p>
+<div class="mat-bloque">\[S_n = \dfrac{a_n \cdot r - a_1}{r - 1}\]</div></li><li><p>Si <span class="mat">\(-1 &lt; r &lt; 1\)</span>, los términos se acercan a 0 y la suma de <strong>todos</strong> los infinitos términos es un número:</p>
+<div class="mat-bloque">\[S_\infty = \dfrac{a_1}{1 - r}\]</div></li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma infinita</div><div class="caja-cuerpo"><p><span class="mat">\(8 + 4 + 2 + 1 + \dfrac{1}{2} + \ldots\)</span>  Es geométrica con <span class="mat">\(a_1 = 8\)</span> y <span class="mat">\(r = \dfrac{1}{2}\)</span>:</p>
+<div class="mat-bloque">\[S_\infty = \dfrac{8}{1 - \frac{1}{2}} = \dfrac{8}{\frac{1}{2}} = 16\]</div></div></aside>
+<div class="actividad hago" id="act-4.4.1"><div class="act-cab"><span class="act-num">4.4.1</span></div><div class="act-cuerpo"><p>En la progresión <span class="mat">\(3, 6, 12, 24, \ldots\)</span>, calcula la suma de los 8 primeros términos.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Sucesiones con hoja de cálculo</h2>
+<p>Una hoja de cálculo genera los términos de una sucesión de forma automática. Por ejemplo, para la progresión aritmética de primer término 4 y diferencia 5:</p>
+<ul><li>En la celda <code>A1</code> escribimos <code>4</code>.</li><li>En la celda <code>A2</code> escribimos <code>=A1+5</code>.</li><li>Copiamos la celda <code>A2</code> hacia abajo: cada celda suma 5 a la de encima.</li></ul>
+<p>Para una progresión geométrica de razón 2 bastaría con escribir <code>=A1*2</code>. Esta forma de construir la sucesión es precisamente su forma recurrente.</p>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 4.3</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

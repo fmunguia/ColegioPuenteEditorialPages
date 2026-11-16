@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 10.1 · Teorema de Pitágoras</title>
+<meta name="description" content="Matemáticas 2º ESO: Teorema de Pitágoras">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD10 · Pitágoras, perímetros y áreas</a> › <span>Apartado 10.1</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 10.1</span></div><h1 class="titulo-sesion">Teorema de Pitágoras</h1><p>En un triángulo rectángulo el lado opuesto al ángulo recto es la <dfn class="glosario" tabindex="0" data-def="en un triángulo rectángulo, el lado opuesto al ángulo recto; es el lado mayor">hipotenusa</dfn> y los otros dos lados son los <dfn class="glosario" tabindex="0" data-def="en un triángulo rectángulo, los dos lados que forman el ángulo recto">catetos</dfn>. La hipotenusa es siempre el lado más largo.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Teorema de Pitágoras</div><div class="caja-cuerpo"><p>En un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos:</p>
+<div class="centro"><p><span class="mat">\(a^2=b^2+c^2\)</span></p></div>
+<ul><li>Para calcular la hipotenusa: <span class="mat">\(a=\sqrt{b^2+c^2}\)</span></li><li>Para calcular un cateto: <span class="mat">\(b=\sqrt{a^2-c^2}\)</span></li></ul></div></aside>
+<div class="minipage"><p>La interpretación geométrica es que el área del cuadrado construido sobre la hipotenusa es igual a la suma de las áreas de los cuadrados construidos sobre los catetos. En el dibujo, <span class="mat">\(25=9+16\)</span>.</p></div>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/b1b48a73604272a6.svg" width="197" height="214" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cálculo de la hipotenusa y de un cateto</div><div class="caja-cuerpo"><ul><li>Catetos de 6 y 8 cm: <span class="mat">\(\;a=\sqrt{6^2+8^2}=\sqrt{36+64}=\sqrt{100}=10\)</span> cm.</li><li>Hipotenusa de 13 cm y un cateto de 5 cm: <span class="mat">\(\;b=\sqrt{13^2-5^2}=\sqrt{169-25}=\sqrt{144}=12\)</span> cm.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Para calcular un cateto se resta</div><div class="caja-cuerpo"><p>Si conoces la hipotenusa y un cateto, el otro cateto es <span class="mat">\(\sqrt{a^2-c^2}\)</span>. Si sumas, te sale un número mayor que la hipotenusa, y eso es imposible: la hipotenusa es siempre el lado mayor.</p></div></aside>
+<p>El teorema también sirve para saber si un triángulo es rectángulo: si los lados cumplen <span class="mat">\(a^2=b^2+c^2\)</span>, el triángulo es rectángulo. Si <span class="mat">\(a^2&gt;b^2+c^2\)</span> es obtusángulo, y si <span class="mat">\(a^2&lt;b^2+c^2\)</span>, acutángulo.</p>
+<div class="actividad hago" id="act-10.1.1"><div class="act-cab"><span class="act-num">10.1.1</span></div><div class="act-cuerpo"><p>Calcula el lado que falta en cada triángulo rectángulo:</p>
+<ol class="tareas cols-3"><li>Catetos 5 y 12 cm.</li><li>Hipotenusa 15 cm y cateto 9 cm.</li><li>Catetos iguales de 7 cm.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Escalera apoyada en la pared</div><div class="caja-cuerpo"><p>Una escalera de 5 m se apoya en una pared con su pie a 1,4 m de la pared. ¿A qué altura llega?</p>
+<div class="centro"><p><span class="mat">\(h=\sqrt{5^2-1{,}4^2}=\sqrt{25-1{,}96}=\sqrt{23{,}04}=4{,}8\)</span> m</p></div></div></aside>
+<div class="actividad hago" id="act-10.1.2"><div class="act-cab"><span class="act-num">10.1.2</span></div><div class="act-cuerpo"><p>Una televisión mide 80 cm de ancho y 45 cm de alto. ¿Cuánto mide su diagonal? Exprésala también en pulgadas (1 pulgada son 2,54 cm).</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="index.html">← Tema</a><a class="boton secundario" href="apartado-2.html">Apartado 10.2 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 11.5 · Experimentos compuestos</title>
+<meta name="description" content="Matemáticas A 4º ESO: Experimentos compuestos">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD11 · Probabilidad</a> › <span>Apartado 11.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 11.5</span></div><h1 class="titulo-sesion">Experimentos compuestos</h1><p>Un experimento compuesto es aquel que está formado por la realización de varios experimentos simples, ya sea de forma consecutiva o simultánea (por ejemplo, lanzar dos monedas, extraer tres cartas, o sacar dos bolas de una urna).</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Diagramas de árbol</div><div class="caja-cuerpo"><p>Para calcular probabilidades en experimentos compuestos, es muy útil construir un esquema gráfico llamado <strong>diagrama de árbol</strong>:</p>
+<ul><li>Cada paso o fase del experimento genera un nuevo nivel de ramas en el árbol.</li><li>La probabilidad de un camino completo (un resultado final específico) se calcula <strong>multiplicando</strong> las probabilidades de las ramas que lo conforman.</li><li>Si varios caminos diferentes llevan a una misma condición pedida en el problema, sus probabilidades finales se <strong>suman</strong>.</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Sin reemplazamiento, la urna cambia</div><div class="caja-cuerpo"><p>Si la bola no se devuelve, en la segunda extracción hay una bola menos. Con 3 rojas y 2 azules, <span class="mat">\(P(\text{dos rojas})=\frac{3}{5}\cdot\frac{2}{4}=\frac{3}{10}\)</span>, y no <span class="mat">\(\frac{3}{5}\cdot\frac{3}{5}\)</span>. Actualiza el árbol después de cada extracción.</p></div></aside>
+<div class="actividad hago" id="act-11.5.1"><div class="act-cab"><span class="act-num">11.5.1</span></div><div class="act-cuerpo"><p>Una urna contiene 3 bolas rojas y 2 bolas azules. Extraemos dos bolas al azar <strong>con reemplazamiento</strong> (es decir, sacamos una, anotamos su color y la devolvemos a la urna antes de sacar la segunda). ¿Cuál es la probabilidad de sacar dos bolas del mismo color?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 11.4</a><a class="boton secundario" href="apartado-6.html">Apartado 11.6 →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

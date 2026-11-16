@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD03 · Polinomios</title>
+
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <span>UD03 · Polinomios</span></nav></header>
+<main>
+<p class="subtitulo">Bloque II · Álgebra</p><h1><span class="codigo">UD03</span> Polinomios</h1><aside class="caja partida"><div class="caja-titulo">🔍 Latas de anchoas en Santoña</div><div class="caja-cuerpo"><p>Una conservera de Santoña quiere fabricar bandejas sin tapa para sus anchoas. Parte de una lámina de aluminio de 30 cm por 20 cm, recorta un cuadrado de lado <span class="mat">\(x\)</span> en cada esquina y dobla los bordes hacia arriba.</p>
+<p>El volumen de la bandeja depende del corte que se haga: <span class="mat">\(V(x) = x\,(30 - 2x)(20 - 2x)\)</span>. Al desarrollar este producto aparece un polinomio, y con él podemos estudiar cómo cambia el volumen al cambiar <span class="mat">\(x\)</span>.</p>
+<ul><li>¿Qué volumen tiene la bandeja si se recortan cuadrados de 2 cm de lado?</li><li>¿Cuál es el grado del polinomio <span class="mat">\(V(x)\)</span>?</li><li>¿Por qué no tiene sentido recortar cuadrados de 10 cm o más?</li></ul></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Reconocer monomios y polinomios, su grado y su valor numérico.</li><li>Sumar, restar y multiplicar polinomios.</li><li>Dividir polinomios y aplicar la regla de Ruffini.</li><li>Usar el teorema del resto para encontrar raíces.</li><li>Factorizar polinomios con factor común, identidades notables y Ruffini.</li><li>Simplificar y operar fracciones algebraicas.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Calcula <span class="mat">\((-2)^3\)</span> y <span class="mat">\(-2^2\)</span>.</li><li>Reduce <span class="mat">\(3x + 5x - 2x\)</span>.</li><li>Calcula <span class="mat">\(2x \cdot 3x^2\)</span>.</li><li>Calcula <span class="mat">\(x^5 : x^2\)</span>.</li><li>Calcula el m.c.m. de 4 y 6.</li><li>Aplica la propiedad distributiva: <span class="mat">\(3(2x - 5)\)</span>.</li><li>Halla <span class="mat">\(2a - b\)</span> para <span class="mat">\(a = 3\)</span> y <span class="mat">\(b = -1\)</span>.</li><li>Escribe los divisores de 12.</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Un cuadrado de lado <span class="mat">\(a + b\)</span> se puede dividir en cuatro piezas: un cuadrado de lado <span class="mat">\(a\)</span>, otro de lado <span class="mat">\(b\)</span> y dos rectángulos iguales de lados <span class="mat">\(a\)</span> y <span class="mat">\(b\)</span>.</p>
+<p>Sumando las áreas de las cuatro piezas obtenemos el área del cuadrado grande. Así se ve, sin hacer ninguna cuenta, por qué <span class="mat">\((a + b)^2\)</span> no es igual a <span class="mat">\(a^2 + b^2\)</span>.</p>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/146d13638fdc1796.svg" width="251" height="251" alt="" loading="lazy"></figure></div>
+<ul><li>¿Cuánto vale el área de cada pieza si <span class="mat">\(a = 3\)</span> y <span class="mat">\(b = 2\)</span>? ¿Y la del cuadrado grande?</li><li>¿Cómo podrías dibujar <span class="mat">\((a - b)^2\)</span> o <span class="mat">\((a + b)(a - b)\)</span>?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 3.1</span> Monomios</a></li><li><a href="apartado-2.html"><span class="num">Apartado 3.2</span> Polinomios</a></li><li><a href="apartado-3.html"><span class="num">Apartado 3.3</span> División de polinomios</a></li><li><a href="apartado-4.html"><span class="num">Apartado 3.4</span> Factorización</a></li><li><a href="apartado-5.html"><span class="num">Apartado 3.5</span> Fracciones algebraicas</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
+
+<nav class="anterior-siguiente"><a class="boton secundario" href="../ud02/index.html">← UD02</a><a class="boton secundario" href="../ud04/index.html">UD04 →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

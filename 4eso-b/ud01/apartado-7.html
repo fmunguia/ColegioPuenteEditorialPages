@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 1.7 · Notación científica</title>
+<meta name="description" content="Matemáticas B 4º ESO: Notación científica">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD01 · Números reales</a> › <span>Apartado 1.7</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 1.7</span></div><h1 class="titulo-sesion">Notación científica</h1><p>La representación de números muy grandes o muy pequeños es complicada por la cantidad de ceros que aparecen. La notación científica intenta resolver este problema utilizando la multiplicación y división por potencias de base 10.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Potencias de base 10</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(10^1=10\)</span></li><li><span class="mat">\(10^{-1}=\dfrac{1}{10}\)</span></li><li><span class="mat">\(10^2=100\)</span></li><li><span class="mat">\(10^{-2}=\dfrac{1}{100}\)</span></li><li><span class="mat">\(10^3=1000\)</span></li><li><span class="mat">\(10^{-3}=\dfrac{1}{1000}\)</span></li></ol></div></aside>
+<p>Esto se utiliza para multiplicar un número para “añadir ceros” o para “mover la coma”. La cantidad de movimiento está definida por el exponente.</p>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Movimiento de la coma</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(3\cdot 10^1=30\)</span></li><li><span class="mat">\(3\cdot 10^{-1}=\dfrac{3}{10}=0,3\)</span></li><li><span class="mat">\(3\cdot 10^2=300\)</span></li><li><span class="mat">\(3\cdot 10^{-2}=\dfrac{3}{100}=0,03\)</span></li><li><span class="mat">\(3\cdot 10^3=3000\)</span></li><li><span class="mat">\(3\cdot 10^{-3}=\dfrac{3}{1000}=0,003\)</span></li></ol></div></aside>
+<p>Para expresar un número en notación científica debemos separar la primera de sus cifras significativas por una coma y a continuación añadir el resto. El exponente de base 10 tiene que ser el correspondiente para que el número tenga el mismo valor.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Notación científica</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(1,234\cdot 10^a\)</span></li><li><strong></strong> </li><li>Donde <span class="mat">\(1,234\)</span> es un número decimal con una sola cifra entera (distinta de cero) y</li><li><span class="mat">\(a\)</span> es un número entero (el exponente necesario para mantener el valor original).</li></ul></div></aside>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El coeficiente va entre 1 y 10</div><div class="caja-cuerpo"><p><span class="mat">\(45 \cdot 10^3\)</span> no está en notación científica, porque <span class="mat">\(45 &gt; 10\)</span>. Se escribe <span class="mat">\(4{,}5 \cdot 10^4\)</span>: si la coma se mueve un lugar a la izquierda, el exponente sube uno.</p></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Transformación a notación científica</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li><span class="mat">\(45\;600\;000 \longrightarrow 4,56\cdot 10^7\)</span></li><li><span class="mat">\(0,000\;054\;36 \longrightarrow 5,436\cdot 10^{-5}\)</span></li></ol></div></aside>
+<div class="actividad hago" id="act-1.7.1"><div class="act-cab"><span class="act-num">1.7.1</span></div><div class="act-cuerpo"><p>Expresa en notación científica</p>
+<ol class="tareas cols-2"><li>3 456 000=</li><li>0,000 136=</li><li>4 000 000=</li><li>0,000 005=</li><li>2=</li><li>0,87=</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="actividad hago" id="act-1.7.2"><div class="act-cab"><span class="act-num">1.7.2</span></div><div class="act-cuerpo"><p>Expresa sin notación científica</p>
+<ol class="tareas cols-2"><li><span class="mat">\(3,54\cdot 10^4=\)</span></li><li><span class="mat">\(3,54\cdot 10^{-4}=\)</span></li><li><span class="mat">\(2,012\cdot 10^7=\)</span></li><li><span class="mat">\(6,36\cdot 10^{-3}=\)</span></li><li><span class="mat">\(1,91\cdot 10^9=\)</span></li><li><span class="mat">\(9,98\cdot 10^{-1}=\)</span></li><li><span class="mat">\(874\cdot 10^7=\)</span></li><li><span class="mat">\(0,0043\cdot 10^{-2}=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<p>Las operaciones con números en notación científica se trabajan normalmente con calculadora, pero es importante entender el significado de las operaciones para poder estimar un resultado coherente sin depender de ella.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Operaciones con notación científica</div><div class="caja-cuerpo"><ul><li>Para la <strong>suma y resta</strong> tienen que tener la misma potencia de base 10 (mismo exponente). Si no lo tienen, hay que transformar uno de los números.</li><li>Para <strong>multiplicaciones y divisiones</strong> hay que operar los coeficientes por un lado, y por otro sumar o restar los exponentes de las potencias de base 10.</li></ul></div></aside>
+<div class="actividad hago" id="act-1.7.3"><div class="act-cab"><span class="act-num">1.7.3</span></div><div class="act-cuerpo"><p>Calcula mentalmente y expresa en notación científica</p>
+<ol class="tareas cols-2"><li><span class="mat">\(3\cdot 10^4+2\cdot 10^4=\)</span></li><li><span class="mat">\((1\cdot 10^{-4})\cdot (3\cdot 10^4)=\)</span></li><li><span class="mat">\(2,3\cdot 10^7-3\cdot 10^6=\)</span></li><li><span class="mat">\((6 \cdot 10^{-3}) : (2 \cdot 10^{-5})=\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-6.html">← Apartado 1.6</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas B · Colegio Puente</footer>
+</body>
+</html>

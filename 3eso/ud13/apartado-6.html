@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 13.6 · Medidas de dispersión</title>
+<meta name="description" content="Matemáticas 3º ESO: Medidas de dispersión">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD13 · Estadística</a> › <span>Apartado 13.6</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 13.6</span></div><h1 class="titulo-sesion">Medidas de dispersión</h1><p>Dos grupos de datos pueden tener la misma media y ser muy distintos: en uno los datos pueden estar muy agrupados y en otro muy dispersos. Las medidas de dispersión miden cuánto se separan los datos de la media.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Medidas de dispersión</div><div class="caja-cuerpo"><ul><li><strong>Rango</strong> o recorrido: diferencia entre el mayor y el menor valor.</li><li><p><strong>Varianza:</strong> media de los cuadrados de las desviaciones respecto a la media.</p>
+<div class="mat-bloque">\[\sigma^2 = \dfrac{\sum (x_i - \bar{x})^2 \cdot f_i}{N} = \dfrac{\sum x_i^2 \cdot f_i}{N} - \bar{x}^2\]</div></li><li><strong>Desviación típica</strong>: raíz cuadrada de la varianza, <span class="mat">\(\sigma = \sqrt{\sigma^2}\)</span>. Se expresa en las mismas unidades que los datos.</li><li><strong>Coeficiente de variación:</strong> <span class="mat">\(CV = \dfrac{\sigma}{\bar{x}}\)</span>. Permite comparar la dispersión de grupos con medias distintas.</li></ul></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Dispersión en la tabla de hermanos</div><div class="caja-cuerpo"><p><span class="mat">\(\sum x_i^2 f_i = 0 + 8 + 24 + 18 + 16 = 66\)</span></p>
+<div class="mat-bloque">\[\sigma^2 = \dfrac{66}{20} - 1,5^2 = 3,3 - 2,25 = 1,05 \qquad \sigma = \sqrt{1,05} \approx 1,02 \qquad CV = \dfrac{1,02}{1,5} \approx 0,68\]</div></div></aside>
+<p>En la práctica, la calculadora científica en modo estadístico (<code>STAT</code>) o las funciones <code>PROMEDIO</code>, <code>MEDIANA</code>, <code>CUARTIL</code> y <code>DESVEST.P</code> de una hoja de cálculo hacen estos cálculos al momento.</p>
+<div class="actividad hago" id="act-13.6.1"><div class="act-cab"><span class="act-num">13.6.1</span></div><div class="act-cuerpo"><p>Calcula el rango, la varianza y la desviación típica de: <span class="mat">\(2, 4, 6, 8, 10\)</span></p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-5.html">← Apartado 13.5</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>

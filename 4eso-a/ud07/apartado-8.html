@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 7.8 · Inecuaciones</title>
+<meta name="description" content="Matemáticas A 4º ESO: Inecuaciones">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas A</a> › <a href="index.html">UD07 · Ecuaciones</a> › <span>Apartado 7.8</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 7.8</span></div><h1 class="titulo-sesion">Inecuaciones</h1><h2 class="subapartado">Inecuaciones de primer grado</h2>
+<p>Las inecuaciones son desigualdades algebraicas en las que sus dos miembros se relacionan por los signos <span class="mat">\(&lt;\)</span>, <span class="mat">\(\leq\)</span>, <span class="mat">\(&gt;\)</span> o <span class="mat">\(\geq\)</span>. Su solución no es un valor único, sino que suele estar formada por uno o varios intervalos de la recta real.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Resolución e intervalos</div><div class="caja-cuerpo"><ul><li>Se resuelven mediante las mismas reglas de transposición que las ecuaciones de primer grado.</li><li>Regla de oro: Si multiplicamos o dividimos los dos miembros de una inecuación por un número negativo, la desigualdad cambia de sentido.</li></ul>
+<div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/fe231527efa682b1.svg" width="277" height="178" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/75852ecf6e2101dc.svg" width="277" height="178" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(x &gt; 1 \rightarrow x \in (1, +\infty)\)</span></td><td><span class="mat">\(x \leq -1 \rightarrow x \in (-\infty, -1]\)</span></td></tr></table></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Inecuación de primer grado</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(3x - 5 &gt; 5x + 3\)</span></li><li>Agrupamos las incógnitas en un miembro y los términos independientes en el otro:</li><li><strong></strong> <span class="mat">\(3x - 5x &gt; 3 + 5 \rightarrow -2x &gt; 8\)</span></li><li>Despejamos la <span class="mat">\(x\)</span>. Como pasamos dividiendo un número negativo (<span class="mat">\(-2\)</span>), invertimos el signo de la desigualdad:</li><li><strong></strong> <span class="mat">\(x &lt; \frac{8}{-2} \rightarrow x &lt; -4\)</span></li><li>La solución expresada como intervalo es: <span class="mat">\(x \in (-\infty, -4)\)</span>.</li></ul></div></aside>
+<div class="actividad hago" id="act-7.8.1"><div class="act-cab"><span class="act-num">7.8.1</span></div><div class="act-cuerpo"><p>Resuelve las siguientes inecuaciones de primer grado:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(4x - 2(x + 1) \leq 6\)</span></li><li><span class="mat">\(\frac{x}{2} - \frac{x+3}{3} &gt; 1\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<h2 class="subapartado">Inecuaciones de segundo grado</h2>
+<p>Para resolver inecuaciones de segundo grado o de grado superior, es necesario recurrir al estudio de los signos del polinomio al sustituir valores en los distintos tramos definidos por sus raíces.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Pasos para resolver inecuaciones polinómicas</div><div class="caja-cuerpo"><ul><li>Se pasan todos los términos a un miembro y se calculan las raíces del polinomio.</li><li>Se divide la recta real en intervalos según dichas raíces y se estudia el signo en cada uno.</li></ul>
+<div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/bffcae18704d1f44.svg" width="277" height="178" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/c3b8fc2560dea794.svg" width="277" height="178" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(x^2 \geq 1 \rightarrow (-\infty, -1] \cup [1, +\infty)\)</span></td><td><span class="mat">\(x^2 &lt; 4 \rightarrow (-2, 2)\)</span></td></tr></table></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Inecuación de segundo grado</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(x^2 - 2x - 3 \geq 0\)</span></li><li>Calculamos las raíces de la ecuación asociada: <span class="mat">\(x^2 - 2x - 3 = 0 \rightarrow x = 3\)</span> y <span class="mat">\(x = -1\)</span>.</li><li>Al colocar las raíces en la recta real se generan tres intervalos: <span class="mat">\((-\infty, -1)\)</span>, <span class="mat">\((-1, 3)\)</span> y <span class="mat">\((3, +\infty)\)</span>.</li><li>Tomamos un valor de prueba en cada uno para evaluar el signo de la expresión <span class="mat">\((x^2 - 2x - 3)\)</span>:</li><li><strong></strong> Si probamos con <span class="mat">\(x = -2 \rightarrow (-2)^2 - 2(-2) - 3 = 4 + 4 - 3 = 5 \rightarrow\)</span> <strong>Positivo (+)</strong></li><li><strong></strong> Si probamos con <span class="mat">\(x = 0 \rightarrow (0)^2 - 2(0) - 3 = -3 \rightarrow\)</span> <strong>Negativo (-)</strong></li><li><strong></strong> Si probamos con <span class="mat">\(x = 4 \rightarrow (4)^2 - 2(4) - 3 = 16 - 8 - 3 = 5 \rightarrow\)</span> <strong>Positivo (+)</strong></li><li>Como buscamos los valores <span class="mat">\(\geq 0\)</span> (positivos o cero), nos quedamos con los tramos con signo +. Al estar incluido el "igual" en la inecuación original, incluimos los extremos cerrándolos con corchetes.</li><li><strong></strong> Solución: <span class="mat">\(x \in (-\infty, -1] \cup [3, +\infty)\)</span></li></ul></div></aside>
+<div class="actividad hago" id="act-7.8.2"><div class="act-cab"><span class="act-num">7.8.2</span></div><div class="act-cuerpo"><p>Resuelve las siguientes inecuaciones de segundo grado:</p>
+<ol class="tareas cols-2"><li><span class="mat">\(x^2 - 5x + 6 &lt; 0\)</span></li><li><span class="mat">\(-x^2 + 4 \geq 0\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-7.html">← Apartado 7.7</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Matemáticas A · Colegio Puente</footer>
+</body>
+</html>

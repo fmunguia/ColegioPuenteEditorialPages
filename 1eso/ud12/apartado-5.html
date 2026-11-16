@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartado 12.5 · Perímetros y áreas de polígonos</title>
+<meta name="description" content="Matemáticas 1º ESO: Perímetros y áreas de polígonos">
+<script>
+window.MathJax = {
+  loader: {load: ['[tex]/cancel', '[tex]/textmacros']},
+  tex: {inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']], processEscapes: false,
+        packages: {'[+]': ['cancel', 'textmacros']}},
+  options: {enableMenu: false},
+  chtml: {matchFontHeight: false}
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+</head>
+<body style="--principal:#328BCF;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD12 · Figuras planas</a> › <span>Apartado 12.5</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Apartado 12.5</span></div><h1 class="titulo-sesion">Perímetros y áreas de polígonos</h1><p>El <dfn class="glosario" tabindex="0" data-def="longitud del contorno de una figura plana">perímetro</dfn> es la longitud del contorno de una figura: la suma de sus lados. El <dfn class="glosario" tabindex="0" data-def="medida de la superficie de una figura">área</dfn> es la medida de su superficie.</p>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Áreas de los polígonos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/65979d7c283478e3.svg" width="61" height="78" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/4993dbb667b7ae81.svg" width="112" height="78" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/6029ef9bf2a0997a.svg" width="96" height="91" alt="" loading="lazy"></figure></td></tr><tr><td>Cuadrado: <span class="mat">\(A = l^2\)</span></td><td>Rectángulo: <span class="mat">\(A = b \cdot h\)</span></td><td>Triángulo: <span class="mat">\(A = \dfrac{b \cdot h}{2}\)</span></td></tr><tr><td><figure class="dibujo "><img src="../../figuras/06891fb297520496.svg" width="85" height="70" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/1bb4b45cdf29cc62.svg" width="102" height="78" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/a005038ab482a271.svg" width="107" height="96" alt="" loading="lazy"></figure></td></tr><tr><td>Rombo: <span class="mat">\(A = \dfrac{D \cdot d}{2}\)</span></td><td>Romboide: <span class="mat">\(A = b \cdot h\)</span></td><td>Trapecio: <span class="mat">\(A = \dfrac{(B + b) \cdot h}{2}\)</span></td></tr></table></div></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Polígonos regulares</div><div class="caja-cuerpo"><p>En un polígono regular de <span class="mat">\(n\)</span> lados de longitud <span class="mat">\(l\)</span> y apotema <span class="mat">\(ap\)</span>:</p>
+<div class="centro"><p><span class="mat">\(P = n \cdot l \qquad A = \dfrac{P \cdot ap}{2}\)</span></p></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cálculo de áreas</div><div class="caja-cuerpo"><ul><li>Rectángulo de 8&nbsp;m por 5&nbsp;m: <span class="mat">\(A = 8 \cdot 5 = 40\)</span>&nbsp;m²; <span class="mat">\(P = 2 \cdot 8 + 2 \cdot 5 = 26\)</span>&nbsp;m.</li><li>Triángulo de base 10&nbsp;cm y altura 6&nbsp;cm: <span class="mat">\(A = \dfrac{10 \cdot 6}{2} = 30\)</span>&nbsp;cm².</li><li>Trapecio de bases 9 y 5&nbsp;cm y altura 4&nbsp;cm: <span class="mat">\(A = \dfrac{(9 + 5) \cdot 4}{2} = 28\)</span>&nbsp;cm².</li><li>Hexágono regular de lado 4&nbsp;cm y apotema 3,5&nbsp;cm: <span class="mat">\(P = 24\)</span>&nbsp;cm; <span class="mat">\(A = \dfrac{24 \cdot 3{,}5}{2} = 42\)</span>&nbsp;cm².</li></ul></div></aside>
+<div class="actividad hago" id="act-12.5.1"><div class="act-cab"><span class="act-num">12.5.1</span></div><div class="act-cuerpo"><p>Calcula el perímetro y el área</p>
+<ol class="tareas cols-1"><li>Un cuadrado de 7&nbsp;cm de lado.</li><li>Un rombo de diagonales 10&nbsp;cm y 24&nbsp;cm y lado 13&nbsp;cm.</li><li>Un triángulo rectángulo de catetos 6&nbsp;cm y 8&nbsp;cm.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="apartado-4.html">← Apartado 12.4</a><a class="boton secundario" href="apartado-6.html">Apartado 12.6 →</a></nav>
+</main>
+<footer class="pie">Matemáticas · Colegio Puente</footer>
+</body>
+</html>
