@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD01 · El ordenador</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <span>UD01 · El ordenador</span></nav></header>
+<main>
+<p class="subtitulo">Bloque I · El ordenador y el teclado</p><h1><span class="codigo">UD01</span> El ordenador</h1><aside class="caja partida"><div class="caja-titulo">🔍 <span class="emoji" aria-hidden="true">🖥</span> El ordenador nuevo de la oficina</div><div class="caja-cuerpo"><p>La Papelería Sena va a comprar dos ordenadores para la oficina y te piden opinión. En la tienda les hablan de «16 GB de RAM», «SSD de 512 GB», «procesador de 8 núcleos» y «licencia de Microsoft 365». Nadie en la oficina sabe qué significa.</p>
+<ul><li>¿Qué piezas tiene un ordenador y para qué sirve cada una?</li><li>¿Qué necesita un ordenador para trabajar con Word y Excel?</li><li>¿Qué harías si un día no arranca?</li></ul></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Distinguir hardware y software.</li><li>Conocer los componentes internos del ordenador.</li><li>Clasificar los periféricos.</li><li>Manejar el sistema operativo, los archivos y el navegador.</li><li>Instalar, actualizar y desinstalar aplicaciones respetando las licencias.</li><li>Diagnosticar y documentar los problemas más comunes.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>¿Qué aparatos usas que tengan un ordenador dentro?</li><li>¿Qué es una aplicación?</li><li>¿Qué sistema operativo tiene tu móvil?</li><li>¿Dónde guardas tus fotos?</li><li>¿Qué haces si una aplicación se queda colgada?</li><li>¿Qué es un USB?</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>En una oficina todo pasa por el ordenador: facturas, nóminas, correos, citas. Si se estropea, el trabajo se para. ¿Cuánto cuesta a una empresa un día sin ordenadores? ¿Quién debe saber resolver los problemas más sencillos?</p></div></aside>
+<p>RA2Instala y actualiza aplicaciones informáticas relacionadas con la tarea administrativa razonando los pasos a seguir en el proceso.</p>
+<figure class="dibujo "><img src="../../figuras/318bbab47ea3a03c.svg" width="690" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/7d5dd064d2a2e963.svg" width="627" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/4f0565129ccf5a59.svg" width="542" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/a630b46fb78fb76a.svg" width="502" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/ad9ff26e6c33e8e4.svg" width="421" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/02672a9fe077dcdc.svg" width="656" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/746a15cc768e7a1d.svg" width="555" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/313c146a627655fb.svg" width="299" height="30" alt="" loading="lazy"></figure><h2 class="seccion">Sesiones</h2><ol class="indice"><li><a href="sesion-1.html"><span class="num">Sesión 1.1</span> Hardware y software</a></li><li><a href="sesion-2.html"><span class="num">Sesión 1.2</span> Dentro del ordenador: placa base, CPU y memorias</a></li><li><a href="sesion-3.html"><span class="num">Sesión 1.3</span> Tarjeta gráfica y periféricos</a></li><li><a href="sesion-4.html"><span class="num">Sesión 1.4</span> El sistema operativo, los archivos y el navegador</a></li><li><a href="sesion-5.html"><span class="num">Sesión 1.5</span> Instalar aplicaciones y licencias</a></li><li><a href="sesion-6.html"><span class="num">Sesión 1.6</span> ¿Qué le pasa a mi ordenador?</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="practica.html"><span class="num">🛠️</span> Práctica con las herramientas</a></li><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul><h2 class="seccion">Mapa mental de la unidad</h2><figure class="dibujo mapa"><img src="../../figuras/3b4435aa583c8ebf.svg" width="618" height="670" alt="" loading="lazy"></figure><p class="nota">✏️ Repasa la unidad con el mapa: tapa una rama y explica en voz alta lo que pone.</p>
+
+<nav class="anterior-siguiente"><span></span><a class="boton secundario" href="../ud02/index.html">UD02 →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

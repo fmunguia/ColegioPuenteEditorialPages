@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD02 · Fracciones y números decimales</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Interpretar una fracción como parte, cociente y operador.</li><li>Simplificar, comparar y ordenar fracciones.</li><li>Sumar, restar, multiplicar y dividir fracciones respetando la jerarquía.</li><li>Resolver problemas de fracciones, también de «lo que queda».</li><li>Pasar de fracción a decimal y de decimal a fracción.</li><li>Redondear, truncar y estimar resultados.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Calcula <span class="mat">\(\text{m.c.m.}(4,6)\)</span> y <span class="mat">\(\text{m.c.d.}(18,24)\)</span>.</li><li>Divide <span class="mat">\(3:4\)</span> y <span class="mat">\(5:8\)</span> hasta obtener resto 0.</li><li>¿Qué es mayor, <span class="mat">\(0{,}7\)</span> o <span class="mat">\(0{,}65\)</span>?</li><li>Calcula la mitad de 36 y la tercera parte de 45.</li><li>Calcula <span class="mat">\(-3+8\)</span> y <span class="mat">\((-2)\cdot 5\)</span>.</li><li>Escribe con cifras «tres centésimas».</li><li>Calcula <span class="mat">\(2{,}5+0{,}75\)</span> y <span class="mat">\(3\cdot 1{,}2\)</span>.</li><li>Redondea 47 a las decenas y 352 a las centenas.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>En una pizzería te dan a elegir entre <span class="mat">\(\frac{3}{8}\)</span> de una pizza grande o <span class="mat">\(\frac{1}{2}\)</span> de una mediana.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/649be00d7721a101.svg" width="397" height="230" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/aaa5ba29f78ed12c.svg" width="397" height="230" alt="" loading="lazy"></figure></div>
 <ul><li>¿Qué datos necesitarías para saber qué opción te conviene más?</li><li>¿Puede ser <span class="mat">\(\frac{3}{8}\)</span> de algo más que <span class="mat">\(\frac{1}{2}\)</span> de otra cosa?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 2.1</span> Significado de una fracción</a></li><li><a href="apartado-2.html"><span class="num">Apartado 2.2</span> Fracciones equivalentes</a></li><li><a href="apartado-3.html"><span class="num">Apartado 2.3</span> Comparación y ordenación de fracciones</a></li><li><a href="apartado-4.html"><span class="num">Apartado 2.4</span> Operaciones con fracciones</a></li><li><a href="apartado-5.html"><span class="num">Apartado 2.5</span> Problemas con fracciones</a></li><li><a href="apartado-6.html"><span class="num">Apartado 2.6</span> Números decimales</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud01/index.html">← UD01</a><a class="boton secundario" href="../ud03/index.html">UD03 →</a></nav>

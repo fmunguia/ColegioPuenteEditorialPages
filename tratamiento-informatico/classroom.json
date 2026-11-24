@@ -1,0 +1,1398 @@
+{
+ "clave": "TratamientoInformatico",
+ "libro": "Tratamiento informático de la información",
+ "curso": "1º FP",
+ "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/index.html",
+ "temas": [
+  {
+   "codigo": "UD01",
+   "titulo": "UD01 · El ordenador",
+   "bloque": "Bloque I · El ordenador y el teclado",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 1.1 · Hardware y software",
+     "descripcion": "Hoy vas a distinguir el hardware del software y conocer las partes de un sistema informático.\nNecesitas: cuaderno y un ordenador para observar.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.2 · Dentro del ordenador: placa base, CPU y memorias",
+     "descripcion": "Hoy vas a conocer los componentes internos del ordenador y su función.\nNecesitas: un ordenador viejo para abrir, si lo hay.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.3 · Tarjeta gráfica y periféricos",
+     "descripcion": "Hoy vas a conocer la tarjeta gráfica, clasificar los periféricos y conocer los puertos de conexión.\nNecesitas: cuaderno y los periféricos del aula.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.4 · El sistema operativo, los archivos y el navegador",
+     "descripcion": "Hoy vas a conocer las funciones del sistema operativo, organizar archivos y carpetas y personalizar el navegador.\nNecesitas: ordenador con Windows y Chrome o Edge.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.5 · Instalar aplicaciones y licencias",
+     "descripcion": "Hoy vas a instalar, actualizar, configurar y desinstalar aplicaciones de oficina respetando las licencias.\nNecesitas: ordenador con permisos para instalar (o simulación guiada).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.6 · ¿Qué le pasa a mi ordenador?",
+     "descripcion": "Hoy vas a diagnosticar los problemas más comunes del ordenador y documentar las incidencias.\nNecesitas: cuaderno y ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/sesion-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD01 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD01 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "El software es…",
+      "opciones": [
+       "la parte física",
+       "la parte lógica: programas y datos",
+       "el monitor"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un byte tiene…",
+      "opciones": [
+       "8 bits",
+       "1024 bits",
+       "10 bits"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La memoria que se borra al apagar es…",
+      "opciones": [
+       "el SSD",
+       "la RAM",
+       "el disco duro"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El componente al que se conecta todo es…",
+      "opciones": [
+       "la CPU",
+       "la fuente",
+       "la placa base"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Un pendrive es un periférico de…",
+      "opciones": [
+       "entrada",
+       "salida",
+       "entrada y salida"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El programa que explica a Windows cómo usar una impresora es…",
+      "opciones": [
+       "el controlador",
+       "la BIOS",
+       "el antivirus"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "LibreOffice tiene licencia…",
+      "opciones": [
+       "propietaria",
+       "de software libre",
+       "OEM"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Si el ordenador no da ninguna señal de vida, revisa primero…",
+      "opciones": [
+       "la RAM",
+       "la tarjeta gráfica",
+       "la alimentación"
+      ],
+      "correcta": 2
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué hay que mirar los requisitos antes de instalar una aplicación?",
+      "solucion": "Para saber si el equipo puede ejecutarla (mínimos) y si irá bien (recomendados), y no perder tiempo o dinero."
+     },
+     {
+      "enunciado": "¿Para qué sirve el parte de incidencias?",
+      "solucion": "Para dejar constancia del problema y su solución, saber qué falla más y resolverlo antes la próxima vez."
+     },
+     {
+      "enunciado": "¿Qué riesgos tiene usar programas sin licencia?",
+      "solucion": "Es ilegal (multas para la empresa) y suelen traer virus o no actualizarse, con fallos de seguridad."
+     }
+    ],
+    "rubrica": [
+     "Distingo hardware y software y uso las unidades de información.",
+     "Conozco la función de la placa, la CPU, la RAM y los discos.",
+     "Clasifico los periféricos y conozco los puertos.",
+     "Organizo archivos y carpetas y personalizo el navegador.",
+     "Compruebo requisitos, instalo, actualizo y desinstalo aplicaciones.",
+     "Distingo los tipos de licencias y las respeto.",
+     "Diagnostico problemas sencillos y los documento."
+    ],
+    "titulo": "UD01 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud01/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD02",
+   "titulo": "UD02 · Mecanografía",
+   "bloque": "Bloque I · El ordenador y el teclado",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 2.1 · El puesto de trabajo y la postura",
+     "descripcion": "Hoy vas a preparar el puesto de trabajo, sentarse correctamente y poner en marcha el equipo.\nNecesitas: ordenador y silla regulable.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.2 · La fila guía",
+     "descripcion": "Hoy vas a colocar los dedos en la fila guía y escribir sus letras sin mirar.\nNecesitas: ordenador con el programa de mecanografía.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.3 · Las filas superior e inferior",
+     "descripcion": "Hoy vas a escribir al tacto con las filas superior e inferior.\nNecesitas: ordenador con el programa de mecanografía.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.4 · Mayúsculas, números y signos",
+     "descripcion": "Hoy vas a escribir al tacto mayúsculas, números y signos de puntuación, y corregir los errores.\nNecesitas: ordenador con el programa de mecanografía.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.5 · Velocidad, precisión y textos en inglés",
+     "descripcion": "Hoy vas a mejorar la velocidad y la precisión, medirlas y escribir al tacto textos en inglés.\nNecesitas: ordenador con el programa de mecanografía.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD02 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD02 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque I · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «El ordenador y el teclado».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/situaciones-bloque-1.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "El monitor debe estar…",
+      "opciones": [
+       "con el borde de arriba a la altura de los ojos",
+       "lo más bajo posible",
+       "a un palmo de la cara"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Los índices se colocan en…",
+      "opciones": [
+       "la G y la H",
+       "la F y la J",
+       "la D y la K"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La Q se pulsa con el…",
+      "opciones": [
+       "índice izquierdo",
+       "anular izquierdo",
+       "meñique izquierdo"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Para escribir una A mayúscula, Mayús se pulsa con…",
+      "opciones": [
+       "el meñique derecho",
+       "el meñique izquierdo",
+       "el pulgar"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La arroba se escribe con…",
+      "opciones": [
+       "Mayús+2",
+       "Alt Gr+2",
+       "Ctrl+2"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El objetivo del módulo es escribir al menos a…",
+      "opciones": [
+       "100 ppm",
+       "200 ppm",
+       "400 ppm"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Después de una coma va…",
+      "opciones": [
+       "un espacio",
+       "ningún espacio",
+       "dos espacios"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué no hay que mirar el teclado?",
+      "solucion": "Porque al mirar se pierde el sitio en el texto, se frena el ritmo y no se automatiza la posición de las teclas."
+     },
+     {
+      "enunciado": "¿Qué es mejor: 15 minutos cada día o dos horas un día a la semana?",
+      "solucion": "15 minutos cada día: la mecanografía es una destreza que se automatiza con práctica frecuente."
+     }
+    ],
+    "rubrica": [
+     "Preparo el puesto y mantengo una buena postura.",
+     "Coloco los dedos en la fila guía y vuelvo a ella.",
+     "Uso las tres filas con el dedo correcto.",
+     "Escribo mayúsculas, números y signos sin mirar.",
+     "Escribo al menos a 200 ppm con menos de una falta por minuto.",
+     "Escribo textos en inglés al tacto.",
+     "Aplico las normas de presentación y corrijo mis errores."
+    ],
+    "titulo": "UD02 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud02/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD03",
+   "titulo": "UD03 · Procesadores de textos",
+   "bloque": "Bloque II · Documentos y presentaciones",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 3.1 · Formato de fuente",
+     "descripcion": "Hoy vas a conocer la ventana de Word y dar formato a los caracteres: fuente, tamaño, estilo, color y efectos.\nNecesitas: ordenador con Word y el documento UD03_Word.docx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.2 · Bordes y sombreados",
+     "descripcion": "Hoy vas a destacar textos y párrafos con bordes y sombreados.\nNecesitas: ordenador con Word y el documento UD03_Word.docx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.3 · Párrafo: alineación, sangría y espaciado",
+     "descripcion": "Hoy vas a dar formato a los párrafos: alineación, sangrías, espaciado e interlineado.\nNecesitas: ordenador con Word y el documento UD03_Word.docx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.4 · Numeración y viñetas",
+     "descripcion": "Hoy vas a organizar la información en listas con viñetas, numeradas y multinivel.\nNecesitas: ordenador con Word y el documento UD03_Word.docx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.5 · Diseño de página y columnas",
+     "descripcion": "Hoy vas a preparar la página (márgenes, orientación y tamaño) y repartir el texto en columnas.\nNecesitas: ordenador con Word.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.6 · Imágenes, formas, ecuaciones y portada",
+     "descripcion": "Hoy vas a insertar y colocar imágenes, formas, cuadros de texto, letra capital, ecuaciones y una portada.\nNecesitas: ordenador con Word.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.7 · Encabezado, pie, borde de página y marca de agua",
+     "descripcion": "Hoy vas a poner encabezados, pies, números de página, bordes de página y marcas de agua.\nNecesitas: ordenador con Word.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.8 · Tabulaciones",
+     "descripcion": "Hoy vas a alinear textos y números en columnas con tabulaciones y caracteres de relleno.\nNecesitas: ordenador con Word.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-8.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.9 · Tablas",
+     "descripcion": "Hoy vas a crear tablas, darles formato, combinar celdas, convertir texto en tabla y hacer cálculos sencillos.\nNecesitas: ordenador con Word.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-9.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.10 · Estilos, saltos de sección e índice",
+     "descripcion": "Hoy vas a dar formato con estilos, organizar el documento en secciones y crear el índice automático.\nNecesitas: ordenador con Word.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-10.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.11 · Notas al pie, corrector y revisión",
+     "descripcion": "Hoy vas a añadir notas al pie, corregir con el corrector y revisar documentos en equipo con comentarios y control de cambios.\nNecesitas: ordenador con Word.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-11.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.12 · Plantillas, formularios y combinar correspondencia",
+     "descripcion": "Hoy vas a crear plantillas y formularios para documentos de empresa y enviar una misma carta a muchos destinatarios con combinar correspondencia.\nNecesitas: ordenador con Word y Excel.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/sesion-12.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD03 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD03 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Los documentos de Word se guardan con la extensión…",
+      "opciones": [
+       ".xlsx",
+       ".docx",
+       ".pptx"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Antes de dar formato a un texto hay que…",
+      "opciones": [
+       "seleccionarlo",
+       "copiarlo",
+       "guardarlo"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El atajo de la negrita en Word en español es…",
+      "opciones": [
+       "%FIG:ce782827cf6eb1d2%+%FIG:6dcd562c06c17ede%",
+       "%FIG:ce782827cf6eb1d2%+%FIG:d46f7df3f3c82f18%",
+       "%FIG:ce782827cf6eb1d2%+%FIG:1be9fd5b01f20c4a%"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Para separar las letras de un título se usa…",
+      "opciones": [
+       "la barra espaciadora",
+       "el espaciado entre caracteres",
+       "el interlineado"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un borde aplicado al párrafo…",
+      "opciones": [
+       "rodea solo las palabras seleccionadas",
+       "va de margen a margen",
+       "rodea toda la página"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En la sangría francesa…",
+      "opciones": [
+       "la primera línea entra más que las demás",
+       "todas las líneas entran igual",
+       "todas las líneas menos la primera entran más"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El espaciado posterior separa…",
+      "opciones": [
+       "las líneas de un párrafo",
+       "un párrafo del siguiente",
+       "las letras de una palabra"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para los pasos de un procedimiento se usa una lista…",
+      "opciones": [
+       "numerada",
+       "con viñetas",
+       "sin formato"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Para mover libremente una imagen hay que cambiar…",
+      "opciones": [
+       "el ajuste del texto",
+       "el tamaño",
+       "el estilo"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La tabulación que alinea los números por la coma es la…",
+      "opciones": [
+       "derecha",
+       "decimal",
+       "centrada"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El índice automático se hace con los párrafos que tienen…",
+      "opciones": [
+       "negrita",
+       "estilo de título",
+       "numeración"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para poner una página horizontal en un documento vertical se usa un salto de…",
+      "opciones": [
+       "página",
+       "columna",
+       "sección"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Una plantilla de Word tiene la extensión…",
+      "opciones": [
+       ".docx",
+       ".dotx",
+       ".pdf"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para enviar la misma carta a 200 clientes se usa…",
+      "opciones": [
+       "combinar correspondencia",
+       "control de cambios",
+       "la marca de agua"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué conviene ver las marcas de formato (¶) mientras trabajas?",
+      "solucion": "Porque se ven los espacios, los %FIG:8ff26602e4143027% y los tabuladores de más, que descolocan el documento cuando cambia el texto."
+     },
+     {
+      "enunciado": "¿Qué alineación tiene cada parte de una carta comercial?",
+      "solucion": "La fecha, a la derecha; el cuerpo, justificado (o a la izquierda); la firma, con sangría izquierda o a la derecha."
+     },
+     {
+      "enunciado": "¿Qué ventaja tiene la numeración automática?",
+      "solucion": "Si añades, quitas o mueves un punto, Word vuelve a numerar todo solo."
+     }
+    ],
+    "rubrica": [
+     "Selecciono texto de varias formas y doy formato de fuente.",
+     "Uso el espaciado entre caracteres y copio formatos con la brocha.",
+     "Aplico bordes y sombreados a textos y a párrafos.",
+     "Alineo párrafos y pongo sangrías con el cuadro Párrafo y con la regla.",
+     "Separo párrafos con espaciado y no con Intro.",
+     "Organizo la información en listas con viñetas, numeradas y multinivel.",
+     "Preparo la página y reparto el texto en columnas.",
+     "Inserto y coloco imágenes, formas, ecuaciones y portadas.",
+     "Uso encabezados, pies, números de página y marcas de agua.",
+     "Alineo datos con tabulaciones y hago tablas con cálculos.",
+     "Trabajo con estilos, secciones e índice automático.",
+     "Reviso con el corrector, comentarios y control de cambios.",
+     "Creo plantillas, formularios y cartas combinadas."
+    ],
+    "titulo": "UD03 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud03/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD04",
+   "titulo": "UD04 · Presentaciones multimedia",
+   "bloque": "Bloque II · Documentos y presentaciones",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud04/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 4.1 · Diseñar una presentación",
+     "descripcion": "Hoy vas a planificar una presentación y aplicar las normas de composición, tipografía y color.\nNecesitas: ordenador con PowerPoint.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud04/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.2 · Diapositivas, vistas y patrones",
+     "descripcion": "Hoy vas a conocer la ventana y las vistas de PowerPoint, usar diseños de diapositiva y crear una plantilla con el patrón.\nNecesitas: ordenador con PowerPoint.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud04/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.3 · Objetos, animaciones y transiciones",
+     "descripcion": "Hoy vas a insertar imágenes, gráficos, tablas, SmartArt, audio y vídeo, y añadir animaciones y transiciones con sentido.\nNecesitas: ordenador con PowerPoint.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud04/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.4 · Presentar en público y exportar",
+     "descripcion": "Hoy vas a conectar el proyector, usar la vista Moderador, ensayar y exportar la presentación.\nNecesitas: ordenador, proyector y, si hay, presentador remoto.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud04/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD04 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud04/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD04 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud04/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque II · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Documentos y presentaciones».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/situaciones-bloque-2.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Lo primero al preparar una presentación es…",
+      "opciones": [
+       "elegir el tema de colores",
+       "decidir el objetivo y el público",
+       "buscar animaciones"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La regla del 6 × 6 limita…",
+      "opciones": [
+       "el número de diapositivas",
+       "las líneas y las palabras por línea",
+       "los colores"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para ordenar diapositivas se usa la vista…",
+      "opciones": [
+       "Clasificador",
+       "Lectura",
+       "Página de notas"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El logo de todas las diapositivas se pone en…",
+      "opciones": [
+       "cada diapositiva",
+       "el patrón",
+       "las notas"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una animación de entrada aparece en color…",
+      "opciones": [
+       "rojo",
+       "verde",
+       "amarillo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para que tus notas solo las veas tú, el proyector debe estar en modo…",
+      "opciones": [
+       "Duplicar",
+       "Extender",
+       "Solo segunda pantalla"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una plantilla de PowerPoint se guarda como…",
+      "opciones": [
+       ".pptx",
+       ".potx",
+       ".ppsx"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué no se deben leer las diapositivas?",
+      "solucion": "Porque el público lee más rápido que tú y deja de escucharte; además, pierdes el contacto visual."
+     },
+     {
+      "enunciado": "¿Qué ventajas tiene una plantilla de empresa?",
+      "solucion": "Todas las presentaciones tienen la misma imagen (colores, fuentes, logo) y se hacen más rápido."
+     }
+    ],
+    "rubrica": [
+     "Planifico objetivo, público, mensaje y guion.",
+     "Aplico las normas de tipografía, composición y color.",
+     "Uso las vistas adecuadas para cada tarea.",
+     "Diseño plantillas con el patrón de diapositivas.",
+     "Inserto objetos y uso animaciones y transiciones con sentido.",
+     "Conecto el proyector y uso la vista Moderador.",
+     "Presento con seguridad y exporto la presentación."
+    ],
+    "titulo": "UD04 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud04/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD05",
+   "titulo": "UD05 · Hojas de cálculo",
+   "bloque": "Bloque III · Datos: hojas de cálculo y bases de datos",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 5.1 · La hoja de cálculo: datos, formatos y operaciones",
+     "descripcion": "Hoy vas a conocer la ventana de Excel, escribir datos, darles formato y hacer operaciones con fórmulas.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.2 · Funciones básicas y fechas",
+     "descripcion": "Hoy vas a calcular con SUMA, PROMEDIO, MAX, MIN y las funciones de fecha, y copiar fórmulas arrastrando.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.3 · Organizar los datos: ordenar, series, filas y hojas",
+     "descripcion": "Hoy vas a ordenar tablas por uno o varios criterios, crear series y organizar filas, columnas y hojas.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.4 · Referencias relativas, absolutas y entre hojas",
+     "descripcion": "Hoy vas a decidir qué referencias cambian al copiar una fórmula y cuáles se quedan fijas, y usar datos de otras hojas.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.5 · Formato condicional y funciones para contar",
+     "descripcion": "Hoy vas a resaltar datos con formato condicional y contar celdas con CONTAR, CONTARA, CONTAR.BLANCO y CONTAR.SI.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.6 · Decidir con la función SI",
+     "descripcion": "Hoy vas a hacer que una celda muestre un resultado u otro según una condición, con SI, SI anidado, Y y O.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.7 · Buscar datos con BUSCARV",
+     "descripcion": "Hoy vas a buscar datos en una tabla con BUSCARV, con coincidencia exacta y aproximada, y rellenar un albarán automático.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.8 · Gráficos",
+     "descripcion": "Hoy vas a elegir el gráfico adecuado para unos datos, crearlo y darle formato.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-8.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.9 · La hoja como base de datos",
+     "descripcion": "Hoy vas a usar una tabla de Excel como lista de datos: filtrar, validar, resumir con tablas dinámicas y proteger.\nNecesitas: ordenador con Excel y el libro UD05_Excel.xlsx.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-9.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.10 · Plantillas, macros y trabajo en equipo",
+     "descripcion": "Hoy vas a crear una plantilla de factura, grabar una macro sencilla, importar y exportar datos y trabajar en un libro compartido.\nNecesitas: ordenador con Excel, el libro UD05_Excel.xlsx y OneDrive.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/sesion-10.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD05 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD05 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Una fórmula empieza siempre por…",
+      "opciones": [
+       "el signo =",
+       "una letra",
+       "un paréntesis"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "¿Qué da =2+3*4?",
+      "opciones": [
+       "20",
+       "14",
+       "24"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El rango B2:B6 tiene…",
+      "opciones": [
+       "2 celdas",
+       "5 celdas",
+       "6 celdas"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Al copiar =B2*$F$1 una fila más abajo, queda…",
+      "opciones": [
+       "=B3*$F$2",
+       "=B3*$F$1",
+       "=B2*$F$1"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "¿Qué función cuenta las celdas que cumplen un criterio?",
+      "opciones": [
+       "CONTAR",
+       "CONTARA",
+       "CONTAR.SI"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "En =SI(B2>=5;\"Apto\";\"No apto\"), «No apto» sale si…",
+      "opciones": [
+       "B2 es menor que 5",
+       "B2 es 5",
+       "B2 está vacía o es mayor que 5"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "BUSCARV busca el dato en…",
+      "opciones": [
+       "la última columna de la tabla",
+       "la primera columna de la tabla",
+       "la primera fila de la tabla"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para enseñar partes de un total se usa un gráfico…",
+      "opciones": [
+       "circular",
+       "de líneas",
+       "de dispersión"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Las filas que no cumplen un filtro…",
+      "opciones": [
+       "se borran",
+       "se ocultan",
+       "se pintan de rojo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un libro con macros se guarda como…",
+      "opciones": [
+       ".xlsx",
+       ".xltx",
+       ".xlsm"
+      ],
+      "correcta": 2
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué es mejor calcular con referencias (=A2*B2) que con números (=50*0,71)?",
+      "solucion": "Porque si cambia un dato, el resultado se actualiza solo, y la fórmula se puede copiar a otras filas."
+     },
+     {
+      "enunciado": "¿Cuándo hay que usar una referencia absoluta?",
+      "solucion": "Cuando la fórmula se va a copiar y una celda tiene que quedarse fija, como el tipo de IVA o una comisión."
+     },
+     {
+      "enunciado": "¿Qué diferencia hay entre BUSCARV con FALSO y con VERDADERO?",
+      "solucion": "Con FALSO busca el dato exacto (si no está, da #N/D). Con VERDADERO toma el valor más cercano por debajo, para tramos, y la tabla debe estar ordenada."
+     },
+     {
+      "enunciado": "¿Qué ventaja tiene guardar la factura como plantilla?",
+      "solucion": "Cada factura nueva sale del modelo con el diseño y las fórmulas, y el modelo no se modifica."
+     }
+    ],
+    "rubrica": [
+     "Introduzco datos y les doy el formato adecuado (moneda, porcentaje, fecha).",
+     "Calculo con fórmulas y funciones (SUMA, PROMEDIO, MAX, MIN, fechas).",
+     "Uso referencias relativas, absolutas y a otras hojas.",
+     "Tomo decisiones con SI y busco datos con BUSCARV.",
+     "Hago gráficos adecuados a los datos.",
+     "Filtro, valido, protejo y resumo datos con tablas dinámicas.",
+     "Creo plantillas y macros sencillas, e importo y exporto datos."
+    ],
+    "titulo": "UD05 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud05/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD06",
+   "titulo": "UD06 · Bases de datos ofimáticas",
+   "bloque": "Bloque III · Datos: hojas de cálculo y bases de datos",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud06/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 6.1 · Qué es una base de datos relacional",
+     "descripcion": "Hoy vas a conocer los elementos de una base de datos relacional y los objetos de Access.\nNecesitas: cuaderno y ordenador con Access.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud06/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 6.2 · Tablas y registros",
+     "descripcion": "Hoy vas a crear una base de datos con sus tablas y relaciones, trabajar con los registros, y ordenar, buscar y filtrar.\nNecesitas: ordenador con Access.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud06/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 6.3 · Consultas, formularios e informes con asistente",
+     "descripcion": "Hoy vas a crear consultas, formularios e informes con los asistentes de Access.\nNecesitas: ordenador con Access y la base de datos de la papelería.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud06/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD06 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud06/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD06 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud06/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque III · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Datos: hojas de cálculo y bases de datos».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/situaciones-bloque-3.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Una fila de una tabla es un…",
+      "opciones": [
+       "campo",
+       "registro",
+       "informe"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La clave principal…",
+      "opciones": [
+       "se puede repetir",
+       "no se puede repetir",
+       "es siempre el nombre"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una base de datos de Access tiene la extensión…",
+      "opciones": [
+       ".xlsx",
+       ".accdb",
+       ".docx"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para imprimir un listado agrupado se usa…",
+      "opciones": [
+       "un informe",
+       "un formulario",
+       "una tabla"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La integridad referencial impide…",
+      "opciones": [
+       "ordenar",
+       "tener pedidos de clientes que no existen",
+       "filtrar"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En un criterio, las fechas van entre…",
+      "opciones": [
+       "comillas",
+       "almohadillas #",
+       "paréntesis"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué se reparten los datos en varias tablas relacionadas?",
+      "solucion": "Para escribir cada dato una sola vez: se ahorra espacio, se evitan errores y al cambiar un dato se cambia en un solo sitio."
+     },
+     {
+      "enunciado": "¿Qué ventaja tiene un formulario frente a escribir en la tabla?",
+      "solucion": "Muestra un registro cada vez, de forma clara, y se equivoca menos quien introduce los datos."
+     }
+    ],
+    "rubrica": [
+     "Identifico tablas, campos, registros, claves y relaciones.",
+     "Creo una base de datos con tablas y tipos de datos adecuados.",
+     "Relaciono tablas con integridad referencial.",
+     "Añado, modifico y elimino registros.",
+     "Ordeno, busco y filtro los datos.",
+     "Creo consultas con el asistente y con criterios.",
+     "Creo formularios e informes con los asistentes."
+    ],
+    "titulo": "UD06 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud06/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD07",
+   "titulo": "UD07 · Imagen y vídeo",
+   "bloque": "Bloque IV · Multimedia, comunicación y seguridad",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud07/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 7.1 · La imagen digital: formatos y resolución",
+     "descripcion": "Hoy vas a distinguir mapa de bits y vectorial, entender la resolución y elegir el formato adecuado.\nNecesitas: ordenador y unas fotos de prueba.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud07/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.2 · Obtener y retocar imágenes",
+     "descripcion": "Hoy vas a obtener imágenes con periféricos, retocarlas y exportarlas para cada uso.\nNecesitas: ordenador, móvil o cámara, escáner y Canva o GIMP.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud07/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.3 · El vídeo digital: elementos, formatos y códecs",
+     "descripcion": "Hoy vas a reconocer los elementos de un vídeo y distinguir formatos contenedores y códecs.\nNecesitas: ordenador y unos vídeos de prueba.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud07/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.4 · Grabar y editar vídeo",
+     "descripcion": "Hoy vas a grabar vídeo con los recursos adecuados, editarlo en la línea de tiempo, exportarlo y escribir una guía básica.\nNecesitas: móvil o webcam y Clipchamp (Microsoft 365).",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud07/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD07 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud07/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD07 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud07/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Una foto es una imagen…",
+      "opciones": [
+       "vectorial",
+       "de mapa de bits",
+       "en CMYK siempre"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para imprimir con calidad se necesitan…",
+      "opciones": [
+       "72 ppp",
+       "150 ppp",
+       "300 ppp"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "El formato que admite transparencia y no pierde calidad es…",
+      "opciones": [
+       "JPG",
+       "PNG",
+       "BMP"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Los colores de la imprenta son…",
+      "opciones": [
+       "RGB",
+       "CMYK",
+       "HD"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "H.264 es…",
+      "opciones": [
+       "un contenedor",
+       "un códec",
+       "una resolución"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Full HD son…",
+      "opciones": [
+       "1280 × 720",
+       "1920 × 1080",
+       "3840 × 2160"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Antes de grabar un vídeo se hace…",
+      "opciones": [
+       "el guion gráfico",
+       "la exportación",
+       "el GIF"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué no se suben a la web las fotos tal como salen del móvil?",
+      "solucion": "Porque pesan mucho y la página carga despacio. Se reducen a unos 1000–2000 píxeles y se exportan en JPG o WEBP."
+     },
+     {
+      "enunciado": "¿Qué cuidarías al grabar un vídeo con el móvil?",
+      "solucion": "Buena luz, el móvil quieto (trípode), orientación según el uso, sin zoom digital y buen sonido."
+     }
+    ],
+    "rubrica": [
+     "Distingo mapa de bits y vectorial y elijo el formato de imagen adecuado.",
+     "Elijo la resolución según el uso: pantalla o imprenta.",
+     "Obtengo imágenes con cámara, móvil, escáner y capturas.",
+     "Retoco, redimensiono y exporto imágenes.",
+     "Reconozco los elementos, formatos y códecs del vídeo.",
+     "Grabo, edito y exporto vídeos sencillos.",
+     "Respeto las licencias y escribo guías básicas para la oficina."
+    ],
+    "titulo": "UD07 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud07/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD08",
+   "titulo": "UD08 · Correo y agenda",
+   "bloque": "Bloque IV · Multimedia, comunicación y seguridad",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud08/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 8.1 · El correo electrónico: elementos y cuentas",
+     "descripcion": "Hoy vas a conocer los elementos de un correo, configurar una cuenta y escribir correos profesionales con firma.\nNecesitas: ordenador con Outlook.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud08/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.2 · Organizar el correo y los contactos",
+     "descripcion": "Hoy vas a organizar el correo con carpetas, categorías, marcas y reglas, y gestionar la libreta de direcciones.\nNecesitas: ordenador con Outlook.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud08/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.3 · La agenda electrónica",
+     "descripcion": "Hoy vas a usar el calendario y las tareas, convocar reuniones y sincronizar la agenda con el móvil.\nNecesitas: ordenador con Outlook y un móvil.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud08/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD08 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud08/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD08 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud08/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "En CCO, los demás destinatarios…",
+      "opciones": [
+       "ven la dirección",
+       "no ven la dirección",
+       "reciben el correo más tarde"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El tipo de cuenta que deja el correo en el servidor y sincroniza los dispositivos es…",
+      "opciones": [
+       "POP3",
+       "IMAP",
+       "CSV"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para que los correos de un remitente vayan solos a una carpeta se usa…",
+      "opciones": [
+       "una regla",
+       "una firma",
+       "una categoría"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un grupo de contactos sirve para…",
+      "opciones": [
+       "escribir a varios como si fueran uno",
+       "borrar contactos",
+       "cambiar la firma"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Una reunión, a diferencia de una cita…",
+      "opciones": [
+       "dura todo el día",
+       "lleva invitados",
+       "no tiene hora"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Para tener la agenda igual en el móvil y el ordenador hay que…",
+      "opciones": [
+       "apuntarla dos veces",
+       "sincronizar la misma cuenta",
+       "imprimirla"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Qué diferencia hay entre escribir a un amigo y a un cliente?",
+      "solucion": "Con un cliente: asunto claro, trato formal, saludo y despedida, sin abreviaturas ni emoticonos, revisado y con firma."
+     },
+     {
+      "enunciado": "¿Por qué organizar el correo cada día?",
+      "solucion": "Para no perder correos importantes, responder a tiempo y encontrar todo rápido."
+     }
+    ],
+    "rubrica": [
+     "Conozco los elementos de un correo y escribo correos profesionales.",
+     "Configuro cuentas y firmas.",
+     "Organizo el correo con carpetas, categorías, marcas y reglas.",
+     "Gestiono contactos, grupos, importación y exportación.",
+     "Uso el calendario: citas, eventos, reuniones y avisos.",
+     "Gestiono tareas y comparto calendarios.",
+     "Sincronizo la agenda con el móvil."
+    ],
+    "titulo": "UD08 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud08/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD09",
+   "titulo": "UD09 · Seguridad informática",
+   "bloque": "Bloque IV · Multimedia, comunicación y seguridad",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud09/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 9.1 · Las amenazas: malware y engaños",
+     "descripcion": "Hoy vas a conocer los tipos de malware, reconocer el phishing y la ingeniería social, y saber qué hacer si un equipo se infecta.\nNecesitas: ordenador con conexión a internet.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud09/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 9.2 · Protegerse: contraseñas, actualizaciones y copias",
+     "descripcion": "Hoy vas a crear contraseñas seguras, activar la verificación en dos pasos, mantener el equipo actualizado y protegido, y hacer copias de seguridad.\nNecesitas: ordenador con Windows y Microsoft 365.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud09/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 9.3 · Protección de datos y navegación segura",
+     "descripcion": "Hoy vas a conocer las obligaciones de la empresa con los datos personales, navegar y descargar de forma segura y respetar las licencias.\nNecesitas: ordenador con navegador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud09/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD09 · Práctica con las herramientas",
+     "descripcion": "Práctica guiada con el ordenador.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud09/practica.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD09 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud09/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque IV · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Multimedia, comunicación y seguridad».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/situaciones-bloque-4.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "El programa que parece útil pero esconde malware es un…",
+      "opciones": [
+       "gusano",
+       "troyano",
+       "cortafuegos"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un correo que suplanta a tu banco para robarte la contraseña es…",
+      "opciones": [
+       "phishing",
+       "spam legítimo",
+       "una cookie"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La contraseña más segura es…",
+      "opciones": [
+       "Ana2009",
+       "qwerty123",
+       "LaPlaya_DeSomo*Sube7"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "La verificación en dos pasos pide, además de la contraseña…",
+      "opciones": [
+       "un código en el móvil",
+       "el DNI",
+       "otra contraseña igual"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En la regla 3-2-1, el 1 significa…",
+      "opciones": [
+       "una copia al año",
+       "una copia fuera de la oficina",
+       "un solo disco"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Pedir a una empresa que borre tus datos es el derecho de…",
+      "opciones": [
+       "acceso",
+       "supresión",
+       "portabilidad"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué se dice que el eslabón más débil de la seguridad es la persona?",
+      "solucion": "Porque la mayoría de los ataques empiezan con un engaño: abrir un adjunto, pulsar un enlace, dar una contraseña o usar una muy fácil."
+     },
+     {
+      "enunciado": "¿Qué tres cosas harías hoy para proteger mejor tus cuentas y archivos?",
+      "solucion": "Respuesta personal. Por ejemplo: cambiar las contraseñas repetidas, activar la verificación en dos pasos y hacer una copia en OneDrive."
+     }
+    ],
+    "rubrica": [
+     "Reconozco los tipos de malware.",
+     "Detecto correos y mensajes de phishing.",
+     "Creo contraseñas seguras y uso la verificación en dos pasos.",
+     "Mantengo el equipo actualizado y con antivirus.",
+     "Hago copias de seguridad y protejo los archivos.",
+     "Conozco las obligaciones de protección de datos.",
+     "Navego de forma segura y respeto las licencias."
+    ],
+    "titulo": "UD09 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/ud09/autoevaluacion.html"
+   }
+  }
+ ]
+}

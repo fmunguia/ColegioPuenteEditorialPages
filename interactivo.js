@@ -16,7 +16,7 @@
   function todos(sel, raiz) { return Array.prototype.slice.call((raiz || document).querySelectorAll(sel)); }
 
   // --- Campos: textos, casillas y opciones ---------------------------------------------
-  var campos = todos('[data-k]').filter(function (el) { return el.matches('input, textarea'); });
+  var campos = todos('[data-k]').filter(function (el) { return el.matches('input, textarea, select'); });
   campos.forEach(function (el) {
     var clave = el.getAttribute('data-k');
     var v = leer(clave);
@@ -26,13 +26,17 @@
     } else if (el.type === 'radio') {
       el.checked = v !== null && v === el.value;
       el.addEventListener('change', function () { if (el.checked) guardar(clave, el.value); });
+    } else if (el.tagName === 'SELECT') {
+      if (v !== null) el.value = v;
+      el.addEventListener('change', function () { guardar(clave, el.value); });
     } else {
       if (v !== null) el.value = v;
       el.addEventListener('input', function () { guardar(clave, el.value); });
     }
   });
+  var chips = todos('.chip-marcar[data-k]');
   var barra = document.querySelector('.barra-respuestas');
-  if (barra && campos.length) barra.hidden = false;
+  if (barra && (campos.length || chips.length)) barra.hidden = false;
 
   // --- Ver la solución y autocorrección -------------------------------------------------
   todos('.ver-sol').forEach(function (b) {
@@ -105,6 +109,61 @@
     });
   });
 
+
+  // --- Ejercicios que se corrigen solos: unir, ordenar, clasificar, verdadero o falso ---------
+  function valorDe(ctrl) {
+    if (ctrl.tagName === 'SELECT') return ctrl.value;
+    var r = ctrl.querySelector('input:checked');
+    return r ? r.value : '';
+  }
+  todos('.autocorr').forEach(function (ej) {
+    var boton = ej.querySelector('.comprobar-ej');
+    var res = ej.querySelector('.res-ej');
+    var ctrls = todos('.ctrl-ej', ej);
+    function limpiar() {
+      ctrls.forEach(function (c) { c.closest('.fila-ej').classList.remove('bien-ej', 'mal-ej'); });
+      if (res) { res.textContent = ''; res.className = 'res-ej'; }
+    }
+    ctrls.forEach(function (c) { c.addEventListener('change', limpiar); });
+    if (!boton) return;
+    boton.addEventListener('click', function () {
+      var bien = 0, vacias = 0;
+      ctrls.forEach(function (c) {
+        var fila = c.closest('.fila-ej');
+        var v = valorDe(c);
+        fila.classList.remove('bien-ej', 'mal-ej');
+        if (v === '') { vacias++; return; }
+        if (v === c.getAttribute('data-sol')) { bien++; fila.classList.add('bien-ej'); }
+        else fila.classList.add('mal-ej');
+      });
+      var total = ctrls.length;
+      var msg = bien === total ? '🤩 ¡Todo bien! ' + bien + ' de ' + total + '.'
+        : bien + ' de ' + total + ' bien. Revisa las marcadas en rojo' + (vacias ? ' y las que faltan.' : '.');
+      res.textContent = msg;
+      res.className = 'res-ej ' + (bien === total ? 'bien' : 'mal');
+    });
+  });
+
+  // --- Rodear, subrayar o tachar palabras -------------------------------------------------
+  todos('.chip-marcar').forEach(function (b) {
+    var clave = b.getAttribute('data-k');
+    var modos = b.getAttribute('data-modos').split(',');
+    function pintar(m) {
+      modos.forEach(function (x) { b.classList.remove(x); });
+      if (m) b.classList.add(m);
+      b.setAttribute('aria-pressed', String(!!m));
+      b.title = m ? m.charAt(0).toUpperCase() + m.slice(1) : 'Sin marcar';
+    }
+    pintar(leer(clave));
+    b.addEventListener('click', function () {
+      var actual = leer(clave);
+      var i = modos.indexOf(actual);
+      var sig = i + 1 < modos.length ? modos[i + 1] : '';
+      guardar(clave, sig);
+      pintar(sig);
+    });
+  });
+
   // --- Copiar, imprimir y borrar -------------------------------------------------------
   function etiqueta(el) {
     var act = el.closest('.actividad');
@@ -124,8 +183,25 @@
     var sesion = document.querySelector('.banda-sesion');
     var lineas = [(sesion ? sesion.textContent.trim() + ' · ' : '') + titulo, ''];
     var vistos = {};
-    campos.forEach(function (el) {
+    var gruposChips = [];
+    // En el orden de la página: campos de texto, opciones, desplegables y palabras marcadas
+    todos('[data-k]').forEach(function (el) {
       var valor = '';
+      if (el.classList.contains('chip-marcar')) {
+        // Palabras para rodear, subrayar o tachar: una línea por ejercicio con las marcadas
+        var grupo = el.closest('.marcar-ej') || el.parentElement;
+        if (gruposChips.indexOf(grupo) >= 0) return;
+        gruposChips.push(grupo);
+        var porModo = {};
+        todos('.chip-marcar[data-k]', grupo).forEach(function (c) {
+          var m = leer(c.getAttribute('data-k'));
+          if (m) (porModo[m] = porModo[m] || []).push(c.textContent.trim());
+        });
+        valor = Object.keys(porModo).map(function (m) { return m + ': ' + porModo[m].join(', '); }).join('; ');
+        if (valor) lineas.push(etiqueta(el) + ': ' + valor);
+        return;
+      }
+      if (campos.indexOf(el) < 0) return;
       if (el.type === 'checkbox') return;
       if (el.type === 'radio') {
         if (!el.checked || vistos[el.name]) return;
@@ -134,6 +210,12 @@
         valor = l ? l.textContent.trim() : el.value;
         var fila = el.closest('tr');
         if (fila) valor = fila.cells[0].textContent.trim() + ': ' + el.value;
+        var filaEj = el.closest('.fila-ej');
+        if (filaEj) valor = filaEj.querySelector('.item-ej').textContent.trim() + ' → ' + l.textContent.trim();
+      } else if (el.tagName === 'SELECT') {
+        if (!el.value) return;
+        var item = el.closest('.fila-ej') ? el.closest('.fila-ej').querySelector('.item-ej') : null;
+        valor = (item ? item.textContent.trim() + ' → ' : '') + el.options[el.selectedIndex].textContent.trim();
       } else {
         valor = el.value.trim();
       }

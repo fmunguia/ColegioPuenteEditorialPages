@@ -17,13 +17,29 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD09 · Trigonometría</a> › <span>Apartado 9.1</span></nav></header>
 <main>
 <div class="banda-sesion"><span>Apartado 9.1</span></div><h1 class="titulo-sesion">Medida de ángulos</h1><p>La trigonometría estudia la relación entre los ángulos y los lados de un triángulo. Antes de empezar necesitamos dos formas de medir ángulos: en grados sexagesimales, la que ya conoces, y en radianes, la que usan la calculadora científica y las matemáticas de Bachillerato.</p>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Grados sexagesimales</div><div class="caja-cuerpo"><ul><li>Una circunferencia completa mide <span class="mat">\(360^\circ\)</span></li><li>Cada grado se divide en 60 minutos y cada minuto en 60 segundos: <span class="mat">\(1^\circ = 60'\)</span>, <span class="mat">\(\ 1' = 60''\)</span></li><li><strong></strong> <span class="mat">\(35^\circ\,24'\,36'' = 35 + \dfrac{24}{60} + \dfrac{36}{3600} = 35,41^\circ\)</span></li></ul></div></aside>
-<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Radianes</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/d3a6c76adfb6ee8a.svg" width="174" height="165" alt="" loading="lazy"></figure></td><td><ul><li>Un <strong>radián</strong> es el ángulo cuyo arco mide lo mismo que el radio</li><li>La circunferencia completa mide <span class="mat">\(2\pi\)</span> rad</li><li><strong></strong> <span class="mat">\(360^\circ = 2\pi \text{ rad} \qquad 180^\circ = \pi \text{ rad}\)</span></li></ul></td></tr></table></div></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Radianes</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/ad18e1576457e00b.svg" width="174" height="165" alt="" loading="lazy"></figure></td><td><ul><li>Un <strong>radián</strong> es el ángulo cuyo arco mide lo mismo que el radio</li><li>La circunferencia completa mide <span class="mat">\(2\pi\)</span> rad</li><li><strong></strong> <span class="mat">\(360^\circ = 2\pi \text{ rad} \qquad 180^\circ = \pi \text{ rad}\)</span></li></ul></td></tr></table></div></div></aside>
 <p>Para pasar de una unidad a otra basta con una regla de tres a partir de la equivalencia <span class="mat">\(180^\circ = \pi\)</span> rad.</p>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Conversión entre grados y radianes</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><span class="mat">\(60^\circ = 60 \cdot \dfrac{\pi}{180} = \dfrac{\pi}{3} \text{ rad}\)</span></td><td><span class="mat">\(\dfrac{3\pi}{4} \text{ rad} = \dfrac{3\pi}{4} \cdot \dfrac{180}{\pi} = 135^\circ\)</span></td></tr></table></div>
 <div class="centro"><div class="tabla"><table><tr><td>Grados</td><td><span class="mat">\(0^\circ\)</span></td><td><span class="mat">\(30^\circ\)</span></td><td><span class="mat">\(45^\circ\)</span></td><td><span class="mat">\(60^\circ\)</span></td><td><span class="mat">\(90^\circ\)</span></td><td><span class="mat">\(180^\circ\)</span></td><td><span class="mat">\(270^\circ\)</span></td></tr><tr><td>Radianes</td><td><span class="mat">\(0\)</span></td><td><span class="mat">\(\dfrac{\pi}{6}\)</span></td><td><span class="mat">\(\dfrac{\pi}{4}\)</span></td><td><span class="mat">\(\dfrac{\pi}{3}\)</span></td><td><span class="mat">\(\dfrac{\pi}{2}\)</span></td><td><span class="mat">\(\pi\)</span></td><td><span class="mat">\(\dfrac{3\pi}{2}\)</span></td></tr></table></div></div></div></aside>

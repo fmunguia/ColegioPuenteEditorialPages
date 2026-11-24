@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="23" viewBox="0 0 21 23">
+<defs>
+<g>
+<g id="glyph-0-0">
+<path d="M 4.625 0 L 4.625 -0.625 L 4.234375 -0.625 L 2.046875 -0.609375 L 1.71875 -0.609375 L 1.71875 -6.21875 L 0.859375 -6.21875 L 0.859375 0 Z M 4.625 0 "/>
+</g>
+</g>
+</defs>
+<path fill-rule="nonzero" fill="rgb(95.999146%, 95.999146%, 95.999146%)" fill-opacity="1" stroke-width="0.59776" stroke-linecap="butt" stroke-linejoin="miter" stroke="rgb(44.999695%, 44.999695%, 44.999695%)" stroke-opacity="1" stroke-miterlimit="10" d="M 4.005406 6.973906 L -4.006313 6.973906 C -4.830531 6.973906 -5.4985 6.305937 -5.4985 5.477812 L -5.4985 -5.479219 C -5.4985 -6.303438 -4.830531 -6.975313 -4.006313 -6.975313 L 4.005406 -6.975313 C 4.829625 -6.975313 5.497594 -6.303438 5.497594 -5.479219 L 5.497594 5.477812 C 5.497594 6.305937 4.829625 6.973906 4.005406 6.973906 Z M 4.005406 6.973906 " transform="matrix(1, 0, 0, -1, 10.811, 11.47)"/>
+<g fill="rgb(0%, 0%, 0%)" fill-opacity="1">
+<use xlink:href="#glyph-0-0" x="8.3" y="13.662"/>
+</g>
+</svg>

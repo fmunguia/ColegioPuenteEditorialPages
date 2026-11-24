@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD02 · Repaso de la unidad</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <a href="index.html">UD02 · Mecanografía</a> › <span>Repaso</span></nav></header>
+<main>
+<h1>📝 Repaso de la unidad</h1><h2 class="seccion">Ejercicios de final de tema</h2><p class="nota">Escribe tu respuesta y después pulsa «Ver la solución» para corregirla tú. Los puntos dicen el nivel: ● básico, ●●● ampliación.</p><div class="ejercicios"><div class="repaso"><div class="rep-cab"><span class="circ">1</span> <span class="puntos" title="Nivel 1">●○○</span> <strong>Postura</strong></div><p>Escribe cuatro normas de la postura correcta delante del ordenador.</p><textarea class="respuesta" rows="3" data-k="t1" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>Espalda recta y apoyada; codos y rodillas a 90°; pies en el suelo; muñecas rectas; monitor a un brazo y a la altura de los ojos.</p><p class="autonota" data-k="s2">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">2</span> <span class="puntos" title="Nivel 1">●○○</span> <strong>Fila guía</strong></div><p>¿En qué teclas descansan los dedos de cada mano? ¿Para qué sirven las rayitas?</p><textarea class="respuesta" rows="3" data-k="t3" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>Izquierda: A S D F. Derecha: J K L Ñ. Pulgares en el espacio.Las rayitas de la F y la J sirven para encontrar la posición sin mirar.</p><p class="autonota" data-k="s4">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">3</span> <span class="puntos" title="Nivel 1">●○○</span> <strong>Dedos</strong></div><p>¿Qué dedo pulsa: a) la T; b) la O; c) la C; d) la P?</p><textarea class="respuesta" rows="3" data-k="t5" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>a) Índice izquierdo.b) Anular derecho.c) Corazón izquierdo.d) Meñique derecho.</p><p class="autonota" data-k="s6">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">4</span> <span class="puntos" title="Nivel 2">●●○</span> <strong>Signos</strong></div><p>¿Cómo escribes: a) @; b) €; c) la U con diéresis; d) el signo de cierre de interrogación?</p><textarea class="respuesta" rows="3" data-k="t7" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>a)</p>
+<figure class="dibujo "><img src="../../figuras/eb6d3befc4be6a26.svg" width="64" height="37" alt="" loading="lazy"></figure>
+<p>+</p>
+<figure class="dibujo "><img src="../../figuras/e0e11fff8c6f22e8.svg" width="34" height="37" alt="" loading="lazy"></figure>
+<p>.b)</p>
+<figure class="dibujo "><img src="../../figuras/eb6d3befc4be6a26.svg" width="64" height="37" alt="" loading="lazy"></figure>
+<p>+</p>
+<figure class="dibujo "><img src="../../figuras/32ff64d50b77b2f0.svg" width="34" height="37" alt="" loading="lazy"></figure>
+<p>.c)</p>
+<figure class="dibujo "><img src="../../figuras/b3cae8744d763ed8.svg" width="66" height="37" alt="" loading="lazy"></figure>
+<p>+</p>
+<figure class="dibujo "><img src="../../figuras/4896a883660d9b99.svg" width="32" height="37" alt="" loading="lazy"></figure>
+<p>y luego</p>
+<figure class="dibujo "><img src="../../figuras/be435fda48eb7e50.svg" width="35" height="37" alt="" loading="lazy"></figure>
+<p>.d)</p>
+<figure class="dibujo "><img src="../../figuras/b3cae8744d763ed8.svg" width="66" height="37" alt="" loading="lazy"></figure>
+<p>+</p>
+<figure class="dibujo "><img src="../../figuras/e55daa5e66de280e.svg" width="29" height="37" alt="" loading="lazy"></figure>
+<p>.</p><p class="autonota" data-k="s8">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">5</span> <span class="puntos" title="Nivel 2">●●○</span> <strong>Presentación</strong></div><p>Corrige los espacios: <em>Hola ,Ana.¿ Vienes mañana ? Son 25€ ( IVA incluido ).</em></p><textarea class="respuesta" rows="3" data-k="t9" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p><em>Hola, Ana. ¿Vienes mañana? Son 25 € (IVA incluido).</em></p><p class="autonota" data-k="s10">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">6</span> <span class="puntos" title="Nivel 2">●●○</span> <strong>Velocidad</strong></div><p>En 3 minutos has escrito 690 pulsaciones con 2 faltas. ¿Cumples el objetivo?</p><textarea class="respuesta" rows="3" data-k="t11" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p><span class="mat">690 / 3 = 230</span> ppm (más de 200) y <span class="mat">2 / 3 ≈ 0,7</span> faltas por minuto (menos de 1). Sí cumples.</p><p class="autonota" data-k="s12">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">7</span> <span class="puntos" title="Nivel 3">●●●</span> <strong>Plan de mejora</strong></div><p>Una compañera escribe a 250 ppm pero con 3 faltas por minuto. ¿Qué le aconsejas?</p><textarea class="respuesta" rows="3" data-k="t13" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>Que baje la velocidad hasta escribir con menos de una falta por minuto, que practique cada día las teclas en las que más falla y que no mire el teclado.La velocidad volverá a subir sola con la precisión.</p><p class="autonota" data-k="s14">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div></div><h2 class="seccion">🧩 Paso a paso</h2><p>Así se resuelven los ejercicios tipo de la unidad. Cada bloque es una orden, como en Scratch: los bloques se leen de arriba abajo y los que tienen forma de C se repiten o solo se hacen si se cumple la condición.</p><aside class="caja scratch"><div class="caja-titulo">🧩 Paso a paso: Una sesión de mecanografía</div><div class="caja-cuerpo"><div class="programa-y-texto"><figure class="dibujo bloques"><img src="../../figuras/ac2910fb15b48560.svg" width="274" height="498" alt="" loading="lazy"></figure><div class="explicacion"><p><strong>Postura:</strong> silla ajustada, pies en el suelo, monitor a la altura de los ojos.</p>
+<p><strong>Dedos:</strong> índices en F y J.</p>
+<p><strong>Práctica:</strong> 15 minutos de lecciones sin mirar.</p>
+<p><strong>Prueba:</strong> 5 minutos, 1100 pulsaciones y 6 faltas.</p>
+<p><strong>Cálculo:</strong> 220 ppm y 1,2 faltas por minuto.</p>
+<p><strong>Decisión:</strong> más de una falta por minuto, así que la próxima sesión, más despacio.</p>
+<p><strong>Tabla:</strong> se apuntan la fecha y los resultados.</p></div></div></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="practica.html">← Práctica con las herramientas</a><a class="boton secundario" href="autoevaluacion.html">Autoevaluación →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

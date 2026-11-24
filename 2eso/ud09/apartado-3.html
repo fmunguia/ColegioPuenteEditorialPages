@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD09 · Semejanza y movimientos en el plano</a> › <span>Apartado 9.3</span></nav></header>
@@ -27,7 +43,7 @@ window.MathJax = {
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Coordenadas de un vector</div><div class="caja-cuerpo"><div class="minipage"><p>Con <span class="mat">\(A(1,1)\)</span> y <span class="mat">\(B(5,3)\)</span>:</p>
 <div class="centro"><p><span class="mat">\(\vec{AB}=(5-1,\;3-1)=(4,2)\)</span></p></div>
 <p>Para ir de <span class="mat">\(A\)</span> a <span class="mat">\(B\)</span> se avanzan 4 unidades a la derecha y 2 hacia arriba.</p></div>
-<div class="minipage"><figure class="dibujo "><img src="../../figuras/5d6958183b0d44f6.svg" width="165" height="114" alt="" loading="lazy"></figure></div></div></aside>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/2f27b4ffece30364.svg" width="165" height="114" alt="" loading="lazy"></figure></div></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Extremo menos origen</div><div class="caja-cuerpo"><p>Las coordenadas de <span class="mat">\(\vec{AB}\)</span> son <span class="mat">\(B-A\)</span>, no <span class="mat">\(A-B\)</span>. Con <span class="mat">\(A(1,1)\)</span> y <span class="mat">\(B(5,3)\)</span>, <span class="mat">\(\vec{AB}=(4,2)\)</span>, mientras que <span class="mat">\(\vec{BA}=(-4,-2)\)</span> tiene sentido contrario.</p></div></aside>
 <div class="actividad hago" id="act-9.3.1"><div class="act-cab"><span class="act-num">9.3.1</span></div><div class="act-cuerpo"><p>Dados los puntos <span class="mat">\(A(-1,2)\)</span>, <span class="mat">\(B(3,5)\)</span> y <span class="mat">\(C(2,-1)\)</span>, calcula las coordenadas de los vectores <span class="mat">\(\vec{AB}\)</span>, <span class="mat">\(\vec{BC}\)</span> y <span class="mat">\(\vec{AC}\)</span>. ¿Qué observas al sumar las coordenadas de <span class="mat">\(\vec{AB}\)</span> y <span class="mat">\(\vec{BC}\)</span>?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>

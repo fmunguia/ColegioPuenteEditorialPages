@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD11 · Movimientos en el plano</a> › <span>Apartado 11.2</span></nav></header>
@@ -33,14 +49,14 @@ window.MathJax = {
 			B' &amp;= (3 + 4, \ 1 - 2) = (7, -1) \\
 			C' &amp;= (2 + 4, \ 4 - 2) = (6, 2)
 		\end{aligned}\]</div></div>
-<div class="minipage"><figure class="dibujo "><img src="../../figuras/93f18b1f4c1169ac.svg" width="189" height="166" alt="" loading="lazy"></figure></div></div></aside>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/c972db5972f0848f.svg" width="189" height="166" alt="" loading="lazy"></figure></div></div></aside>
 <h2 class="subapartado">Giros</h2>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Giro</div><div class="caja-cuerpo"><p>Un <dfn class="glosario" tabindex="0" data-def="movimiento que hace rotar una figura un ángulo alrededor de un punto, el centro">giro</dfn> de centro <span class="mat">\(O\)</span> y ángulo <span class="mat">\(\alpha\)</span> transforma cada punto <span class="mat">\(P\)</span> en otro punto <span class="mat">\(P'\)</span> tal que <span class="mat">\(OP = OP'\)</span> y el ángulo <span class="mat">\(\widehat{POP'}\)</span> mide <span class="mat">\(\alpha\)</span>.</p>
 <p>Por convenio, el ángulo es <strong>positivo</strong> si el giro es en sentido contrario a las agujas del reloj, y <strong>negativo</strong> si es en el sentido de las agujas.</p></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Los giros positivos van al revés que el reloj</div><div class="caja-cuerpo"><p>Un giro de <span class="mat">\(90^\circ\)</span> lleva <span class="mat">\((2, 0)\)</span> a <span class="mat">\((0, 2)\)</span>, hacia arriba, y no a <span class="mat">\((0, -2)\)</span>. Si el ángulo es positivo, se gira en sentido <strong>contrario</strong> a las agujas del reloj.</p></div></aside>
 <p>Cuando el centro es el origen de coordenadas, algunos giros se calculan de forma muy sencilla:</p>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Giros con centro en el origen</div><div class="caja-cuerpo"><ul><li>Giro de <span class="mat">\(90^\circ\)</span>:  <span class="mat">\((x, y) \longrightarrow (-y, x)\)</span></li><li>Giro de <span class="mat">\(180^\circ\)</span>:  <span class="mat">\((x, y) \longrightarrow (-x, -y)\)</span></li><li>Giro de <span class="mat">\(270^\circ\)</span> (o <span class="mat">\(-90^\circ\)</span>):  <span class="mat">\((x, y) \longrightarrow (y, -x)\)</span></li></ul></div></aside>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/f2da8fa9c4c7c399.svg" width="243" height="194" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/7202cf0ec8dc7a66.svg" width="243" height="194" alt="" loading="lazy"></figure></div>
 <div class="actividad hago" id="act-11.2.1"><div class="act-cab"><span class="act-num">11.2.1</span></div><div class="act-cuerpo"><p>Gira el punto <span class="mat">\(P(2, 5)\)</span> con centro en el origen <span class="mat">\(90^\circ\)</span>, <span class="mat">\(180^\circ\)</span> y <span class="mat">\(270^\circ\)</span>.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <h2 class="subapartado">Simetrías</h2>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Simetría axial y simetría central</div><div class="caja-cuerpo"><ul><li>La <dfn class="glosario" tabindex="0" data-def="movimiento que refleja una figura respecto a una recta, el eje, como en un espejo">simetría axial</dfn> de eje <span class="mat">\(e\)</span> transforma cada punto <span class="mat">\(P\)</span> en otro <span class="mat">\(P'\)</span> de forma que el eje <span class="mat">\(e\)</span> es la mediatriz del segmento <span class="mat">\(PP'\)</span>. Es como el reflejo en un espejo.</li><li>La <strong>simetría central</strong> de centro <span class="mat">\(O\)</span> transforma cada punto <span class="mat">\(P\)</span> en otro <span class="mat">\(P'\)</span> de forma que <span class="mat">\(O\)</span> es el punto medio de <span class="mat">\(PP'\)</span>. Equivale a un giro de <span class="mat">\(180^\circ\)</span>.</li></ul>

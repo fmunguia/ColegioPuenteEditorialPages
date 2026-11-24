@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD03 · Potencias y raíces</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Calcular potencias de números enteros y de fracciones, con su signo.</li><li>Usar las propiedades de las potencias para simplificar.</li><li>Entender el exponente cero y el exponente negativo.</li><li>Escribir y operar números en notación científica.</li><li>Calcular raíces cuadradas exactas y enteras.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Calcula <span class="mat">\(2\cdot 2\cdot 2\cdot 2\)</span> y <span class="mat">\((-3)\cdot(-3)\cdot(-3)\)</span>.</li><li>Calcula <span class="mat">\((-4)\cdot(-5)\)</span> y <span class="mat">\((-6):2\)</span>.</li><li>Calcula <span class="mat">\(\frac{2}{3}\cdot\frac{2}{3}\)</span>.</li><li>Multiplica <span class="mat">\(3{,}5\cdot 1\,000\)</span> y divide <span class="mat">\(42:100\)</span>.</li><li>¿Qué número multiplicado por sí mismo da 49?</li><li>Escribe con cifras «tres millones» y «cinco milésimas».</li><li>Calcula <span class="mat">\(4+2\cdot 3-1\)</span>.</li><li>Calcula el área de un cuadrado de 6 cm de lado.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Cuenta la leyenda que el inventor del ajedrez pidió al rey como premio un grano de trigo por la primera casilla del tablero, dos por la segunda, cuatro por la tercera y así, duplicando, hasta la casilla 64.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/3121367bd7ed096c.svg" width="323" height="117" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/82dc1b9c513f087e.svg" width="323" height="117" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuántos granos corresponden a la casilla 10? ¿Y a la 64? Escríbelo como potencia.</li><li>¿Crees que el rey pudo pagar el premio?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 3.1</span> Potencias de exponente natural</a></li><li><a href="apartado-2.html"><span class="num">Apartado 3.2</span> Propiedades de las potencias</a></li><li><a href="apartado-3.html"><span class="num">Apartado 3.3</span> Exponente cero y exponente negativo</a></li><li><a href="apartado-4.html"><span class="num">Apartado 3.4</span> Potencias de base 10 y notación científica</a></li><li><a href="apartado-5.html"><span class="num">Apartado 3.5</span> Raíz cuadrada</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud02/index.html">← UD02</a><a class="boton secundario" href="../ud04/index.html">UD04 →</a></nav>

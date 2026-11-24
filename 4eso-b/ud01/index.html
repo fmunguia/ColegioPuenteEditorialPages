@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <span>UD01 · Números reales</span></nav></header>
@@ -28,7 +44,7 @@ window.MathJax = {
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Simplifica <span class="mat">\(\dfrac{36}{48}\)</span>.</li><li>Calcula <span class="mat">\(\dfrac{2}{3} + \dfrac{5}{6}\)</span>.</li><li>Escribe como fracción <span class="mat">\(0{,}75\)</span>.</li><li>Calcula <span class="mat">\(\sqrt{81}\)</span> y <span class="mat">\(\sqrt{0{,}25}\)</span>.</li><li>Ordena de menor a mayor: <span class="mat">\(-3\)</span>, <span class="mat">\(0{,}5\)</span>, <span class="mat">\(-\dfrac{1}{2}\)</span>, <span class="mat">\(2\)</span>.</li><li>Calcula <span class="mat">\(10^3\)</span>, <span class="mat">\(10^{-2}\)</span> y <span class="mat">\(2{,}5 \cdot 10^2\)</span>.</li><li>Redondea <span class="mat">\(3{,}146\)</span> a las centésimas.</li><li>Representa en una recta <span class="mat">\(-2\)</span>, <span class="mat">\(\dfrac{3}{2}\)</span> y <span class="mat">\(2{,}5\)</span>.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>La diagonal de un cuadrado de lado 1 mide <span class="mat">\(\sqrt{2}\)</span>. Los pitagóricos, en la antigua Grecia, descubrieron que ese número no se puede escribir como fracción, y se cuenta que intentaron mantenerlo en secreto porque rompía su idea de que todo se podía medir con números enteros.</p>
 <p>Con un compás podemos llevar esa diagonal a la recta numérica: el punto que obtenemos existe, aunque nunca podremos escribir todas sus cifras decimales (<span class="mat">\(1{,}414\,213\,562\ldots\)</span>).</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/1fee37d0ce9938e4.svg" width="322" height="208" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/787cd616eb65f494.svg" width="322" height="208" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuántos números como <span class="mat">\(\sqrt{2}\)</span> crees que hay entre 1 y 2? ¿Más o menos que fracciones?</li><li>¿Cómo situarías <span class="mat">\(\sqrt{5}\)</span> en la recta con un triángulo rectángulo?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 1.1</span> Conjuntos numéricos</a></li><li><a href="apartado-2.html"><span class="num">Apartado 1.2</span> Paso de decimal a fracción (Fracción generatriz)</a></li><li><a href="apartado-3.html"><span class="num">Apartado 1.3</span> Intervalos</a></li><li><a href="apartado-4.html"><span class="num">Apartado 1.4</span> Unión e intersección de intervalos</a></li><li><a href="apartado-5.html"><span class="num">Apartado 1.5</span> Valor absoluto</a></li><li><a href="apartado-6.html"><span class="num">Apartado 1.6</span> Aproximaciones y errores</a></li><li><a href="apartado-7.html"><span class="num">Apartado 1.7</span> Notación científica</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><span></span><a class="boton secundario" href="../ud02/index.html">UD02 →</a></nav>

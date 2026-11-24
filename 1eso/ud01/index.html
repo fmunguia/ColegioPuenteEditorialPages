@@ -17,12 +17,28 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD01 · Naturales y divisibilidad</span></nav></header>
 <main>
 <p class="subtitulo">Bloque I · Cálculo</p><h1><span class="codigo">UD01</span> Naturales y divisibilidad</h1><aside class="caja partida"><div class="caja-titulo">🔍 Las lanchas de la bahía</div><div class="caja-cuerpo"><p>Desde el embarcadero de Santander salen las lanchas que cruzan la bahía. La de Somo sale cada 20 minutos y la de Pedreña cada 30 minutos. En un día de agosto pueden viajar en ellas más de 3 000 personas, y la naviera tiene que organizar los horarios, los billetes y los grupos que suben a bordo.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/c8c05d1d088901a6.svg" width="637" height="70" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/6a3849f795bf2c38.svg" width="637" height="70" alt="" loading="lazy"></figure></div>
 <ul><li>Si a las 10:00 salen las dos a la vez, ¿a qué hora vuelven a coincidir? Búscalo en el dibujo.</li><li>Un colegio lleva 84 alumnos de 1º y 120 de 2º. Quieren subir en grupos iguales, sin mezclar cursos y lo más grandes posible. ¿Cuántos alumnos irán en cada grupo?</li><li>En un verano viajan 287 436 personas. ¿Cómo lo dirías redondeando a los millares?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Leer, escribir y redondear números naturales grandes.</li><li>Hacer operaciones combinadas respetando la jerarquía.</li><li>Encontrar múltiplos y divisores y usar los criterios de divisibilidad.</li><li>Distinguir números primos y compuestos y factorizar.</li><li>Calcular el m.c.m. y el M.C.D. y usarlos en problemas de coincidencias y repartos.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><p>Para empezar la unidad necesitas manejar con soltura las tablas de multiplicar, las divisiones y el nombre de cada orden de unidades.</p>
@@ -31,7 +47,7 @@ window.MathJax = {
 <ol class="tareas cols-2"><li>Escribe con cifras: cuarenta mil doscientos ocho.</li><li>Escribe con letras: <span class="mat">\(1\,305\,020\)</span>.</li><li>Calcula: <span class="mat">\(345 + 1\,289 + 76\)</span></li><li>Calcula: <span class="mat">\(4\,002 - 1\,875\)</span></li><li>Calcula: <span class="mat">\(127 \cdot 34\)</span></li><li>Calcula: <span class="mat">\(9 \cdot 8\)</span> y <span class="mat">\(7 \cdot 6\)</span></li><li>Haz la división <span class="mat">\(856 : 4\)</span>.</li><li>Haz la división <span class="mat">\(1\,000 : 7\)</span>. ¿Cuánto sobra?</li><li>¿Cuáles de estos números son pares? 34, 57, 90, 121, 316</li><li>Escribe la tabla del 7 hasta <span class="mat">\(7 \cdot 10\)</span>.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Cuando compras por internet, los datos de tu tarjeta viajan cifrados. Muchos de esos sistemas se basan en una idea muy sencilla: multiplicar dos números primos es fácil, pero descubrir qué dos primos se han multiplicado es muy difícil cuando son enormes, de cientos de cifras.</p>
 <ul><li>Calcula <span class="mat">\(13 \cdot 17\)</span>. ¿Has tardado mucho?</li><li>Ahora al revés: <span class="mat">\(391\)</span> es el producto de dos números primos. ¿Cuáles son? ¿Qué te ha costado más?</li><li>¿Por qué crees que los ordenadores usan primos tan grandes para proteger los mensajes?</li></ul>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/1bfabfe42bb02ced.svg" width="370" height="91" alt="" loading="lazy"></figure>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/b06fe6b445c6ed09.svg" width="370" height="91" alt="" loading="lazy"></figure>
 <p>Los números primos menores que 30</p></div>
 <p>Eratóstenes, Euclides y otros matemáticos griegos ya estudiaban los números primos hace más de 2 000 años. Hoy siguen siendo uno de los grandes temas de investigación: todavía no sabemos, por ejemplo, si hay infinitas parejas de primos que se diferencian en 2, como 11 y 13 o 41 y 43.</p></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 1.1</span> Los números naturales</a></li><li><a href="apartado-2.html"><span class="num">Apartado 1.2</span> Operaciones con números naturales</a></li><li><a href="apartado-3.html"><span class="num">Apartado 1.3</span> Múltiplos y divisores</a></li><li><a href="apartado-4.html"><span class="num">Apartado 1.4</span> Números primos y compuestos</a></li><li><a href="apartado-5.html"><span class="num">Apartado 1.5</span> Mínimo común múltiplo y máximo común divisor</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 

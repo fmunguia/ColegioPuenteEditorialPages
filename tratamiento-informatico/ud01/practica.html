@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD01 · Práctica con las herramientas</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <a href="index.html">UD01 · El ordenador</a> › <span>Práctica</span></nav></header>
+<main>
+<h1>🛠️ Práctica con las herramientas</h1><p>Sigue los pasos con el ordenador. Los números de los dibujos señalan dónde tienes que mirar o pulsar.</p><aside class="caja hago practica"><div class="caja-titulo">💻 Windows: La ficha técnica del ordenador de la oficina</div><div class="caja-cuerpo"><div class="paso-practica"><span class="num-paso">1</span><div><p>Abre <strong>Configuración</strong> › <strong>Sistema</strong> › <strong>Información</strong> y anota: nombre del equipo, procesador, RAM instalada, tipo de sistema y edición y versión de Windows.</p></div></div>
+<div class="paso-practica"><span class="num-paso">2</span><div><p>En el <strong>Explorador de archivos</strong> › <strong>Este equipo</strong>, anota la capacidad total y libre de cada disco. En el <strong>Administrador de tareas</strong> › <strong>Rendimiento</strong>, mira si el disco es SSD o HDD y el nombre de la tarjeta gráfica.</p></div></div>
+<div class="paso-practica"><span class="num-paso">3</span><div><p>Haz una lista de los periféricos conectados y de los puertos libres.</p></div></div>
+<div class="paso-practica"><span class="num-paso">4</span><div><p>En <strong>Configuración</strong> › <strong>Aplicaciones</strong> › <strong>Aplicaciones instaladas</strong>, anota las aplicaciones de oficina, su versión y su licencia.</p></div></div>
+<div class="paso-practica"><span class="num-paso">5</span><div><p>Comprueba en la web de Microsoft si el equipo cumple los requisitos de Microsoft 365 y de Windows 11.</p></div></div>
+<div class="paso-practica"><span class="num-paso">6</span><div><p>Comprueba si hay actualizaciones pendientes y anota la fecha de la última.</p></div></div>
+<div class="paso-practica"><span class="num-paso">7</span><div><p>Con todo, haz en Word la <strong>ficha técnica del equipo</strong> con una tabla y una conclusión: ¿sirve para el trabajo de la oficina? ¿Qué mejorarías?</p></div></div>
+<div class="paso-practica"><span class="num-paso">8</span><div><p><span class="emoji" aria-hidden="true">🎯</span> Guárdala como <code>UD01_ficha_tecnica_Apellido.pdf</code> y súbela a Classroom.</p></div></div></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="sesion-6.html">← Sesión 1.6</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloque II · Situaciones de aprendizaje</title>
+
+<link rel="stylesheet" href="../estilo.css">
+<script src="../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "patrimonio", "materia": "Patrimonio de Cantabria", "huella": "8e54f452"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#009900;--acento:#9AC21B">
+<header class="cabecera"><a class="logo" href="../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../index.html">Inicio</a> › <a href="index.html">Patrimonio de Cantabria</a> › <span>Situaciones de aprendizaje</span></nav></header>
+<main>
+<h1>🎯 Situaciones de aprendizaje</h1><p class="subtitulo">Bloque II · Cantabria, patrimonio cultural</p><aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: Archivo de la memoria: leyendas y voces de nuestros mayores</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>Las historias, canciones y refranes que conocen nuestros abuelos son patrimonio inmaterial, y desaparecen si nadie los recoge. La biblioteca municipal quiere crear un archivo sonoro con lo que recoja el alumnado.</p>
+<h4 class="etapa">Reto</h4>
+<p>Recoger historias de tradición oral (leyendas, seres mitológicos, canciones, refranes, recuerdos de la vida de antes) y publicarlas en un archivo sonoro y un mapa de leyendas de la comarca.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Preparar en grupo el guion de la entrevista y el documento de permiso para grabar.</li><li>Entrevistar a un familiar o vecino mayor (en casa) siguiendo el paso a paso de la unidad 7: nombre, edad, pueblo, fecha.</li><li>Escuchar las grabaciones en clase, elegir los fragmentos más interesantes y transcribirlos.</li><li>Comparar las historias con las recogidas por Manuel Llano o García-Lomas: ¿son iguales?, ¿qué ha cambiado?</li><li>Situar cada historia en un mapa de la comarca y preparar las fichas del archivo (audio, transcripción y datos).</li><li>Presentar el archivo a las familias y entregarlo a la biblioteca municipal.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>Un archivo sonoro con transcripciones y un mapa de leyendas de la comarca.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios PC 4.1, 4.2, 4.3 y 1.1. Rúbrica: entrevista y permisos, calidad de la grabación, transcripción fiel, comparación con las fuentes escritas, mapa y presentación.</p></div></aside>
+<aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: Ruta del patrimonio de nuestro municipio</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>En nuestro municipio hay iglesias, casonas, puentes, calles con nombre de personajes ilustres y lugares con leyenda que muchos vecinos no conocen. El ayuntamiento quiere una ruta a pie para dar a conocer este patrimonio.</p>
+<h4 class="etapa">Reto</h4>
+<p>Diseñar una ruta guiada por el patrimonio del municipio (edificios, arte, personajes y leyendas) y hacer de guías para otro curso o para las familias.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Hacer el inventario del patrimonio del municipio: edificios, monumentos, calles dedicadas a personajes, leyendas y fiestas.</li><li>Elegir de seis a ocho paradas y trazar la ruta en un mapa: distancia, tiempo y accesibilidad.</li><li>Investigar cada parada en dos fuentes fiables: estilo, época, personaje o leyenda, y su estado de conservación.</li><li>Escribir la ficha de cada parada y preparar lo que se contará (un minuto por parada). Hacer códigos QR con más información.</li><li>Ensayar la visita guiada y revisar el texto con la rúbrica.</li><li>Hacer la ruta con otro curso o con las familias y recoger sus opiniones en una encuesta.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>Un folleto o mapa de la ruta con códigos QR y una visita guiada hecha por el alumnado.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios PC 5.1, 5.2, 7.1, 7.3 y 1.2. Rúbrica: selección de paradas, exactitud de la información, mapa, explicación oral, conservación y propuestas, y trabajo en equipo.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+
+</main>
+<footer class="pie">Patrimonio de Cantabria · Colegio Puente</footer>
+</body>
+</html>

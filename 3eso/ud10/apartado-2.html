@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD10 · Geometría plana</a> › <span>Apartado 10.2</span></nav></header>
@@ -24,7 +40,7 @@ window.MathJax = {
 <div class="banda-sesion"><span>Apartado 10.2</span></div><h1 class="titulo-sesion">Teorema de Pitágoras</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Teorema de Pitágoras</div><div class="caja-cuerpo"><div class="minipage"><p>En un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos:</p>
 <div class="mat-bloque">\[a^2 = b^2 + c^2\]</div>
 <p>La hipotenusa <span class="mat">\(a\)</span> es el lado opuesto al ángulo recto, y los catetos <span class="mat">\(b\)</span> y <span class="mat">\(c\)</span> son los lados que lo forman.</p></div>
-<div class="minipage"><figure class="dibujo "><img src="../../figuras/072f4065337b2e3f.svg" width="206" height="224" alt="" loading="lazy"></figure></div></div></aside>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/be005797f31c2c3e.svg" width="206" height="224" alt="" loading="lazy"></figure></div></div></aside>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cálculo de un lado</div><div class="caja-cuerpo"><ul><li>Catetos <span class="mat">\(9\)</span>&nbsp;cm y <span class="mat">\(12\)</span>&nbsp;cm:  <span class="mat">\(a = \sqrt{9^2 + 12^2} = \sqrt{225} = 15\)</span>&nbsp;cm.</li><li>Hipotenusa <span class="mat">\(13\)</span>&nbsp;cm y un cateto <span class="mat">\(5\)</span>&nbsp;cm:  <span class="mat">\(b = \sqrt{13^2 - 5^2} = \sqrt{144} = 12\)</span>&nbsp;cm.</li></ul></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¿Sumar o restar?</div><div class="caja-cuerpo"><p>Solo se suman los cuadrados cuando se busca la <strong>hipotenusa</strong>. Si falta un cateto, se restan: con hipotenusa <span class="mat">\(13\)</span> y cateto <span class="mat">\(5\)</span>, el otro cateto es <span class="mat">\(\sqrt{169 - 25} = 12\)</span>, y no <span class="mat">\(\sqrt{169 + 25} \approx 13{,}9\)</span>, que sería mayor que la hipotenusa.</p></div></aside>
 <p>El teorema también sirve para saber si un triángulo es rectángulo, conociendo sus tres lados. Si <span class="mat">\(a\)</span> es el lado mayor:</p>

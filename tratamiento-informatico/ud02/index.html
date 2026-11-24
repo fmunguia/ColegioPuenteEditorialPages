@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD02 · Mecanografía</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <span>UD02 · Mecanografía</span></nav></header>
+<main>
+<p class="subtitulo">Bloque I · El ordenador y el teclado</p><h1><span class="codigo">UD02</span> Mecanografía</h1><aside class="caja partida"><div class="caja-titulo">🔍 <span class="emoji" aria-hidden="true">⌨</span> Escribir sin mirar</div><div class="caja-cuerpo"><p>En la Papelería Sena, Marta escribe con dos dedos y mirando el teclado. Tarda una hora en pasar a limpio una carta y siempre se le cuela alguna errata. Su compañero Luis escribe sin mirar, al doble de velocidad, mientras habla por teléfono.</p>
+<ul><li>¿Cuántos dedos usas tú para escribir?</li><li>¿Miras el teclado o la pantalla?</li><li>¿Por qué crees que en las ofertas de empleo de administrativo piden «mecanografía»?</li></ul></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Preparar el puesto de trabajo y mantener una buena postura.</li><li>Colocar los dedos en la fila guía y escribir al tacto.</li><li>Usar todas las filas, mayúsculas, números y signos.</li><li>Copiar textos en español y en inglés con velocidad y precisión.</li><li>Detectar y corregir errores mecanográficos.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>¿Cuántas letras tiene el abecedario español?</li><li>¿Qué tecla escribe en mayúscula?</li><li>¿Dónde está la Ñ en el teclado?</li><li>¿Qué es una errata?</li><li>¿Cuántas palabras escribes por minuto en el móvil?</li><li>¿Qué es la ergonomía?</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Una administrativa escribe miles de palabras al día: correos, cartas, facturas, informes. Si escribe al doble de velocidad y sin errores, ¿cuánto tiempo ahorra a la semana? ¿Y a su espalda, si se sienta bien?</p>
+<p><span class="emoji" aria-hidden="true">⏰</span> La mecanografía se practica <strong>todas las semanas del curso</strong>, un rato cada día, con el programa de mecanografía que te indique tu profesora. Apunta tu progreso en la tabla de la ficha .</p></div></aside>
+<p>RA1Procesa textos alfanuméricos en un teclado extendido aplicando las técnicas mecanográficas.</p>
+<figure class="dibujo "><img src="../../figuras/83e1bec0a96661a8.svg" width="413" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/3c9d0a88761e11f1.svg" width="350" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/fc7395d579ac4e14.svg" width="654" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/89196028f8372372.svg" width="574" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/06bc0d1be06f8f4e.svg" width="784" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/d37e1d009593d075.svg" width="766" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/c7bb30b107b8efd4.svg" width="570" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/c9b418e37d7ce592.svg" width="792" height="53" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/dda776e312352ae5.svg" width="606" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/53dfc783e95b205b.svg" width="427" height="30" alt="" loading="lazy"></figure><h2 class="seccion">Sesiones</h2><ol class="indice"><li><a href="sesion-1.html"><span class="num">Sesión 2.1</span> El puesto de trabajo y la postura</a></li><li><a href="sesion-2.html"><span class="num">Sesión 2.2</span> La fila guía</a></li><li><a href="sesion-3.html"><span class="num">Sesión 2.3</span> Las filas superior e inferior</a></li><li><a href="sesion-4.html"><span class="num">Sesión 2.4</span> Mayúsculas, números y signos</a></li><li><a href="sesion-5.html"><span class="num">Sesión 2.5</span> Velocidad, precisión y textos en inglés</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="practica.html"><span class="num">🛠️</span> Práctica con las herramientas</a></li><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li><li><a href="../situaciones-bloque-1.html"><span class="num">🎯</span> Situaciones de aprendizaje del bloque</a></li></ul><h2 class="seccion">Mapa mental de la unidad</h2><figure class="dibujo mapa"><img src="../../figuras/f3561322443dc046.svg" width="618" height="648" alt="" loading="lazy"></figure><p class="nota">✏️ Repasa la unidad con el mapa: tapa una rama y explica en voz alta lo que pone.</p>
+
+<nav class="anterior-siguiente"><a class="boton secundario" href="../ud01/index.html">← UD01</a><a class="boton secundario" href="../ud03/index.html">UD03 →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

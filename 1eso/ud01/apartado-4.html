@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD01 · Naturales y divisibilidad</a> › <span>Apartado 1.4</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <p>Una forma de encontrar los primos es la <strong>criba de Eratóstenes</strong>, un sabio griego del siglo III a. C.: se escriben los números del 2 al 100 y se van tachando los múltiplos de 2, de 3, de 5 y de 7 (sin tachar esos números). Los que quedan sin tachar son primos.</p>
 <div class="actividad hago" id="act-1.4.1"><div class="act-cab"><span class="act-num">1.4.1</span></div><div class="act-cuerpo"><p>Haz la criba de Eratóstenes hasta el 50 y escribe los números primos que encuentres. ¿Cuántos hay?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <p>Para <dfn class="glosario" tabindex="0" data-def="escribir un número como producto de números primos">factorizar</dfn> un número lo escribimos como producto de números primos. Se divide entre el primo más pequeño posible y se repite con el cociente hasta llegar a 1. Los factores que se repiten se escriben como potencia.</p>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Factorización en números primos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/ac384dd0cb3ea2c9.svg" width="70" height="138" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/836fdb9917b7cd61.svg" width="72" height="138" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(18=2\cdot3\cdot3=2\cdot3^2\)</span></td><td><span class="mat">\(28=2\cdot2\cdot7=2^2\cdot7\)</span></td></tr></table></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Factorización en números primos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/6d497e120a3d1882.svg" width="70" height="138" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/1ff4b5431c2ff066.svg" width="72" height="138" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(18=2\cdot3\cdot3=2\cdot3^2\)</span></td><td><span class="mat">\(28=2\cdot2\cdot7=2^2\cdot7\)</span></td></tr></table></div></div></aside>
 <div class="actividad hago" id="act-1.4.2"><div class="act-cab"><span class="act-num">1.4.2</span></div><div class="act-cuerpo"><p>Factoriza</p>
 <ol class="tareas cols-4"><li><span class="mat">\(36\)</span></li><li><span class="mat">\(60\)</span></li><li><span class="mat">\(90\)</span></li><li><span class="mat">\(150\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>

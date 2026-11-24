@@ -17,20 +17,36 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD08 · Ecuaciones</span></nav></header>
 <main>
 <p class="subtitulo">Bloque II · Álgebra</p><h1><span class="codigo">UD08</span> Ecuaciones</h1><aside class="caja partida"><div class="caja-titulo">🔍 La cooperativa del recreo</div><div class="caja-cuerpo"><p>Los alumnos de 1º han montado una cooperativa para pagar el viaje de fin de curso a los Picos de Europa. En el recreo venden bocadillos y zumos. Los zumos cuestan 0,80&nbsp;€, pero han perdido la hoja con el precio de los bocadillos. Ayer vendieron 40 bocadillos y 25 zumos y recaudaron 100&nbsp;€.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/8ced5ae2fdb50faf.svg" width="373" height="138" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/4612da4b6f94f089.svg" width="373" height="138" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuánto dinero sacaron con los zumos? ¿Y con los bocadillos? ¿A cuánto venden cada bocadillo?</li><li>En la balanza hay cajas iguales y pesas de 1&nbsp;kg. ¿Cuánto pesa cada caja? ¿Qué puedes quitar de los dos platos sin que se desequilibre?</li><li>Necesitan 1 200&nbsp;€ para el viaje y ya tienen 380&nbsp;€. Si cada día de cooperativa ganan unos 40&nbsp;€, ¿cuántos días les faltan?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Reconocer una ecuación, sus miembros y su incógnita.</li><li>Comprobar si un número es solución de una ecuación.</li><li>Resolver ecuaciones de primer grado sencillas.</li><li>Resolver ecuaciones con paréntesis y con denominadores.</li><li>Plantear y resolver problemas con ecuaciones.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><p>Para resolver ecuaciones usarás las operaciones inversas y todo lo que aprendiste en la unidad 7.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/de6ba6487b1374f3.svg" width="541" height="45" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/ef7c0afd615bee8c.svg" width="541" height="45" alt="" loading="lazy"></figure></div>
 <ol class="tareas cols-2"><li>Escribe en lenguaje algebraico: el doble de un número menos 3.</li><li>Escribe: la suma de dos números consecutivos.</li><li>Valor numérico de <span class="mat">\(4x - 7\)</span> para <span class="mat">\(x = 3\)</span>.</li><li>Valor numérico de <span class="mat">\(2(x + 5)\)</span> para <span class="mat">\(x = -2\)</span>.</li><li>Reduce: <span class="mat">\(5x + 3 - 2x + 4\)</span></li><li>Reduce: <span class="mat">\(3(x - 2) + x\)</span></li><li>Reduce: <span class="mat">\(-(4 - x) + 2x\)</span></li><li>Calcula: <span class="mat">\(\text{m.c.m.}(4, 6)\)</span></li><li>Calcula: <span class="mat">\(12 \cdot \frac{x}{4}\)</span></li><li>¿Qué número sumado a 17 da 30?</li><li>¿Qué número multiplicado por 6 da 54?</li><li>¿Qué número multiplicado por <span class="mat">\(-3\)</span> da 21?</li></ol>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/cf9a172c9cb1af07.svg" width="507" height="91" alt="" loading="lazy"></figure></div></div></aside>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/5def1d6726f7e9ee.svg" width="507" height="91" alt="" loading="lazy"></figure></div></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>El signo <span class="mat">\(=\)</span> lo inventó el médico y matemático galés Robert Recorde en 1557. En su libro explicó que había elegido dos rayas paralelas e iguales «porque no puede haber dos cosas más iguales». Antes, en cada ecuación había que escribir con palabras «es igual a».</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/a94ea2452539c08e.svg" width="366" height="48" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/4ca8fbd4b22ee075.svg" width="366" height="48" alt="" loading="lazy"></figure></div>
 <ul><li>¿Por qué crees que es tan importante que en una ecuación los dos miembros valgan lo mismo?</li><li>En la calculadora o en una hoja de cálculo, el signo <span class="mat">\(=\)</span> significa «calcula». ¿Es lo mismo que en una ecuación?</li><li>Piensa un número, multiplícalo por 3 y súmale 4. Si te sale 25, ¿qué número habías pensado? ¿Cómo lo has averiguado?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 8.1</span> Ecuaciones y soluciones</a></li><li><a href="apartado-2.html"><span class="num">Apartado 8.2</span> Resolución de ecuaciones</a></li><li><a href="apartado-3.html"><span class="num">Apartado 8.3</span> Ecuaciones con paréntesis y denominadores</a></li><li><a href="apartado-4.html"><span class="num">Apartado 8.4</span> Problemas con ecuaciones</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud07/index.html">← UD07</a><a class="boton secundario" href="../ud09/index.html">UD09 →</a></nav>

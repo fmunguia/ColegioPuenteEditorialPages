@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD09 · Semejanza y movimientos en el plano</a> › <span>Apartado 9.4</span></nav></header>
@@ -31,13 +47,13 @@ window.MathJax = {
 <p>Una figura tiene <strong>eje de simetría</strong> si al aplicarle esa simetría queda igual.</p></div></aside>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Movimientos de un triángulo</div><div class="caja-cuerpo"><div class="minipage"><p>Triángulo <span class="mat">\(ABC\)</span> con <span class="mat">\(A(1,1)\)</span>, <span class="mat">\(B(3,1)\)</span> y <span class="mat">\(C(1,2)\)</span>:</p>
 <ul><li>Traslación de vector <span class="mat">\((2,1)\)</span>: <span class="mat">\(A'(3,2)\)</span>, <span class="mat">\(B'(5,2)\)</span>, <span class="mat">\(C'(3,3)\)</span>.</li><li>Simetría de eje <span class="mat">\(Y\)</span>: <span class="mat">\(A'(-1,1)\)</span>, <span class="mat">\(B'(-3,1)\)</span>, <span class="mat">\(C'(-1,2)\)</span>.</li><li>Giro de 180º: <span class="mat">\(A'(-1,-1)\)</span>, <span class="mat">\(B'(-3,-1)\)</span>, <span class="mat">\(C'(-1,-2)\)</span>.</li></ul></div>
-<div class="minipage"><figure class="dibujo "><img src="../../figuras/908a901530517051.svg" width="270" height="197" alt="" loading="lazy"></figure></div></div></aside>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/c45cf87898588073.svg" width="270" height="197" alt="" loading="lazy"></figure></div></div></aside>
 <div class="actividad hago" id="act-9.4.1"><div class="act-cab"><span class="act-num">9.4.1</span></div><div class="act-cuerpo"><p>Dibuja el cuadrilátero de vértices <span class="mat">\(A(1,0)\)</span>, <span class="mat">\(B(4,0)\)</span>, <span class="mat">\(C(4,2)\)</span> y <span class="mat">\(D(2,3)\)</span> y aplícale:</p>
 <ol class="tareas cols-1"><li>Una traslación de vector <span class="mat">\((-5,2)\)</span>.</li><li>Una simetría de eje <span class="mat">\(X\)</span>.</li><li>Un giro de 90º con centro en el origen.</li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <h2 class="subapartado">Mosaicos y frisos</h2>
 <p>Los movimientos aparecen continuamente en el arte y la arquitectura. Un <dfn class="glosario" tabindex="0" data-def="banda decorativa formada al trasladar un motivo en una dirección">friso</dfn> es una banda decorativa formada al repetir un motivo con traslaciones en una dirección. Un <dfn class="glosario" tabindex="0" data-def="recubrimiento del plano con piezas que no dejan huecos ni se superponen">mosaico</dfn> cubre el plano sin dejar huecos ni superponer piezas. Los mosaicos de la Alhambra de Granada son un ejemplo famoso, y también los dibujos del artista neerlandés M. C. Escher.</p>
 <p>Solo hay tres polígonos regulares que forman mosaicos por sí solos: el triángulo equilátero, el cuadrado y el hexágono regular, porque sus ángulos dividen exactamente a 360º.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/3967dcc4e752550c.svg" width="210" height="104" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/594a3a1bfb56010c.svg" width="210" height="104" alt="" loading="lazy"></figure></div>
 <div class="actividad hago" id="act-9.4.2"><div class="act-cab"><span class="act-num">9.4.2</span></div><div class="act-cuerpo"><p>Con GeoGebra, dibuja un polígono y usa las herramientas «Traslada objeto por un vector», «Rota alrededor de un punto» y «Refleja objeto en recta» para diseñar un friso.</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
 <nav class="anterior-siguiente"><a class="boton secundario" href="apartado-3.html">← Apartado 9.3</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>

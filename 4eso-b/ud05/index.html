@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <span>UD05 · Sistemas de ecuaciones</span></nav></header>
@@ -28,7 +44,7 @@ window.MathJax = {
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Resuelve <span class="mat">\(2x + 3 = 11\)</span>.</li><li>Despeja <span class="mat">\(y\)</span> en <span class="mat">\(3x + y = 7\)</span>.</li><li>¿Es <span class="mat">\((2, -1)\)</span> solución de <span class="mat">\(3x + 2y = 4\)</span>?</li><li>Resuelve <span class="mat">\(x^2 - 5x + 4 = 0\)</span>.</li><li>Representa la recta <span class="mat">\(y = 2x - 1\)</span>.</li><li>Resuelve <span class="mat">\(2x - 1 &gt; 5\)</span>.</li><li>Calcula el m.c.m. de 2, 3 y 4.</li><li>Escribe 8 y <span class="mat">\(\dfrac{1}{4}\)</span> como potencias de 2.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Cada ecuación lineal con dos incógnitas es una recta: sus soluciones son los infinitos puntos de la recta. Si dibujamos las dos rectas de un sistema, la solución es el punto que está en las dos a la vez.</p>
 <p>En el dibujo están las rectas <span class="mat">\(x + y = 6\)</span> y <span class="mat">\(2x - y = 3\)</span>. Fíjate en el punto donde se cortan.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/75d939d761737454.svg" width="237" height="238" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/12233842717a7683.svg" width="237" height="238" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuál es la solución del sistema? Compruébala en las dos ecuaciones.</li><li>¿Qué ocurriría si las dos rectas fueran paralelas?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 5.1</span> Interpretación gráfica de los sistemas lineales</a></li><li><a href="apartado-2.html"><span class="num">Apartado 5.2</span> Sistemas de ecuaciones lineales</a></li><li><a href="apartado-3.html"><span class="num">Apartado 5.3</span> Sistemas con paréntesis y denominadores</a></li><li><a href="apartado-4.html"><span class="num">Apartado 5.4</span> Sistemas de ecuaciones no lineales</a></li><li><a href="apartado-5.html"><span class="num">Apartado 5.5</span> Sistemas exponenciales y logarítmicos</a></li><li><a href="apartado-6.html"><span class="num">Apartado 5.6</span> Sistemas de inecuaciones</a></li><li><a href="apartado-7.html"><span class="num">Apartado 5.7</span> Inecuaciones lineales con dos incógnitas</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud04/index.html">← UD04</a><a class="boton secundario" href="../ud06/index.html">UD06 →</a></nav>

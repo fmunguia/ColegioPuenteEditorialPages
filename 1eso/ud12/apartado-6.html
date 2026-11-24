@@ -17,12 +17,28 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD12 · Figuras planas</a> › <span>Apartado 12.6</span></nav></header>
 <main>
 <div class="banda-sesion"><span>Apartado 12.6</span></div><h1 class="titulo-sesion">Circunferencia y círculo</h1><p>La <dfn class="glosario" tabindex="0" data-def="línea curva cerrada cuyos puntos están a la misma distancia del centro">circunferencia</dfn> es la línea curva cerrada cuyos puntos están a la misma distancia (el radio) del centro. El <dfn class="glosario" tabindex="0" data-def="superficie plana limitada por una circunferencia">círculo</dfn> es la superficie que encierra.</p>
-<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Longitud y área</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/e0cf12e5d8bfe986.svg" width="125" height="125" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Longitud y área</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/cfe328c24e28130c.svg" width="125" height="125" alt="" loading="lazy"></figure></div>
 <div class="minipage"><ul><li>Longitud de la circunferencia: <span class="mat">\(L = 2 \pi r\)</span></li><li>Área del círculo: <span class="mat">\(A = \pi r^2\)</span></li><li><span class="mat">\(\pi \approx 3{,}14\)</span>. El diámetro mide el doble que el radio.</li></ul></div></div></aside>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Una rotonda</div><div class="caja-cuerpo"><p>Una rotonda de la entrada a Astillero tiene 10&nbsp;m de radio.</p>
 <ul><li>Longitud: <span class="mat">\(L = 2 \cdot 3{,}14 \cdot 10 = 62{,}8\)</span>&nbsp;m.</li><li>Área: <span class="mat">\(A = 3{,}14 \cdot 10^2 = 314\)</span>&nbsp;m².</li></ul></div></aside>

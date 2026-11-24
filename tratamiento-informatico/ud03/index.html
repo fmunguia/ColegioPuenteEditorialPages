@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD03 · Procesadores de textos</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <span>UD03 · Procesadores de textos</span></nav></header>
+<main>
+<p class="subtitulo">Bloque II · Documentos y presentaciones</p><h1><span class="codigo">UD03</span> Procesadores de textos</h1><aside class="caja partida"><div class="caja-titulo">🔍 <span class="emoji" aria-hidden="true">✉</span> Una carta que dé buena imagen</div><div class="caja-cuerpo"><p>En la Papelería Sena van a abrir una tienda en línea y quieren enviar una carta de bienvenida a sus clientes. El borrador está escrito, pero todo va seguido, con la misma letra y sin márgenes: no se lee bien y no parece de una empresa seria.</p>
+<ul><li>¿Qué hace que un documento parezca profesional?</li><li>¿Cómo destacarías la información más importante?</li><li>¿Qué pasa si arreglas el aspecto con espacios y saltos de línea?</li></ul></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Conocer la ventana de Word y sus herramientas.</li><li>Dar formato a los caracteres: fuente, tamaño, estilo y efectos.</li><li>Dar formato a los párrafos: alineación, sangría y espaciado.</li><li>Organizar la información en listas, tabulaciones y tablas.</li><li>Insertar imágenes, formas, encabezados y marcas de agua.</li><li>Trabajar documentos largos con estilos, secciones e índice.</li><li>Revisar documentos, crear plantillas y combinar correspondencia.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>¿Qué es un párrafo?</li><li>¿Qué atajo deshace el último cambio?</li><li>¿Qué partes tiene una carta?</li><li><p>¿Para qué sirve la tecla</p>
+<figure class="dibujo "><img src="../../figuras/8ff26602e4143027.svg" width="54" height="37" alt="" loading="lazy"></figure>
+<p>?</p></li><li>¿Qué diferencia hay entre una letra con y sin serifa?</li><li>Escribe tres tipos de documentos de una oficina.</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Una empresa escribe cada día cartas, facturas, presupuestos, actas y circulares. Si cada persona les da un aspecto distinto, ¿qué imagen da la empresa? ¿Cómo se consigue que todos los documentos tengan el mismo estilo?</p>
+<p><span class="emoji" aria-hidden="true">📂</span> En esta unidad trabajarás con el documento <strong>UD03_Word.docx</strong>, que tienes en Classroom. Cada actividad dice en qué apartado.</p></div></aside>
+<p>RA4Elabora documentos de textos utilizando las opciones de un procesador de textos tipo.</p>
+<figure class="dibujo "><img src="../../figuras/a8448575018a5bfb.svg" width="779" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/a44b96984dc8cceb.svg" width="494" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/20cd7cbd336f9d27.svg" width="763" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/d3a9db7901d5f0ea.svg" width="608" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/1f739bf577d7feff.svg" width="661" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/5ba65c188af57290.svg" width="387" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/b526c0ee1cd0b93d.svg" width="424" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/f58ef8e2e165334b.svg" width="707" height="48" alt="" loading="lazy"></figure><h2 class="seccion">Sesiones</h2><ol class="indice"><li><a href="sesion-1.html"><span class="num">Sesión 3.1</span> Formato de fuente</a></li><li><a href="sesion-2.html"><span class="num">Sesión 3.2</span> Bordes y sombreados</a></li><li><a href="sesion-3.html"><span class="num">Sesión 3.3</span> Párrafo: alineación, sangría y espaciado</a></li><li><a href="sesion-4.html"><span class="num">Sesión 3.4</span> Numeración y viñetas</a></li><li><a href="sesion-5.html"><span class="num">Sesión 3.5</span> Diseño de página y columnas</a></li><li><a href="sesion-6.html"><span class="num">Sesión 3.6</span> Imágenes, formas, ecuaciones y portada</a></li><li><a href="sesion-7.html"><span class="num">Sesión 3.7</span> Encabezado, pie, borde de página y marca de agua</a></li><li><a href="sesion-8.html"><span class="num">Sesión 3.8</span> Tabulaciones</a></li><li><a href="sesion-9.html"><span class="num">Sesión 3.9</span> Tablas</a></li><li><a href="sesion-10.html"><span class="num">Sesión 3.10</span> Estilos, saltos de sección e índice</a></li><li><a href="sesion-11.html"><span class="num">Sesión 3.11</span> Notas al pie, corrector y revisión</a></li><li><a href="sesion-12.html"><span class="num">Sesión 3.12</span> Plantillas, formularios y combinar correspondencia</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="practica.html"><span class="num">🛠️</span> Práctica con las herramientas</a></li><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul><h2 class="seccion">Mapa mental de la unidad</h2><figure class="dibujo mapa"><img src="../../figuras/4efd33969572b291.svg" width="618" height="670" alt="" loading="lazy"></figure><p class="nota">✏️ Repasa la unidad con el mapa: tapa una rama y explica en voz alta lo que pone.</p>
+
+<nav class="anterior-siguiente"><a class="boton secundario" href="../ud02/index.html">← UD02</a><a class="boton secundario" href="../ud04/index.html">UD04 →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

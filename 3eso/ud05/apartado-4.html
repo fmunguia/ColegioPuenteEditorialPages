@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD05 · Lenguaje algebraico y polinomios</a> › <span>Apartado 5.4</span></nav></header>
@@ -24,7 +40,7 @@ window.MathJax = {
 <div class="banda-sesion"><span>Apartado 5.4</span></div><h1 class="titulo-sesion">Identidades notables</h1><p>Hay tres productos que aparecen con tanta frecuencia que conviene saberlos de memoria. Se llaman <dfn class="glosario" tabindex="0" data-def="productos de binomios que conviene saber de memoria: cuadrado de una suma, cuadrado de una diferencia y suma por diferencia">identidades notables</dfn>.</p>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Identidades notables</div><div class="caja-cuerpo"><ul><li><strong>Cuadrado de una suma:</strong>  <span class="mat">\((a + b)^2 = a^2 + 2ab + b^2\)</span></li><li><strong>Cuadrado de una diferencia:</strong>  <span class="mat">\((a - b)^2 = a^2 - 2ab + b^2\)</span></li><li><strong>Suma por diferencia:</strong>  <span class="mat">\((a + b)(a - b) = a^2 - b^2\)</span></li></ul></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡No olvides el doble producto!</div><div class="caja-cuerpo"><p>Un error muy frecuente es escribir <span class="mat">\((a + b)^2 = a^2 + b^2\)</span>: falta el doble producto <span class="mat">\(2ab\)</span>. Por ejemplo, <span class="mat">\((x + 3)^2 = x^2 + 6x + 9\)</span>, y no <span class="mat">\(x^2 + 9\)</span>. El dibujo lo muestra: el cuadrado grande tiene dos rectángulos de área <span class="mat">\(ab\)</span>.</p></div></aside>
-<div class="centro"><div class="minipage"><figure class="dibujo "><img src="../../figuras/adada9447d89abda.svg" width="216" height="218" alt="" loading="lazy"></figure>
+<div class="centro"><div class="minipage"><figure class="dibujo "><img src="../../figuras/2f84ac9984e33de5.svg" width="216" height="218" alt="" loading="lazy"></figure>
 <p>El área del cuadrado de lado <span class="mat">\(a + b\)</span> es <span class="mat">\(a^2 + 2ab + b^2\)</span>.</p></div></div>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Uso de las identidades notables</div><div class="caja-cuerpo"><ul><li><span class="mat">\((x + 3)^2 = x^2 + 2 \cdot x \cdot 3 + 3^2 = x^2 + 6x + 9\)</span></li><li><span class="mat">\((2x - 5)^2 = (2x)^2 - 2 \cdot 2x \cdot 5 + 5^2 = 4x^2 - 20x + 25\)</span></li><li><span class="mat">\((3x + 2)(3x - 2) = (3x)^2 - 2^2 = 9x^2 - 4\)</span></li></ul></div></aside>
 <div class="actividad hago" id="act-5.4.1"><div class="act-cab"><span class="act-num">5.4.1</span></div><div class="act-cuerpo"><p>Desarrolla:</p>

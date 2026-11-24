@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD06 · Práctica con las herramientas</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <a href="index.html">UD06 · Bases de datos ofimáticas</a> › <span>Práctica</span></nav></header>
+<main>
+<h1>🛠️ Práctica con las herramientas</h1><p>Sigue los pasos con el ordenador. Los números de los dibujos señalan dónde tienes que mirar o pulsar.</p><aside class="caja hago practica"><div class="caja-titulo">💻 Access: La base de datos de la Papelería Sena</div><div class="caja-cuerpo"><div class="paso-practica"><span class="num-paso">1</span><div><p>Crea <code>Sena_Apellido.accdb</code>. Importa desde Excel los clientes (o escríbelos) a la tabla <strong>Clientes</strong> y revisa los tipos de datos y la clave.</p></div></div>
+<div class="paso-practica"><span class="num-paso">2</span><div><p>Crea las tablas <strong>Productos</strong> y <strong>Pedidos</strong> con sus claves, tipos y propiedades (precio en Moneda, unidades mayores que 0, fecha obligatoria).</p></div></div>
+<div class="paso-practica"><span class="num-paso">3</span><div><p>Relaciona las tres tablas con integridad referencial. Haz una captura de la ventana Relaciones.</p></div></div>
+<div class="paso-practica"><span class="num-paso">4</span><div><p>Con el asistente, crea un <strong>formulario</strong> para Pedidos e introduce veinte pedidos.</p></div></div>
+<div class="paso-practica"><span class="num-paso">5</span><div><p>Crea tres consultas: <strong>Pedidos de enero</strong>, <strong>Productos con pocas existencias</strong> (menos de 5) y <strong>Pedidos de clientes VIP</strong>.</p></div></div>
+<div class="paso-practica"><span class="num-paso">6</span><div><p>Con el asistente, haz el informe <strong>Ventas por cliente</strong>, agrupado por cliente con el total de unidades, y expórtalo a PDF.</p></div></div>
+<div class="paso-practica"><span class="num-paso">7</span><div><p>Haz una copia de seguridad de la base de datos (<strong>Archivo</strong> › <strong>Guardar como</strong> › <strong>Realizar copia de seguridad</strong>).</p></div></div>
+<div class="paso-practica"><span class="num-paso">8</span><div><p><span class="emoji" aria-hidden="true">🎯</span> Entrega en Classroom la base de datos, la captura de las relaciones y el informe en PDF.</p></div></div></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="sesion-3.html">← Sesión 6.3</a><a class="boton secundario" href="repaso.html">Repaso de la unidad →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

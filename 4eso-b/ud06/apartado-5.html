@@ -17,12 +17,28 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD06 · Estudio de funciones</a> › <span>Apartado 6.5</span></nav></header>
 <main>
 <div class="banda-sesion"><span>Apartado 6.5</span></div><h1 class="titulo-sesion">Tasa de variación media</h1><p>Se define la Tasa de Variación Media (TVM) de una función entre dos puntos como la pendiente media en dicho intervalo. En las funciones rectas la TVM será siempre la misma (constante).</p>
-<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Tasa de Variación Media</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/66567e5b279bf611.svg" width="280" height="275" alt="" loading="lazy"></figure></td><td><ul><li>La Tasa de Variación Media entre a y b se calcula:</li><li><strong></strong> <span class="mat">\(TVM[a,b]=\dfrac{f(b)-f(a)}{b-a}=\dfrac{\Delta y}{\Delta x}\)</span></li><li><strong></strong> </li><li>Se puede utilizar los valores y hacer la diferencia o directamente el valor de la diferencia <span class="mat">\(\Delta\)</span>.</li><li>En el ejemplo el cálculo sería el siguiente:</li><li><strong></strong> <span class="mat">\(TVM[5,11]=\frac{10-2}{11-5}=\frac{8}{6}=\frac{4}{3}\)</span></li><li><strong></strong> </li><li><strong></strong> <span class="mat">\(TVM[5,11]=\dfrac{\Delta y}{\Delta x}=\frac{8}{6}=\frac{4}{3}\)</span></li></ul></td></tr></table></div></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Tasa de Variación Media</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/acbc5bcf76321e6e.svg" width="280" height="275" alt="" loading="lazy"></figure></td><td><ul><li>La Tasa de Variación Media entre a y b se calcula:</li><li><strong></strong> <span class="mat">\(TVM[a,b]=\dfrac{f(b)-f(a)}{b-a}=\dfrac{\Delta y}{\Delta x}\)</span></li><li><strong></strong> </li><li>Se puede utilizar los valores y hacer la diferencia o directamente el valor de la diferencia <span class="mat">\(\Delta\)</span>.</li><li>En el ejemplo el cálculo sería el siguiente:</li><li><strong></strong> <span class="mat">\(TVM[5,11]=\frac{10-2}{11-5}=\frac{8}{6}=\frac{4}{3}\)</span></li><li><strong></strong> </li><li><strong></strong> <span class="mat">\(TVM[5,11]=\dfrac{\Delta y}{\Delta x}=\frac{8}{6}=\frac{4}{3}\)</span></li></ul></td></tr></table></div></div></aside>
 <h2 class="subapartado">Tasas de variación absoluta y relativa</h2>
 <p>La tasa de variación media nos da el ritmo de cambio por unidad de <span class="mat">\(x\)</span>. Para describir un cambio en contextos reales (población, precios, temperaturas) se usan también otras dos tasas.</p>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Tres formas de medir un cambio</div><div class="caja-cuerpo"><p>Entre <span class="mat">\(x = a\)</span> y <span class="mat">\(x = b\)</span>:</p>

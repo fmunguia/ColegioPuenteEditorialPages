@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD09 · Semejanza y movimientos en el plano</a> › <span>Apartado 9.2</span></nav></header>
@@ -29,7 +45,7 @@ window.MathJax = {
 <ul><li>La razón entre los perímetros es <span class="mat">\(k\)</span>.</li><li>La razón entre las áreas es <span class="mat">\(k^2\)</span>.</li></ul></div></aside>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Ampliación de un rectángulo</div><div class="caja-cuerpo"><p>Un rectángulo de <span class="mat">\(3\times 2\)</span> cm se amplía con razón <span class="mat">\(k=2\)</span> y queda de <span class="mat">\(6\times 4\)</span> cm.</p>
 <ul><li>Perímetros: 10 cm y 20 cm. Se multiplican por 2.</li><li>Áreas: 6 cm<span class="mat">\(^2\)</span> y 24 cm<span class="mat">\(^2\)</span>. Se multiplican por <span class="mat">\(2^2=4\)</span>.</li></ul>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/87b24c69e25f4eea.svg" width="264" height="106" alt="" loading="lazy"></figure></div></div></aside>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/6fc2c378c61a6ca9.svg" width="264" height="106" alt="" loading="lazy"></figure></div></div></aside>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Triángulos semejantes</div><div class="caja-cuerpo"><p>Dos triángulos son semejantes si se cumple uno de estos criterios:</p>
 <ul><li>Tienen dos ángulos iguales.</li><li>Tienen los tres lados proporcionales.</li><li>Tienen un ángulo igual y los lados que lo forman proporcionales.</li></ul></div></aside>
 <div class="actividad hago" id="act-9.2.1"><div class="act-cab"><span class="act-num">9.2.1</span></div><div class="act-cuerpo"><p>Los lados de un triángulo miden 4, 5 y 7 cm. Calcula los lados de un triángulo semejante cuyo lado menor mide 10 cm. ¿Cuál es la razón de semejanza? ¿Cuántas veces mayor es su área?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>

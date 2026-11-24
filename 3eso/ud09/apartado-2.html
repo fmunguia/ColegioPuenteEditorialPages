@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD09 · Funciones lineales y cuadráticas</a> › <span>Apartado 9.2</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <p>Su gráfica es una recta.</p>
 <ul><li><span class="mat">\(m\)</span> es la <strong>pendiente</strong>.</li><li><span class="mat">\(n\)</span> es la <strong>ordenada en el origen</strong>: la recta corta al eje <span class="mat">\(Y\)</span> en el punto <span class="mat">\((0, n)\)</span>.</li></ul>
 <p>Si <span class="mat">\(m = 0\)</span> la función es <strong>constante</strong>, <span class="mat">\(y = n\)</span>, y su gráfica es una recta horizontal.</p></div></aside>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/f9fda68f52a90abb.svg" width="266" height="299" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/d802500322b1ea7c.svg" width="266" height="299" alt="" loading="lazy"></figure></div>
 <p>Para representar una recta basta con conocer <strong>dos de sus puntos</strong>. Lo más sencillo es hacer una tabla con dos valores de <span class="mat">\(x\)</span> y calcular <span class="mat">\(y\)</span>.</p>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Representar una función lineal</div><div class="caja-cuerpo"><p><span class="mat">\(y = -2x + 3\)</span>.  Pendiente <span class="mat">\(m = -2\)</span> (decreciente), ordenada en el origen <span class="mat">\(n = 3\)</span>.</p>
 <div class="centro"><div class="tabla"><table><tr><td><span class="mat">\(x\)</span></td><td>0</td><td>2</td></tr><tr><td><span class="mat">\(y\)</span></td><td>3</td><td><span class="mat">\(-1\)</span></td></tr></table></div></div>

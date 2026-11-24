@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD13 · Probabilidad</a> › <span>Apartado 13.3</span></nav></header>
@@ -35,7 +51,7 @@ window.MathJax = {
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ <span class="mat">\((1,2)\)</span> y <span class="mat">\((2,1)\)</span> son casos distintos</div><div class="caja-cuerpo"><p>Al lanzar dos dados, sacar un 1 en el primero y un 2 en el segundo no es lo mismo que al revés. La suma 3 tiene 2 casos favorables de 36, no 1 de 21. Piensa en dos dados de colores distintos.</p></div></aside>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Suma de dos dados</div><div class="caja-cuerpo"><div class="minipage"><div class="tabla"><table><tr><td><span class="mat">\(+\)</span></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr></table></div></div>
 <div class="minipage"><p>Hay <span class="mat">\(6\cdot 6=36\)</span> casos posibles. La suma 7 aparece 6 veces, así que <span class="mat">\(P(\text{suma }7)=\dfrac{6}{36}=\dfrac{1}{6}\)</span>. Es la suma más probable.</p></div></div></aside>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Diagrama de árbol con dos monedas</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/fd391560611c28ef.svg" width="179" height="154" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Diagrama de árbol con dos monedas</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/fe242d4ea8f97971.svg" width="179" height="154" alt="" loading="lazy"></figure></div>
 <div class="minipage"><p><span class="mat">\(E=\{CC, CX, XC, XX\}\)</span></p>
 <p><span class="mat">\(P(\text{dos caras})=\dfrac{1}{4}\)</span></p>
 <p><span class="mat">\(P(\text{una cara y una cruz})=\dfrac{2}{4}=\dfrac{1}{2}\)</span></p></div></div></aside>

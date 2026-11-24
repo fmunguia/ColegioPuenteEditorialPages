@@ -132,6 +132,17 @@ ul.plan .min { font-weight: 700; font-size: .9rem; white-space: nowrap; }
 /* Dibujos */
 figure.dibujo { margin: 16px 0; text-align: center; overflow-x: auto; }
 figure.dibujo img { display: inline-block; vertical-align: middle; }
+/* Fotos y fichas de lugar (Patrimonio) */
+figure.foto { margin: 16px auto; text-align: center; max-width: 720px; }
+figure.foto img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.25); }
+figure.foto figcaption { font-size: .9rem; margin-top: 6px; }
+figure.foto .autoria { font-size: .75rem; opacity: .75; }
+.fotos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.fotos figure.foto { margin: 8px 0; }
+table.ficha-lugar { border-collapse: collapse; width: 100%; }
+table.ficha-lugar th { text-align: left; vertical-align: top; padding: 4px 10px 4px 0; width: 9em; color: var(--principal); }
+table.ficha-lugar td { padding: 4px 0; }
+.caja.excursion { --c: #6BA539; }
 figcaption { font-size: .9rem; color: var(--suave); margin-top: 4px; }
 .fig-linea img { vertical-align: middle; }
 .programa-y-texto { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
@@ -241,3 +252,61 @@ h2.subapartado { font-size: 1.15rem; margin: 1.5em 0 .5em; color: color-mix(in s
   main { max-width: none; padding: 0; }
   .momento, .actividad, .caja { break-inside: avoid; }
 }
+
+/* Libros de lectura (Lengua) */
+.caja.lectura { --c: var(--acento); }
+.caja.lectura .caja-cuerpo { font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; line-height: 1.6; }
+.caja.lectura .fuente { font-family: inherit; font-size: .85rem; font-style: italic; text-align: right; opacity: .8; }
+.tiempo-lectura { font-weight: 400; font-size: .85rem; margin-left: .6em; }
+.np { display: inline-block; min-width: 1.6em; font-family: system-ui, sans-serif; font-size: .75rem; font-weight: 700;
+  color: color-mix(in srgb, var(--acento) 70%, black); }
+.poema { margin: .6em 0 .6em 1.5em; font-style: italic; }
+.poema p { margin: 0 0 .8em; }
+.caja.critico { --c: #6BA539; }
+.caja.antes-leer { --c: #E04F2E; }
+.criterios-ficha { font-size: .85rem; opacity: .85; }
+.tipo-comp { display: inline-block; font-size: .78rem; font-weight: 700; color: #fff; border-radius: 10px;
+  padding: 1px 8px; margin-right: 4px; }
+.tipo-comp.localizo { background: #328BCF; }
+.tipo-comp.interpreto { background: #7B4F9E; }
+.tipo-comp.valoro { background: #4F8A2B; }
+.tipo-comp.creo { background: #C2387A; }
+.tarjetas { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; margin: 12px 0; }
+.tarjetas .tarjeta { flex: 0 1 150px; text-align: center; font-size: .88rem; padding: 8px; border-radius: 8px;
+  border: 2px solid color-mix(in srgb, var(--principal) 40%, white); background: #fff; }
+.tarjetas .tarjeta .emoji { font-size: 1.6rem; display: block; }
+.tarjetas .flecha { font-size: 1.4rem; color: var(--principal); }
+.libro-recomendado { display: flex; gap: 12px; align-items: flex-start; margin: 12px 0; padding: 10px;
+  border-radius: 8px; border: 2px solid color-mix(in srgb, var(--acento) 50%, white); }
+.libro-recomendado .libro-emoji .emoji { font-size: 2rem; }
+
+/* Ejercicios que se corrigen solos: unir, ordenar, clasificar, verdadero o falso */
+.autocorr { margin: 10px 0; padding: 10px 12px; background: var(--fondo-2); border-radius: 10px; }
+.nota-ej { margin: 0 0 6px; font-size: .9rem; color: var(--suave); }
+.filas-ej { display: grid; gap: 6px; }
+.fila-ej { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 6px 8px; background: #fff;
+  border: 2px solid var(--borde); border-radius: 8px; }
+.fila-ej .item-ej { flex: 1 1 14em; min-width: 0; }
+.ordenar .fila-ej .item-ej { flex-basis: 10em; }
+.flecha-ej { color: var(--suave); }
+.unir .fila-ej { display: grid; grid-template-columns: minmax(7em, 34%) auto minmax(0, 1fr); }
+.unir select.ctrl-ej { width: 100%; }
+@media (max-width: 560px) { .unir .fila-ej { grid-template-columns: 1fr; } .unir .flecha-ej { display: none; } }
+select.ctrl-ej { font: inherit; font-size: 1rem; max-width: 100%; padding: 4px 6px; border: 2px solid var(--borde);
+  border-radius: 6px; background: #fffef8; }
+.grupo-ej { display: inline-flex; flex-wrap: wrap; gap: 4px; }
+.op-ej { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border: 2px solid var(--borde);
+  border-radius: 999px; cursor: pointer; font-size: .95rem; background: #fff; }
+.op-ej:has(input:checked) { border-color: var(--principal); background: color-mix(in srgb, var(--principal) 12%, white); }
+.fila-ej.bien-ej { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 8%, white); }
+.fila-ej.mal-ej { border-color: var(--mal); background: color-mix(in srgb, var(--mal) 7%, white); }
+.botones-ej { margin: 8px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.res-ej.bien { color: var(--ok); font-weight: 600; }
+.res-ej.mal { color: var(--mal); font-weight: 600; }
+.marcar-ej { margin: 8px 0; }
+.chip-marcar { font: inherit; font-size: 1rem; margin: 3px; padding: 4px 12px; border: 2px solid transparent;
+  border-radius: 999px; background: var(--fondo-2); cursor: pointer; color: var(--texto); }
+.chip-marcar.rodeado, .chip-marcar.marcado { border-color: var(--hago); background: #fff; }
+.chip-marcar.subrayado { text-decoration: underline 3px var(--principal); text-underline-offset: 4px; }
+.chip-marcar.tachado { text-decoration: line-through 3px var(--mal); }
+@media print { .botones-ej, .nota-ej { display: none; } }

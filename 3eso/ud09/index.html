@@ -17,19 +17,35 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD09 · Funciones lineales y cuadráticas</span></nav></header>
 <main>
 <p class="subtitulo">Bloque III · Funciones</p><h1><span class="codigo">UD09</span> Funciones lineales y cuadráticas</h1><aside class="caja partida"><div class="caja-titulo">🔍 Bicis por el paseo de Pereda</div><div class="caja-cuerpo"><p>Para recorrer en bici el paseo marítimo de Santander hay dos tiendas de alquiler. La tienda A cobra <span class="mat">\(4\)</span>&nbsp;€ por la fianza y el casco y <span class="mat">\(1{,}50\)</span>&nbsp;€ por cada hora. La tienda B no cobra nada fijo, pero pide <span class="mat">\(2{,}50\)</span>&nbsp;€ por hora.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/d342cd5c4cdc6317.svg" width="374" height="242" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/499d4ab9e37ca7fe.svg" width="374" height="242" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuánto cuesta alquilar dos horas en cada tienda? ¿Y seis horas?</li><li>¿Con cuántas horas cuesta lo mismo en las dos tiendas? ¿Dónde se ve en la gráfica?</li><li>¿Qué fórmula da el precio en cada tienda según las horas?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Reconocer funciones de proporcionalidad directa y funciones lineales.</li><li>Interpretar la pendiente y la ordenada en el origen.</li><li>Hallar la ecuación de la recta que pasa por dos puntos.</li><li>Representar parábolas a partir de su vértice y sus cortes con los ejes.</li><li>Usar funciones lineales y cuadráticas para resolver problemas reales.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ul><li>Dos magnitudes son directamente proporcionales si su cociente es constante: si <span class="mat">\(2\)</span>&nbsp;kg cuestan <span class="mat">\(5\)</span>&nbsp;€, <span class="mat">\(3\)</span>&nbsp;kg cuestan <span class="mat">\(7{,}50\)</span>&nbsp;€.</li><li>Para dibujar una gráfica a partir de una fórmula se hace una tabla de valores y se representan los puntos.</li><li>Para resolver <span class="mat">\(ax^2 + bx + c = 0\)</span> se usa la fórmula <span class="mat">\(x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}\)</span>.</li><li>Una función corta al eje <span class="mat">\(Y\)</span> cuando <span class="mat">\(x = 0\)</span> y al eje <span class="mat">\(X\)</span> cuando <span class="mat">\(y = 0\)</span>.</li></ul>
 <p>Comprueba que sabes hacer estos ejercicios de cursos anteriores:</p>
 <ol class="tareas cols-2"><li>Completa la tabla de <span class="mat">\(y = 3x\)</span> para <span class="mat">\(x = -1, 0, 2\)</span>.</li><li>Representa los puntos <span class="mat">\((0, 3)\)</span> y <span class="mat">\((2, -1)\)</span>.</li><li>Calcula <span class="mat">\(x^2 - 4x + 3\)</span> para <span class="mat">\(x = 2\)</span>.</li><li>Resuelve <span class="mat">\(x^2 - 4x + 3 = 0\)</span>.</li><li>Resuelve <span class="mat">\(0{,}15x + 12 = 72\)</span>.</li><li>Calcula <span class="mat">\(\dfrac{8 - 2}{3 - 1}\)</span>.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Un jugador golpea un balón hacia arriba. Si no tenemos en cuenta el rozamiento del aire, la altura del balón, en metros, a los <span class="mat">\(t\)</span> segundos es aproximadamente <span class="mat">\(h(t) = -5t^2 + 20t\)</span>. La gráfica no es una recta: es una curva llamada <em>parábola</em>.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/0288d95900b58e83.svg" width="373" height="182" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/dec2ff65a3ca91b8.svg" width="373" height="182" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuál es la altura máxima del balón? ¿En qué momento la alcanza?</li><li>¿Cuándo vuelve a llegar al suelo? ¿Qué ecuación tienes que resolver?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 9.1</span> Función de proporcionalidad directa</a></li><li><a href="apartado-2.html"><span class="num">Apartado 9.2</span> Función lineal</a></li><li><a href="apartado-3.html"><span class="num">Apartado 9.3</span> Función cuadrática</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud08/index.html">← UD08</a><a class="boton secundario" href="../ud10/index.html">UD10 →</a></nav>

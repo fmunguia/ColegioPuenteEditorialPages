@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD07 · Sistemas de ecuaciones lineales</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Encontrar soluciones de una ecuación con dos incógnitas.</li><li>Resolver sistemas de forma gráfica y saber cuántas soluciones tienen.</li><li>Resolver sistemas por sustitución, igualación y reducción.</li><li>Elegir el método más cómodo en cada caso.</li><li>Plantear y resolver problemas con sistemas.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Resuelve <span class="mat">\(3x-5=10\)</span>.</li><li>Resuelve <span class="mat">\(2(x+1)=x+7\)</span>.</li><li>Despeja <span class="mat">\(y\)</span> en <span class="mat">\(x+y=10\)</span>.</li><li>Despeja <span class="mat">\(x\)</span> en <span class="mat">\(x-2y=4\)</span>.</li><li>Calcula <span class="mat">\(2x+3y\)</span> si <span class="mat">\(x=4\)</span> e <span class="mat">\(y=-1\)</span>.</li><li>Representa el punto <span class="mat">\((2,-3)\)</span> en unos ejes.</li><li>Completa: si <span class="mat">\(y=2x+1\)</span> y <span class="mat">\(x=3\)</span>, entonces <span class="mat">\(y=\ldots\)</span></li><li>Traduce: «el doble de un número más otro número es 15».</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Dos empresas alquilan bicis en Laredo. La empresa A cobra 4 € por hora. La empresa B cobra 6 € fijos y 2 € por hora.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/b767e8c219225a62.svg" width="333" height="194" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/b1586a556275e94a.svg" width="333" height="194" alt="" loading="lazy"></figure></div>
 <ul><li>¿Para cuántas horas cuestan lo mismo las dos empresas? ¿Cuánto se paga?</li><li>¿Cuál te conviene si quieres la bici toda la mañana?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 7.1</span> Ecuaciones lineales con dos incógnitas</a></li><li><a href="apartado-2.html"><span class="num">Apartado 7.2</span> Sistemas de ecuaciones</a></li><li><a href="apartado-3.html"><span class="num">Apartado 7.3</span> Métodos algebraicos</a></li><li><a href="apartado-4.html"><span class="num">Apartado 7.4</span> Problemas con sistemas de ecuaciones</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud06/index.html">← UD06</a><a class="boton secundario" href="../ud08/index.html">UD08 →</a></nav>

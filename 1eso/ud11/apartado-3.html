@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD11 · Probabilidad</a> › <span>Apartado 11.3</span></nav></header>
@@ -25,7 +41,7 @@ window.MathJax = {
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Probabilidad experimental</div><div class="caja-cuerpo"><p>La <dfn class="glosario" tabindex="0" data-def="número entre 0 y 1 que mide lo fácil que es que ocurra un suceso">probabilidad</dfn> de un suceso es un número entre 0 y 1 que mide lo fácil que es que ocurra. Cuando repetimos un experimento muchas veces, la frecuencia relativa se acerca a la probabilidad.</p></div></aside>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Lanzamiento de una chincheta</div><div class="caja-cuerpo"><div class="centro"><div class="tabla"><table><tr><td>Lanzamientos</td><td>10</td><td>50</td><td>100</td><td>500</td></tr><tr><td>Punta arriba</td><td>7</td><td>31</td><td>62</td><td>305</td></tr><tr><td>Frecuencia relativa</td><td>0,70</td><td>0,62</td><td>0,62</td><td>0,61</td></tr></table></div></div>
 <p>La probabilidad de que caiga con la punta hacia arriba es aproximadamente <span class="mat">\(0{,}61\)</span>.</p></div></aside>
-<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Escala de probabilidad</div><div class="caja-cuerpo"><div class="centro"><figure class="dibujo "><img src="../../figuras/75cb1692d63b4f8e.svg" width="510" height="80" alt="" loading="lazy"></figure></div></div></aside>
+<aside class="caja aprendo definicion"><div class="caja-titulo">📖 Escala de probabilidad</div><div class="caja-cuerpo"><div class="centro"><figure class="dibujo "><img src="../../figuras/33e8a4f0f7aed3be.svg" width="510" height="80" alt="" loading="lazy"></figure></div></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ El azar no tiene memoria</div><div class="caja-cuerpo"><p>Si una moneda ha salido cara cinco veces seguidas, la probabilidad de que la siguiente sea cruz sigue siendo <span class="mat">\(\frac{1}{2}\)</span>. La moneda no «sabe» lo que ha salido antes, así que no «toca» cruz.</p></div></aside>
 <div class="actividad hago" id="act-11.3.1"><div class="act-cab"><span class="act-num">11.3.1</span></div><div class="act-cuerpo"><p>Lanza una moneda 20 veces y anota cuántas veces sale cara. Junta tus datos con los de tus compañeros y calcula la frecuencia relativa de cara. ¿A qué número se acerca?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>

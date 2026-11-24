@@ -17,19 +17,35 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD14 · Probabilidad</span></nav></header>
 <main>
 <p class="subtitulo">Bloque V · Estadística y probabilidad</p><h1><span class="codigo">UD14</span> Probabilidad</h1><aside class="caja partida"><div class="caja-titulo">🔍 La ruleta de la tómbola</div><div class="caja-cuerpo"><p>En las fiestas del pueblo, la tómbola tiene una ruleta con <span class="mat">\(12\)</span> sectores iguales: uno rojo, que da el premio grande, tres azules, que dan un premio pequeño, y ocho blancos, sin premio. Cada tirada cuesta <span class="mat">\(1\)</span>&nbsp;€.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/aa7006f1ced3f44c.svg" width="187" height="160" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/9c4f08ac8797516d.svg" width="187" height="160" alt="" loading="lazy"></figure></div>
 <ul><li>¿Qué es más probable: ganar un premio pequeño o no ganar nada?</li><li>Si tiras <span class="mat">\(120\)</span> veces, ¿cuántas veces esperas que salga el premio grande?</li><li>¿Puedes saber qué saldrá en la próxima tirada? ¿Y qué pasará, más o menos, en mil tiradas?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Distinguir experimentos aleatorios y deterministas.</li><li>Escribir el espacio muestral y operar con sucesos.</li><li>Estimar probabilidades con la frecuencia relativa.</li><li>Calcular probabilidades con la regla de Laplace.</li><li>Resolver experimentos compuestos con tablas y diagramas de árbol.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ul><li>Una fracción se simplifica dividiendo numerador y denominador entre el mismo número: <span class="mat">\(\frac{6}{36} = \frac{1}{6}\)</span>.</li><li>Una fracción se puede escribir como decimal y como porcentaje: <span class="mat">\(\frac{3}{4} = 0{,}75 = 75\%\)</span>.</li><li>Para multiplicar fracciones se multiplican los numeradores y los denominadores: <span class="mat">\(\frac{3}{5} \cdot \frac{2}{4} = \frac{6}{20}\)</span>.</li><li>La frecuencia relativa es la frecuencia absoluta dividida entre el número total de datos.</li></ul>
 <p>Comprueba que sabes hacer estos ejercicios de cursos anteriores:</p>
 <ol class="tareas cols-2"><li>Simplifica <span class="mat">\(\dfrac{8}{40}\)</span>.</li><li>Escribe <span class="mat">\(\dfrac{2}{5}\)</span> como decimal y como porcentaje.</li><li>Calcula <span class="mat">\(\dfrac{3}{5} \cdot \dfrac{2}{4}\)</span>.</li><li>Calcula <span class="mat">\(1 - \dfrac{3}{10}\)</span>.</li><li>¿Cuántas cartas tiene la baraja española? ¿Cuántas de cada palo?</li><li>Ordena de menor a mayor: <span class="mat">\(\dfrac{1}{2}\)</span>, <span class="mat">\(\dfrac{2}{5}\)</span> y <span class="mat">\(\dfrac{3}{10}\)</span>.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>En tu clase hay unos <span class="mat">\(25\)</span> alumnos y el año tiene <span class="mat">\(365\)</span> días. ¿Crees que es probable que dos personas de la clase cumplan años el mismo día? Parece difícil, pero a partir de <span class="mat">\(23\)</span> personas la probabilidad ya es mayor que <span class="mat">\(\frac{1}{2}\)</span>, y con <span class="mat">\(50\)</span> personas es casi seguro.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/41b1ebed57c3bb0f.svg" width="566" height="203" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/5dbcf433fa4dc398.svg" width="566" height="203" alt="" loading="lazy"></figure></div>
 <ul><li>Haced la prueba en clase: ¿hay dos personas que cumplan años el mismo día?</li><li>¿Por qué crees que la probabilidad crece tan deprisa?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 14.1</span> Experimentos aleatorios y sucesos</a></li><li><a href="apartado-2.html"><span class="num">Apartado 14.2</span> Frecuencia relativa y probabilidad</a></li><li><a href="apartado-3.html"><span class="num">Apartado 14.3</span> Regla de Laplace</a></li><li><a href="apartado-4.html"><span class="num">Apartado 14.4</span> Experimentos compuestos</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud13/index.html">← UD13</a><span></span></nav>

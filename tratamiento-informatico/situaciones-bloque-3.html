@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloque III · Situaciones de aprendizaje</title>
+
+<link rel="stylesheet" href="../estilo.css">
+<script src="../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../index.html">Inicio</a> › <a href="index.html">Tratamiento informático de la información</a> › <span>Situaciones de aprendizaje</span></nav></header>
+<main>
+<h1>🎯 Situaciones de aprendizaje</h1><p class="subtitulo">Bloque III · Datos: hojas de cálculo y bases de datos</p><aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: El albarán y la factura de mi empresa</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>Cada alumno ha creado (o inventado) una empresa para el trabajo final del curso. Toda empresa que vende necesita dos documentos: el <strong>albarán</strong>, que acompaña a la mercancía, y la <strong>factura</strong>, que la cobra. Ahora los usa la Papelería Sena; ahora te toca a ti.</p>
+<h4 class="etapa">Reto</h4>
+<p>Diseñar en Excel los modelos de albarán y de factura de tu empresa, que se rellenen solos al escribir el código del producto y la cantidad, con los colores y la tipografía de tu guía de estilo.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Analizar un albarán y una factura reales: qué datos llevan, cuáles son obligatorios y qué cálculos hacen. Hacer un boceto en papel.</li><li>Crear la hoja de productos (al menos diez, con código, descripción y precio) y la de clientes.</li><li>Montar el albarán con BUSCARV, SI y referencias a otras hojas. Probarlo con tres pedidos.</li><li>Montar la factura: base imponible, descuento por pronto pago con SI, IVA con referencia absoluta y total. Añadir la fecha con HOY y el vencimiento a 30 días.</li><li>Aplicar la guía de estilo (colores, fuente, logo), proteger las celdas con fórmulas y guardar los dos modelos como plantillas.</li><li>Hacer una factura de prueba, exportarla a PDF y presentarla a la clase en dos minutos.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>Las plantillas <code>.xltx</code> del albarán y la factura, una factura de prueba en PDF y el boceto inicial.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios 3a, 3b, 3d y 4d. Rúbrica: datos obligatorios del documento, fórmulas correctas y protegidas, uso de BUSCARV y SI, presentación según la guía de estilo y exposición. Cada alumno completa los billetes de salida de cada sesión.</p></div></aside>
+<aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: El informe de gastos de la oficina</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>La dirección del centro quiere saber en qué se gasta el dinero de la oficina (papel, tinta, mensajería, luz, teléfono…) para decidir dónde ahorrar el año que viene.</p>
+<h4 class="etapa">Reto</h4>
+<p>En equipos de tres, preparar un informe con los gastos de un año: una lista de movimientos, un resumen por meses y por conceptos, gráficos y tres propuestas de ahorro.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Repartir los roles (coordinación, datos, gráficos). Importar el archivo CSV de movimientos que da la profesora y revisar que cada dato esté en su columna.</li><li>Limpiar la lista: formato como tabla, validación de datos en la columna de conceptos y formato condicional para los gastos de más de 500&nbsp;€.</li><li>Resumir con una tabla dinámica (meses en filas, conceptos en columnas) y calcular el gasto medio, el máximo y el mínimo de cada concepto.</li><li>Hacer los gráficos: evolución mensual (líneas) y reparto por conceptos (circular).</li><li>Escribir las conclusiones y las tres propuestas de ahorro en una hoja de presentación, compartir el libro en OneDrive y revisarlo con comentarios entre equipos.</li><li>Exportar el informe a PDF y presentarlo como si fuera a la dirección.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>El libro de Excel compartido y el informe en PDF con tablas, gráficos y conclusiones.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios 3a, 3c, 3e y 3f. Rúbrica del equipo: datos importados y limpios, tabla dinámica correcta, gráficos adecuados, conclusiones y propuestas, y trabajo en equipo. Autoevaluación de cada rol.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

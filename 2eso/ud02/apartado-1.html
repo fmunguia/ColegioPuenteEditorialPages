@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD02 · Fracciones y números decimales</a> › <span>Apartado 2.1</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <ul><li><span class="mat">\(a\)</span> es el <dfn class="glosario" tabindex="0" data-def="término de una fracción que indica cuántas partes se toman">numerador</dfn>: indica cuántas partes se toman.</li><li><span class="mat">\(b\)</span> es el <dfn class="glosario" tabindex="0" data-def="término de una fracción que indica en cuántas partes iguales se divide la unidad">denominador</dfn>: indica en cuántas partes iguales se divide la unidad. Nunca puede ser 0.</li></ul></div></aside>
 <p>Una fracción tiene tres significados:</p>
 <ul><li><strong>Parte de la unidad:</strong> <span class="mat">\(\frac{3}{8}\)</span> de una pizza son 3 de sus 8 porciones.</li><li><strong>Cociente:</strong> <span class="mat">\(\frac{3}{4}=3:4=0{,}75\)</span>.</li><li><strong>Operador:</strong> <span class="mat">\(\frac{2}{5}\)</span> de 30 alumnos son <span class="mat">\(30:5\cdot 2=12\)</span> alumnos.</li></ul>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Representación de fracciones</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/0becd5478c848359.svg" width="197" height="62" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/a081ea533c02eba0.svg" width="107" height="107" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/0be18a0e78e8b578.svg" width="130" height="107" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(\dfrac{3}{8}\)</span></td><td><span class="mat">\(\dfrac{3}{4}\)</span></td><td><span class="mat">\(\dfrac{7}{5}=1+\dfrac{2}{5}\)</span></td></tr></table></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Representación de fracciones</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/3533e119995a3d25.svg" width="197" height="62" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/cf9c25b9f54c0400.svg" width="107" height="107" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/02f6623a9e1793b6.svg" width="130" height="107" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(\dfrac{3}{8}\)</span></td><td><span class="mat">\(\dfrac{3}{4}\)</span></td><td><span class="mat">\(\dfrac{7}{5}=1+\dfrac{2}{5}\)</span></td></tr></table></div></div></aside>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Tipos de fracciones</div><div class="caja-cuerpo"><ul><li><strong>Propia:</strong> el numerador es menor que el denominador y la fracción es menor que 1: <span class="mat">\(\frac{2}{3}\)</span>.</li><li><strong>Impropia:</strong> el numerador es mayor que el denominador y la fracción es mayor que 1: <span class="mat">\(\frac{7}{5}\)</span>. Se puede escribir como <strong>número mixto</strong>: <span class="mat">\(\frac{7}{5}=1\frac{2}{5}\)</span>.</li><li><strong>Igual a la unidad:</strong> numerador y denominador son iguales: <span class="mat">\(\frac{4}{4}=1\)</span>.</li></ul></div></aside>
 <div class="actividad hago" id="act-2.1.1"><div class="act-cab"><span class="act-num">2.1.1</span></div><div class="act-cuerpo"><p>Representa gráficamente y clasifica estas fracciones. Escribe las impropias como número mixto:</p>
 <ol class="tareas cols-4"><li><span class="mat">\(\dfrac{5}{6}\)</span></li><li><span class="mat">\(\dfrac{9}{4}\)</span></li><li><span class="mat">\(\dfrac{3}{3}\)</span></li><li><span class="mat">\(\dfrac{11}{5}\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>

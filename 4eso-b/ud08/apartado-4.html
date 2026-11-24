@@ -17,28 +17,44 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD08 · Semejanza y medida</a> › <span>Apartado 8.4</span></nav></header>
 <main>
 <div class="banda-sesion"><span>Apartado 8.4</span></div><h1 class="titulo-sesion">Perímetros y áreas</h1><p>El <strong>perímetro</strong> (<span class="mat">\(P\)</span>) es la suma de las longitudes de todos los lados de una figura (su contorno). El <strong>área</strong> (<span class="mat">\(A\)</span>) es la medida de la superficie interior que ocupa la figura.</p>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Triángulo</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/574e73205eeac8cb.svg" width="162" height="144" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Triángulo</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/12930868a8f4ca76.svg" width="162" height="144" alt="" loading="lazy"></figure></div>
 <div class="minipage"><p><strong>Perímetro:</strong> <span class="mat">\(P = \text{Suma de sus 3 lados}\)</span> <br>
         <strong>Área:</strong> <span class="mat">\(A = \dfrac{b \cdot h}{2}\)</span></p></div></div></aside>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cuadrado y Rectángulo</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/c606759744b0b9ef.svg" width="242" height="110" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cuadrado y Rectángulo</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/daa0d199ed2e8f7a.svg" width="242" height="110" alt="" loading="lazy"></figure></div>
 <div class="minipage"><p><strong>Cuadrado:</strong><br>
         <span class="mat">\(P = 4 \cdot l\)</span>   <span class="mat">\(A = l^2\)</span> <br>
         <strong>Rectángulo:</strong><br>
         <span class="mat">\(P = 2b + 2h\)</span>   <span class="mat">\(A = b \cdot h\)</span></p></div></div></aside>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Rombo</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/d1b3581612aee76b.svg" width="162" height="125" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Rombo</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/f92f18d0ca6ac16d.svg" width="162" height="125" alt="" loading="lazy"></figure></div>
 <div class="minipage"><p><strong>Perímetro:</strong> <span class="mat">\(P = 4 \cdot l\)</span> <br>
         <strong>Área:</strong> <span class="mat">\(A = \dfrac{D \cdot d}{2}\)</span> <br>
         <em>(D: Diagonal mayor, d: diagonal menor)</em></p></div></div></aside>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Trapecio</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/acbdb45d8a4f99b0.svg" width="198" height="123" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Trapecio</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/caa3d9a0423ba242.svg" width="198" height="123" alt="" loading="lazy"></figure></div>
 <div class="minipage"><p><strong>Perímetro:</strong> <span class="mat">\(P = \text{Suma de sus 4 lados}\)</span> <br>
         <strong>Área:</strong> <span class="mat">\(A = \dfrac{(B + b) \cdot h}{2}\)</span> <br>
         <em>(B: Base mayor, b: base menor)</em></p></div></div></aside>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Polígono Regular (ej. Hexágono)</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/324f9c924c69b782.svg" width="162" height="158" alt="" loading="lazy"></figure></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Polígono Regular (ej. Hexágono)</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/7b7a6fda5981270e.svg" width="162" height="158" alt="" loading="lazy"></figure></div>
 <div class="minipage"><p><strong>Perímetro:</strong> <span class="mat">\(P = n \cdot l\)</span> <br>
         <strong>Área:</strong> <span class="mat">\(A = \dfrac{P \cdot ap}{2}\)</span> <br>
         <em>(n: nº lados, ap: apotema)</em></p></div></div></aside>

@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD10 · Pitágoras, perímetros y áreas</a> › <span>Apartado 10.5</span></nav></header>
@@ -24,7 +40,7 @@ window.MathJax = {
 <div class="banda-sesion"><span>Apartado 10.5</span></div><h1 class="titulo-sesion">Áreas de figuras compuestas</h1><p>Para calcular el área de una figura más complicada se descompone en figuras conocidas y se suman (o restan) sus áreas.</p>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Una puerta con arco</div><div class="caja-cuerpo"><div class="minipage"><p>Una puerta está formada por un rectángulo de <span class="mat">\(1\times 2\)</span> m y un semicírculo encima, de 1 m de diámetro.</p>
 <ul><li>Rectángulo: <span class="mat">\(1\cdot 2=2\)</span> m<span class="mat">\(^2\)</span></li><li>Semicírculo: <span class="mat">\(\dfrac{\pi\cdot 0{,}5^2}{2}\approx 0{,}39\)</span> m<span class="mat">\(^2\)</span></li><li>Total: <span class="mat">\(\approx 2{,}39\)</span> m<span class="mat">\(^2\)</span></li></ul></div>
-<div class="minipage"><figure class="dibujo "><img src="../../figuras/5b5ca162578d6c1e.svg" width="59" height="128" alt="" loading="lazy"></figure></div></div></aside>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/9bfdc35bab28fe78.svg" width="59" height="128" alt="" loading="lazy"></figure></div></div></aside>
 <div class="actividad hago" id="act-10.5.1"><div class="act-cab"><span class="act-num">10.5.1</span></div><div class="act-cuerpo"><p>Calcula el área de una figura formada por un cuadrado de 4 cm de lado y un semicírculo construido sobre uno de sus lados.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="actividad hago" id="act-10.5.2"><div class="act-cab"><span class="act-num">10.5.2</span></div><div class="act-cuerpo"><p>Una ventana tiene forma de rectángulo de 80 cm de ancho y 1,2 m de alto, rematado por un triángulo isósceles de 80 cm de base y 30 cm de altura. Calcula la superficie de cristal y el perímetro del marco.</p><textarea class="respuesta" rows="4" data-k="t2" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="actividad hago" id="act-10.5.3"><div class="act-cab"><span class="act-num">10.5.3</span></div><div class="act-cuerpo"><p>Un parterre rectangular de <span class="mat">\(6\times 4\)</span> m tiene en cada esquina un cuarto de círculo de 1 m de radio plantado con flores. El resto es césped. ¿Qué superficie ocupan las flores? ¿Y el césped?</p><textarea class="respuesta" rows="4" data-k="t3" placeholder="Escribe aquí tus respuestas"></textarea></div></div>

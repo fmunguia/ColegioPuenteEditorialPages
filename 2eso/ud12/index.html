@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD12 · Estadística</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Distinguir población y muestra y clasificar variables estadísticas.</li><li>Organizar datos en tablas de frecuencias, también agrupados en intervalos.</li><li>Elegir, construir e interpretar gráficos estadísticos.</li><li>Calcular e interpretar la media, la mediana y la moda.</li><li>Calcular el rango y la desviación media y comparar conjuntos de datos.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Ordena de menor a mayor: 3, 8, 1, 5, 8, 2.</li><li>Calcula <span class="mat">\(\dfrac{4+7+10}{3}\)</span>.</li><li>Calcula el 25 % de 80.</li><li>Calcula <span class="mat">\(0{,}3\cdot 360\)</span>.</li><li>Expresa <span class="mat">\(\frac{12}{40}\)</span> como decimal y como porcentaje.</li><li>Calcula <span class="mat">\(1\cdot 4+2\cdot 3+3\cdot 2\)</span>.</li><li>Calcula <span class="mat">\(|3-7|\)</span> y <span class="mat">\(|9-7|\)</span>.</li><li>¿Qué número está justo en medio de 6 y 9?</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Un anuncio muestra este gráfico de las ventas de dos marcas de zumo.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/d77ea3d1dfe34fa9.svg" width="242" height="194" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/298c9343558459b1.svg" width="242" height="194" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuántas veces más alta es la barra A que la B? ¿Y cuántas veces más vende A que B?</li><li>¿Por qué engaña este gráfico? ¿Cómo lo dibujarías tú?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 12.1</span> Población, muestra y variables</a></li><li><a href="apartado-2.html"><span class="num">Apartado 12.2</span> Tablas de frecuencias</a></li><li><a href="apartado-3.html"><span class="num">Apartado 12.3</span> Gráficos estadísticos</a></li><li><a href="apartado-4.html"><span class="num">Apartado 12.4</span> Medidas de centralización</a></li><li><a href="apartado-5.html"><span class="num">Apartado 12.5</span> Medidas de dispersión</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud11/index.html">← UD11</a><a class="boton secundario" href="../ud13/index.html">UD13 →</a></nav>

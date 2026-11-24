@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloque I · Situaciones de aprendizaje</title>
+
+<link rel="stylesheet" href="../estilo.css">
+<script src="../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "patrimonio", "materia": "Patrimonio de Cantabria", "huella": "8e54f452"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#009900;--acento:#9AC21B">
+<header class="cabecera"><a class="logo" href="../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../index.html">Inicio</a> › <a href="index.html">Patrimonio de Cantabria</a> › <span>Situaciones de aprendizaje</span></nav></header>
+<main>
+<h1>🎯 Situaciones de aprendizaje</h1><p class="subtitulo">Bloque I · Cantabria, patrimonio natural</p><aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: Guía de un espacio natural de nuestra comarca</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>Muchos visitantes llegan cada verano a los espacios protegidos de Cantabria sin saber qué ver, qué plantas y animales viven allí ni qué normas hay que respetar. La oficina de turismo del ayuntamiento quiere una guía hecha por gente joven de la zona.</p>
+<h4 class="etapa">Reto</h4>
+<p>Elaborar la guía de un espacio natural cercano (las marismas de Santoña, el parque de Cabárceno, el Saja-Besaya, las dunas de Liencres o el que elija la clase): relieve, ríos, flora, fauna, figura de protección, rutas y normas.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Elegir el espacio y repartir los apartados por equipos: relieve y paisaje, agua, flora, fauna, protección y visita.</li><li>Buscar información en fuentes fiables (web del Gobierno de Cantabria, guías oficiales, el propio libro) y anotar de dónde sale cada dato.</li><li>Hacer el mapa del espacio con sus rutas, miradores y puntos de interés, y un perfil o esquema del relieve.</li><li>Escribir las fichas de especies (al menos cuatro plantas y cuatro animales) con foto de licencia libre y su autor.</li><li>Redactar el decálogo del buen visitante y comprobar la guía con la rúbrica. Maquetarla en papel o en web.</li><li>Presentar la guía a otro curso o a las familias y entregarla a la oficina de turismo o a la biblioteca.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>Una guía ilustrada (en papel o digital) del espacio natural, con mapa, fichas de especies, rutas y decálogo del visitante.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios PN de las unidades 2 a 4 y PC 1.1. Rúbrica: exactitud de la información, fuentes citadas, mapa y esquemas, fichas de especies, decálogo, presentación y trabajo en equipo.</p></div></aside>
+<aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: Ruta del agua: del nacimiento a la desembocadura</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>El río de nuestra comarca nos da agua, paisaje y vida, pero también sufre vertidos, basura y obras. Muchos vecinos no saben dónde nace ni por dónde pasa.</p>
+<h4 class="etapa">Reto</h4>
+<p>Investigar un río de Cantabria (el Pas, el Besaya, el Miera, el Asón…) desde su nacimiento hasta su desembocadura y proponer medidas para cuidarlo.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Situar el río en el mapa: vertiente, nacimiento, afluentes, pueblos que atraviesa y desembocadura. Calcular su longitud.</li><li>Hacer el perfil del río (curso alto, medio y bajo) y describir el paisaje de cada tramo.</li><li>Investigar la flora y la fauna del río y de su ribera: bosque de galería, salmón, nutria, desmán…</li><li>Salida al río (o visita virtual): observar el agua, la vegetación y la basura, y tomar fotos y notas en una ficha de campo.</li><li>Diagnosticar los problemas del río y escribir tres propuestas realistas para cuidarlo.</li><li>Presentar el trabajo en un mural o en un mapa interactivo y enviar las propuestas al ayuntamiento.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>Un mural o mapa interactivo del río y una carta con propuestas al ayuntamiento.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios PN de las unidades 2 y 3 y PC 3.2. Rúbrica: localización y perfil del río, flora y fauna, ficha de campo, propuestas, presentación y trabajo en equipo.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+
+</main>
+<footer class="pie">Patrimonio de Cantabria · Colegio Puente</footer>
+</body>
+</html>

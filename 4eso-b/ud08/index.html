@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <span>UD08 · Semejanza y medida</span></nav></header>
@@ -28,7 +44,7 @@ window.MathJax = {
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Simplifica <span class="mat">\(\dfrac{12}{18}\)</span>.</li><li>Resuelve <span class="mat">\(\dfrac{x}{4} = \dfrac{9}{6}\)</span>.</li><li>Calcula <span class="mat">\(\sqrt{5^2 + 12^2}\)</span>.</li><li>Calcula el área de un triángulo de base 6 cm y altura 5 cm.</li><li>Calcula la longitud de una circunferencia de radio 3 cm.</li><li>Calcula el área de un círculo de radio 3 cm.</li><li>Pasa <span class="mat">\(2{,}5\)</span> m<span class="mat">\(^2\)</span> a cm<span class="mat">\(^2\)</span>.</li><li>Pasa 3 dm<span class="mat">\(^3\)</span> a litros.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>El faro de Cabo Mayor se alza sobre los acantilados de Santander. Para calcular su altura sin subir a él basta con un día de sol y una cinta métrica, como hizo Tales con las pirámides.</p>
 <p>A la misma hora, una persona de 1,6 m proyecta una sombra de 2 m y la torre del faro una sombra de 37,5 m. Los rayos del sol llegan paralelos, así que los dos triángulos tienen los mismos ángulos.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/3faa5988df35072c.svg" width="370" height="203" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/36bfc8318502ce07.svg" width="370" height="203" alt="" loading="lazy"></figure></div>
 <ul><li>¿Por qué son semejantes los dos triángulos?</li><li>¿Cuánto mide la torre del faro?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 8.1</span> Teorema de Tales</a></li><li><a href="apartado-2.html"><span class="num">Apartado 8.2</span> Semejanza</a></li><li><a href="apartado-3.html"><span class="num">Apartado 8.3</span> Teorema de Pitágoras</a></li><li><a href="apartado-4.html"><span class="num">Apartado 8.4</span> Perímetros y áreas</a></li><li><a href="apartado-5.html"><span class="num">Apartado 8.5</span> La circunferencia y el círculo</a></li><li><a href="apartado-6.html"><span class="num">Apartado 8.6</span> Cálculo de áreas y volúmenes: poliedros</a></li><li><a href="apartado-7.html"><span class="num">Apartado 8.7</span> Cuerpos de revolución</a></li><li><a href="apartado-8.html"><span class="num">Apartado 8.8</span> Taller digital</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud07/index.html">← UD07</a><a class="boton secundario" href="../ud09/index.html">UD09 →</a></nav>

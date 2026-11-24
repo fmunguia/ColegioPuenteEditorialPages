@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD13 · Probabilidad</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Distinguir experimentos aleatorios y deterministas.</li><li>Describir el espacio muestral y los sucesos de un experimento.</li><li>Estimar probabilidades a partir de la frecuencia relativa.</li><li>Calcular probabilidades con la regla de Laplace y con el suceso contrario.</li><li>Contar los casos de experimentos de dos pasos con tablas y diagramas de árbol.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Simplifica <span class="mat">\(\frac{6}{36}\)</span> y <span class="mat">\(\frac{9}{12}\)</span>.</li><li>Expresa <span class="mat">\(\frac{3}{4}\)</span> como decimal y como porcentaje.</li><li>Calcula <span class="mat">\(1-\frac{2}{5}\)</span> y <span class="mat">\(1-0{,}35\)</span>.</li><li>Ordena de menor a mayor: <span class="mat">\(\frac{1}{2}\)</span>, <span class="mat">\(\frac{1}{3}\)</span>, <span class="mat">\(\frac{2}{5}\)</span>.</li><li>¿Cuántos múltiplos de 3 hay del 1 al 20?</li><li>¿Cuántos números primos hay del 1 al 10?</li><li>Calcula <span class="mat">\(\frac{2}{5}\cdot\frac{1}{4}\)</span>.</li><li>Un valor aparece 12 veces en 60 datos. Calcula su frecuencia relativa.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>En un juego ganas si la aguja se para en rojo. Puedes elegir la ruleta.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/aa57fca38e8f57d3.svg" width="422" height="176" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/84147e082f816098.svg" width="422" height="176" alt="" loading="lazy"></figure></div>
 <ul><li>¿Qué ruleta eliges? ¿Qué probabilidad de ganar tienes con cada una?</li><li>Si juegas 80 veces con la ruleta B, ¿cuántas veces esperas ganar, más o menos?</li><li>Diseña una ruleta en la que la probabilidad de rojo sea <span class="mat">\(\frac{1}{3}\)</span>.</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 13.1</span> Experimentos aleatorios</a></li><li><a href="apartado-2.html"><span class="num">Apartado 13.2</span> Frecuencia relativa y probabilidad</a></li><li><a href="apartado-3.html"><span class="num">Apartado 13.3</span> Regla de Laplace</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud12/index.html">← UD12</a><span></span></nav>

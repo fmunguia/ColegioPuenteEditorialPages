@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patrimonio de Cantabria</title>
+
+<link rel="stylesheet" href="../estilo.css">
+<script src="../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "patrimonio", "materia": "Patrimonio de Cantabria", "huella": "8e54f452"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#009900;--acento:#9AC21B">
+<header class="cabecera"><a class="logo" href="../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../index.html">Inicio</a> › <span>Patrimonio de Cantabria</span></nav></header>
+<main>
+<p class="subtitulo">3º ESO</p><h1>Patrimonio de Cantabria</h1><aside class="caja principal"><div class="caja-titulo">📖 Cómo son las fichas</div><div class="caja-cuerpo"><p>Cada sesión de clase tiene su página. Empieza con el cuadro <strong>Hoy</strong>: qué vas a aprender, qué necesitas y qué vas a hacer, paso a paso. Marca cada paso cuando lo termines.</p><p>Cada ficha tiene tres partes, cada una con su color: <span class="chip m-aprendo">📖 Leo y aprendo</span> <span class="chip m-hago">✏️ Hago</span> <span class="chip m-amplio">🚀 Amplío</span>. Las actividades tienen tres niveles: ⭐ básica, ⭐⭐ un paso más y ⭐⭐⭐ ampliación.</p><p>Puedes escribir tus respuestas en la página: se guardan en este navegador. Para entregarlas, pulsa «Copiar mis respuestas» y pégalas en la tarea de Classroom.</p></div></aside><h2 class="seccion">Bloque I · Cantabria, patrimonio natural</h2><ul class="indice"><li><a href="ud01/index.html"><span class="num">UD01</span> Cantabria</a> <span class="nota">4 sesiones</span></li><li><a href="ud02/index.html"><span class="num">UD02</span> El relieve y los paisajes naturales</a> <span class="nota">5 sesiones</span></li><li><a href="ud03/index.html"><span class="num">UD03</span> Ríos, flora y fauna</a> <span class="nota">6 sesiones</span></li><li><a href="ud04/index.html"><span class="num">UD04</span> Espacios naturales protegidos</a> <span class="nota">6 sesiones</span></li><li><a href="situaciones-bloque-1.html"><span class="num">🎯</span> Situaciones de aprendizaje</a></li></ul><h2 class="seccion">Bloque II · Cantabria, patrimonio cultural</h2><ul class="indice"><li><a href="ud05/index.html"><span class="num">UD05</span> La Prehistoria en Cantabria</a> <span class="nota">6 sesiones</span></li><li><a href="ud06/index.html"><span class="num">UD06</span> Románico y gótico</a> <span class="nota">6 sesiones</span></li><li><a href="ud07/index.html"><span class="num">UD07</span> La mitología y las leyendas de Cantabria</a> <span class="nota">5 sesiones</span></li><li><a href="ud08/index.html"><span class="num">UD08</span> Grandes personajes de Cantabria</a> <span class="nota">7 sesiones</span></li><li><a href="situaciones-bloque-2.html"><span class="num">🎯</span> Situaciones de aprendizaje</a></li></ul><h2 class="seccion">Para consultar</h2><ul class="indice"><li><a href="glosario.html"><span class="num">🔤</span> Glosario</a></li></ul>
+
+
+</main>
+<footer class="pie">Patrimonio de Cantabria · Colegio Puente</footer>
+</body>
+</html>

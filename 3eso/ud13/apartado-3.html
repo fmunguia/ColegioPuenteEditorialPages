@@ -17,12 +17,28 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD13 · Estadística</a> › <span>Apartado 13.3</span></nav></header>
 <main>
 <div class="banda-sesion"><span>Apartado 13.3</span></div><h1 class="titulo-sesion">Gráficos estadísticos</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Elección del gráfico</div><div class="caja-cuerpo"><ul><li><strong>Diagrama de barras:</strong> variables cualitativas o cuantitativas discretas.</li><li><strong>Histograma:</strong> variables continuas agrupadas en intervalos. Las barras están pegadas.</li><li><strong>Diagrama de sectores:</strong> para ver qué parte del total representa cada valor. El ángulo de cada sector es <span class="mat">\(360^\circ \cdot h_i\)</span>.</li><li><strong>Polígono de frecuencias</strong> o gráfico de líneas: para ver la evolución de una variable.</li></ul></div></aside>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/0b9281c5cb339c47.svg" width="392" height="282" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/bf4ef526d436608e.svg" width="392" height="282" alt="" loading="lazy"></figure></div>
 <p>Las hojas de cálculo construyen todos estos gráficos a partir de una tabla de datos. Lo importante es elegir el adecuado y comprobar que los ejes y las escalas no distorsionan la información.</p>
 <div class="actividad hago" id="act-13.3.1"><div class="act-cab"><span class="act-num">13.3.1</span></div><div class="act-cuerpo"><p>Elige el gráfico más adecuado: a) color favorito de la clase; b) estatura de los alumnos; c) evolución del paro mes a mes; d) número de hermanos.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>

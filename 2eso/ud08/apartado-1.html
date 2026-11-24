@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD08 · Funciones y gráficas</a> › <span>Apartado 8.1</span></nav></header>
@@ -25,7 +41,7 @@ window.MathJax = {
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Coordenadas de un punto</div><div class="caja-cuerpo"><p>Cada punto se representa con un par ordenado <span class="mat">\(P(x,y)\)</span>:</p>
 <ul><li><span class="mat">\(x\)</span> es la <dfn class="glosario" tabindex="0" data-def="primera coordenada de un punto; indica su posición horizontal">abscisa</dfn>: cuánto se avanza en horizontal desde el origen.</li><li><span class="mat">\(y\)</span> es la <dfn class="glosario" tabindex="0" data-def="segunda coordenada de un punto; indica su posición vertical">ordenada</dfn>: cuánto se avanza en vertical.</li></ul>
 <p>Los ejes dividen el plano en cuatro <strong>cuadrantes</strong>, numerados en sentido contrario a las agujas del reloj.</p></div></aside>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/c922eb6b5d8e7927.svg" width="318" height="262" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/a79c1eac3abf1b1f.svg" width="318" height="262" alt="" loading="lazy"></figure></div>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Primero la <span class="mat">\(x\)</span></div><div class="caja-cuerpo"><p><span class="mat">\((3,2)\)</span> y <span class="mat">\((2,3)\)</span> son puntos distintos. En un par ordenado, el primer número es siempre la abscisa (horizontal) y el segundo, la ordenada (vertical).</p></div></aside>
 <div class="actividad hago" id="act-8.1.1"><div class="act-cab"><span class="act-num">8.1.1</span></div><div class="act-cuerpo"><p>Representa los puntos <span class="mat">\(A(2,5)\)</span>, <span class="mat">\(B(-3,4)\)</span>, <span class="mat">\(C(-1,-1)\)</span>, <span class="mat">\(D(0,-3)\)</span>, <span class="mat">\(E(4,0)\)</span> y <span class="mat">\(F(5,-2)\)</span> e indica en qué cuadrante o eje está cada uno.</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>

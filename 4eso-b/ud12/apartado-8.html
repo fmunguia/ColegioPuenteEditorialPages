@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD12 · Recuento y probabilidad</a> › <span>Apartado 12.8</span></nav></header>
@@ -25,7 +41,7 @@ window.MathJax = {
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Probabilidad condicionada</div><div class="caja-cuerpo"><ul><li><strong></strong> <span class="mat">\(P(A|B) = \dfrac{P(A \cap B)}{P(B)} \qquad \text{y por tanto} \qquad P(A \cap B) = P(B) \cdot P(A|B)\)</span></li><li><strong></strong> </li><li><span class="mat">\(P(A|B)\)</span> se lee «probabilidad de <span class="mat">\(A\)</span> sabiendo que ha ocurrido <span class="mat">\(B\)</span>»</li><li>En un diagrama de árbol, las probabilidades de las ramas del segundo nivel son probabilidades condicionadas</li></ul></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ <span class="mat">\(P(A|B)\)</span> no es lo mismo que <span class="mat">\(P(B|A)\)</span></div><div class="caja-cuerpo"><p>En la tabla de las gafas, la probabilidad de llevar gafas sabiendo que es chico es <span class="mat">\(P(G|C) = \dfrac{10}{40} = 0{,}25\)</span>, pero la probabilidad de ser chico sabiendo que lleva gafas es <span class="mat">\(P(C|G) = \dfrac{10}{25} = 0{,}4\)</span>. El denominador es siempre el total de la condición.</p></div></aside>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Sucesos dependientes e independientes</div><div class="caja-cuerpo"><ul><li><span class="mat">\(A\)</span> y <span class="mat">\(B\)</span> son <strong>independientes</strong> si saber que ha ocurrido uno no cambia la probabilidad del otro: <span class="mat">\(\ P(A|B) = P(A)\)</span></li><li>Equivale a <span class="mat">\(\ P(A \cap B) = P(A) \cdot P(B)\)</span></li><li>Las extracciones <strong>con</strong> reemplazamiento son independientes; <strong>sin</strong> reemplazamiento, dependientes</li></ul></div></aside>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Extracciones sin reemplazamiento</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/5081a2827dceb795.svg" width="170" height="190" alt="" loading="lazy"></figure></td><td>Una urna tiene 4 bolas rojas y 6 azules. Sacamos dos sin devolver. <ul><li><span class="mat">\(P(R_1 \cap R_2) = \dfrac{4}{10} \cdot \dfrac{3}{9} = \dfrac{2}{15}\)</span></li><li><span class="mat">\(P(\text{distinto color}) = \dfrac{4}{10}\cdot\dfrac{6}{9} + \dfrac{6}{10}\cdot\dfrac{4}{9} = \dfrac{8}{15}\)</span></li></ul></td></tr></table></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Extracciones sin reemplazamiento</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/9a57934deab0ddb9.svg" width="170" height="190" alt="" loading="lazy"></figure></td><td>Una urna tiene 4 bolas rojas y 6 azules. Sacamos dos sin devolver. <ul><li><span class="mat">\(P(R_1 \cap R_2) = \dfrac{4}{10} \cdot \dfrac{3}{9} = \dfrac{2}{15}\)</span></li><li><span class="mat">\(P(\text{distinto color}) = \dfrac{4}{10}\cdot\dfrac{6}{9} + \dfrac{6}{10}\cdot\dfrac{4}{9} = \dfrac{8}{15}\)</span></li></ul></td></tr></table></div></div></aside>
 <h2 class="subapartado">Probabilidad total</h2>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Teorema de la probabilidad total</div><div class="caja-cuerpo"><p>Si <span class="mat">\(A_1, A_2, \dots\)</span> son sucesos que no pueden ocurrir a la vez y cubren todos los casos, la probabilidad de cualquier suceso <span class="mat">\(B\)</span> es la suma de los caminos del árbol que llegan a <span class="mat">\(B\)</span>:</p>
 <ul><li><strong></strong> <span class="mat">\(P(B) = P(A_1)\cdot P(B|A_1) + P(A_2)\cdot P(B|A_2) + \cdots\)</span></li></ul></div></aside>

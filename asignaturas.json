@@ -35,6 +35,13 @@
   "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/4eso-b/classroom.json"
  },
  {
+  "clave": "Patrimonio",
+  "libro": "Patrimonio de Cantabria",
+  "curso": "3º ESO",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/classroom.json"
+ },
+ {
   "clave": "SistemasControlRobotica",
   "libro": "Sistemas de Control y Robótica I",
   "curso": "3º ESO",
@@ -47,5 +54,12 @@
   "curso": "2º ESO",
   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/index.html",
   "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/taller-programacion-robotica/classroom.json"
+ },
+ {
+  "clave": "TratamientoInformatico",
+  "libro": "Tratamiento informático de la información",
+  "curso": "1º FP",
+  "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/index.html",
+  "classroom": "https://fmunguia.github.io/ColegioPuenteEditorialPages/tratamiento-informatico/classroom.json"
  }
 ]

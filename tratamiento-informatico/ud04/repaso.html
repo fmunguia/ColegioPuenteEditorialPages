@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD04 · Repaso de la unidad</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <a href="index.html">UD04 · Presentaciones multimedia</a> › <span>Repaso</span></nav></header>
+<main>
+<h1>📝 Repaso de la unidad</h1><h2 class="seccion">Ejercicios de final de tema</h2><p class="nota">Escribe tu respuesta y después pulsa «Ver la solución» para corregirla tú. Los puntos dicen el nivel: ● básico, ●●● ampliación.</p><div class="ejercicios"><div class="repaso"><div class="rep-cab"><span class="circ">1</span> <span class="puntos" title="Nivel 1">●○○</span> <strong>Diseño</strong></div><p>Escribe cuatro normas de diseño de una buena diapositiva.</p><textarea class="respuesta" rows="3" data-k="t1" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>Poco texto (6 × 6); letra grande y sin serifa; buen contraste; como mucho tres colores y dos fuentes; imágenes de calidad; una idea por diapositiva.</p><p class="autonota" data-k="s2">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">2</span> <span class="puntos" title="Nivel 1">●○○</span> <strong>Vistas</strong></div><p>¿Qué vista usas para: a) reordenar; b) escribir notas; c) proyectar?</p><textarea class="respuesta" rows="3" data-k="t3" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>a) Clasificador de diapositivas.b) Normal (panel de notas) o Página de notas.c) Presentación con diapositivas.</p><p class="autonota" data-k="s4">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">3</span> <span class="puntos" title="Nivel 1">●○○</span> <strong>Teclas</strong></div><p>¿Qué hacen</p>
+<figure class="dibujo "><img src="../../figuras/5cc00646dbde0a50.svg" width="42" height="37" alt="" loading="lazy"></figure>
+<p>,</p>
+<figure class="dibujo "><img src="../../figuras/b3cae8744d763ed8.svg" width="66" height="37" alt="" loading="lazy"></figure>
+<p>+</p>
+<figure class="dibujo "><img src="../../figuras/5cc00646dbde0a50.svg" width="42" height="37" alt="" loading="lazy"></figure>
+<p>,</p>
+<figure class="dibujo "><img src="../../figuras/6dcd562c06c17ede.svg" width="34" height="37" alt="" loading="lazy"></figure>
+<p>y</p>
+<figure class="dibujo "><img src="../../figuras/fba022bfa6aff213.svg" width="46" height="37" alt="" loading="lazy"></figure>
+<p>durante una presentación?</p><textarea class="respuesta" rows="3" data-k="t5" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>F5: empieza desde el principio.Mayús+F5: desde la diapositiva actual.B: pantalla negra.Esc: termina.</p><p class="autonota" data-k="s6">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">4</span> <span class="puntos" title="Nivel 2">●●○</span> <strong>Patrón</strong></div><p>Quieres cambiar el logo de una presentación de 40 diapositivas. ¿Cómo lo haces en un minuto?</p><textarea class="respuesta" rows="3" data-k="t7" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p><strong>Vista</strong> › <strong>Patrón de diapositivas</strong>: cambias el logo en la diapositiva patrón y aparece en todas.</p><p class="autonota" data-k="s8">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">5</span> <span class="puntos" title="Nivel 2">●●○</span> <strong>Animaciones</strong></div><p>Quieres que los cuatro puntos de una lista aparezcan uno a uno cuando hablas de cada uno. ¿Qué haces?</p><textarea class="respuesta" rows="3" data-k="t9" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>Seleccionas el cuadro de texto, eliges una animación de <strong>entrada</strong> y en <strong>Opciones de efectos</strong> › <strong>Por párrafo</strong>, con inicio <strong>Al hacer clic</strong>.</p><p class="autonota" data-k="s10">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">6</span> <span class="puntos" title="Nivel 2">●●○</span> <strong>Exportar</strong></div><p>¿En qué formato envías la presentación: a) para que nadie la cambie; b) para que se vea sola en una pantalla de la tienda; c) para que la sigan editando?</p><textarea class="respuesta" rows="3" data-k="t11" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>a) PDF.b) Vídeo (<code>.mp4</code>) o <code>.ppsx</code> con intervalos.c) <code>.pptx</code> (o compartida en OneDrive).</p><p class="autonota" data-k="s12">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div>
+<div class="repaso"><div class="rep-cab"><span class="circ">7</span> <span class="puntos" title="Nivel 3">●●●</span> <strong>Mejorar una presentación</strong></div><p>Un compañero ha hecho 25 diapositivas con mucho texto, fondo de colores y una transición distinta en cada una, y las lee de espaldas. Dale cinco consejos.</p><textarea class="respuesta" rows="3" data-k="t13" placeholder="Escribe aquí tu respuesta"></textarea><div class="corregir"><button type="button" class="boton ver-sol">👀 Ver la solución</button><div class="solucion" hidden><p class="sol-titulo">Solución</p><p>Reducir a 6 u 8 diapositivas con una idea cada una; aplicar la regla del 6 × 6 y cambiar texto por imágenes y gráficos; usar el patrón con un fondo claro y dos o tres colores; una sola transición suave; usar la vista Moderador con notas y mirar al público.</p><p class="autonota" data-k="s14">¿Cómo te ha ido? <button type="button" data-v="bien">✅ La tenía bien</button><button type="button" data-v="corrijo">✏️ La corrijo</button></p></div></div></div></div><h2 class="seccion">🧩 Paso a paso</h2><p>Así se resuelven los ejercicios tipo de la unidad. Cada bloque es una orden, como en Scratch: los bloques se leen de arriba abajo y los que tienen forma de C se repiten o solo se hacen si se cumple la condición.</p><aside class="caja scratch"><div class="caja-titulo">🧩 Paso a paso: Preparar una presentación</div><div class="caja-cuerpo"><div class="programa-y-texto"><figure class="dibujo bloques"><img src="../../figuras/8c246bc1776ec886.svg" width="341" height="419" alt="" loading="lazy"></figure><div class="explicacion"><p><strong>Objetivo y público:</strong> presentar el ciclo a alumnos de 4.º de ESO.</p>
+<p><strong>Guion:</strong> qué es, qué se aprende, prácticas en empresas, salidas, cierre.</p>
+<p><strong>Patrón:</strong> azul del centro, una fuente sin serifa, logo.</p>
+<p><strong>Diapositivas:</strong> cinco, con una foto o un icono cada una.</p>
+<p><strong>Notas:</strong> dos o tres frases por diapositiva.</p>
+<p><strong>Ensayo:</strong> 5 minutos.</p>
+<p><strong>Copia:</strong> PDF en un USB y en OneDrive.</p></div></div></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="practica.html">← Práctica con las herramientas</a><a class="boton secundario" href="autoevaluacion.html">Autoevaluación →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

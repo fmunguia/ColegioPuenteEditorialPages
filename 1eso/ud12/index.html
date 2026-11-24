@@ -17,19 +17,35 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD12 · Figuras planas</span></nav></header>
 <main>
 <p class="subtitulo">Bloque V · Geometría</p><h1><span class="codigo">UD12</span> Figuras planas</h1><aside class="caja partida"><div class="caja-titulo">🔍 Un parque junto a la ría</div><div class="caja-cuerpo"><p>El ayuntamiento de Astillero va a hacer un parque nuevo junto a la ría. Este es el plano de la zona de césped, con una fuente circular de 3&nbsp;m de radio, un parterre de flores y un camino en diagonal.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/a7bbe79568df4660.svg" width="285" height="152" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/c292da6182f49576.svg" width="285" height="152" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuántos metros de valla hacen falta para rodear el césped? ¿Cuántos metros cuadrados de césped hay que plantar si la fuente ocupa una parte?</li><li>El parterre tiene 8&nbsp;m de base y 6&nbsp;m de altura. ¿Cuántas plantas caben si se ponen 4 por metro cuadrado?</li><li>¿Cuánto mide el camino en diagonal? ¿Cuánto se ahorra al cruzar por él en lugar de bordear el césped?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Clasificar ángulos, triángulos y cuadriláteros.</li><li>Aplicar el teorema de Pitágoras.</li><li>Cambiar unidades de longitud y de superficie.</li><li>Calcular perímetros y áreas de polígonos y del círculo.</li><li>Reconocer traslaciones, giros y simetrías.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><p>En esta unidad usarás mucho los cuadrados, las raíces cuadradas y los cambios de unidades.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/474bc9fd4c2ece58.svg" width="344" height="131" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/78562c4e7e4169d5.svg" width="344" height="131" alt="" loading="lazy"></figure></div>
 <ol class="tareas cols-2"><li>Calcula <span class="mat">\(7^2\)</span> y <span class="mat">\(12^2\)</span>.</li><li>Calcula <span class="mat">\(2{,}5^2\)</span>.</li><li>Calcula <span class="mat">\(\sqrt{81}\)</span> y <span class="mat">\(\sqrt{144}\)</span>.</li><li>Calcula <span class="mat">\(\sqrt{36 + 64}\)</span>.</li><li>Calcula <span class="mat">\(3{,}5 \cdot 1\,000\)</span>.</li><li>Calcula <span class="mat">\(45 : 100\)</span>.</li><li>Calcula <span class="mat">\(0{,}07 \cdot 10\,000\)</span>.</li><li>Calcula <span class="mat">\(3{,}14 \cdot 4\)</span>.</li><li>Calcula <span class="mat">\(\frac{12 \cdot 5}{2}\)</span>.</li><li>Calcula <span class="mat">\(180 - (65 + 48)\)</span>.</li><li>¿Cuántos grados tiene un ángulo recto?</li><li>¿Cuántos lados tiene un hexágono?</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Las paredes de la Alhambra de Granada están cubiertas de mosaicos que los artistas andalusíes hicieron hace más de 600 años. Repetían una misma figura una y otra vez, trasladándola, girándola o haciendo su simétrica, hasta cubrir toda la pared sin dejar huecos. Siglos después, los matemáticos demostraron que solo hay 17 formas distintas de hacerlo, y casi todas aparecen en la Alhambra.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/cb9515715b36eec0.svg" width="341" height="96" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/f9be1e3970ed3917.svg" width="341" height="96" alt="" loading="lazy"></figure></div>
 <ul><li>Busca en el mosaico una traslación, un giro y una simetría.</li><li>¿Se puede cubrir el suelo sin huecos con baldosas que sean triángulos equiláteros? ¿Y con pentágonos regulares?</li><li>¿Dónde has visto mosaicos o baldosas que se repiten en tu pueblo o en tu ciudad?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 12.1</span> Elementos básicos y ángulos</a></li><li><a href="apartado-2.html"><span class="num">Apartado 12.2</span> Polígonos</a></li><li><a href="apartado-3.html"><span class="num">Apartado 12.3</span> Teorema de Pitágoras</a></li><li><a href="apartado-4.html"><span class="num">Apartado 12.4</span> Unidades de longitud y superficie</a></li><li><a href="apartado-5.html"><span class="num">Apartado 12.5</span> Perímetros y áreas de polígonos</a></li><li><a href="apartado-6.html"><span class="num">Apartado 12.6</span> Circunferencia y círculo</a></li><li><a href="apartado-7.html"><span class="num">Apartado 12.7</span> Movimientos en el plano</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud11/index.html">← UD11</a><span></span></nav>

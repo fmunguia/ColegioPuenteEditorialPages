@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD05 · Potencias y raíces</a> › <span>Apartado 5.1</span></nav></header>
@@ -24,7 +40,7 @@ window.MathJax = {
 <div class="banda-sesion"><span>Apartado 5.1</span></div><h1 class="titulo-sesion">Potencias</h1><p>Una bacteria se divide en dos cada hora. Después de 5 horas habrá <span class="mat">\(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32\)</span> bacterias. Esta multiplicación repetida se escribe de forma abreviada como una <dfn class="glosario" tabindex="0" data-def="forma abreviada de escribir una multiplicación de factores iguales: 2⁵ = 2 · 2 · 2 · 2 · 2">potencia</dfn>: <span class="mat">\(2^5\)</span>.</p>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Potencia</div><div class="caja-cuerpo"><div class="centro"><p><span class="mat">\(a^n = \underbrace{a \cdot a \cdot \ldots \cdot a}_{n \text{ veces}}\)</span></p></div>
 <ul><li><span class="mat">\(a\)</span> es la <dfn class="glosario" tabindex="0" data-def="en una potencia, el número que se multiplica por sí mismo">base</dfn>: el número que se multiplica.</li><li><span class="mat">\(n\)</span> es el <dfn class="glosario" tabindex="0" data-def="en una potencia, el número de veces que se multiplica la base">exponente</dfn>: las veces que se multiplica.</li><li><span class="mat">\(5^2\)</span> se lee «cinco al cuadrado» y <span class="mat">\(5^3\)</span> «cinco al cubo».</li></ul></div></aside>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cuadrados y cubos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/649eb59a6c759558.svg" width="85" height="85" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/1a9ced9b895b325c.svg" width="106" height="106" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(3^2 = 3 \cdot 3 = 9\)</span> cuadraditos</td><td><span class="mat">\(3^3 = 3 \cdot 3 \cdot 3 = 27\)</span> cubitos</td></tr></table></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cuadrados y cubos</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/a3241d6236cbf83b.svg" width="85" height="85" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/53ae9c1f2aa23984.svg" width="106" height="106" alt="" loading="lazy"></figure></td></tr><tr><td><span class="mat">\(3^2 = 3 \cdot 3 = 9\)</span> cuadraditos</td><td><span class="mat">\(3^3 = 3 \cdot 3 \cdot 3 = 27\)</span> cubitos</td></tr></table></div></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ Una potencia no es una multiplicación por el exponente</div><div class="caja-cuerpo"><p><span class="mat">\(5^3\)</span> no es <span class="mat">\(5 \cdot 3 = 15\)</span>. El exponente indica cuántas veces se repite la base como factor: <span class="mat">\(5^3 = 5 \cdot 5 \cdot 5 = 125\)</span>.</p></div></aside>
 <div class="actividad hago" id="act-5.1.1"><div class="act-cab"><span class="act-num">5.1.1</span></div><div class="act-cuerpo"><p>Escribe como potencia y calcula</p>
 <ol class="tareas cols-2"><li><span class="mat">\(4 \cdot 4 \cdot 4\)</span></li><li><span class="mat">\(10 \cdot 10 \cdot 10 \cdot 10\)</span></li><li><span class="mat">\(7 \cdot 7\)</span></li><li><span class="mat">\(2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2\)</span></li></ol><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>

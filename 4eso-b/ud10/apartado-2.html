@@ -17,13 +17,29 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD10 · Geometría analítica</a> › <span>Apartado 10.2</span></nav></header>
 <main>
 <div class="banda-sesion"><span>Apartado 10.2</span></div><h1 class="titulo-sesion">Operaciones con vectores</h1><aside class="caja aprendo definicion"><div class="caja-titulo">📖 Suma, resta y producto por un número</div><div class="caja-cuerpo"><p>Si <span class="mat">\(\vec{u} = (u_1, u_2)\)</span>, <span class="mat">\(\vec{v} = (v_1, v_2)\)</span> y <span class="mat">\(k\)</span> es un número real:</p>
 <ul><li>Suma: <span class="mat">\(\ \vec{u} + \vec{v} = (u_1 + v_1,\ u_2 + v_2)\)</span> (regla del paralelogramo)</li><li>Resta: <span class="mat">\(\ \vec{u} - \vec{v} = (u_1 - v_1,\ u_2 - v_2)\)</span></li><li>Producto por un número: <span class="mat">\(\ k \cdot \vec{u} = (k u_1,\ k u_2)\)</span>. Si <span class="mat">\(k &gt; 0\)</span> conserva el sentido; si <span class="mat">\(k &lt; 0\)</span> lo invierte</li></ul></div></aside>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Combinación lineal</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/637a79cdf6235d95.svg" width="205" height="179" alt="" loading="lazy"></figure></td><td><ul><li><span class="mat">\(\vec{u} = (3,1)\)</span>, <span class="mat">\(\ \vec{v} = (1,3)\)</span></li><li><span class="mat">\(\vec{u} + \vec{v} = (4,4)\)</span></li><li><span class="mat">\(2\vec{u} - \vec{v} = (6-1,\ 2-3) = (5,-1)\)</span></li></ul></td></tr></table></div></div></aside>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Combinación lineal</div><div class="caja-cuerpo"><div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/c907a1a0a833373c.svg" width="205" height="179" alt="" loading="lazy"></figure></td><td><ul><li><span class="mat">\(\vec{u} = (3,1)\)</span>, <span class="mat">\(\ \vec{v} = (1,3)\)</span></li><li><span class="mat">\(\vec{u} + \vec{v} = (4,4)\)</span></li><li><span class="mat">\(2\vec{u} - \vec{v} = (6-1,\ 2-3) = (5,-1)\)</span></li></ul></td></tr></table></div></div></aside>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Vectores paralelos</div><div class="caja-cuerpo"><p>Dos vectores son paralelos (tienen la misma dirección) cuando uno es múltiplo del otro, es decir, cuando sus coordenadas son proporcionales:</p>
 <ul><li><strong></strong> <span class="mat">\(\vec{u} \parallel \vec{v} \iff \dfrac{u_1}{v_1} = \dfrac{u_2}{v_2}\)</span></li></ul>
 <p>Ejemplo: <span class="mat">\((2,-3)\)</span> y <span class="mat">\((-4,6)\)</span> son paralelos porque <span class="mat">\(\dfrac{2}{-4} = \dfrac{-3}{6}\)</span>.</p></div></aside>

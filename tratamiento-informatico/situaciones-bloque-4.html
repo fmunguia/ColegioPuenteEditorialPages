@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloque IV · Situaciones de aprendizaje</title>
+
+<link rel="stylesheet" href="../estilo.css">
+<script src="../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../index.html">Inicio</a> › <a href="index.html">Tratamiento informático de la información</a> › <span>Situaciones de aprendizaje</span></nav></header>
+<main>
+<h1>🎯 Situaciones de aprendizaje</h1><p class="subtitulo">Bloque IV · Multimedia, comunicación y seguridad</p><aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: La campaña de inauguración</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>La empresa del trabajo final abre sus puertas. Para darse a conocer necesita una imagen propia y una pequeña campaña en redes sociales y en papel.</p>
+<h4 class="etapa">Reto</h4>
+<p>Crear el logo, la invitación a la inauguración, un folleto, un GIF animado y un vídeo de 30 segundos, y escribir la guía básica de imagen y vídeo de la empresa.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Diseñar el logo (tarea 11) en Canva o en un programa vectorial, con la paleta de colores de la guía de estilo. Exportarlo en PNG con fondo transparente y en SVG.</li><li>Hacer la invitación (tarea 3) y el folleto (tarea 4) en Canva, preparar el folleto para imprenta (PDF a 300 ppp) y la invitación para redes (PNG a 72 ppp).</li><li>Hacer fotos del producto con el móvil y retocarlas con GIMP: recortar, enderezar, ajustar el brillo y reducir el tamaño para la web.</li><li>Crear el GIF animado (tarea 5) y grabar y montar en Clipchamp el vídeo de 30 segundos, con música libre de derechos y rótulos. Exportarlo en MP4.</li><li>Escribir la guía básica de imagen y vídeo de la empresa: formatos, resoluciones y tamaños para cada uso. Presentar la campaña a la clase.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>El logo, la invitación, el folleto, las fotos retocadas, el GIF, el vídeo y la guía de imagen y vídeo.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios 6a, 6b, 6c, 6d, 6g, 6h y 6i. Rúbrica: formatos y resoluciones adecuados a cada uso, calidad del retoque, montaje del vídeo, licencias de los recursos usados (criterio 2h) y coherencia con la guía de estilo.</p></div></aside>
+<aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: Una semana en la oficina</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>Durante una semana, el aula es la oficina de la empresa del trabajo final. Cada día llegan correos de clientes y proveedores, hay reuniones que organizar y algún correo sospechoso.</p>
+<h4 class="etapa">Reto</h4>
+<p>Gestionar el correo, los contactos y la agenda de la empresa con Outlook durante la semana, de forma profesional y segura, y entregar al final un informe de la semana.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Preparar la cuenta: firma corporativa (tarea 13), carpetas, categorías y reglas, y la libreta de contactos importada desde Excel con los grupos Clientes y Proveedores.</li><li>Responder a los correos que manda la profesora: un pedido, una petición de presupuesto y una queja. Escribir el correo de reclamación a un proveedor (tarea 12).</li><li>Organizar la agenda: convocar una reunión por Teams, crear las citas y las tareas de la semana y sincronizarlas con el móvil.</li><li>Detectar los correos de phishing que llegan entre los demás, marcarlos y explicar las pistas. Activar la verificación en dos pasos y hacer una copia de seguridad del correo.</li><li>Escribir el informe de la semana en Word con capturas (qué se ha recibido, qué se ha respondido, qué está pendiente) y el decálogo de seguridad de la oficina.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>El buzón y el calendario organizados, los correos enviados, el informe de la semana y el decálogo de seguridad.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios 8a, 8c, 8d, 8e, 8f y 8g, y 4h. Rúbrica: corrección de los correos, uso de CC y CCO, organización (carpetas, reglas, categorías), gestión de la agenda y de las tareas, detección del phishing y medidas de seguridad.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

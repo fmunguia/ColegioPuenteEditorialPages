@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <a href="index.html">UD08 · Funciones y gráficas</a> › <span>Apartado 8.3</span></nav></header>
@@ -24,15 +40,15 @@ window.MathJax = {
 <div class="banda-sesion"><span>Apartado 8.3</span></div><h1 class="titulo-sesion">Interpretación de gráficas</h1><p>Las gráficas aparecen continuamente en las noticias, en las facturas o en las aplicaciones del móvil. Saber leerlas permite extraer mucha información de un vistazo.</p>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Características de una función</div><div class="caja-cuerpo"><ul><li><strong>Dominio:</strong> valores de <span class="mat">\(x\)</span> para los que existe la función.</li><li><strong>Recorrido:</strong> valores que toma <span class="mat">\(y\)</span>.</li><li><strong>Creciente:</strong> al aumentar <span class="mat">\(x\)</span>, aumenta <span class="mat">\(y\)</span> (la gráfica sube de izquierda a derecha).</li><li><strong>Decreciente:</strong> al aumentar <span class="mat">\(x\)</span>, disminuye <span class="mat">\(y\)</span> (la gráfica baja).</li><li><strong>Constante:</strong> al aumentar <span class="mat">\(x\)</span>, <span class="mat">\(y\)</span> no cambia (tramo horizontal).</li><li><strong>Máximo:</strong> punto más alto respecto a los que tiene alrededor. <strong>Mínimo:</strong> punto más bajo.</li><li><strong>Continua:</strong> se puede dibujar sin levantar el lápiz.</li><li><strong>Puntos de corte con los ejes:</strong> donde la gráfica toca el eje <span class="mat">\(X\)</span> o el eje <span class="mat">\(Y\)</span>.</li></ul></div></aside>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Excursión a Peña Cabarga</div><div class="caja-cuerpo"><p>La gráfica muestra la distancia a casa de un grupo que sale de excursión a Peña Cabarga.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/e95e897ffb3d1136.svg" width="326" height="261" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/20cca9d9cf16083b.svg" width="326" height="261" alt="" loading="lazy"></figure></div>
 <ul><li>El dominio va de las 9:00 a las 14:00 y el recorrido, de 0 a 8 km.</li><li>Es creciente de 9:00 a 10:00 y de 10:30 a 11:30: se alejan de casa.</li><li>Es constante de 10:00 a 10:30 (paran a descansar) y de 11:30 a 12:30 (comen en la cumbre).</li><li>Es decreciente de 12:30 a 14:00: vuelven a casa.</li><li>El máximo es 8 km y se alcanza entre las 11:30 y las 12:30.</li></ul></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ La gráfica no es el dibujo del camino</div><div class="caja-cuerpo"><p>En una gráfica de distancia a casa, un tramo que sube no significa subir una cuesta: significa alejarse de casa. Lee siempre qué hay en cada eje.</p></div></aside>
 <h2 class="subapartado">Gráficas engañosas</h2>
 <p>Una gráfica bien hecha ayuda a entender los datos, pero una gráfica mal construida puede engañar. Hay que fijarse en:</p>
 <ul><li>Si el eje vertical <strong>no empieza en 0</strong>: una diferencia pequeña parece enorme.</li><li>Si las divisiones de los ejes <strong>no son iguales</strong>.</li><li>Si faltan las <strong>unidades</strong> o el título de los ejes.</li></ul>
-<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. El mismo dato con dos escalas</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/35ae1f536b000ec6.svg" width="152" height="165" alt="" loading="lazy"></figure>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. El mismo dato con dos escalas</div><div class="caja-cuerpo"><div class="minipage"><figure class="dibujo "><img src="../../figuras/b68a2a15e5204132.svg" width="152" height="165" alt="" loading="lazy"></figure>
 <p>El eje empieza en 50: parece que B triplica a A.</p></div>
-<div class="minipage"><figure class="dibujo "><img src="../../figuras/c951af6874d99ba1.svg" width="152" height="165" alt="" loading="lazy"></figure>
+<div class="minipage"><figure class="dibujo "><img src="../../figuras/a8adb58795878269.svg" width="152" height="165" alt="" loading="lazy"></figure>
 <p>El eje empieza en 0: los valores 51 y 53 son casi iguales.</p></div></div></aside>
 <div class="actividad hago" id="act-8.3.1"><div class="act-cab"><span class="act-num">8.3.1</span></div><div class="act-cuerpo"><p>Observa la gráfica de la excursión a Peña Cabarga. ¿A qué hora están más lejos de casa? ¿Cuánto tiempo están parados en total? ¿Es mayor la velocidad a la ida o a la vuelta?</p><textarea class="respuesta" rows="4" data-k="t1" placeholder="Escribe aquí tus respuestas"></textarea></div></div>
 <div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>

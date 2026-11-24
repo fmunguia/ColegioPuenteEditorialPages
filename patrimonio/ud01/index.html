@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD01 · Cantabria</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "patrimonio", "materia": "Patrimonio de Cantabria", "huella": "8e54f452"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#009900;--acento:#9AC21B">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Patrimonio de Cantabria</a> › <span>UD01 · Cantabria</span></nav></header>
+<main>
+<p class="subtitulo">Bloque I · Cantabria, patrimonio natural</p><h1><span class="codigo">UD01</span> Cantabria</h1><aside class="caja partida"><div class="caja-titulo">🔍 <span class="emoji" aria-hidden="true">🗺</span> Un mapa para la visita</div><div class="caja-cuerpo"><p>Un grupo de alumnos de un instituto de Valencia va a pasar una semana en Cantabria. Su profesora os ha escrito: «Queremos ver la montaña, el mar y algún pueblo bonito, pero no sabemos ni dónde está cada cosa ni qué tiempo hará. ¿Nos ayudáis?».</p>
+<ul><li>¿Sabrías decirles con qué comunidades limita Cantabria?</li><li>¿Qué les recomendarías traer en la maleta? ¿Por qué?</li><li>Si solo pudieran ver tres lugares, ¿cuáles elegirías?</li></ul></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Situar Cantabria en un mapa de España y de Europa y nombrar sus límites.</li><li>Conocer los municipios y las comarcas de Cantabria y localizar la tuya.</li><li>Distinguir las tres grandes unidades del relieve: la Marina, la Montaña y Campoo y los Valles del Sur.</li><li>Leer un climograma y explicar cómo es el clima de Cantabria.</li><li>Relacionar el clima y el relieve con los paisajes.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>¿Cuáles son los puntos cardinales?</li><li>¿Qué es una comunidad autónoma?</li><li>¿Qué diferencia hay entre tiempo y clima?</li><li>¿Qué es la escala de un mapa?</li><li>¿Cómo se llama el mar que baña Cantabria?</li><li>¿En qué municipio vives?</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>En Cantabria puedes bañarte en el mar por la mañana y, una hora y media después, tirar bolas de nieve en Alto Campoo. ¿Qué tiene que tener un territorio tan pequeño para que pase algo así?</p></div></aside>
+<aside class="caja objetivos criterios"><div class="caja-titulo">📋 Criterios de evaluación</div><div class="caja-cuerpo"><ul><li><strong>PN 1.1</strong> Analizar los entornos naturales interpretando información en diferentes formatos (mapas, gráficos, esquemas).</li><li><strong>PN 1.2</strong> Transmitir información sobre el patrimonio natural de forma clara y con la terminología adecuada.</li><li><strong>PN 2.1</strong> Resolver cuestiones buscando y organizando información de distintas fuentes.</li><li><strong>PN 6.1</strong> Valorar la importancia del paisaje como patrimonio natural.</li></ul></div></aside>
+<p>PN: criterios de Patrimonio Natural de Cantabria (2.º ESO). PC: criterios de Patrimonio Histórico Artístico de Cantabria (3.º ESO).</p><h2 class="seccion">Sesiones</h2><ol class="indice"><li><a href="sesion-1.html"><span class="num">Sesión 1.1</span> Situación geográfica y límites</a></li><li><a href="sesion-2.html"><span class="num">Sesión 1.2</span> Organización territorial: municipios y comarcas</a></li><li><a href="sesion-3.html"><span class="num">Sesión 1.3</span> Relieve y principales unidades geográficas</a></li><li><a href="sesion-4.html"><span class="num">Sesión 1.4</span> Clima y paisajes de Cantabria</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul><h2 class="seccion">Mapa mental de la unidad</h2><figure class="dibujo mapa"><img src="../../figuras/08b51aade0d8e106.svg" width="683" height="630" alt="" loading="lazy"></figure><p class="nota">✏️ Repasa la unidad con el mapa: tapa una rama y explica en voz alta lo que pone.</p>
+
+<nav class="anterior-siguiente"><span></span><a class="boton secundario" href="../ud02/index.html">UD02 →</a></nav>
+</main>
+<footer class="pie">Patrimonio de Cantabria · Colegio Puente</footer>
+</body>
+</html>

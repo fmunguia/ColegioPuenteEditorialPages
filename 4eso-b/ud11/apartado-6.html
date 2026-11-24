@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <a href="index.html">UD11 · Estadística</a> › <span>Apartado 11.6</span></nav></header>
@@ -25,7 +41,7 @@ window.MathJax = {
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 Principales medidas de dispersión</div><div class="caja-cuerpo"><ul><li><strong>Rango o Recorrido (<span class="mat">\(R\)</span>):</strong> Diferencia entre el valor máximo y el mínimo. <span class="mat">\(R = x_{max} - x_{min}\)</span>.</li><li><p><strong>Varianza (<span class="mat">\(\sigma^2\)</span>):</strong> Promedio de los cuadrados de las desviaciones respecto a la media.</p>
 <div class="mat-bloque">\[\sigma^2 = \frac{\sum f_i \cdot x_i^2}{N} - \bar{x}^2\]</div></li><li><strong>Desviación típica (<span class="mat">\(\sigma\)</span>):</strong> Raíz cuadrada positiva de la varianza. Es la medida más usada pues tiene las mismas unidades que los datos. <span class="mat">\(\sigma = \sqrt{\sigma^2}\)</span>.</li><li><strong>Coeficiente de variación (<span class="mat">\(CV\)</span>):</strong> Relación entre la desviación típica y la media. Sirve para comparar la dispersión de poblaciones distintas. <span class="mat">\(CV = \frac{\sigma}{|\bar{x}|}\)</span>.</li></ul></div></aside>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ En la varianza se resta el cuadrado de la media</div><div class="caja-cuerpo"><p>En la fórmula <span class="mat">\(\sigma^2 = \dfrac{\sum f_i x_i^2}{N} - \bar{x}^2\)</span> se resta <span class="mat">\(\bar{x}^2\)</span>, no <span class="mat">\(\bar{x}\)</span>. Por eso, si te sale una varianza negativa, hay un error: la varianza y la desviación típica nunca son negativas.</p></div></aside>
-<div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/03ce9b10bfe900bb.svg" width="192" height="130" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/1f13ad222a13a7b9.svg" width="192" height="130" alt="" loading="lazy"></figure></td></tr></table></div>
+<div class="tabla"><table><tr><td><figure class="dibujo "><img src="../../figuras/907690420458fe96.svg" width="192" height="130" alt="" loading="lazy"></figure></td><td><figure class="dibujo "><img src="../../figuras/6a889ea8782cd25b.svg" width="192" height="130" alt="" loading="lazy"></figure></td></tr></table></div>
 <aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. Cálculo de dispersión</div><div class="caja-cuerpo"><p>Dadas las notas de un grupo en un examen: <span class="mat">\(4, 5, 6, 7, 8\)</span>.</p>
 <ul><li>Media: <span class="mat">\(\bar{x} = \frac{4+5+6+7+8}{5} = 6\)</span>.</li><li>Varianza: <span class="mat">\(\sigma^2 = \frac{4^2+5^2+6^2+7^2+8^2}{5} - 6^2 = \frac{190}{5} - 36 = 38 - 36 = 2\)</span>.</li><li>Desviación típica: <span class="mat">\(\sigma = \sqrt{2} \approx 1,41\)</span>.</li><li>CV: <span class="mat">\(CV = \frac{1,41}{6} \approx 0,235\)</span> (23,5 %).</li></ul></div></aside>
 <div class="actividad hago" id="act-11.6.1"><div class="act-cab"><span class="act-num">11.6.1</span></div><div class="act-cuerpo"><p>Dos jugadores de baloncesto, A y B, han anotado los siguientes puntos en 5 partidos:</p>

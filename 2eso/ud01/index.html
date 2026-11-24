@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "2eso", "materia": "Matem\u00e1ticas", "huella": "2e0a5b39"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD01 · Divisibilidad y números enteros</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Encontrar múltiplos y divisores de un número.</li><li>Usar los criterios de divisibilidad.</li><li>Descomponer un número en factores primos.</li><li>Calcular el m.c.d. y el m.c.m. y usarlos en problemas de repartos y coincidencias.</li><li>Ordenar números enteros y operar con ellos respetando la jerarquía.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Calcula <span class="mat">\(7\cdot 9\)</span> y <span class="mat">\(8\cdot 6\)</span>.</li><li>Haz la división <span class="mat">\(85:6\)</span>. ¿Cuál es el resto?</li><li>¿Es exacta la división <span class="mat">\(96:8\)</span>? ¿Y <span class="mat">\(100:7\)</span>?</li><li>Escribe los números pares que hay entre 31 y 41.</li><li>Calcula <span class="mat">\(15-9+4\)</span> y <span class="mat">\(20-3\cdot 4\)</span>.</li><li>¿Qué temperatura es más baja: 2 ºC o 0 ºC?</li><li>Calcula <span class="mat">\(3\cdot 3\cdot 3\)</span> y <span class="mat">\(2\cdot 2\cdot 5\)</span>.</li><li>Escribe los números del 1 al 30 que están en la tabla del 4 y en la del 6.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Los babilonios dividían la circunferencia en 360 grados y la hora en 60 minutos. El 360 y el 60 tienen muchísimos divisores: el 360 se puede dividir de forma exacta entre 2, 3, 4, 5, 6, 8, 9, 10, 12…</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/b6809aefd788579b.svg" width="224" height="216" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/ac9b916d19c0b084.svg" width="224" height="216" alt="" loading="lazy"></figure></div>
 <ul><li>¿Por qué crees que eligieron números con tantos divisores?</li><li>¿Sería igual de cómodo repartir una hora de 100 minutos en tercios?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 1.1</span> Múltiplos y divisores</a></li><li><a href="apartado-2.html"><span class="num">Apartado 1.2</span> Criterios de divisibilidad</a></li><li><a href="apartado-3.html"><span class="num">Apartado 1.3</span> Números primos y compuestos</a></li><li><a href="apartado-4.html"><span class="num">Apartado 1.4</span> Máximo común divisor y mínimo común múltiplo</a></li><li><a href="apartado-5.html"><span class="num">Apartado 1.5</span> Números enteros</a></li><li><a href="apartado-6.html"><span class="num">Apartado 1.6</span> Suma y resta de números enteros</a></li><li><a href="apartado-7.html"><span class="num">Apartado 1.7</span> Multiplicación y división de números enteros</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><span></span><a class="boton secundario" href="../ud02/index.html">UD02 →</a></nav>

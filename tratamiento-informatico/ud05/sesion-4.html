@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sesión 5.4 · Referencias relativas, absolutas y entre hojas</title>
+<meta name="description" content="Hoy vas a decidir qué referencias cambian al copiar una fórmula y cuáles se quedan fijas, y usar datos de otras hojas.">
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <a href="index.html">UD05 · Hojas de cálculo</a> › <span>Sesión 5.4</span></nav></header>
+<main>
+<div class="banda-sesion"><span>Sesión 5.4</span></div><h1 class="titulo-sesion">Referencias relativas, absolutas y entre hojas</h1><p class="criterios-ficha"><strong>Criterios:</strong> 3a, 3b</p>
+<aside class="caja principal plan-sesion"><div class="caja-titulo">🎯 Hoy</div><div class="caja-cuerpo"><p><strong>Objetivo:</strong> Hoy vas a decidir qué referencias cambian al copiar una fórmula y cuáles se quedan fijas, y usar datos de otras hojas.</p><p><strong>Necesitas:</strong> ordenador con Excel y el libro UD05_Excel.xlsx</p><ul class="plan"><li class="m-hago"><label><input type="checkbox" data-k="p1"><span class="etiqueta-momento">🤔 Pienso</span><span class="que">¿Por qué falla al copiar la fórmula del IVA?</span><span class="min">10 min</span></label></li><li class="m-aprendo"><label><input type="checkbox" data-k="p2"><span class="etiqueta-momento">📖 Leo y aprendo</span><span class="que">Referencias relativas, absolutas y mixtas. La tecla F4. Referencias a otras hojas.</span><span class="min">40 min</span></label></li><li class="m-hago"><label><input type="checkbox" data-k="p3"><span class="etiqueta-momento">✏️ Hago</span><span class="que">Actividades 5.4.1 a 5.4.6 (ejercicios 8, 9, 10, 10E, 10F y 10H).</span><span class="min">160 min</span></label></li><li class="m-amplio"><label><input type="checkbox" data-k="p4"><span class="etiqueta-momento">🚀 Amplío</span><span class="que">Curiosidad y actividad 5.4.7.</span><span class="min"></span></label></li><li class="m-hago"><label><input type="checkbox" data-k="p5"><span class="etiqueta-momento">✅ Compruebo</span><span class="que">Billete de salida.</span><span class="min">10 min</span></label></li></ul><p class="total">Total: 220 min</p></div></aside>
+<section class="momento m-hago"><h2 class="banda m-hago"><span class="icono">🤔</span> Pienso<span class="min">10 min</span></h2><p class="que-hago"><strong>Qué hago aquí:</strong> Piensa un momento y contesta con lo que ya sabes. No pasa nada si no lo sabes: es para empezar.</p><div class="momento-cuerpo"><p>El IVA (21 %) está en la celda F1. En C2 escribes</p>
+<figure class="dibujo "><img src="../../figuras/2a8efccddf19688d.svg" width="69" height="37" alt="" loading="lazy"></figure>
+<p>y funciona. Al copiarla hacia abajo, en C3 sale 0. ¿Qué fórmula crees que hay en C3?</p>
+<textarea class="respuesta" rows="3" data-k="t6" placeholder="Escribe aquí tu respuesta"></textarea></div></section>
+<section class="momento m-aprendo"><h2 class="banda m-aprendo"><span class="icono">📖</span> Leo y aprendo<span class="min">40 min</span></h2><p class="que-hago"><strong>Qué hago aquí:</strong> Lee despacio, mira los dibujos y los ejemplos, y quédate con la idea clave del final.</p><div class="momento-cuerpo"><p>Al copiar una fórmula, Excel cambia sus referencias: si bajas una fila, suman una fila; si vas una columna a la derecha, suman una columna. Es una <dfn class="glosario" tabindex="0" data-def="referencia a una celda que cambia al copiar la fórmula, como B2">referencia relativa</dfn>.</p>
+<p>Pero a veces una celda tiene que quedarse <strong>fija</strong>: el tipo de IVA, el porcentaje de comisión, un descuento… Para eso se usa una <dfn class="glosario" tabindex="0" data-def="referencia a una celda que no cambia al copiar la fórmula; lleva el signo $ delante de la columna y de la fila, como $F$1">referencia absoluta</dfn>, con el signo <strong>$</strong> delante de la columna y de la fila: <strong>$F$1</strong>.</p>
+<figure class="dibujo "><img src="../../figuras/6dfc8b45141549ab.svg" width="514" height="200" alt="" loading="lazy"><figcaption>Al copiar hacia abajo, B2 cambia a B3, B4… pero $F$1 se queda fijo.</figcaption></figure>
+<div class="centro"><div class="tabla"><table><tr><th>Referencia</th><th>Ejemplo</th><th>Al copiar la fórmula…</th></tr><tr><td>Relativa</td><td><code>F1</code></td><td>cambian la columna y la fila.</td></tr><tr><td>Absoluta</td><td><code>$F$1</code></td><td>no cambia nada.</td></tr><tr><td>Mixta</td><td><code>F$1</code></td><td>cambia la columna; la fila 1 queda fija.</td></tr><tr><td>Mixta</td><td><code>$F1</code></td><td>cambia la fila; la columna F queda fija.</td></tr></table></div></div>
+<aside class="caja aprendo ejemplo"><div class="caja-titulo">Ejemplo. <span class="emoji" aria-hidden="true">⌨</span> La tecla F4</div><div class="caja-cuerpo"><p>No hace falta escribir los $. Escribe la referencia (F1) y pulsa</p>
+<figure class="dibujo "><img src="../../figuras/7436ea6508577727.svg" width="40" height="37" alt="" loading="lazy"></figure>
+<p>: pasa a <code>$F$1</code>. Si vuelves a pulsar, pasa por <code>F$1</code>, <code>$F1</code> y otra vez <code>F1</code>.</p></div></aside>
+<p>También puedes usar datos de <strong>otra hoja</strong>: se escribe el nombre de la hoja, una exclamación y la celda.</p>
+<figure class="dibujo "><img src="../../figuras/045e00c6b6ab4f62.svg" width="110" height="37" alt="" loading="lazy"></figure>
+<p>trae la celda B3 de la hoja Precios. Si el nombre tiene espacios, va entre comillas simples:</p>
+<figure class="dibujo "><img src="../../figuras/8e420bc8474ef7a3.svg" width="203" height="37" alt="" loading="lazy"></figure>
+<p>. Lo más fácil es escribir <code>=</code>, ir a la otra hoja, hacer clic en la celda y pulsar</p>
+<figure class="dibujo "><img src="../../figuras/8ff26602e4143027.svg" width="54" height="37" alt="" loading="lazy"></figure>
+<p>.</p>
+<aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡Ojo!</div><div class="caja-cuerpo"><p>Si al copiar una fórmula salen ceros o el error <strong>#¡REF!</strong>, revisa las referencias que deberían ser fijas. El tipo de IVA, la comisión o el descuento se escriben <strong>una sola vez</strong> en una celda y se usan con $: si cambian, cambias una celda y no cien fórmulas.</p></div></aside>
+<aside class="caja aprendo mapa-sesion"><div class="caja-titulo">🔍 Mi mapa de hoy</div><div class="caja-cuerpo"><figure class="dibujo mapa"><img src="../../figuras/8d993bd43a05b0f5.svg" width="544" height="190" alt="" loading="lazy"></figure></div></aside>
+<div class="idea-clave"><strong>💡 Idea clave.</strong> Al copiar, las referencias relativas cambian y las absolutas ($F$1) no. Los datos que se repiten en muchas fórmulas van en una celda con $.</div></div></section>
+<section class="momento m-hago"><h2 class="banda m-hago"><span class="icono">✏️</span> Hago<span class="min">160 min</span></h2><p class="que-hago"><strong>Qué hago aquí:</strong> Haz las actividades en orden. Empieza siempre por las básicas.</p><div class="momento-cuerpo"><div class="actividad hago" id="act-5.4.1"><div class="act-cab"><span class="act-num">5.4.1</span><span class="nivel">⭐ Básica</span></div><div class="act-cuerpo"><p>Copias</p>
+<figure class="dibujo "><img src="../../figuras/207a0fcfdd4d3e1c.svg" width="85" height="37" alt="" loading="lazy"></figure>
+<p>de C2 a C5. ¿Qué fórmula queda en C5? ¿Y si la fórmula fuera</p>
+<figure class="dibujo "><img src="../../figuras/2a8efccddf19688d.svg" width="69" height="37" alt="" loading="lazy"></figure>
+<p>?</p>
+<textarea class="respuesta" rows="3" data-k="t7" placeholder="Escribe aquí tu respuesta"></textarea></div></div>
+<div class="actividad hago" id="act-5.4.2"><div class="act-cab"><span class="act-num">5.4.2</span><span class="nivel">⭐ Básica</span></div><div class="act-cuerpo"><p>Haz los ejercicios de cantidad, precio, base imponible, IVA y total. Primero escribe el IVA en cada fórmula; después, en una celda aparte, y usa $.</p>
+<figure class="dibujo "><img src="../../figuras/8a93114320f71a42.svg" width="478" height="30" alt="" loading="lazy"></figure></div></div>
+<div class="actividad hago" id="act-5.4.3"><div class="act-cab"><span class="act-num">5.4.3</span><span class="nivel">⭐ Básica</span></div><div class="act-cuerpo"><p>Completa el control de ingresos del primer semestre: el IVA de cada mes con el tipo de la celda G4 y el total. Copia las fórmulas hacia abajo.</p>
+<figure class="dibujo "><img src="../../figuras/17b6475c1b1702ec.svg" width="490" height="30" alt="" loading="lazy"></figure></div></div>
+<div class="actividad hago" id="act-5.4.4"><div class="act-cab"><span class="act-num">5.4.4</span><span class="nivel">⭐ Básica</span></div><div class="act-cuerpo"><p><strong>Papelería Sena.</strong> Completa la factura con lo aprendido. Después, en otra hoja, haz la factura número 2 con cuatro productos. Los precios deben venir de la factura 1 con referencias a la otra hoja.</p>
+<figure class="dibujo "><img src="../../figuras/8b729a7c3b60e95c.svg" width="490" height="30" alt="" loading="lazy"></figure></div></div>
+<div class="actividad hago" id="act-5.4.5"><div class="act-cab"><span class="act-num">5.4.5</span><span class="nivel">⭐⭐ Un paso más</span></div><div class="act-cuerpo"><p>En la lista de precios, calcula el precio final con tarjeta (con un recargo del 10 %) y al contado (con un descuento del 5 %). El recargo y el descuento están en dos celdas aparte.</p>
+<figure class="dibujo "><img src="../../figuras/e23e5efd286e5a3b.svg" width="520" height="30" alt="" loading="lazy"></figure>
+<ol class="tareas cols-1"><li>Fórmula del precio con tarjeta: <input type="text" class="hueco" size="16" data-k="h8" aria-label="Completa"></li><li>Fórmula del precio al contado: <input type="text" class="hueco" size="16" data-k="h9" aria-label="Completa"></li></ol></div></div>
+<div class="actividad hago" id="act-5.4.6"><div class="act-cab"><span class="act-num">5.4.6</span><span class="nivel">⭐⭐ Un paso más</span></div><div class="act-cuerpo"><p>Quieres hacer una tabla de multiplicar en B2:J10, con los números del 1 al 9 en la fila 1 y en la columna A. Escribe la fórmula de B2 que se pueda copiar a toda la tabla.</p>
+<textarea class="respuesta" rows="3" data-k="t10" placeholder="Escribe aquí tu respuesta"></textarea></div></div></div></section>
+<section class="momento m-amplio"><h2 class="banda m-amplio"><span class="icono">🚀</span> Amplío (si quieres saber más)</h2><p class="que-hago"><strong>Qué hago aquí:</strong> ¿Has terminado? Lee la curiosidad o elige el reto. Es voluntario.</p><div class="momento-cuerpo"><aside class="caja amplio curiosidad"><div class="caja-titulo">💡 ¿Sabías que...?</div><div class="caja-cuerpo"><p>Puedes dar un <strong>nombre</strong> a una celda: selecciona F1, escribe <code>IVA</code> en el cuadro de nombres y pulsa</p>
+<figure class="dibujo "><img src="../../figuras/8ff26602e4143027.svg" width="54" height="37" alt="" loading="lazy"></figure>
+<p>. Ahora puedes escribir</p>
+<figure class="dibujo "><img src="../../figuras/a1929ec15115ec62.svg" width="77" height="37" alt="" loading="lazy"></figure>
+<p>. Un nombre funciona como una referencia absoluta y la fórmula se entiende mejor.</p></div></aside>
+<div class="actividad amplio" id="act-5.4.7"><div class="act-cab"><span class="act-num">5.4.7</span><span class="nivel">⭐⭐⭐ Ampliación</span></div><div class="act-cuerpo"><p>Pon nombre a las celdas del recargo y del descuento de la actividad 5.4.5 y reescribe las fórmulas con esos nombres.</p>
+<textarea class="respuesta" rows="3" data-k="t11" placeholder="Escribe aquí tu respuesta"></textarea></div></div></div></section>
+<section class="momento m-hago"><h2 class="banda m-hago"><span class="icono">✅</span> Compruebo<span class="min">10 min</span></h2><p class="que-hago"><strong>Qué hago aquí:</strong> Contesta sin mirar la ficha y marca cómo lo llevas.</p><div class="momento-cuerpo"><aside class="caja hago billete"><div class="caja-titulo">🎫 Billete de salida</div><div class="caja-cuerpo"><ol><li>¿Qué diferencia hay entre <code>F1</code> y <code>$F$1</code>?<textarea class="respuesta" rows="2" data-k="t12" placeholder="Tu respuesta"></textarea></li><li>¿Qué tecla añade los $?<textarea class="respuesta" rows="2" data-k="t13" placeholder="Tu respuesta"></textarea></li><li>¿Cómo escribes la celda A5 de la hoja Clientes?<textarea class="respuesta" rows="2" data-k="t14" placeholder="Tu respuesta"></textarea></li></ol><p class="como-lo-llevo"><strong>¿Cómo lo llevo?</strong> <label><input type="radio" name="b15" value="Lo sé hacer solo" data-k="b15"> Lo sé hacer solo</label><label><input type="radio" name="b15" value="Con ayuda" data-k="b15"> Con ayuda</label><label><input type="radio" name="b15" value="Todavía no" data-k="b15"> Todavía no</label></p></div></aside></div></section>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+<nav class="anterior-siguiente"><a class="boton secundario" href="sesion-3.html">← Sesión 5.3</a><a class="boton secundario" href="sesion-5.html">Sesión 5.5 →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

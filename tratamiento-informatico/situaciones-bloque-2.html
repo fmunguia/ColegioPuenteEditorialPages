@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloque II · Situaciones de aprendizaje</title>
+
+<link rel="stylesheet" href="../estilo.css">
+<script src="../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../index.html">Inicio</a> › <a href="index.html">Tratamiento informático de la información</a> › <span>Situaciones de aprendizaje</span></nav></header>
+<main>
+<h1>🎯 Situaciones de aprendizaje</h1><p class="subtitulo">Bloque II · Documentos y presentaciones</p><aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: Los documentos de mi empresa</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>Cada alumno ha creado (o inventado) una empresa para el trabajo final. Ya tiene nombre y logo; ahora necesita que todos sus documentos se vean iguales y profesionales.</p>
+<h4 class="etapa">Reto</h4>
+<p>Escribir en Word la guía de estilo de tu empresa y, aplicándola, preparar sus documentos: el albarán, la factura con borde de página, una carta con el logo como marca de agua y el horario de un curso de formación.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Elegir la paleta de colores (con Coolors) y dos tipografías. Crear en Word los estilos de la empresa (título, subtítulo, normal, tabla).</li><li>Escribir la guía de estilo: logo, colores con su código, fuentes, márgenes y ejemplos de uso, con portada, encabezado y pie, saltos de sección e índice automático.</li><li>Diseñar el albarán y la factura con tablas, tabulaciones y borde de página. Guardarlos como plantillas.</li><li>Preparar una carta con membrete y el logo como marca de agua, y combinarla con la lista de clientes.</li><li>Hacer el horario del curso de formación con una tabla y revisarlo todo con el corrector. Exportar los documentos a PDF.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>La guía de estilo con índice automático, las plantillas del albarán y la factura, la carta combinada y el horario, en Word y en PDF (tareas 6, 7, 8, 9, 14 y 15 del trabajo final).</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios 4a, 4b, 4c, 4d, 4e y 4f. Rúbrica: uso de estilos, índice y secciones, tablas y tabulaciones, plantillas, combinación de correspondencia, ortografía y coherencia con la guía de estilo.</p></div></aside>
+<aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: Presentamos la empresa a los inversores</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>Una entidad de microcréditos para jóvenes emprendedores organiza una jornada en la que cada empresa tiene cinco minutos para presentarse y pedir financiación.</p>
+<h4 class="etapa">Reto</h4>
+<p>Preparar en PowerPoint (o en Prezi, tarea 2 del trabajo final) la presentación de tu empresa con su propio patrón de diapositivas, y exponerla en público con el proyector y un presentador inalámbrico.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Escribir el guion: quiénes somos, qué vendemos, a quién, por qué somos distintos, cuánto dinero pedimos y para qué. Hacer un boceto de las diapositivas.</li><li>Crear el patrón de diapositivas con los colores, las fuentes y el logo de la guía de estilo, y guardarlo como plantilla.</li><li>Hacer las diapositivas con imágenes, un gráfico de Excel vinculado, una tabla y un vídeo corto, con pocas palabras por diapositiva.</li><li>Añadir transiciones y animaciones discretas, escribir las notas del orador y ensayar con la vista Moderador.</li><li>Presentar en clase con el proyector y el presentador. La clase hace de jurado con una rúbrica. Exportar la presentación a PDF y a vídeo.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>La plantilla y la presentación (<code>.potx</code> y <code>.pptx</code>), el PDF y el vídeo, y la exposición en público.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios 7a, 7b, 7c, 7d, 7e y 7f. Rúbrica: diseño y tipografía, patrón propio, contenido claro, objetos y animaciones adecuados, uso del proyector y del presentador, y exposición oral. Heteroevaluación de la clase.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

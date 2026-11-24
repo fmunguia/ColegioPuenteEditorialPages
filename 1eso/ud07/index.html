@@ -17,19 +17,35 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD07 · Lenguaje algebraico</span></nav></header>
 <main>
 <p class="subtitulo">Bloque II · Álgebra</p><h1><span class="codigo">UD07</span> Lenguaje algebraico</h1><aside class="caja partida"><div class="caja-titulo">🔍 El tren de cercanías</div><div class="caja-cuerpo"><p>Los trenes de cercanías que unen Santander con Torrelavega, Reinosa o Liérganes pueden llevar más o menos vagones según la hora. Imagina que la cabina del maquinista tiene 8 plazas para viajeros y que cada vagón añade 56 plazas.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/20ff67e314d5561c.svg" width="373" height="90" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/e66c4e4a54c5e7d5.svg" width="373" height="90" alt="" loading="lazy"></figure></div>
 <div class="centro"><div class="tabla"><table><tr><th>Vagones</th><th>1</th><th>2</th><th>3</th><th>4</th><th>10</th><th><span class="mat">\(v\)</span></th></tr><tr><td>Plazas</td><td>64</td><td>120</td><td></td><td></td><td></td><td></td></tr></table></div></div>
 <ul><li>Completa la tabla. ¿Cómo calculas las plazas de un tren de 10 vagones sin hacer todos los anteriores?</li><li>Escribe una expresión con la letra <span class="mat">\(v\)</span> que dé las plazas de un tren de <span class="mat">\(v\)</span> vagones.</li><li>Un día de partido del Racing viajan 400 personas a la vez. ¿Cuántos vagones hacen falta como mínimo?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Descubrir la regla de una secuencia y escribir su término general.</li><li>Traducir enunciados al lenguaje algebraico y al revés.</li><li>Calcular el valor numérico de una expresión.</li><li>Reconocer los elementos de un monomio y los monomios semejantes.</li><li>Sumar, restar y multiplicar monomios y quitar paréntesis.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><p>En el álgebra se usan las mismas reglas que con los números. Recuerda el orden de las operaciones:</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/d0d7805fb6d58322.svg" width="534" height="42" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/d6b22cd7d3347106.svg" width="534" height="42" alt="" loading="lazy"></figure></div>
 <ol class="tareas cols-2"><li>Calcula: <span class="mat">\(3 \cdot 4 + 2\)</span></li><li>Calcula: <span class="mat">\(3 \cdot (4 + 2)\)</span></li><li>Calcula: <span class="mat">\((-2) \cdot 5 + 7\)</span></li><li>Calcula: <span class="mat">\(-3 - (-8)\)</span></li><li>Calcula: <span class="mat">\((-4)^2\)</span> y <span class="mat">\(-4^2\)</span></li><li>Calcula: <span class="mat">\(2 \cdot 3^2 - 10\)</span></li><li>Calcula: <span class="mat">\(5 \cdot (6 - 9)\)</span></li><li>Calcula: <span class="mat">\(\frac{1}{2} \cdot 18 + 1\)</span></li><li>Calcula: <span class="mat">\(2^3 \cdot 2^2\)</span></li><li>Escribe los cinco primeros múltiplos de 4.</li><li>¿Qué número sigue? 3, 7, 11, 15…</li><li>¿Qué número sigue? 1, 4, 9, 16…</li></ol>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/61a2edfd607d32a1.svg" width="251" height="91" alt="" loading="lazy"></figure>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/50e64cce9c914464.svg" width="251" height="91" alt="" loading="lazy"></figure>
 <p>¿Cuántos puntos tendrá la figura 5? ¿Y la figura 6?</p></div></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>La palabra <em>álgebra</em> viene del título de un libro que el sabio persa al-Juarismi escribió en Bagdad hacia el año 820: <em>al-jabr</em>. En él no había letras ni símbolos: todo se escribía con palabras.</p>
 <div class="centro"><div class="tabla"><table><tr><td><em>«Un cuadrado y diez raíces de la cosa son igual a treinta y nueve monedas.»</em></td><td><span class="mat">\(x^2 + 10x = 39\)</span></td></tr></table></div></div>

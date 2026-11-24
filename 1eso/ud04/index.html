@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "1eso", "materia": "Matem\u00e1ticas", "huella": "e67a7763"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD04 · Números decimales</span></nav></header>
@@ -26,7 +42,7 @@ window.MathJax = {
 <ul><li>Antes de calcular nada, ¿crees que le llega el dinero? Haz una estimación redondeando los precios.</li><li>Completa la columna del importe. ¿Cuánto paga en total y cuánto le devuelven?</li><li>La báscula marca 0,350&nbsp;kg de queso. ¿Cuántos gramos son? ¿Por qué el cero del final no cambia el valor?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Leer, escribir, comparar y ordenar números decimales.</li><li>Redondear decimales y estimar resultados.</li><li>Sumar, restar, multiplicar y dividir decimales.</li><li>Pasar de fracción a decimal y de decimal exacto a fracción.</li><li>Resolver problemas de compras, medidas y tiempos con decimales.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><p>Una unidad se puede dividir en 10 décimas o en 100 centésimas. En el cuadrado, cada cuadradito es una centésima.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/94dd0ede0c68929b.svg" width="360" height="170" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/db48a3ced2ad1a5f.svg" width="360" height="170" alt="" loading="lazy"></figure></div>
 <ol class="tareas cols-2"><li>Escribe como decimal: <span class="mat">\(\frac{7}{10}\)</span> y <span class="mat">\(\frac{45}{100}\)</span>.</li><li>¿Cuántos céntimos son 2,35&nbsp;€?</li><li>Calcula: <span class="mat">\(375 + 1\,248\)</span></li><li>Calcula: <span class="mat">\(2\,000 - 763\)</span></li><li>Calcula: <span class="mat">\(46 \cdot 25\)</span></li><li>Calcula: <span class="mat">\(852 : 12\)</span></li><li>Calcula: <span class="mat">\(36 \cdot 10\)</span> y <span class="mat">\(36 \cdot 100\)</span></li><li>Redondea <span class="mat">\(4\,782\)</span> a las centenas.</li><li>Simplifica <span class="mat">\(\frac{25}{100}\)</span>.</li><li>¿Cuántos centímetros tiene un metro?</li><li>¿Cuántos gramos son medio kilo?</li><li>Calcula: <span class="mat">\(1\,000 - 1\)</span> y <span class="mat">\(1 - \frac{1}{10}\)</span></li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>En España escribimos los decimales con coma, <span class="mat">\(3{,}25\)</span>, pero en Reino Unido o Estados Unidos usan un punto, <span class="mat">\(3.25\)</span>, y las calculadoras y los ordenadores también. Fue el ingeniero flamenco Simon Stevin quien, en 1585, explicó en un pequeño libro llamado <em>La Disme</em> cómo usar los decimales para hacer cuentas de comercio, medidas y monedas. Antes se usaban casi siempre fracciones.</p>
 <ul><li>Si en una web inglesa ves que algo cuesta <span class="mat">\(12.50\)</span>, ¿cuánto cuesta en realidad?</li><li>¿Por qué crees que Stevin pensaba que los decimales eran más cómodos que las fracciones para el comercio?</li><li>¿Qué es más fácil: sumar <span class="mat">\(\frac{1}{4} + \frac{1}{5}\)</span> o sumar <span class="mat">\(0{,}25 + 0{,}2\)</span>?</li><li>Escribe los números <span class="mat">\(1\,234{,}5\)</span> y <span class="mat">\(0{,}75\)</span> como se escribirían en inglés.</li></ul>

@@ -17,6 +17,22 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "4eso-b", "materia": "Matem\u00e1ticas B", "huella": "09a08d9d"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas B</a> › <span>UD07 · Funciones elementales</span></nav></header>
@@ -28,7 +44,7 @@ window.MathJax = {
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>Si <span class="mat">\(f(x) = x^2 - 3x\)</span>, calcula <span class="mat">\(f(-2)\)</span>.</li><li>Halla la pendiente de la recta que pasa por <span class="mat">\((0, 1)\)</span> y <span class="mat">\((2, 5)\)</span>.</li><li>Resuelve <span class="mat">\(x^2 - 4x + 3 = 0\)</span>.</li><li>Calcula <span class="mat">\(2^{-3}\)</span> y <span class="mat">\(\left(\frac{1}{2}\right)^{-2}\)</span>.</li><li>Calcula <span class="mat">\(\log_2 16\)</span>.</li><li>Calcula <span class="mat">\(|-5|\)</span> y <span class="mat">\(|3 - 8|\)</span>.</li><li>Halla el dominio de <span class="mat">\(\sqrt{x - 1}\)</span>.</li><li>Si <span class="mat">\(f(x) = \dfrac{6}{x}\)</span>, calcula <span class="mat">\(f(4)\)</span>.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Las funciones <span class="mat">\(f(x) = x^2\)</span> y <span class="mat">\(g(x) = 2^x\)</span> se parecen mucho en sus primeros valores. Para <span class="mat">\(x = 2\)</span> las dos valen 4, y para <span class="mat">\(x = 4\)</span> las dos valen 16. ¿Cuál crece más deprisa?</p>
 <p>Observa la gráfica: entre <span class="mat">\(x = 2\)</span> y <span class="mat">\(x = 4\)</span> la parábola va por encima, pero a partir de <span class="mat">\(x = 4\)</span> la exponencial la adelanta y ya no la vuelve a alcanzar.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/208b0866dc4461a7.svg" width="261" height="242" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/f9d9a606f97c7f8c.svg" width="261" height="242" alt="" loading="lazy"></figure></div>
 <ul><li>Calcula <span class="mat">\(x^2\)</span> y <span class="mat">\(2^x\)</span> para <span class="mat">\(x = 3\)</span> y para <span class="mat">\(x = 10\)</span>.</li><li>¿Hay algún otro punto de corte para valores negativos de <span class="mat">\(x\)</span>?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 7.1</span> Funciones lineales</a></li><li><a href="apartado-2.html"><span class="num">Apartado 7.2</span> Funciones cuadráticas</a></li><li><a href="apartado-3.html"><span class="num">Apartado 7.3</span> Funciones exponenciales</a></li><li><a href="apartado-4.html"><span class="num">Apartado 7.4</span> Funciones de proporcionalidad inversa</a></li><li><a href="apartado-5.html"><span class="num">Apartado 7.5</span> Funciones con valor absoluto</a></li><li><a href="apartado-6.html"><span class="num">Apartado 7.6</span> Funciones con radicales</a></li><li><a href="apartado-7.html"><span class="num">Apartado 7.7</span> Funciones logarítmicas</a></li><li><a href="apartado-8.html"><span class="num">Apartado 7.8</span> Funciones definidas a trozos</a></li><li><a href="apartado-9.html"><span class="num">Apartado 7.9</span> Transformaciones de gráficas</a></li><li><a href="apartado-10.html"><span class="num">Apartado 7.10</span> Taller digital</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud06/index.html">← UD06</a><a class="boton secundario" href="../ud08/index.html">UD08 →</a></nav>

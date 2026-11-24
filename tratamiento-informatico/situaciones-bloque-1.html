@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloque I · Situaciones de aprendizaje</title>
+
+<link rel="stylesheet" href="../estilo.css">
+<script src="../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../index.html">Inicio</a> › <a href="index.html">Tratamiento informático de la información</a> › <span>Situaciones de aprendizaje</span></nav></header>
+<main>
+<h1>🎯 Situaciones de aprendizaje</h1><p class="subtitulo">Bloque I · El ordenador y el teclado</p><aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: Preparamos el ordenador de la nueva oficina</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>La Papelería Sena abre una segunda tienda y necesita un ordenador para la oficina. El gerente no sabe qué comprar ni cómo dejarlo listo, y quiere tener por escrito qué se ha hecho por si algo falla.</p>
+<h4 class="etapa">Reto</h4>
+<p>En parejas, elegir el equipo adecuado, dejarlo preparado con los programas que necesita la oficina y escribir la documentación: la ficha técnica, el registro de instalación y un parte de incidencias.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Analizar qué hará el equipo (facturas, correo, hojas de cálculo, videollamadas) y deducir los requisitos mínimos y óptimos de los programas.</li><li>Comparar tres ordenadores de tiendas en línea (procesador, RAM, disco, tarjeta gráfica, precio) en una tabla y justificar la elección.</li><li>Instalar, actualizar y configurar en un equipo del aula (o en una máquina virtual) Microsoft 365, el navegador con los favoritos de la oficina y un lector de PDF, respetando las licencias. Desinstalar lo que sobre.</li><li>Simular tres averías que propone la profesora (la impresora no imprime, no hay sonido, el equipo va lento), diagnosticarlas y resolverlas.</li><li>Redactar la ficha técnica del equipo y el parte de incidencias, y presentar la propuesta al «gerente» en tres minutos.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>La tabla comparativa, la ficha técnica del equipo, el registro de lo instalado con sus licencias y los partes de incidencias.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios 2a, 2b, 2d, 2e, 2f, 2g y 2h. Rúbrica: requisitos bien analizados, elección justificada, instalación y configuración correctas, licencias respetadas, incidencias resueltas y documentadas. Coevaluación entre parejas.</p></div></aside>
+<aside class="caja situacion"><div class="caja-titulo">🎯 Situación de aprendizaje: El reto de las 200 pulsaciones</div><div class="caja-cuerpo"><h4 class="etapa">Contexto</h4>
+<p>En las ofertas de empleo de auxiliar administrativo se pide escribir rápido y sin errores. Algunas empresas hacen una prueba de mecanografía en la entrevista.</p>
+<h4 class="etapa">Reto</h4>
+<p>Llegar al final del trimestre a 200 pulsaciones por minuto con una falta por minuto como máximo, y demostrarlo en una prueba de selección simulada con textos en español y en inglés.</p>
+<h4 class="etapa">Tareas</h4>
+<ol><li>Preparar el puesto de trabajo (silla, pantalla, luz) con la lista de comprobación de la UD02. Hacer una prueba inicial de 5 minutos y anotar la velocidad y las faltas.</li><li>Fijar una meta personal semanal y registrar cada sesión de práctica en una hoja de Excel con un gráfico de evolución.</li><li>Practicar las filas, los números y los signos con el programa de mecanografía del centro, 15 minutos al inicio de cada clase.</li><li>Copiar textos profesionales (una carta, un correo, un aviso) y un texto en inglés, corrigiendo los errores mecanográficos.</li><li>Hacer la prueba de selección final: 10 minutos de copia y un texto en inglés. Comparar con la prueba inicial y escribir qué ha funcionado.</li></ol>
+<h4 class="etapa">Producto final</h4>
+<p>La hoja de Excel con el registro y el gráfico de evolución, y los resultados de la prueba final.</p>
+<h4 class="etapa">Evaluación</h4>
+<p>Criterios 1a, 1b, 1c, 1f, 1g, 1h y 1j. Se evalúan la postura (observación), la velocidad y la precisión de la prueba final y la mejora respecto a la inicial. Autoevaluación con la rúbrica de la unidad.</p></div></aside>
+<div class="barra-respuestas" hidden><button type="button" class="boton secundario copiar">📋 Copiar mis respuestas</button><button type="button" class="boton secundario imprimir">🖨️ Imprimir</button><button type="button" class="boton secundario borrar">🗑️ Borrar mis respuestas</button><p class="nota guardado">Lo que escribes se guarda solo en este navegador. Para entregarlo, pulsa «Copiar mis respuestas» y pégalo en Classroom.</p></div>
+
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

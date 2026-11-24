@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UD08 · Correo y agenda</title>
+
+<link rel="stylesheet" href="../../estilo.css">
+<script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "tratamiento-informatico", "materia": "Tratamiento inform\u00e1tico de la informaci\u00f3n", "huella": "330f4758"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
+</head>
+<body style="--principal:#CC0000;--acento:#E6C120">
+<header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Tratamiento informático de la información</a> › <span>UD08 · Correo y agenda</span></nav></header>
+<main>
+<p class="subtitulo">Bloque IV · Multimedia, comunicación y seguridad</p><h1><span class="codigo">UD08</span> Correo y agenda</h1><aside class="caja partida"><div class="caja-titulo">🔍 <span class="emoji" aria-hidden="true">📨</span> Doscientos correos sin leer</div><div class="caja-cuerpo"><p>El gerente de la Papelería Sena tiene 200 correos sin leer: pedidos, facturas de proveedores, publicidad y avisos del banco, todo mezclado. La semana pasada se le olvidó una reunión con un proveedor y un cliente se quejó porque su pedido no llegó.</p>
+<ul><li>¿Cómo organizarías el correo para no perder nada importante?</li><li>¿Cómo te acuerdas tú de tus citas?</li><li>¿Cómo escribirías un correo para reclamar un pedido?</li></ul></div></aside>
+<aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Conocer los elementos de un correo y escribirlo correctamente.</li><li>Configurar cuentas de correo y firmas.</li><li>Organizar el correo con carpetas, categorías y reglas.</li><li>Gestionar la libreta de direcciones.</li><li>Usar el calendario y las tareas y sincronizarlos con el móvil.</li></ul></div></aside>
+<aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ol class="tareas cols-2"><li>¿Cuál es tu dirección de correo?</li><li>¿Qué significa la @?</li><li>¿Qué es el correo no deseado?</li><li>¿Qué es un archivo adjunto?</li><li>¿Qué aplicación usas para tus citas?</li><li>¿Cómo empieza una carta formal?</li></ol></div></aside>
+<aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>El correo es la forma de comunicación escrita más usada en las empresas y queda como prueba de lo que se dice. ¿Escribirías igual a un amigo que a un cliente? ¿Qué pasa si un correo llega a quien no debe?</p></div></aside>
+<p>RA8Gestiona el correo y la agenda electrónica manejando aplicaciones específicas.</p>
+<figure class="dibujo "><img src="../../figuras/5cbc51cafae7e7e2.svg" width="501" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/f57a4a7a486b4e81.svg" width="619" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/acde2f06e79f3826.svg" width="504" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/e2c1591ebac49d36.svg" width="666" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/1ed531daaad14892.svg" width="328" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/d597b052ed584ca3.svg" width="803" height="30" alt="" loading="lazy"></figure>
+<figure class="dibujo "><img src="../../figuras/d039bdba6f5fb48b.svg" width="366" height="30" alt="" loading="lazy"></figure><h2 class="seccion">Sesiones</h2><ol class="indice"><li><a href="sesion-1.html"><span class="num">Sesión 8.1</span> El correo electrónico: elementos y cuentas</a></li><li><a href="sesion-2.html"><span class="num">Sesión 8.2</span> Organizar el correo y los contactos</a></li><li><a href="sesion-3.html"><span class="num">Sesión 8.3</span> La agenda electrónica</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="practica.html"><span class="num">🛠️</span> Práctica con las herramientas</a></li><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul><h2 class="seccion">Mapa mental de la unidad</h2><figure class="dibujo mapa"><img src="../../figuras/c175c751ac995e49.svg" width="618" height="670" alt="" loading="lazy"></figure><p class="nota">✏️ Repasa la unidad con el mapa: tapa una rama y explica en voz alta lo que pone.</p>
+
+<nav class="anterior-siguiente"><a class="boton secundario" href="../ud07/index.html">← UD07</a><a class="boton secundario" href="../ud09/index.html">UD09 →</a></nav>
+</main>
+<footer class="pie">Tratamiento informático de la información · Colegio Puente</footer>
+</body>
+</html>

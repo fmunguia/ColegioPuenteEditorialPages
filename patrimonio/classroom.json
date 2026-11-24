@@ -1,0 +1,1170 @@
+{
+ "clave": "Patrimonio",
+ "libro": "Patrimonio de Cantabria",
+ "curso": "3º ESO",
+ "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/index.html",
+ "temas": [
+  {
+   "codigo": "UD01",
+   "titulo": "UD01 · Cantabria",
+   "bloque": "Bloque I · Cantabria, patrimonio natural",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud01/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 1.1 · Situación geográfica y límites",
+     "descripcion": "Hoy vas a situar Cantabria en España y en Europa y nombrar sus límites.\nNecesitas: el libro, un atlas o un mapa de España y lápices de colores.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud01/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.2 · Organización territorial: municipios y comarcas",
+     "descripcion": "Hoy vas a conocer cómo se organiza el territorio de Cantabria y localizar tu municipio y tu comarca.\nNecesitas: el libro y lápices de colores.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud01/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.3 · Relieve y principales unidades geográficas",
+     "descripcion": "Hoy vas a distinguir las tres grandes unidades del relieve de Cantabria y localizar las principales montañas.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud01/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 1.4 · Clima y paisajes de Cantabria",
+     "descripcion": "Hoy vas a leer un climograma y relacionar el clima con los paisajes de Cantabria.\nNecesitas: el libro y lápices de colores.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud01/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD01 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud01/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Cantabria es una comunidad uniprovincial porque…",
+      "opciones": [
+       "tiene una sola provincia",
+       "tiene un solo municipio grande",
+       "solo tiene costa en un mar"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Al sur, Cantabria limita con las provincias de…",
+      "opciones": [
+       "León, Palencia y Burgos",
+       "Asturias, León y Palencia",
+       "Burgos, Bizkaia y Álava"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Un enclave es…",
+      "opciones": [
+       "un municipio con muchos pueblos",
+       "un territorio rodeado por completo por otro distinto",
+       "una comarca sin costa"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Lo que gobierna un ayuntamiento es…",
+      "opciones": [
+       "una comarca",
+       "una junta vecinal",
+       "un municipio"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Los ríos cántabros que van al mar son cortos y rápidos porque…",
+      "opciones": [
+       "la vertiente norte de la cordillera es corta y empinada",
+       "llueve poco en la costa",
+       "nacen en la meseta"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El Ebro nace en Campoo pero va al Mediterráneo porque…",
+      "opciones": [
+       "lo desviaron con un canal",
+       "nace al sur de la divisoria de aguas",
+       "el Cantábrico está más lejos"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La amplitud térmica de Santander es pequeña sobre todo por…",
+      "opciones": [
+       "la altitud",
+       "la influencia del mar",
+       "la falta de lluvia en verano"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Liébana es más seca y soleada que la costa porque…",
+      "opciones": [
+       "está más al sur de España",
+       "las montañas que la rodean frenan las nubes",
+       "tiene clima mediterráneo"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué en Cantabria hay paisajes tan distintos en tan poco espacio? Usa en tu respuesta las palabras altitud, mar y cordillera.",
+      "solucion": "Porque en muy pocos kilómetros se pasa del mar a montañas de más de 2000 metros. El mar suaviza la temperatura de la costa; con la altitud baja la temperatura (unos 0,6 ºC cada 100 m) y aparece la nieve; y la cordillera frena las nubes, de modo que hay valles más secos como Liébana. Al cambiar la temperatura y la lluvia, cambian las plantas y los usos del suelo."
+     },
+     {
+      "enunciado": "¿Para qué sirven las comarcas si no tienen gobierno propio? ¿Crees que deberían tenerlo? Da un argumento a favor y otro en contra.",
+      "solucion": "Agrupan municipios que comparten paisaje, historia y costumbres; sirven para orientarse y para organizar servicios comunes (turismo, desarrollo rural, mancomunidades). A favor de un gobierno comarcal: los municipios pequeños podrían compartir servicios y ahorrar. En contra: sería una administración más, con más gasto y más lejos de los vecinos."
+     }
+    ],
+    "rubrica": [
+     "Sitúo Cantabria con los puntos cardinales y nombro sus límites y provincias vecinas.",
+     "Distingo municipio, pueblo, junta vecinal y comarca.",
+     "Calculo e interpreto la densidad de población.",
+     "Clasifico lugares en las tres unidades del relieve y lo justifico.",
+     "Leo un climograma y calculo la amplitud térmica.",
+     "Explico con causas la relación entre relieve, clima y paisaje."
+    ],
+    "titulo": "UD01 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud01/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD02",
+   "titulo": "UD02 · El relieve y los paisajes naturales",
+   "bloque": "Bloque I · Cantabria, patrimonio natural",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud02/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 2.1 · La Cordillera Cantábrica",
+     "descripcion": "Hoy vas a conocer la Cordillera Cantábrica, cómo se formó y por qué es tan importante para Cantabria.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud02/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.2 · Los Picos de Europa",
+     "descripcion": "Hoy vas a conocer los Picos de Europa y las huellas que dejaron el hielo y el agua en sus montañas.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud02/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.3 · Los valles y montañas interiores",
+     "descripcion": "Hoy vas a reconocer los principales valles de Cantabria y sus montañas, y cómo vive la gente en ellos.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud02/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.4 · La costa cantábrica",
+     "descripcion": "Hoy vas a conocer cómo es la costa de Cantabria y cómo la modela el mar.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud02/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 2.5 · Playas, acantilados, rías y marismas",
+     "descripcion": "Hoy vas a distinguir las formas de la costa y entender por qué las rías y las marismas son tan valiosas.\nNecesitas: el libro y lápices de colores.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud02/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD02 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud02/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Hay fósiles marinos en las cumbres de la cordillera porque…",
+      "opciones": [
+       "las rocas se formaron en el fondo del mar y luego se levantaron",
+       "el mar llegaba hasta las cumbres hace 1000 años",
+       "los trajeron los glaciares"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Una divisoria de aguas es…",
+      "opciones": [
+       "el lugar donde un río se une al mar",
+       "una línea de cumbres que separa ríos que van a mares distintos",
+       "un embalse entre dos valles"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un valle en forma de U lo excava…",
+      "opciones": [
+       "un río",
+       "el viento",
+       "un glaciar"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "La muda pasiega consistía en…",
+      "opciones": [
+       "cambiar de cabaña con el ganado según la hierba",
+       "vender el ganado en otoño",
+       "cambiar las tejas de la cabaña"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Los islotes y cabos aparecen donde la roca es…",
+      "opciones": [
+       "más blanda",
+       "más dura",
+       "más reciente"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "La rasa litoral demuestra que…",
+      "opciones": [
+       "el nivel del mar fue más alto",
+       "hubo volcanes en la costa",
+       "el mar nunca ha cambiado"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Una playa es una forma de…",
+      "opciones": [
+       "erosión",
+       "transporte",
+       "depósito"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Rellenar una marisma aumenta el riesgo de…",
+      "opciones": [
+       "sequía",
+       "inundación",
+       "incendio"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué decimos que el paisaje es «patrimonio natural»? Pon un ejemplo de esta unidad que tardó millones de años en formarse y que podría perderse en pocos años.",
+      "solucion": "Porque es una herencia que hemos recibido, única y frágil, que debemos dejar a las generaciones futuras. Ejemplo: las dunas de Liencres o una marisma tardaron miles de años en formarse y pueden destruirse con pisoteo, construcciones o rellenos en muy poco tiempo."
+     },
+     {
+      "enunciado": "¿Qué tienen en común un circo glaciar y una playa? ¿Y en qué se diferencian?",
+      "solucion": "Los dos son formas del relieve creadas por agentes externos. Se diferencian en el agente y el proceso: el circo lo excavó el hielo de un glaciar (erosión); la playa la forma el mar al dejar arena en zonas tranquilas (depósito)."
+     }
+    ],
+    "rubrica": [
+     "Explico cómo se formó la cordillera y la relaciono con los fósiles y el karst.",
+     "Describo los Picos de Europa e identifico huellas glaciares.",
+     "Explico el aprovechamiento por pisos de un valle y la muda pasiega.",
+     "Explico la erosión, el transporte y el depósito del mar.",
+     "Distingo y clasifico playa, duna, acantilado, ría y marisma.",
+     "Argumento por qué hay que proteger el paisaje frágil."
+    ],
+    "titulo": "UD02 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud02/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD03",
+   "titulo": "UD03 · Ríos, flora y fauna",
+   "bloque": "Bloque I · Cantabria, patrimonio natural",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 3.1 · La red hidrográfica de Cantabria",
+     "descripcion": "Hoy vas a entender cómo se organizan los ríos de Cantabria en tres vertientes.\nNecesitas: el libro y lápices de colores.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.2 · Los principales ríos: Ebro, Asón, Pas, Besaya, Saja, Nansa y Deva",
+     "descripcion": "Hoy vas a conocer los ríos principales de Cantabria, dónde nacen y dónde desembocan.\nNecesitas: el libro y un mapa de Cantabria.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.3 · Bosques autóctonos: robledales, hayedos y encinares",
+     "descripcion": "Hoy vas a reconocer los tres grandes bosques autóctonos de Cantabria y sus árboles.\nNecesitas: el libro y, si se puede, hojas recogidas del suelo.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.4 · Flora característica",
+     "descripcion": "Hoy vas a reconocer plantas características de Cantabria en distintos ambientes.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.5 · Fauna terrestre y marina",
+     "descripcion": "Hoy vas a conocer los animales más característicos de la montaña, los ríos, la costa y el mar de Cantabria.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 3.6 · Especies protegidas y en peligro de extinción",
+     "descripcion": "Hoy vas a conocer por qué algunas especies están en peligro y qué se hace para protegerlas.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/sesion-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD03 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "El Saja y el Besaya llegan al mar…",
+      "opciones": [
+       "por separado, en dos rías",
+       "juntos, por la ría de Suances",
+       "por la bahía de Santander"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Los ríos cántabros tienen mucho caudal sobre todo porque…",
+      "opciones": [
+       "nacen en glaciares",
+       "llueve mucho todo el año",
+       "son muy largos"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En el Pico Tres Mares nacen ríos que van al…",
+      "opciones": [
+       "Cantábrico, Mediterráneo y Atlántico",
+       "Cantábrico, Ebro y Duero",
+       "Cantábrico y Mediterráneo"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "En un hayedo casi no crecen plantas en el suelo porque…",
+      "opciones": [
+       "el suelo es salado",
+       "la sombra es muy densa",
+       "hace demasiado calor"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El encinar cantábrico es un resto de…",
+      "opciones": [
+       "plantaciones romanas",
+       "épocas con clima más cálido",
+       "la última glaciación"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una especie invasora es la que…",
+      "opciones": [
+       "trajo el ser humano y se extiende sin control",
+       "vive en varios países",
+       "es venenosa"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El desmán ibérico es un buen indicador de…",
+      "opciones": [
+       "bosques maduros",
+       "ríos con agua limpia",
+       "costas sin construir"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Entrar en el catálogo de especies amenazadas obliga a…",
+      "opciones": [
+       "prohibir la entrada al monte",
+       "hacer un plan de recuperación",
+       "criar la especie en zoos"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué el oso pardo es un ejemplo de que la protección funciona? ¿Por qué no podemos decir lo mismo del urogallo?",
+      "solucion": "A principios de los años noventa quedaban menos de cien osos y hoy son varios cientos gracias a la protección legal, los planes de recuperación y la persecución de la caza ilegal. El urogallo sigue bajando: necesita bosques de montaña grandes y tranquilos, y le afectan las molestias, la pérdida de hábitat y el cambio climático, que la protección aún no ha resuelto."
+     },
+     {
+      "enunciado": "Explica la cadena que une clima, relieve, bosques y fauna en un hayedo de montaña.",
+      "solucion": "El relieve de montaña frena las nubes y crea un clima frío y húmedo con nieblas. Ese clima permite vivir al haya, que forma un bosque denso. El hayedo da alimento (hayucos) y refugio a animales como el oso, el corzo o el urogallo."
+     }
+    ],
+    "rubrica": [
+     "Explico qué es una cuenca, un afluente y una vertiente.",
+     "Localizo los ríos principales y relaciono sus rasgos con el relieve y el clima.",
+     "Distingo los bosques autóctonos y explico los pisos de vegetación.",
+     "Distingo especies autóctonas, alóctonas e invasoras.",
+     "Explico las amenazas de las especies en peligro con ejemplos.",
+     "Propongo y argumento medidas para proteger la biodiversidad."
+    ],
+    "titulo": "UD03 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud03/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD04",
+   "titulo": "UD04 · Espacios naturales protegidos",
+   "bloque": "Bloque I · Cantabria, patrimonio natural",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 4.1 · Parques nacionales y naturales",
+     "descripcion": "Hoy vas a conocer qué es un espacio natural protegido y las figuras de protección.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.2 · Parque Nacional de los Picos de Europa",
+     "descripcion": "Hoy vas a conocer el primer parque nacional de España y sus valores.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.3 · Parque Natural de las Dunas de Liencres",
+     "descripcion": "Hoy vas a conocer cómo se forman las dunas de Liencres y por qué son tan frágiles.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.4 · Parque Natural de Oyambre",
+     "descripcion": "Hoy vas a conocer un parque donde se mezclan playas, rías, acantilados, prados y pueblos.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.5 · Parque Natural de las Marismas de Santoña, Victoria y Joyel",
+     "descripcion": "Hoy vas a conocer el humedal más importante del norte de España y su papel para las aves.\nNecesitas: el libro y, si hay, unos prismáticos.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 4.6 · Parque Natural de Saja-Besaya",
+     "descripcion": "Hoy vas a conocer el parque natural más grande de Cantabria y preparar el proyecto de interpretación de un espacio.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/sesion-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD04 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque I · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Cantabria, patrimonio natural».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/situaciones-bloque-1.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Un parque natural lo declara…",
+      "opciones": [
+       "el Estado",
+       "la comunidad autónoma",
+       "la Unión Europea"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Una ZEPA protege sobre todo…",
+      "opciones": [
+       "las aves",
+       "los ríos",
+       "los monumentos"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El Parque Nacional de los Picos de Europa se amplió a los tres macizos en…",
+      "opciones": [
+       "1918",
+       "1988",
+       "1995"
+      ],
+      "correcta": 2
+     },
+     {
+      "pregunta": "Las dunas no se las lleva el viento porque…",
+      "opciones": [
+       "están mojadas",
+       "las plantas las sujetan",
+       "tienen piedras dentro"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Oyambre es un parque «humanizado» porque…",
+      "opciones": [
+       "dentro hay pueblos, prados y campings",
+       "lo plantó el ser humano",
+       "no tiene animales"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Las marismas de Santoña son importantes para las aves porque…",
+      "opciones": [
+       "tienen comederos artificiales",
+       "son una escala de descanso y alimento en su migración",
+       "allí no hay invierno"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El parque natural más grande de Cantabria es…",
+      "opciones": [
+       "Saja-Besaya",
+       "Oyambre",
+       "Peña Cabarga"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Limitar el acceso en coche a un lugar sirve para…",
+      "opciones": [
+       "cobrar más",
+       "reducir el impacto de la masificación",
+       "que no vaya nadie"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué es importante que en los espacios protegidos haya centros de interpretación y guardas? ¿Bastaría con poner normas?",
+      "solucion": "Las normas solas no bastan: los centros de interpretación explican qué tiene de valioso el lugar y por qué hay normas, y cuando la gente lo entiende lo respeta más. Los guardas vigilan que se cumplan, informan y ayudan en emergencias."
+     },
+     {
+      "enunciado": "¿Se puede proteger la naturaleza sin echar a las personas que viven en ella? Explica un ejemplo y un conflicto que pueda surgir.",
+      "solucion": "Sí. En los Picos de Europa o en Oyambre la gente sigue viviendo y trabajando (ganadería, queserías, pesca, turismo), respetando las normas. Pueden surgir conflictos, por ejemplo entre ganaderos y lobos, o entre ampliar un camping y proteger una ría; se resuelven con planes, ayudas y diálogo."
+     }
+    ],
+    "rubrica": [
+     "Explico qué es un espacio protegido y distingo sus figuras.",
+     "Describo el Parque Nacional de los Picos de Europa y su historia.",
+     "Explico qué protege cada parque natural y por qué.",
+     "Analizo conflictos entre usos humanos y conservación.",
+     "Calculo e interpreto datos de superficie, migración o capacidad de carga.",
+     "Propongo soluciones argumentadas y hábitos sostenibles."
+    ],
+    "titulo": "UD04 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud04/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD05",
+   "titulo": "UD05 · La Prehistoria en Cantabria",
+   "bloque": "Bloque II · Cantabria, patrimonio cultural",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 5.1 · Las cuevas prehistóricas",
+     "descripcion": "Hoy vas a entender cómo vivían los grupos del Paleolítico y para qué usaban las cuevas.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.2 · El arte rupestre paleolítico",
+     "descripcion": "Hoy vas a reconocer qué pintaban, con qué colores y con qué técnicas los artistas del Paleolítico.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.3 · Altamira",
+     "descripcion": "Hoy vas a conocer la cueva de Altamira, su descubrimiento y por qué es tan importante.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.4 · El Castillo y Las Monedas",
+     "descripcion": "Hoy vas a conocer las cuevas del monte Castillo, en Puente Viesgo.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.5 · Covalanas, El Pendo y Hornos de la Peña",
+     "descripcion": "Hoy vas a conocer otras tres cuevas importantes y comparar sus técnicas.\nNecesitas: el libro y un mapa de Cantabria.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 5.6 · Qué es el Patrimonio de la Humanidad",
+     "descripcion": "Hoy vas a entender qué es el Patrimonio de la Humanidad y qué bienes de Cantabria lo son.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/sesion-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD05 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Los grupos del Paleolítico vivían sobre todo…",
+      "opciones": [
+       "en el fondo oscuro de las cuevas",
+       "en la entrada de cuevas y abrigos",
+       "en poblados de piedra"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En un yacimiento, la capa más antigua suele ser…",
+      "opciones": [
+       "la de arriba",
+       "la de abajo",
+       "la más gruesa"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Las manos en negativo se hacían…",
+      "opciones": [
+       "soplando pintura alrededor de la mano",
+       "grabando con sílex",
+       "con un pincel de pelo"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La calcita formada sobre una pintura da…",
+      "opciones": [
+       "su edad exacta",
+       "una edad mínima de la pintura",
+       "una edad máxima"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "En 1880 muchos científicos dudaron de Altamira porque…",
+      "opciones": [
+       "las pinturas eran modernas",
+       "no creían que en la Prehistoria se pintara tan bien",
+       "la cueva no tenía entrada"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Los discos rojos de El Castillo plantean si los pintaron…",
+      "opciones": [
+       "los romanos",
+       "los neandertales",
+       "los cántabros"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Las ciervas de Covalanas están hechas con…",
+      "opciones": [
+       "grabado",
+       "tamponado de puntos",
+       "carbón negro"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Que un bien sea Patrimonio de la Humanidad obliga sobre todo a…",
+      "opciones": [
+       "abrirlo a todo el mundo",
+       "conservarlo",
+       "cobrar entrada"
+      ],
+      "correcta": 1
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué crees que se pintaba en el fondo oscuro de las cuevas y no en la entrada, donde vivían? Da al menos dos hipótesis.",
+      "solucion": "Respuesta abierta. Por ejemplo: porque el fondo oscuro era un lugar especial, apartado de la vida diaria, para ritos o ceremonias; porque la oscuridad y la luz de las lámparas creaban efectos (las figuras parecían moverse); o porque así las pinturas quedaban protegidas."
+     },
+     {
+      "enunciado": "¿Qué es más importante para conservar el arte rupestre: que lo vea mucha gente o que no se dañe? ¿Se pueden conseguir las dos cosas?",
+      "solucion": "Respuesta abierta. Lo primero es que no se dañe, porque si se pierde no se puede recuperar. Se pueden conseguir las dos cosas con réplicas como la Neocueva, museos, visitas virtuales y visitas reales muy controladas."
+     }
+    ],
+    "rubrica": [
+     "Explico la forma de vida del Paleolítico y el uso de las cuevas.",
+     "Reconozco temas, materiales y técnicas del arte rupestre.",
+     "Distingo hechos e hipótesis y razono sobre la datación.",
+     "Explico la historia y la conservación de Altamira.",
+     "Localizo y describo las principales cuevas de Cantabria.",
+     "Explico qué es el Patrimonio de la Humanidad y qué obligaciones supone."
+    ],
+    "titulo": "UD05 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud05/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD06",
+   "titulo": "UD06 · Románico y gótico",
+   "bloque": "Bloque II · Cantabria, patrimonio cultural",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 6.1 · El arte prerrománico",
+     "descripcion": "Hoy vas a conocer el arte de la Alta Edad Media en Cantabria y la iglesia de Santa María de Lebeña.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 6.2 · El románico cántabro",
+     "descripcion": "Hoy vas a reconocer las características del románico y sus partes en una iglesia.\nNecesitas: el libro y lápices.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 6.3 · Colegiatas, iglesias y monasterios",
+     "descripcion": "Hoy vas a conocer los grandes edificios románicos de Cantabria.\nNecesitas: el libro y un mapa de Cantabria.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 6.4 · El arte gótico",
+     "descripcion": "Hoy vas a distinguir el gótico del románico y conocer sus obras en Cantabria.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 6.5 · Santillana del Mar y su patrimonio",
+     "descripcion": "Hoy vas a conocer Santillana del Mar como conjunto histórico y reflexionar sobre el turismo.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 6.6 · El Camino Lebaniego",
+     "descripcion": "Hoy vas a conocer el Camino Lebaniego, el Año Jubilar y su valor como patrimonio.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/sesion-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD06 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Santa María de Lebeña es…",
+      "opciones": [
+       "románica",
+       "mozárabe",
+       "gótica"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Las iglesias románicas tienen poca luz porque…",
+      "opciones": [
+       "sus muros gruesos aguantan la bóveda y no admiten grandes ventanas",
+       "no sabían hacer vidrio",
+       "eran muy pequeñas"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La colegiata famosa por sus canecillos es la de…",
+      "opciones": [
+       "Santillana",
+       "Cervatos",
+       "Castañeda"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Los beatos son…",
+      "opciones": [
+       "copias ilustradas de los Comentarios al Apocalipsis",
+       "monjes de Liébana",
+       "iglesias del siglo VIII"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "El gótico pudo abrir grandes vidrieras gracias a…",
+      "opciones": [
+       "la bóveda de crucería y los contrafuertes",
+       "los muros más gruesos",
+       "los techos de madera"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Las grandes iglesias góticas de Cantabria están sobre todo en…",
+      "opciones": [
+       "los valles de Campoo",
+       "las villas del mar",
+       "Liébana"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Un conjunto histórico protege…",
+      "opciones": [
+       "solo la iglesia principal",
+       "un pueblo o barrio entero",
+       "los museos"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Hay Año Jubilar Lebaniego cuando el 16 de abril cae en…",
+      "opciones": [
+       "domingo",
+       "lunes",
+       "año bisiesto"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué decimos que las iglesias románicas eran «libros de piedra»? ¿Sigue siendo útil hoy esa función?",
+      "solucion": "Porque, en una época en que casi nadie sabía leer, sus esculturas y pinturas contaban historias de la Biblia y enseñaban qué estaba bien y qué estaba mal. Hoy siguen siendo «libros» para conocer cómo pensaba y vivía la gente de la Edad Media."
+     },
+     {
+      "enunciado": "¿Qué tienen en común Altamira, Santillana del Mar y el Camino Lebaniego como patrimonio? ¿Qué problema comparten?",
+      "solucion": "Los tres son patrimonio cultural de valor excepcional y atraen a muchos visitantes. Comparten el riesgo de la masificación: el turismo da vida y dinero, pero si no se controla puede dañar el bien o expulsar a los vecinos."
+     }
+    ],
+    "rubrica": [
+     "Sitúo en el tiempo prerrománico, románico y gótico.",
+     "Reconozco los rasgos de cada estilo y explico su técnica.",
+     "Localizo y describo las obras principales de Cantabria.",
+     "Explico el valor del Beato y de los beatos.",
+     "Explico qué es un conjunto histórico y analizo el turismo en Santillana.",
+     "Explico el Camino Lebaniego y su valor como patrimonio."
+    ],
+    "titulo": "UD06 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud06/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD07",
+   "titulo": "UD07 · La mitología y las leyendas de Cantabria",
+   "bloque": "Bloque II · Cantabria, patrimonio cultural",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud07/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 7.1 · El origen de la mitología cántabra",
+     "descripcion": "Hoy vas a saber qué son los mitos y las leyendas y de dónde viene la mitología de Cantabria.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud07/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.2 · Seres del bosque y de la montaña",
+     "descripcion": "Hoy vas a conocer los principales seres de la mitología cántabra que viven en bosques, montes y casas.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud07/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.3 · Seres del agua y del cielo",
+     "descripcion": "Hoy vas a conocer los seres mitológicos relacionados con el mar, los ríos y el tiempo.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud07/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.4 · Leyendas de lugares de Cantabria",
+     "descripcion": "Hoy vas a conocer leyendas ligadas a lugares de Cantabria y su valor para los pueblos.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud07/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 7.5 · La tradición oral y su transmisión",
+     "descripcion": "Hoy vas a entender cómo se han transmitido los mitos y las leyendas y cómo podemos conservarlos hoy.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud07/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD07 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud07/repaso.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Una leyenda se diferencia de un mito en que…",
+      "opciones": [
+       "se sitúa en un lugar o persona concretos y mezcla realidad y fantasía",
+       "no tiene seres fantásticos",
+       "es siempre inventada"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Parte de la mitología cántabra que conocemos…",
+      "opciones": [
+       "es de época romana con seguridad",
+       "la recogieron y recrearon escritores del siglo XX",
+       "viene de libros griegos"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Los seres malos de la mitología amenazan sobre todo…",
+      "opciones": [
+       "las ciudades",
+       "el ganado, las fuentes y los árboles",
+       "los barcos de guerra"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El Ojáncano se vence…",
+      "opciones": [
+       "con agua bendita",
+       "arrancándole el pelo blanco de la barba",
+       "cantándole"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El toque a nublo consistía en…",
+      "opciones": [
+       "tocar las campanas para alejar la tormenta",
+       "avisar de la llegada de barcos",
+       "llamar a misa"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "A diferencia de las sirenas griegas, la Sirenuca…",
+      "opciones": [
+       "es mitad ave",
+       "salva a los marineros con su canto",
+       "vive en un río"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Feijoo dio por cierto el caso del hombre pez porque…",
+      "opciones": [
+       "lo vio él mismo",
+       "muchos testigos de confianza se lo aseguraron",
+       "encontró escamas"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El patrimonio inmaterial es «patrimonio vivo» porque…",
+      "opciones": [
+       "solo existe mientras la gente lo practica",
+       "está en los museos",
+       "no cambia nunca"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "Si hoy ya sabemos por qué truena o por qué se pierde el ganado, ¿para qué sirve conservar los mitos?",
+      "solucion": "Porque nos cuentan cómo pensaban, qué temían y qué valoraban nuestros antepasados; forman parte de nuestra identidad y de la lengua; inspiran literatura, arte y fiestas; y nos enseñan valores, como cuidar la naturaleza y ayudar a quien lo necesita."
+     },
+     {
+      "enunciado": "¿Qué diferencia hay entre conservar una leyenda en un libro y mantenerla viva? ¿Cuál de las dos cosas es más difícil?",
+      "solucion": "En un libro queda fijada y no se pierde, pero no cambia ni se transmite. Mantenerla viva es que la gente la siga contando, adaptándola. Es más difícil, porque depende de que haya ocasiones y personas que la cuenten y la escuchen."
+     }
+    ],
+    "rubrica": [
+     "Distingo mito, leyenda y cuento y clasifico relatos.",
+     "Explico el origen y las capas de la mitología cántabra con sentido crítico.",
+     "Describo los principales seres y los relaciono con la vida rural y marinera.",
+     "Separo lo real y lo fantástico en una leyenda de lugar.",
+     "Explico qué es la tradición oral y cómo se transmitía.",
+     "Recojo y documento un relato de la tradición oral."
+    ],
+    "titulo": "UD07 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud07/autoevaluacion.html"
+   }
+  },
+  {
+   "codigo": "UD08",
+   "titulo": "UD08 · Grandes personajes de Cantabria",
+   "bloque": "Bloque II · Cantabria, patrimonio cultural",
+   "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/index.html",
+   "tareas": [
+    {
+     "titulo": "Sesión 8.1 · Escritores: Pereda y Gerardo Diego",
+     "descripcion": "Hoy vas a conocer a José María de Pereda, a Gerardo Diego y a otros escritores de Cantabria.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/sesion-1.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.2 · Pintores, escultores y músicos",
+     "descripcion": "Hoy vas a conocer a artistas de Cantabria y cómo reflejaron su tierra.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/sesion-2.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.3 · Científicos",
+     "descripcion": "Hoy vas a conocer a científicos de Cantabria y los centros de investigación actuales.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/sesion-3.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.4 · Ingenieros y arquitectos",
+     "descripcion": "Hoy vas a conocer a Torres Quevedo, a Juan de Herrera y a los canteros de Trasmiera.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/sesion-4.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.5 · Deportistas",
+     "descripcion": "Hoy vas a conocer a grandes deportistas de Cantabria y los deportes tradicionales.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/sesion-5.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.6 · Mujeres que dejaron huella",
+     "descripcion": "Hoy vas a conocer a mujeres relevantes de Cantabria y reflexionar sobre por qué se las ha recordado menos.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/sesion-6.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Sesión 8.7 · Personajes que proyectan Cantabria",
+     "descripcion": "Hoy vas a conocer a personas que han dado a conocer Cantabria en el mundo.\nNecesitas: el libro.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/sesion-7.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "UD08 · Repaso de la unidad",
+     "descripcion": "Ejercicios de final de tema con su solución y el paso a paso.",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/repaso.html",
+     "enlaces": []
+    },
+    {
+     "titulo": "Bloque II · Situaciones de aprendizaje",
+     "descripcion": "Las situaciones de aprendizaje del bloque «Cantabria, patrimonio cultural».",
+     "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/situaciones-bloque-2.html",
+     "enlaces": []
+    }
+   ],
+   "autoevaluacion": {
+    "test": [
+     {
+      "pregunta": "Peñas arriba, de Pereda, transcurre en…",
+      "opciones": [
+       "el puerto de Santander",
+       "un pueblo de montaña, Tudanca",
+       "París"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Gerardo Diego pertenece a la…",
+      "opciones": [
+       "Generación del 98",
+       "Generación del 27",
+       "Ilustración"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "María Blanchard es una pintora…",
+      "opciones": [
+       "cubista",
+       "románica",
+       "paisajista realista"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "La primera estación de biología marina de España la fundó…",
+      "opciones": [
+       "Torres Quevedo",
+       "González de Linares",
+       "Menéndez Pelayo"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "El Telekino servía para…",
+      "opciones": [
+       "jugar al ajedrez",
+       "manejar máquinas a distancia por radio",
+       "subir montañas"
+      ],
+      "correcta": 1
+     },
+     {
+      "pregunta": "Los canteros de Trasmiera eran famosos por…",
+      "opciones": [
+       "trabajar la piedra en catedrales y palacios",
+       "pescar ballenas",
+       "hacer quesos"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Juan de la Cosa es conocido por…",
+      "opciones": [
+       "el primer mapa con América",
+       "descubrir Altamira",
+       "fundar un banco"
+      ],
+      "correcta": 0
+     },
+     {
+      "pregunta": "Los indianos eran…",
+      "opciones": [
+       "cántabros que volvieron de América y financiaron obras en sus pueblos",
+       "pueblos indígenas de América",
+       "marinos de Colón"
+      ],
+      "correcta": 0
+     }
+    ],
+    "preguntas": [
+     {
+      "enunciado": "¿Por qué las personas también son patrimonio, si no son monumentos ni paisajes?",
+      "solucion": "Porque sus obras, inventos, descubrimientos y ejemplo forman parte de la herencia que recibimos: novelas, cuadros, música, mapas, hospitales o récords. Además, recordarlas nos ayuda a saber quiénes somos y a inspirar a quienes vienen detrás."
+     },
+     {
+      "enunciado": "Elige dos personajes de campos distintos de la unidad y explica qué tienen en común en su relación con Cantabria.",
+      "solucion": "Respuesta abierta. Por ejemplo: Pereda y Riancho retrataron el paisaje y la vida de Cantabria, uno con palabras y otro con pinceles; o Juan de la Cosa y los indianos llevaron Cantabria a América y trajeron de vuelta conocimiento y riqueza."
+     }
+    ],
+    "rubrica": [
+     "Relaciono escritores y artistas con su obra y con el patrimonio que retratan.",
+     "Explico las aportaciones de científicos e ingenieros de Cantabria.",
+     "Valoro los deportes tradicionales como patrimonio inmaterial.",
+     "Explico por qué se conocen menos mujeres y destaco a varias pioneras.",
+     "Explico la huella de Juan de la Cosa y de los indianos.",
+     "Argumento la elección de un personaje con criterios de patrimonio."
+    ],
+    "titulo": "UD08 · Autoevaluación",
+    "url": "https://fmunguia.github.io/ColegioPuenteEditorialPages/patrimonio/ud08/autoevaluacion.html"
+   }
+  }
+ ]
+}

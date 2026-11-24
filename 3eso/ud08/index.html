@@ -17,19 +17,35 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD08 · Funciones y gráficas</span></nav></header>
 <main>
 <p class="subtitulo">Bloque III · Funciones</p><h1><span class="codigo">UD08</span> Funciones y gráficas</h1><aside class="caja partida"><div class="caja-titulo">🔍 El teleférico de Fuente Dé</div><div class="caja-cuerpo"><p>El teleférico de Fuente Dé, en los Picos de Europa, sube desde unos <span class="mat">\(1\,070\)</span>&nbsp;m hasta <span class="mat">\(1\,823\)</span>&nbsp;m de altitud en menos de cuatro minutos. Una familia sube, pasea una hora por el mirador del Cable y vuelve a bajar. La gráfica muestra la altitud a la que están en cada momento.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/8a92f59e868af8b7.svg" width="541" height="202" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/e9847848e83f5804.svg" width="541" height="202" alt="" loading="lazy"></figure></div>
 <ul><li>¿Qué variable depende de la otra? ¿Cuánto tiempo pasa la familia arriba?</li><li>¿Cuántos metros sube la cabina por minuto, aproximadamente?</li><li>¿En qué tramos aumenta la altitud, en cuáles disminuye y en cuál se mantiene?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Reconocer cuándo una relación entre dos variables es una función.</li><li>Pasar de un enunciado a una tabla, una gráfica o una fórmula.</li><li>Hallar el dominio, el recorrido y los puntos de corte con los ejes.</li><li>Estudiar la continuidad, el crecimiento y los máximos y mínimos.</li><li>Reconocer funciones periódicas.</li><li>Leer gráficas con espíritu crítico y detectar las engañosas.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ul><li>Un punto del plano se escribe <span class="mat">\((x, y)\)</span>: primero la coordenada horizontal y después la vertical.</li><li>Para calcular el valor de una expresión se sustituyen las letras, poniendo los negativos entre paréntesis: si <span class="mat">\(x = -2\)</span>, <span class="mat">\(3x - 5 = 3 \cdot (-2) - 5 = -11\)</span>.</li><li>Para hallar cuándo una expresión vale <span class="mat">\(0\)</span> se resuelve una ecuación: <span class="mat">\(2x - 6 = 0 \Rightarrow x = 3\)</span>.</li><li>Un porcentaje de aumento se calcula dividiendo el aumento entre la cantidad inicial.</li></ul>
 <p>Comprueba que sabes hacer estos ejercicios de cursos anteriores:</p>
 <ol class="tareas cols-2"><li>Representa <span class="mat">\((3, -2)\)</span>, <span class="mat">\((0, 4)\)</span> y <span class="mat">\((-1, 0)\)</span>.</li><li>Calcula <span class="mat">\(3x - 5\)</span> para <span class="mat">\(x = -2\)</span>.</li><li>Calcula <span class="mat">\(x^2 - 4\)</span> para <span class="mat">\(x = -3\)</span>.</li><li>Resuelve <span class="mat">\(2x - 6 = 0\)</span>.</li><li>¿Qué porcentaje aumenta algo que pasa de <span class="mat">\(80\)</span> a <span class="mat">\(92\)</span>?</li><li>Completa la tabla de <span class="mat">\(y = 2x + 1\)</span> para <span class="mat">\(x = 0, 1, 2\)</span>.</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Cuando subimos una montaña, la temperatura del aire baja aproximadamente <span class="mat">\(6{,}5\)</span>&nbsp;ºC por cada <span class="mat">\(1\,000\)</span>&nbsp;m de altitud. Por eso un día de verano se puede estar a <span class="mat">\(20\)</span>&nbsp;ºC en Potes, a unos <span class="mat">\(300\)</span>&nbsp;m, y necesitar una chaqueta arriba del teleférico de Fuente Dé.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/0e27335f893d8fbb.svg" width="485" height="170" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/e9b132b2e5457fa0.svg" width="485" height="170" alt="" loading="lazy"></figure></div>
 <ul><li>¿Qué temperatura habrá, más o menos, en la estación de arriba del teleférico?</li><li>¿Es una función creciente o decreciente? ¿A qué altitud se llegaría a <span class="mat">\(0\)</span>&nbsp;ºC?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 8.1</span> Concepto de función</a></li><li><a href="apartado-2.html"><span class="num">Apartado 8.2</span> Características de una función</a></li><li><a href="apartado-3.html"><span class="num">Apartado 8.3</span> Lectura crítica de gráficas</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud07/index.html">← UD07</a><a class="boton secundario" href="../ud09/index.html">UD09 →</a></nav>

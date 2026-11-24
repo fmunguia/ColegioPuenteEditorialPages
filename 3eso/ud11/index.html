@@ -17,19 +17,35 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" defer></script>
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+<style>html.candado body>*{display:none!important}html.candado body>.pantalla-candado{display:flex!important}
+.pantalla-candado{position:fixed;inset:0;align-items:center;justify-content:center;background:#f4f6f8;font-family:system-ui,sans-serif}
+.pantalla-candado form{background:#fff;padding:28px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,.15);max-width:340px;width:90%;text-align:center}
+.pantalla-candado input{width:100%;box-sizing:border-box;padding:10px;font-size:1rem;margin:12px 0;border:1px solid #bbb;border-radius:6px}
+.pantalla-candado button{padding:10px 18px;font-size:1rem;border:0;border-radius:6px;background:var(--principal,#009900);color:#fff;cursor:pointer}
+.pantalla-candado .error{color:#c00;min-height:1.2em;font-size:.9rem}</style>
+<script>(function(){var d={"libro": "3eso", "materia": "Matem\u00e1ticas", "huella": "f0a446fc"};
+function h(t){var x=0x811c9dc5,b=new TextEncoder().encode(t);for(var i=0;i<b.length;i++){x^=b[i];x=Math.imul(x,0x01000193)>>>0;}return ("0000000"+x.toString(16)).slice(-8);}
+var k="candado-"+d.libro,ok=false;try{ok=localStorage.getItem(k)===d.huella;}catch(e){}
+if(ok)return;document.documentElement.classList.add("candado");
+document.addEventListener("DOMContentLoaded",function(){var p=document.createElement("div");p.className="pantalla-candado";
+p.innerHTML='<form><div style="font-size:2rem">🔒</div><strong></strong><input type="password" autocomplete="current-password" placeholder="Contraseña" aria-label="Contraseña"><div class="error"></div><button type="submit">Entrar</button></form>';
+p.querySelector("strong").textContent=d.materia;document.body.appendChild(p);var i=p.querySelector("input");i.focus();
+p.querySelector("form").addEventListener("submit",function(ev){ev.preventDefault();
+if(h(d.libro+":"+i.value.trim())===d.huella){try{localStorage.setItem(k,d.huella);}catch(e){}document.documentElement.classList.remove("candado");p.remove();}
+else{p.querySelector(".error").textContent="Contraseña incorrecta";i.select();}});});})();</script>
 </head>
 <body style="--principal:#328BCF;--acento:#E6C120">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Matemáticas</a> › <span>UD11 · Movimientos en el plano</span></nav></header>
 <main>
 <p class="subtitulo">Bloque IV · Geometría</p><h1><span class="codigo">UD11</span> Movimientos en el plano</h1><aside class="caja partida"><div class="caja-titulo">🔍 Los girasoles de El Capricho</div><div class="caja-cuerpo"><p>En Comillas está El Capricho, una casa que diseñó Antoni Gaudí. Su fachada está cubierta de azulejos con girasoles que se repiten una y otra vez, formando bandas decorativas. Los artesanos no dibujaban cada flor de nuevo: copiaban el mismo motivo y lo iban desplazando.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/264cfbd96fc0c06a.svg" width="402" height="90" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/b9ed588c0869a6b7.svg" width="402" height="90" alt="" loading="lazy"></figure></div>
 <ul><li>¿Qué hay que hacer con un girasol para colocarlo encima del siguiente?</li><li>¿Cambia el tamaño o la forma de las flores al moverlas?</li><li>¿Cuántos ejes de simetría tiene cada girasol? ¿Se queda igual si lo giras?</li></ul></div></aside>
 <aside class="caja objetivos"><div class="caja-titulo">🎯 Aprenderás a</div><div class="caja-cuerpo"><ul><li>Calcular las coordenadas y el módulo de un vector y operar con vectores.</li><li>Aplicar traslaciones, giros y simetrías a puntos y figuras.</li><li>Encontrar los ejes y los centros de simetría de una figura.</li><li>Componer movimientos y reconocer el movimiento que resulta.</li><li>Analizar y crear frisos y mosaicos.</li></ul></div></aside>
 <aside class="caja recuerda"><div class="caja-titulo">✔️ ¿Qué necesitas recordar?</div><div class="caja-cuerpo"><ul><li>Un punto del plano se escribe con dos coordenadas <span class="mat">\((x, y)\)</span>.</li><li>El teorema de Pitágoras da la hipotenusa: <span class="mat">\(\sqrt{3^2 + 4^2} = 5\)</span>.</li><li>Los ángulos de un triángulo suman <span class="mat">\(180^\circ\)</span> y una vuelta completa mide <span class="mat">\(360^\circ\)</span>.</li><li>Una figura tiene un eje de simetría si al doblarla por él las dos mitades coinciden.</li></ul>
 <p>Comprueba que sabes hacer estos ejercicios de cursos anteriores:</p>
 <ol class="tareas cols-2"><li>Representa <span class="mat">\(A(2, -1)\)</span> y <span class="mat">\(B(-3, 2)\)</span>.</li><li>Calcula <span class="mat">\(\sqrt{6^2 + 8^2}\)</span>.</li><li>Calcula <span class="mat">\((-3) - 2\)</span> y <span class="mat">\(4 - (-5)\)</span>.</li><li>Halla el ángulo interior de un hexágono regular.</li><li>¿Cuántos ejes de simetría tiene un rectángulo?</li><li>¿Qué ángulo gira la aguja de los minutos en un cuarto de hora?</li></ol></div></aside>
 <aside class="caja pensar"><div class="caja-titulo">📖 Para pensar</div><div class="caja-cuerpo"><p>Las abejas construyen sus panales con celdas hexagonales. Los hexágonos regulares encajan sin dejar huecos ni montarse unos sobre otros, y entre todas las figuras que cubren el plano son las que, con la misma cantidad de cera, encierran más espacio para guardar la miel.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/5eb213d2356b8bc3.svg" width="197" height="131" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/81f1f369776ea904.svg" width="197" height="131" alt="" loading="lazy"></figure></div>
 <ul><li>¿Cuántos hexágonos se juntan en cada vértice? ¿Por qué <span class="mat">\(3 \cdot 120^\circ\)</span> tiene que dar <span class="mat">\(360^\circ\)</span>?</li><li>¿Qué otros polígonos regulares podrían cubrir el plano ellos solos?</li></ul></div></aside><h2 class="seccion">Apartados</h2><ol class="indice"><li><a href="apartado-1.html"><span class="num">Apartado 11.1</span> Vectores</a></li><li><a href="apartado-2.html"><span class="num">Apartado 11.2</span> Movimientos en el plano</a></li><li><a href="apartado-3.html"><span class="num">Apartado 11.3</span> Composición de movimientos</a></li><li><a href="apartado-4.html"><span class="num">Apartado 11.4</span> Frisos y mosaicos</a></li></ol><h2 class="seccion">Al terminar la unidad</h2><ul class="indice"><li><a href="repaso.html"><span class="num">📝</span> Repaso de la unidad</a></li><li><a href="autoevaluacion.html"><span class="num">✅</span> Autoevaluación</a></li></ul>
 
 <nav class="anterior-siguiente"><a class="boton secundario" href="../ud10/index.html">← UD10</a><a class="boton secundario" href="../ud12/index.html">UD12 →</a></nav>

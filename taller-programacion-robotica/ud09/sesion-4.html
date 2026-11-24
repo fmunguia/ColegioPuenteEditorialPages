@@ -7,6 +7,7 @@
 <meta name="description" content="Hoy vas a enviar y recibir mensajes por radio entre dos placas.">
 <link rel="stylesheet" href="../../estilo.css">
 <script src="../../interactivo.js" defer></script>
+
 </head>
 <body style="--principal:#971A6F;--acento:#9AC21B">
 <header class="cabecera"><a class="logo" href="../../index.html">Colegio Puente · Libros</a><nav class="migas" aria-label="Estás en"><a href="../../index.html">Inicio</a> › <a href="../index.html">Taller de programación y robótica</a> › <a href="index.html">UD09 · Control y comunicaciones</a> › <span>Sesión 9.4</span></nav></header>
@@ -15,15 +16,15 @@
 <section class="momento m-hago"><h2 class="banda m-hago"><span class="icono">🤔</span> Pienso<span class="min">5 min</span></h2><p class="que-hago"><strong>Qué hago aquí:</strong> Piensa un momento y contesta con lo que ya sabes. No pasa nada si no lo sabes: es para empezar.</p><div class="momento-cuerpo"><p>Para hablar con walkie-talkies, los dos tenéis que poner el mismo <strong>canal</strong>. ¿Qué pasaría si toda la clase usara el mismo canal?</p>
 <textarea class="respuesta" rows="3" data-k="t6" placeholder="Escribe aquí tu respuesta"></textarea></div></section>
 <section class="momento m-aprendo"><h2 class="banda m-aprendo"><span class="icono">📖</span> Leo y aprendo<span class="min">15 min</span></h2><p class="que-hago"><strong>Qué hago aquí:</strong> Lee despacio, mira los dibujos y los ejemplos, y quédate con la idea clave del final.</p><div class="momento-cuerpo"><p>La Micro:Bit tiene una <strong>antena</strong>. Con ella envía y recibe <strong>ondas de radio</strong>. Así dos placas se comunican sin cable, hasta unos 20 metros.</p>
-<figure class="dibujo "><img src="../../figuras/114bc3a408c03f83.svg" width="424" height="138" alt="" loading="lazy"><figcaption>Dos placas en el mismo grupo se envían mensajes.</figcaption></figure>
+<figure class="dibujo "><img src="../../figuras/e34efceee81ec3ff.svg" width="422" height="138" alt="" loading="lazy"><figcaption>Dos placas en el mismo grupo se envían mensajes.</figcaption></figure>
 <aside class="caja aprendo definicion"><div class="caja-titulo">📖 <span class="emoji" aria-hidden="true">📡</span> Tres bloques de Radio</div><div class="caja-cuerpo"><p><span class="emoji" aria-hidden="true">📺</span> <strong>radio establecer grupo</strong>: es el canal, un número del 0 al 255. Solo se entienden las placas del mismo grupo.</p>
 <p><span class="emoji" aria-hidden="true">📤</span> <strong>radio enviar número</strong>: envía un número.</p>
 <p><span class="emoji" aria-hidden="true">📥</span> <strong>al recibir radio</strong>: se ejecuta cuando llega un número. El número queda en <strong>receivedNumber</strong>.</p></div></aside>
-<aside class="caja principal makecode-caja"><div class="caja-titulo">🧩 MakeCode: Emisor y receptor</div><div class="caja-cuerpo"><div class="programa-y-texto"><figure class="dibujo bloques"><img src="../../figuras/cafffce22d5e98af.svg" width="611" height="282" alt="" loading="lazy"></figure></div></div></aside>
+<aside class="caja principal makecode-caja"><div class="caja-titulo">🧩 MakeCode: Emisor y receptor</div><div class="caja-cuerpo"><div class="programa-y-texto"><figure class="dibujo bloques"><img src="../../figuras/32cd91bb28120617.svg" width="610" height="282" alt="" loading="lazy"></figure></div></div></aside>
 <p>A la izquierda, el <strong>emisor</strong>: al pulsar A, envía un 1. A la derecha, el <strong>receptor</strong>: al recibir un 1, muestra un corazón.</p>
-<div class="centro"><figure class="dibujo "><img src="../../figuras/fe84c8f337541e90.svg" width="578" height="74" alt="" loading="lazy"></figure></div>
+<div class="centro"><figure class="dibujo "><img src="../../figuras/f19e59aff3a75069.svg" width="579" height="74" alt="" loading="lazy"></figure></div>
 <aside class="caja aprendo error-tipico"><div class="caja-titulo">⚠️ ¡Ojo!</div><div class="caja-cuerpo"><p>Si todas las parejas usan el mismo grupo, los mensajes llegan a todas las placas. Cada pareja necesita su número.</p></div></aside>
-<aside class="caja aprendo mapa-sesion"><div class="caja-titulo">🔍 Mi mapa de hoy</div><div class="caja-cuerpo"><figure class="dibujo mapa"><img src="../../figuras/3bebe4c2cc4a142e.svg" width="544" height="126" alt="" loading="lazy"></figure></div></aside>
+<aside class="caja aprendo mapa-sesion"><div class="caja-titulo">🔍 Mi mapa de hoy</div><div class="caja-cuerpo"><figure class="dibujo mapa"><img src="../../figuras/56e46b364a15e723.svg" width="546" height="126" alt="" loading="lazy"></figure></div></aside>
 <div class="idea-clave"><strong>💡 Idea clave.</strong> Dos placas se comunican por radio si tienen el mismo grupo. Una envía y la otra recibe.</div></div></section>
 <section class="momento m-hago"><h2 class="banda m-hago"><span class="icono">✏️</span> Hago<span class="min">25 min</span></h2><p class="que-hago"><strong>Qué hago aquí:</strong> Haz las actividades en orden. Empieza siempre por las básicas.</p><div class="momento-cuerpo"><div class="actividad hago" id="act-9.4.1"><div class="act-cab"><span class="act-num">9.4.1</span><span class="nivel">⭐ Básica</span></div><div class="act-cuerpo"><p>Escribe vuestro número de grupo: <input type="text" class="hueco" size="6" data-k="h7" aria-label="Completa">. Comprueba que nadie cerca lo usa.</p></div></div>
 <div class="actividad hago" id="act-9.4.2"><div class="act-cab"><span class="act-num">9.4.2</span><span class="nivel">⭐ Básica</span></div><div class="act-cuerpo"><p>Programad el emisor y el receptor. Pulsad A. ¿Sale el corazón?</p>
